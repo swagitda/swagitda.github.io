@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Keynote on Kelly Shortridge</title>
+    <link>./tags/keynote/</link>
+    <description>Recent content in Keynote on Kelly Shortridge</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 May 2018 17:15:09 -0400</lastBuildDate>
+    
+	<atom:link href="./tags/keynote/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Security as a Product</title>
+      <link>./posts/security-as-a-product/</link>
+      <pubDate>Fri, 18 May 2018 17:15:09 -0400</pubDate>
+      
+      <guid>./posts/security-as-a-product/</guid>
+      <description>Originally given as the keynote at BSides Knoxville.
+Security is a product, but we treat it like a sacred, immutable grail to preserve, unblemished by the sublunary needs of users. And yet, we wonder why defense remains stagnant, why we fail so consistently in progressing towards the glorious ideal of a “secure organization.” We will continue to fail — unless we treat security as a product. Are we trying to respect the phantasmal Elder Deities of Infosec and their stringent doctrine, or are we trying to ensure our organization can still thrive while operating in a perilous digital world?</description>
+    </item>
+    
+  </channel>
+</rss>

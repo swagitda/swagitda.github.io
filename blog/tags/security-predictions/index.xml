@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security Predictions on Kelly Shortridge</title>
+    <link>./tags/security-predictions/</link>
+    <description>Recent content in Security Predictions on Kelly Shortridge</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 21 Dec 2017 16:52:25 -0400</lastBuildDate>
+    
+	<atom:link href="./tags/security-predictions/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2018 Cybersecurity Predictions</title>
+      <link>./posts/2018-cybersecurity-predictions/</link>
+      <pubDate>Thu, 21 Dec 2017 16:52:25 -0400</pubDate>
+      
+      <guid>./posts/2018-cybersecurity-predictions/</guid>
+      <description>Fed up with ridiculous infosec predictions for the upcoming year, I decided to aggregate them all and use the power of Markov Chains to generate my own list. What follows is the result, lightly edited solely for readability. I hope to be pioneering the next-gen AI-powered thought leadering market segment.
+In 2018, security. Cyber security people will die. We’ve long debated where security people will die. We expect this lucrative trend to continue through 2018.</description>
+    </item>
+    
+    <item>
+      <title>Revisiting 2016 Security Predictions</title>
+      <link>./posts/revisiting-2016-security-predictions/</link>
+      <pubDate>Fri, 30 Dec 2016 21:08:55 -0400</pubDate>
+      
+      <guid>./posts/revisiting-2016-security-predictions/</guid>
+      <description>I totally get it — it’d be boring to say year after year, “Yep, phishing definitely still works,” so security vendors instead pour creative thinking and marketing pizzazz into their annual security predictions. Most seem to aim to match the majority of their predictions to other vendors’, with generally one or two unique predictions thrown in to show off their innovative thought leadering. Sometimes those unique ones are spot-on and glorify their authors, and other times we can look back a year later and share a good chuckle.</description>
+    </item>
+    
+  </channel>
+</rss>
