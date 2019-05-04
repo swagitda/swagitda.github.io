@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kelly Shortridge</title>
+    <link>swagitda.com/blog/</link>
+    <description>Recent content on Kelly Shortridge</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 17 Dec 2018 18:35:02 -0400</lastBuildDate>
+    
+	<atom:link href="swagitda.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My 2018 Reading List</title>
+      <link>swagitda.com/blog/posts/2018-reading-list/</link>
+      <pubDate>Mon, 17 Dec 2018 18:35:02 -0400</pubDate>
+      
+      <guid>swagitda.com/blog/posts/2018-reading-list/</guid>
+      <description>My perennial New Year’s resolution is to read one fiction and one non-fiction book per month. I tend to fail, and this year I only averaged 1.33 books per month (which, interestingly, is the same as last year; 2016 was 1.5 per month).
+As you can tell from this list, I became a bit obsessed with afrofuturism and am still in awe of the immersive worldbuilding within the genre’s novels I read.</description>
+    </item>
+    
+    <item>
+      <title>Security as a Product</title>
+      <link>swagitda.com/blog/posts/security-as-a-product/</link>
+      <pubDate>Fri, 18 May 2018 17:15:09 -0400</pubDate>
+      
+      <guid>swagitda.com/blog/posts/security-as-a-product/</guid>
+      <description>Originally given as the keynote at BSides Knoxville.
+Security is a product, but we treat it like a sacred, immutable grail to preserve, unblemished by the sublunary needs of users. And yet, we wonder why defense remains stagnant, why we fail so consistently in progressing towards the glorious ideal of a “secure organization.” We will continue to fail — unless we treat security as a product. Are we trying to respect the phantasmal Elder Deities of Infosec and their stringent doctrine, or are we trying to ensure our organization can still thrive while operating in a perilous digital world?</description>
+    </item>
+    
+    <item>
+      <title>2018 Cybersecurity Predictions</title>
+      <link>swagitda.com/blog/posts/2018-cybersecurity-predictions/</link>
+      <pubDate>Thu, 21 Dec 2017 16:52:25 -0400</pubDate>
+      
+      <guid>swagitda.com/blog/posts/2018-cybersecurity-predictions/</guid>
+      <description>Fed up with ridiculous infosec predictions for the upcoming year, I decided to aggregate them all and use the power of Markov Chains to generate my own list. What follows is the result, lightly edited solely for readability. I hope to be pioneering the next-gen AI-powered thought leadering market segment.
+In 2018, security. Cyber security people will die. We’ve long debated where security people will die. We expect this lucrative trend to continue through 2018.</description>
+    </item>
+    
+    <item>
+      <title>My 2017 Reading List</title>
+      <link>swagitda.com/blog/posts/2017-reading-list/</link>
+      <pubDate>Thu, 07 Dec 2017 16:44:58 -0400</pubDate>
+      
+      <guid>swagitda.com/blog/posts/2017-reading-list/</guid>
+      <description>As I wrote about last year, my ongoing New Year’s resolution is to try to read one non-fiction and one fiction book per month. I was unable to fully accomplish this goal for 2017 (I tend to gravitate more towards fiction in tumultuous times), but I loved the books I did manage to read along the way.
+In the vein of last year’s post, I sought out non-fiction and science / speculative fiction books by a diverse set of authors.</description>
+    </item>
+    
+    <item>
+      <title>First Principles of Building Security Products</title>
+      <link>swagitda.com/blog/posts/first-principles-building-security-products/</link>
+      <pubDate>Mon, 12 Jun 2017 16:32:41 -0400</pubDate>
+      
+      <guid>swagitda.com/blog/posts/first-principles-building-security-products/</guid>
+      <description>Using Shamir’s 10 Commandments of Commercial Security to build better security products
+A printout of Adi Shamir’s 10 Commandments of Commercial Security has been my #1 office essential since I first stumbled upon them, and I argue it should be yours, too. Shamir outlined these commandments in his talk at the Crypto ‘95 conference (yes, way back in 1995), and they not only spell out the first principles of enterprise security, but serve as a poignant reminder that although it feels as if the industry is evolving around us at a feverish pace, the fundamentals of building security products are true even two decades later.</description>
+    </item>
+    
+    <item>
+      <title>Choice Architecture for InfoSec Blue Teams</title>
+      <link>swagitda.com/blog/posts/choice-architecture-infosec-blue-teams/</link>
+      <pubDate>Wed, 08 Feb 2017 16:17:34 -0400</pubDate>
+      
+      <guid>swagitda.com/blog/posts/choice-architecture-infosec-blue-teams/</guid>
+      <description>I recently spoke at Art into Science: A Conference for Defense, which was an intellectually-stimulating (and delightfully quirky) conference focused on moving towards a professional discipline for defensive infosec. Sadly, I had to rush through the last part of my presentation, so I wanted to do it justice by fleshing out my thoughts here. I’m going to skip through the first two sections of my talk— an introduction to cognitive biases and how they manifest in infosec, then challenges that arise due to the group nature of blue teams — but feel free to check out the slides here.</description>
+    </item>
+    
+    <item>
+      <title>Russia used the U.S. Influence Ops Playbook</title>
+      <link>swagitda.com/blog/posts/russia-used-us-influence-ops-playbook/</link>
+      <pubDate>Wed, 18 Jan 2017 16:05:49 -0400</pubDate>
+      
+      <guid>swagitda.com/blog/posts/russia-used-us-influence-ops-playbook/</guid>
+      <description>Roger Trinquier, the French counterinsurgency theorist, said, “The sine qua non of victory in [insurgent/counterinsurgent] warfare is the unconditional support of the people.” In Influence Operations, success is ultimately about the ability to overcome one’s status as an outsider.
+The past few months have seen cyberwar intersect with Influence Operations, in Russia using chicanery along these lines to influence the U.S. presidential election. In wanting to learn more about Influence Ops, I stumbled across a paper from the Naval War College entitled “Influence Operations &amp;amp; the Human Domain.</description>
+    </item>
+    
+    <item>
+      <title>Revisiting 2016 Security Predictions</title>
+      <link>swagitda.com/blog/posts/revisiting-2016-security-predictions/</link>
+      <pubDate>Fri, 30 Dec 2016 21:08:55 -0400</pubDate>
+      
+      <guid>swagitda.com/blog/posts/revisiting-2016-security-predictions/</guid>
+      <description>I totally get it — it’d be boring to say year after year, “Yep, phishing definitely still works,” so security vendors instead pour creative thinking and marketing pizzazz into their annual security predictions. Most seem to aim to match the majority of their predictions to other vendors’, with generally one or two unique predictions thrown in to show off their innovative thought leadering. Sometimes those unique ones are spot-on and glorify their authors, and other times we can look back a year later and share a good chuckle.</description>
+    </item>
+    
+    <item>
+      <title>My 2016 Reading List</title>
+      <link>swagitda.com/blog/posts/2016-reading-list/</link>
+      <pubDate>Mon, 26 Dec 2016 21:03:57 -0400</pubDate>
+      
+      <guid>swagitda.com/blog/posts/2016-reading-list/</guid>
+      <description>Two years ago, I made my New Years Resolution to read one fiction and one non-fiction book each month, and I’ve (mostly) kept it up since then. But towards the end of 2015, it suddenly occurred to me that the vast majority of the authors I read were men. So, I made my 2016 resolution to flip that ratio, while still sticking to the genres to which I gravitate, namely science fiction and popular science (with a bit of history thrown in).</description>
+    </item>
+    
+    <item>
+      <title>3 questions on cybersecurity that should be asked in the debates</title>
+      <link>swagitda.com/blog/posts/3-questions-cybersecurity-debates/</link>
+      <pubDate>Fri, 30 Sep 2016 20:41:38 -0400</pubDate>
+      
+      <guid>swagitda.com/blog/posts/3-questions-cybersecurity-debates/</guid>
+      <description>A citizen’s guide (or to sound smart at cocktail parties) While the first U.S. presidential debate included an open-ended, broad question about each candidate’s stance on cybersecurity, it accomplished little in helping citizens understand the candidates’ actual policy positions — nor why cybersecurity policies are relevant at all on the national scale. Saying “cybersecurity is important” for the U.S. today is like saying “having a military is important.”
+But, it was also clear from the responses, such as bringing up Daesh’s use of the internet for recruitment or using the term “the cyber,” that there’s a lack of mainstream understanding of what cybersecurity actually means in a policy context (the argument against the term “cyber” and its derivatives is left for another day).</description>
+    </item>
+    
+    <item>
+      <title>Behavioral Models of InfoSec: Prospect Theory</title>
+      <link>swagitda.com/blog/posts/behavioral-models-infosec-prospect-theory/</link>
+      <pubDate>Mon, 01 Aug 2016 20:20:59 -0400</pubDate>
+      
+      <guid>swagitda.com/blog/posts/behavioral-models-infosec-prospect-theory/</guid>
+      <description>To those in the information security / cyber security industry, it’s an accepted truth that there exists a pernicious incentive structure that overwhelmingly puts the odds in the attacker’s favor. The consistent narrative is that defenders make irrational decisions and focus on the wrong problems while vendors peddle FUD and snake oil that not just fails to bolster the defensive cause, but inflicts ongoing harm.
+But, I’ve seen less in the way of seeking to understand defenders’ irrational decision making patterns and why the industry is the way it currently is…and even less about how to fix this toxic feedback loop.</description>
+    </item>
+    
+    <item>
+      <title>WTFunding: Bioinformatics &amp; Genetic Data</title>
+      <link>swagitda.com/blog/posts/wtfunding-bioinformatics-genetic-data/</link>
+      <pubDate>Tue, 17 May 2016 19:35:10 -0400</pubDate>
+      
+      <guid>swagitda.com/blog/posts/wtfunding-bioinformatics-genetic-data/</guid>
+      <description>WTFunding is one of my “spare time” projects to delve into tech sectors attracting VC funding that pique my curiosity. I like connecting dots between disparate things, it’s also pretty useful.
+Table of Contents:  So what is bioinformatics? What are the applications? What&amp;rsquo;s hindering adoption? Who cares? What are the risks? What&amp;rsquo;s the current scene? Conclusion  So what is bioinformatics? Simply put, bioinformatics is software used to understand biological data, including (but not limited to) genomic sequences.</description>
+    </item>
+    
+    <item>
+      <title>Apple vs. FBI: Privacy &amp; Inequality</title>
+      <link>swagitda.com/blog/posts/apple-vs-fbi-privacy-inequality/</link>
+      <pubDate>Thu, 17 Mar 2016 19:29:13 -0400</pubDate>
+      
+      <guid>swagitda.com/blog/posts/apple-vs-fbi-privacy-inequality/</guid>
+      <description>In recent news, there’s been a fiery public relations battle between the FBI and Apple. While there has been vocal protest by the technology community, and particularly the information security community, against the FBI’s request, it has largely been rooted in (very valid) concerns over the degradation of software security, national security and privacy in a general sense. However, there’s a larger societal concern that cannot be ignored.
+By way of brief background, the gist of the legal fight is that the FBI wants Apple to create a custom version of its operating system for iPhones, iOS, that would allow it to circumvent the safety measure of reducing the frequency with which the device’s passcode can be guessed when locked.</description>
+    </item>
+    
+    <item>
+      <title>WTFunding: Space Data (Satellite Imagery)</title>
+      <link>swagitda.com/blog/posts/wtfunding-space-data-satellite-imagery/</link>
+      <pubDate>Mon, 04 Jan 2016 18:49:24 -0400</pubDate>
+      
+      <guid>swagitda.com/blog/posts/wtfunding-space-data-satellite-imagery/</guid>
+      <description>WTFunding is one of my “spare time” projects to delve into tech sectors attracting VC funding that pique my curiosity. I like connecting dots between disparate things, it’s also pretty useful.
+Table of Contents:  So what is &amp;ldquo;space data&amp;rdquo; and &amp;ldquo;satellite imagery&amp;rdquo;? What are the applications? What&amp;rsquo;s hindering adoption? Who cares? What are the risks? What&amp;rsquo;s the current scene? Conclusion  So what is &amp;ldquo;space data&amp;rdquo; and &amp;ldquo;satellite imagery&amp;rdquo;?</description>
+    </item>
+    
+    <item>
+      <title>WTFunding: Industrial / Manufacturing Analytics</title>
+      <link>swagitda.com/blog/posts/wtfunding-industrial-manufacturing-analytics/</link>
+      <pubDate>Tue, 13 Oct 2015 17:24:07 -0400</pubDate>
+      
+      <guid>swagitda.com/blog/posts/wtfunding-industrial-manufacturing-analytics/</guid>
+      <description>WTFunding is one of my “spare time” projects to delve into tech sectors attracting VC funding that pique my curiosity. I like connecting dots between disparate things, it’s also pretty useful.
+Table of Contents:  So what is &amp;ldquo;industrial / manufacturing analytics&amp;rdquo;? What are the applications? What&amp;rsquo;s hindering adoption? Who cares? What are the risks? What&amp;rsquo;s the current scene? Final thoughts  So what is “industrial / manufacturing analytics”? There doesn’t seem to be a great catch-all term for it yet, but there are a few different terms for and related to the sector I’m discussing: smart manufacturing, infrastructure analytics, manufacturing analytics, industrial analytics and, though it’s a broader term, IoT analytics.</description>
+    </item>
+    
+  </channel>
+</rss>
