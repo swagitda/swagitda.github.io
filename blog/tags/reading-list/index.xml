@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reading-List on Kelly Shortridge</title>
+    <link>swagitda.com/blog/tags/reading-list/</link>
+    <description>Recent content in Reading-List on Kelly Shortridge</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 17 Dec 2018 18:35:02 -0400</lastBuildDate>
+    
+	<atom:link href="swagitda.com/blog/tags/reading-list/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My 2018 Reading List</title>
+      <link>swagitda.com/blog/posts/2018-reading-list/</link>
+      <pubDate>Mon, 17 Dec 2018 18:35:02 -0400</pubDate>
+      
+      <guid>swagitda.com/blog/posts/2018-reading-list/</guid>
+      <description>My perennial New Year’s resolution is to read one fiction and one non-fiction book per month. I tend to fail, and this year I only averaged 1.33 books per month (which, interestingly, is the same as last year; 2016 was 1.5 per month).
+As you can tell from this list, I became a bit obsessed with afrofuturism and am still in awe of the immersive worldbuilding within the genre’s novels I read.</description>
+    </item>
+    
+    <item>
+      <title>My 2017 Reading List</title>
+      <link>swagitda.com/blog/posts/2017-reading-list/</link>
+      <pubDate>Thu, 07 Dec 2017 16:44:58 -0400</pubDate>
+      
+      <guid>swagitda.com/blog/posts/2017-reading-list/</guid>
+      <description>As I wrote about last year, my ongoing New Year’s resolution is to try to read one non-fiction and one fiction book per month. I was unable to fully accomplish this goal for 2017 (I tend to gravitate more towards fiction in tumultuous times), but I loved the books I did manage to read along the way.
+In the vein of last year’s post, I sought out non-fiction and science / speculative fiction books by a diverse set of authors.</description>
+    </item>
+    
+    <item>
+      <title>My 2016 Reading List</title>
+      <link>swagitda.com/blog/posts/2016-reading-list/</link>
+      <pubDate>Mon, 26 Dec 2016 21:03:57 -0400</pubDate>
+      
+      <guid>swagitda.com/blog/posts/2016-reading-list/</guid>
+      <description>Two years ago, I made my New Years Resolution to read one fiction and one non-fiction book each month, and I’ve (mostly) kept it up since then. But towards the end of 2015, it suddenly occurred to me that the vast majority of the authors I read were men. So, I made my 2016 resolution to flip that ratio, while still sticking to the genres to which I gravitate, namely science fiction and popular science (with a bit of history thrown in).</description>
+    </item>
+    
+  </channel>
+</rss>
