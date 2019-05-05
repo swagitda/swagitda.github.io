@@ -6,10 +6,31 @@
     <description>Recent content on Kelly Shortridge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Dec 2018 18:35:02 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 13 Mar 2019 21:28:01 -0400</lastBuildDate>
     
 	<atom:link href="//swagitda.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My Reflections on the 2019 RSA Conference</title>
+      <link>//swagitda.github.io/blog/posts/my-reflections-on-rsac-2019/</link>
+      <pubDate>Wed, 13 Mar 2019 21:28:01 -0400</pubDate>
+      
+      <guid>//swagitda.github.io/blog/posts/my-reflections-on-rsac-2019/</guid>
+      <description>Reflecting on my existential crisis during RSAC, I tried to distill what exactly was so troublesome about the conference. The expo floor was less two separate halls, as per years prior, and more like Mordor, with a befouled sprawl connecting Minas Morgul and the Black Gate — but instead of orcs and Uruk-hai, vendors crammed the hallways that used to serve as open breathing space.
+The RSAC Innovation Sandbox’s “natural” lighting (featuring me and my buzzword bingo card)  The color of RSAC itself is royal purple — fitting as hosts of this ostentatious banquet — with a splash of cyber-turquoise.</description>
+    </item>
+    
+    <item>
+      <title>The Cyber Tub: Communicating the Dynamics of Information Security Risk Management</title>
+      <link>//swagitda.github.io/blog/posts/the-cyber-tub/</link>
+      <pubDate>Thu, 20 Dec 2018 22:02:49 -0400</pubDate>
+      
+      <guid>//swagitda.github.io/blog/posts/the-cyber-tub/</guid>
+      <description>This is probably how a Cyber Tub looks, right?
+People struggle to understand how risk accumulates in complex systems, thereby also not understanding the extent to which risk must be reduced. This misapprehension can lead to “wait and see” decisions that cause a problem to snowball, or mitigations that don’t meaningfully reduce risk, creating the feeling of just barely treading water in your security program.
+It is challenging for people to understand risk dynamics conceptually for two primary reasons.</description>
+    </item>
     
     <item>
       <title>My 2018 Reading List</title>
@@ -19,6 +40,17 @@
       <guid>//swagitda.github.io/blog/posts/2018-reading-list/</guid>
       <description>My perennial New Year’s resolution is to read one fiction and one non-fiction book per month. I tend to fail, and this year I only averaged 1.33 books per month (which, interestingly, is the same as last year; 2016 was 1.5 per month).
 As you can tell from this list, I became a bit obsessed with afrofuturism and am still in awe of the immersive worldbuilding within the genre’s novels I read.</description>
+    </item>
+    
+    <item>
+      <title>The Red Pill of Resilience in InfoSec</title>
+      <link>//swagitda.github.io/blog/posts/red-pill-of-resilience-infosec/</link>
+      <pubDate>Wed, 01 Aug 2018 17:26:47 -0400</pubDate>
+      
+      <guid>//swagitda.github.io/blog/posts/red-pill-of-resilience-infosec/</guid>
+      <description>What follows is the full text of my keynote, also available as a video and as slides.
+There has been insufficient exploration of the first principles of resilience in the context of information security, despite the term being superficially peppered in our common discourse. Too often, resilience is conflated with robustness — to the detriment of us all.
+To state more poetically, through the pen of the notable fantasy author Robert Jordan referencing one of Aesop’s fables, “The oak fought the wind and was broken, the willow bent when it must and survived.</description>
     </item>
     
     <item>

@@ -3,20 +3,54 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>//swagitda.github.io/blog/</loc>
-    <lastmod>2018-12-17T18:35:02-04:00</lastmod>
+    <loc>//swagitda.github.io/blog/tags/infosec/</loc>
+    <lastmod>2019-03-13T21:28:01-04:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//swagitda.github.io/blog/</loc>
+    <lastmod>2019-03-13T21:28:01-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//swagitda.github.io/blog/tags/market-analysis/</loc>
+    <lastmod>2019-03-13T21:28:01-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//swagitda.github.io/blog/posts/my-reflections-on-rsac-2019/</loc>
+    <lastmod>2019-03-13T21:28:01-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//swagitda.github.io/blog/posts/</loc>
+    <lastmod>2019-03-13T21:28:01-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//swagitda.github.io/blog/tags/</loc>
+    <lastmod>2019-03-13T21:28:01-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//swagitda.github.io/blog/tags/risk-management/</loc>
+    <lastmod>2018-12-20T22:02:49-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//swagitda.github.io/blog/posts/the-cyber-tub/</loc>
+    <lastmod>2018-12-20T22:02:49-04:00</lastmod>
   </url>
   
   <url>
     <loc>//swagitda.github.io/blog/posts/2018-reading-list/</loc>
     <lastmod>2018-12-17T18:35:02-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//swagitda.github.io/blog/posts/</loc>
-    <lastmod>2018-12-17T18:35:02-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -26,21 +60,14 @@
   </url>
   
   <url>
-    <loc>//swagitda.github.io/blog/tags/</loc>
-    <lastmod>2018-12-17T18:35:02-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>//swagitda.github.io/blog/tags/infosec/</loc>
-    <lastmod>2018-05-18T17:15:09-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>//swagitda.github.io/blog/tags/keynote/</loc>
-    <lastmod>2018-05-18T17:15:09-04:00</lastmod>
+    <lastmod>2018-08-01T17:26:47-04:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//swagitda.github.io/blog/posts/red-pill-of-resilience-infosec/</loc>
+    <lastmod>2018-08-01T17:26:47-04:00</lastmod>
   </url>
   
   <url>

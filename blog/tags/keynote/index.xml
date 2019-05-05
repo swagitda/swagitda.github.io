@@ -6,10 +6,21 @@
     <description>Recent content in Keynote on Kelly Shortridge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 18 May 2018 17:15:09 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 01 Aug 2018 17:26:47 -0400</lastBuildDate>
     
 	<atom:link href="//swagitda.github.io/blog/tags/keynote/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Red Pill of Resilience in InfoSec</title>
+      <link>//swagitda.github.io/blog/posts/red-pill-of-resilience-infosec/</link>
+      <pubDate>Wed, 01 Aug 2018 17:26:47 -0400</pubDate>
+      
+      <guid>//swagitda.github.io/blog/posts/red-pill-of-resilience-infosec/</guid>
+      <description>What follows is the full text of my keynote, also available as a video and as slides.
+There has been insufficient exploration of the first principles of resilience in the context of information security, despite the term being superficially peppered in our common discourse. Too often, resilience is conflated with robustness — to the detriment of us all.
+To state more poetically, through the pen of the notable fantasy author Robert Jordan referencing one of Aesop’s fables, “The oak fought the wind and was broken, the willow bent when it must and survived.</description>
+    </item>
     
     <item>
       <title>Security as a Product</title>

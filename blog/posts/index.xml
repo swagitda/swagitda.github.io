@@ -5,8 +5,209 @@
         <description>Recent content in Posts on Kelly Shortridge</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 17 Dec 2018 18:35:02 -0400</lastBuildDate>
+        <lastBuildDate>Wed, 13 Mar 2019 21:28:01 -0400</lastBuildDate>
         <atom:link href="//swagitda.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>My Reflections on the 2019 RSA Conference</title>
+            <link>//swagitda.github.io/blog/posts/my-reflections-on-rsac-2019/</link>
+            <pubDate>Wed, 13 Mar 2019 21:28:01 -0400</pubDate>
+            
+            <guid>//swagitda.github.io/blog/posts/my-reflections-on-rsac-2019/</guid>
+            <description>Reflecting on my existential crisis during RSAC, I tried to distill what exactly was so troublesome about the conference. The expo floor was less two separate halls, as per years prior, and more like Mordor, with a befouled sprawl connecting Minas Morgul and the Black Gate — but instead of orcs and Uruk-hai, vendors crammed the hallways that used to serve as open breathing space.
+The RSAC Innovation Sandbox’s “natural” lighting (featuring me and my buzzword bingo card)  The color of RSAC itself is royal purple — fitting as hosts of this ostentatious banquet — with a splash of cyber-turquoise.</description>
+            <content type="html"><![CDATA[
+
+<p>Reflecting on my existential crisis during RSAC, I tried to distill what exactly was so troublesome about the conference. The expo floor was less two separate halls, as per years prior, and more like Mordor, with a befouled sprawl connecting Minas Morgul and the Black Gate — but instead of orcs and Uruk-hai, vendors crammed the hallways that used to serve as open breathing space.</p>
+
+<p><figure style="float:right; max-width:40%; padding-left: 10px">
+    <img src="/blog/img/infosec-buzzword-bingo.jpg" alt="Kelly Shortridge holding their infosec buzzword bingo card">
+    <figcaption>The RSAC Innovation Sandbox’s “natural” lighting (featuring me and <a href="/blog/posts/infosec-startup-buzzword-bingo-2019-edition">my buzzword bingo card</a>)<figcaption>
+</figure>
+The color of RSAC itself is royal purple — fitting as hosts of this ostentatious banquet — with a splash of cyber-turquoise. The vendors left an abstract expressionist mark bursting with oceanic blues, imperial reds, dramatic gunmetal, and the occasional accent of atomic tangerine. Artfully abstract globes, honeycombs, and glowing orbs were juxtaposed with elegant waves and gently curved lines, mixing familiar shapes with the futuristic mouthfeel of “cyber.”</p>
+
+<p>There was a dizzying sense of perpetual motion, like a spinning top just barely staying upright. Quiet was seemingly anathema — the pestilential cacophony of canned speeches and whizbangs and desperate pleas for attention was unavoidable.</p>
+
+<p>In this vainglorious feast by the information security industry in dedication to itself, experiencing an existential crisis is perhaps an inevitability. The ultimate purpose of information security — ensuring an organization can thrive despite digital risks — was obscured beneath the thick layers of cheap pens dimly glinting, XL men’s t-shirts boldly proclaiming trivialities, and the hollow promises of soothing your fears one badge scan at a time.</p>
+
+<p>But this alone can be rationalized away and not lead to a crisis of faith in the importance of our collective work. These criticisms are true for most trade shows; they are inherently loud and sales-y. What makes the RSA Conference burrow into the brain like a parasite greedily devouring all hope is that the diabolical song and dance is not helping beneficial solutions fall into the right hands.</p>
+
+<p>RSAC is largely successful due to network effects — because everyone seemingly attends, everyone else attends — making it a good place to catch up with a lot of people at once. This reality makes its issues even more problematic; the four that personally drove my distress are:</p>
+
+<ol>
+<li><a href="#fud">Hyperbolization of FUD</a></li>
+<li><a href="#disconnect">Disconnect between products &amp; personas</a></li>
+<li><a href="#personas">Misunderstanding of personas</a></li>
+<li><a href="#blocker">Promotion of security as a blocker vs. a compromiser</a></li>
+</ol>
+
+<hr />
+
+<h2 id="a-name-fud-a-hyperbolization-of-fud"><a name="fud"></a>Hyperbolization of FUD</h2>
+
+<p>In a banquet of distasteful and inane catch phrases and bullet points, one gave me acid reflux like no other—it exemplifies what I am calling the hyperbolization of fear, uncertainty, and doubt (“FUD”). A large EDR vendor’s advertisements around town roughly stated, <em>“It takes a lifetime to build your career, and 5 seconds to lose it.”</em></p>
+
+<p>There was no shortage of FUD around threats, but this tagline directly stokes the fear that someone’s professional life will be over if they let an attacker slip by. It’s tasteless and mostly incorrect, and I find it appalling to imply that someone’s life will be ruined if they don’t buy your product. I also find it lazy; if you can’t sell your product without scaring people to such a degree, perhaps you should make your product inherently matter more to them.</p>
+
+<p>Part of the issue might be that the industry is generally poor at realistic threat modelling, making these doom and gloom buzzphrases compelling. While it’s too much to hope that all vendors could help their customers threat model responsibly, I believe it’s a reasonable expectation to not aim directly at personal fears and not make up scenarios that lack precedence in history or logic. If a vendor must create dystopian sci-fi to justify use of their product, they are doing it all wrong.</p>
+
+<h2 id="a-name-disconnect-a-disconnect-between-products-personas"><a name="disconnect"></a>Disconnect between products &amp; personas</h2>
+
+<p>My first supposition with regards to the persona problem was a disconnect <a href="https://blog.hubspot.com/marketing/buyer-persona-definition-under-100-sr">between buyer</a> and <a href="https://blog.hubspot.com/marketing/buyer-persona-definition-under-100-sr">user personas</a>. Specifically, that narratives around usability seemed to be keeping the buyer (CISO) in mind, rather than the people who would actually use it (individual contributors (“ICs”). Upon reflection, I think it’s worse than this — that there is a disconnect between the buyer personas and the vendors’ target audience.</p>
+
+<p>By this I mean that the marketing tactics, highlighted characteristics, even the words used all feel targeted towards other sales and marketing professionals, or perhaps venture capitalists (“VCs”). During the conference, I spoke with a large swath of practitioners ranging from CISOs to managers to senior ICs to more junior ICs, and none of them found the booths enlightening or particularly worthy of their attention.</p>
+
+<p>This begets the question — for whom is all this marketing? My prior assumption was that vendors would target the buyer persona (generally the CISO or director/manager-level) at the very least, since they are the people spending the budget. Ideally vendors would also target ICs, who are the ones actually using the product, and whose thumbs up is generally required by the buyer.</p>
+
+<p>But given <em>none</em> of those personas felt addressed by vendors at the RSAC expo hall, who did? To be perfectly frank, I’m not entirely convinced of the answer, but my hunch is that:</p>
+
+<ol>
+<li>VCs are dictating marketing/value propositions too much, particularly given they are generally disconnected from customer viewpoints</li>
+<li>Marketing people are generally too disconnected from customers &amp; don’t really understand the relevant personas</li>
+<li>Infosec is generally horrendously bad at understanding the spectrum of relevant user personas</li>
+</ol>
+
+<h2 id="a-name-personas-a-misunderstanding-of-personas"><a name="personas"></a>Misunderstanding of personas</h2>
+
+<p>Point #3 above leads to this observation, which is that vendors overall seem to egregiously misunderstand the personas for which they are allegedly building their products.</p>
+
+<p>As I discussed in <a href="https://techcrunch.com/2019/02/13/the-infosec-reckoning-has-arrived/">my TechCrunch article</a>, vendors are building tools and determining the specific problem being solved after the fact — often leading to the need to convince customers that the vendor-invented problem is relevant to their organization. This trend of focusing on tech rather than customer problems extends, I think, to vendor-invented personas, as well.</p>
+
+<p>If you were judging solely based on the RSAC vendor floor this year, you might think the most important user persona in infosec is “SecOps.” There’s little differentiation visible in this “persona” between a SOC analyst straight out of school analyzing low-priority events vs. a SecOps engineer who writes automation scripts for things like <a href="https://slack.engineering/distributed-security-alerting-c89414c992d6">distributed alerting</a> — not to mention a SecOps manager vs a SOC manager and the chromatic variation around all of these titles. And, is their purview <a href="https://medium.com/@sroberts/introduction-to-dfir-d35d5de4c180">just DFIR</a> or other responsibilities, too?</p>
+
+<p>This isn’t to say generalized personas aren’t useful — but I’m wondering if vendors are now treating SecOps as the “person who deals with security events.” If so, then most people in infosec are kind of SecOps depending on how you define “event,” which would thus render SecOps a meaningless term given how different everyone’s workflows are across the range of roles.</p>
+
+<p>Additionally, there were impressively lazy attempts at catering to the DevOps and so-called SecDevOps personas. Security vendors seem to think that making their product available via API means they “integrate with DevOps workflows,” which is either amazingly apathetic or oblivious.</p>
+
+<p>There was also lip service paid to working with existing CI/CD pipelines, but then security vendors still expect DevOps people to go through 20 additional hoops, not realizing that they simply won’t. For instance, please don’t claim you are DevOps-friendly while asking them to install a kernel module on every machine they actively use.</p>
+
+<p>This leads to my assumption (and into my next point) that security doesn’t realize how immaterial they are relative to a team (DevOps) that can justifiably argue that they support revenue-generating activities. And, what’s worse, vendors provide little support for their customers to fight for security’s inclusion in the conversation.</p>
+
+<p>It as if vendors expect that by saying “we secure the development lifecycle!”, security practitioners can convince the organization to install their product. This notion of a security team having the keys to an organizational steam roller is, of course, pure fantasy.</p>
+
+<h2 id="a-name-blocker-a-promotion-of-security-as-a-blocker-vs-a-compromiser"><a name="blocker"></a>Promotion of security as a blocker vs. a compromiser</h2>
+
+<p>Finally, I think infosec is largely ignoring an important emerging shift, which I believe is inevitable — the transition from security as the “no people” to enablers of the business. Enterprise security only matters to the extent that it is helping preserve the company’s ongoing operations. Anything beyond that feels largely like intellectual vanity to me (this is precisely why I’ve been evangelizing the notion for <a href="/blog/posts/security-as-a-product/">a few years now</a>).</p>
+
+<p>How does this play into RSAC? I argue that the most successful security vendors of late are about removing barriers, in contrast to many security people believing barriers are worthwhile aids in their infosec crusade (and I also suspect that creating organizational barriers provides significant vocational fulfillment among a chunk of security professionals).</p>
+
+<p>To wit, zScaler consolidated old products and made it easier for the organization to access resources without the tedious VPN dance. Okta likewise streamlined access and made a lot of enterprise workflows simpler. Both are now trading at delectably rich multiples (both above 20x <a href="https://www.investopedia.com/terms/e/ev-revenue-multiple.asp">EV/Revenue</a>) — a victory even beyond the fact that they are some of the few information security startups to IPO in recent years.</p>
+
+<p>Ultimately, anyone can say “no” to something —but just saying “no” isn’t actually solving a problem. Figuring out a compromise, like preserving or even improving UX while still ensuring an organization’s security, is a hard problem — the type of problem which should be most intellectually fulfilling.</p>
+
+<p>Security will keep being dismissed by other parts of the organization until it lets go of finding fulfillment through security righteousness and instead finds fulfillment by finding an elegant way to enable the business while still reducing its risk.</p>
+
+<p>One of my favorite examples to cite is John “Four” Flynn and <a href="https://www.youtube.com/watch?v=pY4FBGI7bHM">the tale of implementing 2FA on SSH at Facebook</a>. The security team conducted product-like user research interviews across engineering teams to figure out how SSH was being used — essentially mapping user workflows. The security team’s goal was to add 2FA to SSH, but instead of ramming it through like petulant ayatollahs, they sought to understand the user perspective and determine a solution that would not add friction for engineers.</p>
+
+<p>It was a hard problem, but with a huge payoff; now the engineering teams can trust that security isn’t just trying to make their lives more difficult for sport or quasi-religious fervor. This means the relationship can be more like a <em>partnership</em>, rather than a political battle — the sort of battle security practitioners allegedly detest (likely because they tend to lose it).</p>
+
+<hr />
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>These issues are not engendered by one constituent of the industry — they just all happen to notably bubble up like a tar pit burping methane in the harsh fluorescent spotlight of RSAC. It is the failure of culture among practitioners, vendors failing to understand their customers’ needs, founders going for cash grabs, and VCs encouraging the noxious sleaze and bamboozlery.</p>
+
+<p>All of this comes, perhaps, from a reticence towards doing the harder, right thing and instead taking the easier path — the one that harvests confusion and fear to seize success that mediocrity could not earn otherwise.</p>
+
+<p><a href="https://swagitda.com/speaking/index.html">I speak a lot</a> about incentives, and, in fairness, there is an abundance of incentives rewarding this mediocrity, but far fewer promoting the more difficult path. CISOs don’t want to speak out against vendors and, in fact, benefit when they are seen as essential in navigating not just the threat landscape, but the vendor landscape as well. Vendors can still find decent M&amp;A exits that make founders and investors happy enough, even if they sell solely within their professional networks and don’t ever find true product/market fit.</p>
+
+<p>And if VCs make enough money from this buffoonery, why should they bother to understand the customer personas better to inform their investment choices? Many VCs have CISO friends, but I know from private conversations that these CISO friends often view the VCs as useful fools who can help them gain advisory or board positions.</p>
+
+<p>If it sounds hopeless, well… I’m not sure it isn’t. But I refuse to <a href="/blog/posts/red-pill-of-resilience-infosec/">give into nihlism</a>. There are absolutely those of us who are fighting to change things, but there is a lot of entrenched power which benefits from keeping these dynamics the way they are in information security.</p>
+
+<p>It will take those willing to risk their power to speak out in the truest form of thought leadership there is. Speaking into a warm and fuzzy echo chamber isn’t thought leadership; bravely challenging the status quo, armed with evidence, is.</p>
+
+<p>We can keep the corporate-friendly cerulean and navy aesthetic, the blustering loudness, and yes, even the free pens, but we need to dedicate these efforts not to the thrill of our industry finally being considered “cool,” but to solving hard problems and protecting organizations in the way they need.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>The Cyber Tub: Communicating the Dynamics of Information Security Risk Management</title>
+            <link>//swagitda.github.io/blog/posts/the-cyber-tub/</link>
+            <pubDate>Thu, 20 Dec 2018 22:02:49 -0400</pubDate>
+            
+            <guid>//swagitda.github.io/blog/posts/the-cyber-tub/</guid>
+            <description>This is probably how a Cyber Tub looks, right?
+People struggle to understand how risk accumulates in complex systems, thereby also not understanding the extent to which risk must be reduced. This misapprehension can lead to “wait and see” decisions that cause a problem to snowball, or mitigations that don’t meaningfully reduce risk, creating the feeling of just barely treading water in your security program.
+It is challenging for people to understand risk dynamics conceptually for two primary reasons.</description>
+            <content type="html"><![CDATA[
+
+<p><img src="/blog/img/cyber-tub.png" alt="A tub covered in Matrix code" /><em>This is probably how a Cyber Tub looks, right?</em></p>
+
+<p>People struggle to understand how risk accumulates in complex systems, thereby also not understanding the extent to which risk must be reduced. This misapprehension can lead to “wait and see” decisions that cause a problem to snowball, or mitigations that don’t meaningfully reduce risk, creating the feeling of just barely treading water in your security program.</p>
+
+<p>It is challenging for people to understand risk dynamics conceptually for two primary reasons. First, we are bad at tying inflows and outflows to the current level of risk in a system, as we tend to believe outputs are positively correlated with inputs. For example, from the climate change realm, 63% of MIT graduate students erroneously believed that if you stabilize emissions above the rate they’re being removed, atmospheric CO2 would stabilize.<a name="back-1"></a><a href="#cite-1">[1]</a> If emissions are still higher than reductions, there still will be net pollution — it will just be added at a more stable rate.</p>
+
+<p>Second, we tend to ignore the accumulation of effects from inflows.<a name="back-2"></a><a href="#cite-2">[2]</a> For example, you may reduce the amount you overspend in a given year, but that doesn’t mean your personal debt is being reduced — you must earn a surplus over a period of time to pay down the debt you already accumulated. Ignoring accumulation leads us to underestimate the magnitude of mitigations required to stabilize risk — let alone make a dent in decreasing the risk level towards our goal.</p>
+
+<p>What can we do about this lack of intuitive comprehension? A useful analogy to help people conceptually is a bathtub, with its straightforward inflows and outflows. When discussing information security risk, this analogy can help policy makers grasp the true implications of the decisions they’re making. Too often, mitigations are believed to “solve” the problem, while in reality, the inflows contributing to the problem are still outpacing the benefits from mitigations — but no further action is taken, resulting in continued accumulation of risk.</p>
+
+<p>Thus, I’ve conceived the “Cyber Tub” as a way to better communicate information security risk and ensuring its dynamics — from accumulation to reduction — are well understood. Let’s delve into the analogy.</p>
+
+<hr />
+
+<h3 id="the-spout">The Spout</h3>
+
+<p>Let’s say you have a bathtub already full of water. The bathtub is actually a “Cyber Tub,” and the water already in it represents your risk level — it could include things like your legacy systems or even the risk of credential theft in modern systems. The spout is actively running, adding a steady, hot stream of complexity into the tub. You don’t want the tub to overflow, because in real life, that leads to a state where you want to tear your hair out from all the complexity you must manage, and probably something will go wrong. So what do you do?</p>
+
+<h3 id="the-drain">The Drain</h3>
+
+<p>First, you need to install a drain — the patch management drain, in fact — if you don’t have one already, which is going to be challenging given all the water already in the tub. If you do have a drain, it’s likely clogged with lots of gross hair from people using the tub, so you’re going to have to clean it out manually so it can drain — and you’ll have to do that each time manually when it gets clogged again.</p>
+
+<p>But, of course, you’re very clever, so you decide to install a self-cleaning drain — an automated patch management solution. However, you already know it will take a lot of effort to implement, and it probably won’t work perfectly the first time (and probably not every time in the future, either). So, you perform some calculations to see which helps keep the tub from overflowing more effectively given how many manual uncloggers you have vs. how many auto-drain maintainers you have on your team.</p>
+
+<h3 id="the-bucket">The Bucket</h3>
+
+<p>Regrettably, your drain solution only keeps the tub from filling up more rather than helping the water level go down. Clearly you need a bucket to remove a bunch of water all at once. But where do you get the bucket? Which type of bucket is right? How do you dunk in the bucket without splashing a bunch of water out? Where do you put the water in the bucket after? Do you need multiple buckets? There are lots of things to think about when transitioning to the bucket life.</p>
+
+<p>Think of this like transitioning to a cloud or containerized world — the transition costs will be non-trivial and involve a lot of thinking over how to carefully lift the water without losing any.<a name="back-3"></a><a href="#cite-3">[3]</a> You can also only transition a certain amount of code at a time, so there needs to be a rollout plan as well. After all, even if you can buy a bunch of buckets at one time, it’s unlikely you can dump them all in at once to clear out the tub without something going wrong.</p>
+
+<p>As you can see, there’s a lot of calculation here, including whether the bucket-based transition to cloud / containers can clear out the tub, since we already know the patch management drain will cancel out the complexity faucet, but nothing more. You also can’t forget that managing a bunch of little buckets is different from managing one tub, so you’ll need to consider the potential risks from that, too.</p>
+
+<h3 id="additional-examples">Additional Examples</h3>
+
+<p>To solidify exactly what I mean through this analogy, let’s consider other examples from information security and how they can be viewed through the Cyber Tub lens:</p>
+
+<ol>
+<li>A design review by the security team helps steady the water level as you release a new feature or product. By addressing security issues at the design phase, you tackle problems before they go into production and come out of the spout (you can use a threat model to prioritize). You could also require sign-off by the security team before release. Therefore, when a new feature or product is released, it won’t add as much water to the Cyber Tub.</li>
+<li>Pentesting only tells you a very rough measure of your water level is — do limited findings mean your app is secure, or instead that your testing team is inadequate? Even if you remedy issues from the results of the pentest, it may only be counteracting the spout slightly more — you can think of a pentest like a leaky bucket that may or may not help. Adopting a continuous testing model instead can act as a healthy drain and hedge against ongoing risk that point-in-time assessments cannot catch.</li>
+<li>If you are concerned about credential theft risk, think of it as the water in the bathtub. The drain could represent requirements for complex passwords —perhaps enough to counteract the additional risk of each new credential added. The bucket could be enforcing the use of SSO and a password manager, which will actually lower the level of the risk engendered by the existing pool of credentials.<a name="back-4"></a><a href="#cite-4">[4]</a></li>
+</ol>
+
+<hr />
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>For any problem in the information security risk space, try to think of it in terms of this “Cyber Tub.” Consider these four key questions:</p>
+
+<ol>
+<li>What are the inflows that add to the problem?</li>
+<li>What can you do to reduce water coming in from the spout?</li>
+<li>How can you keep the drain open and draining quickly?</li>
+<li>What mitigations will actually make a dent in the problem? What are the best buckets available?<a name="back-5"></a><a href="#cite-5">[5]</a></li>
+</ol>
+
+<p>While the Cyber Tub may seem like an overly simplistic analogy, that is part of its beauty — nearly anyone can understand it, as long as they’re familiar with the basics of how a bathtub works. We can’t expect to present facts and figures to non-experts and have them perfectly grasp the dynamic processes around information security risk. Let’s give everyone a helping hand and start presenting information security risk in a way people can actually understand it — a way that leads to smarter decision making.</p>
+
+<hr />
+
+<h2 id="references">References</h2>
+
+<p><a name="cite-1"></a><a href="#back-1">[1]</a> Sterman, J. D., &amp; Sweeney, L. B. (2007). <a href="http://web.mit.edu/jsterman/www/StermanSweeneyClimaticChangeFinal.pdf">Understanding public complacency about climate change: Adults’ mental models of climate change violate conservation of matter.</a> <em>Climatic Change, 80</em>(3–4), 213–238. doi:10.1007/s10584–006–9107–5</p>
+
+<p><a name="cite-2"></a><a href="#back-2">[2]</a> Sterman, J. D. (2012). <a href="http://jsterman.scripts.mit.edu/docs/Sterman%20Sustaining%20Sustainability%2010-2.pdf">Sustaining Sustainability: Creating a Systems Science in a Fragmented Academy and Polarized World.</a> <em>Sustainability Science</em>, 21–58. doi:10.1007/978–1–4614–3188–6_2</p>
+
+<p><a name="cite-3"></a><a href="#back-3">[3]</a> It’s surprisingly difficult to find a succinct explanation for how modern infrastructure can help with information security, outside of vendor drivel. For now, please check out <a href="/blog/posts/red-pill-of-resilience-infosec/">the fulltext of my keynote on resilience in infosec</a>, specifically the “adaptability” and “transformability” sections. You can also view <a href="https://www.leviathansecurity.com/cloudsecurity">these resources by Leviathan</a>, although they are a bit out of date (2015).</p>
+
+<p><a name="cite-4"></a><a href="#back-4">[4]</a> Thank you to <a href="https://medium.com/@HockeyInJune/product-security-14127b5838ba">Julian Cohen</a> for this example.</p>
+
+<p><a name="cite-5"></a><a href="#back-5">[5]</a> You also have to consider the difficulty implementing these mitigations in the context of the stagnant bathwater — the problem — potentially obscuring your path to implementation (a topic for another time).</p>
+
+<p>I also suggest reading: Åström, K.J. and Murray, R.M. <a href="http://www.cds.caltech.edu/~murray/books/AM08/pdf/am07-complete_17Jul07.pdf">Feedback Systems: An Introduction for Scientists and Engineers</a>.</p>
+
+<p><em>Thank you to Julian Cohen, Camille Fournier, and Alex Rasmussen.</em></p>
+]]></content>
+        </item>
         
         <item>
             <title>My 2018 Reading List</title>
@@ -63,6 +264,394 @@ As you can tell from this list, I became a bit obsessed with afrofuturism and am
 <p>]The Book of Why: The New Science of Cause and Effect](<a href="https://www.amazon.com/Book-Why-Science-Cause-Effect-ebook/dp/B075CR9QBJ/">https://www.amazon.com/Book-Why-Science-Cause-Effect-ebook/dp/B075CR9QBJ/</a>) by Judea Pearl and Dana Mackenzie</p>
 
 <p><a href="https://www.amazon.com/Complexity-Guided-Tour-Melanie-Mitchell-ebook/dp/B002SAUBWC/">Complexity: A Guided Tour</a> by Melanie Mitchell</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>The Red Pill of Resilience in InfoSec</title>
+            <link>//swagitda.github.io/blog/posts/red-pill-of-resilience-infosec/</link>
+            <pubDate>Wed, 01 Aug 2018 17:26:47 -0400</pubDate>
+            
+            <guid>//swagitda.github.io/blog/posts/red-pill-of-resilience-infosec/</guid>
+            <description>What follows is the full text of my keynote, also available as a video and as slides.
+There has been insufficient exploration of the first principles of resilience in the context of information security, despite the term being superficially peppered in our common discourse. Too often, resilience is conflated with robustness — to the detriment of us all.
+To state more poetically, through the pen of the notable fantasy author Robert Jordan referencing one of Aesop’s fables, “The oak fought the wind and was broken, the willow bent when it must and survived.</description>
+            <content type="html"><![CDATA[
+
+<p><em>What follows is the full text of my keynote, also available as <a href="https://www.youtube.com/watch?v=ux--pHFpeac">a video</a> and <a href="https://swagitda.com/speaking/Red-Pill-of-Resilience-Shortridge-Countermeasure-2017.pdf">as slides</a>.</em></p>
+
+<hr />
+
+<p>There has been insufficient exploration of the first principles of resilience in the context of information security, despite the term being superficially peppered in our common discourse. Too often, resilience is conflated with robustness — to the detriment of us all.</p>
+
+<p>To state more poetically, through the pen of the notable fantasy author Robert Jordan referencing one of Aesop’s fables, <em>“The oak fought the wind and was broken, the willow bent when it must and survived.”</em> To speak of protection without resilience is to believe you can always beat the wind. To speak of deterrence without resilience is to believe you can deter the wind from blowing at all.</p>
+
+<p>There are times when attacks may be deterred or halted before damage is wrought, but one cannot always predict which way the wind will blow. We cannot predict the adversary we will face and the amount of resources they are willing to expend to compromise our systems.</p>
+
+<p>Protection or deterrence can serve as a valuable tactic to grant some level of peace, but resilience — the ability to absorb change and survive — is the foundation on which survival rests. Again, far more poetically than I could ever say, Generalissimo <a href="https://en.wikipedia.org/wiki/Chiang_Kai-shek">Chiang Kai-shek</a> of the Republic of China advised, <em>“The more you sweat in peace, the less you bleed in war.”</em> Attempt the peace, but assure you can still survive the war.</p>
+
+<p>But the discourse about resilience in information security has, to date, been far from poetic. Rather, it’s been sprinkled as a buzzword, floating along at a shallow level primarily in discussions of cyber insurance and how companies can transfer risk by buying policies. I believe this is a waste of its potentially torrential conceptual power. Resilience is ultimately about accepting reality and building a defensive strategy around reality.</p>
+
+<p>As in the Matrix, resilience serves as the red pill — once you accept the reality, it’s impossible to go back to a strategy that ignores it. My goal in this talk is to show you how digging into this heart of resilience can drive a paradigm shift in how we architect security strategy (and I don’t throw the term “paradigm shift” around lightly).</p>
+
+<p>I’ll first explore why the time for the resilience paradigm is nigh, and how our grief as an industry has led us to this point. I’ll next briefly share the etymology of resilience. Its application to information security is one of the newest, and there exists a rich history of its use in other domains — a history worth exploring to see if there are principles and findings to be shared.</p>
+
+<p>Information security is not the only complex system, and ecological systems dealing with climate change and urban areas dealing with natural disasters represent analogical systems in which dynamics are nearly impossible to predict, and the number of interrelating factors is prohibitive to enumerate.</p>
+
+<p>This cross-domain research presents a concept of resilience based on robustness, adaptability, and transformability. I’ll cover these three concepts in detail so we can understand how they fit under the umbrella of resilience. I’ll expand on this cross-domain lens, and it will serve as the one through which I’ll examine what resilience means in information security.</p>
+
+<p>I am humbly attempting to define and establish a notion around what resilience means for information security — both in an intellectual and practical sense. I would be shocked if all of my thinking is on the mark. More than anything, I desperately want to encourage a discussion of first principles around resilience, and to begin a fruitful conversation around how practical implementations of resilience ideology for defensive security should look. I believe we have a fighting chance.</p>
+
+<hr />
+
+<h2 id="stages-of-grief-in-information-security">Stages of Grief in Information Security</h2>
+
+<p>But first, why is there rising talk about the term “resilience,” despite the industry not having solidly established what it means? I propose that it is the result of the final stage of grief — acceptance — of the fact that there is not, and likely will not ever be, such a thing as an un-hackable organization or system.</p>
+
+<p>Over the past twenty years, the infosec industry has grieved the fact that companies are ever-vulnerable to attack. Very little can be done against the latest exploit or attack vector that is currently unpublished and unknown. The industry has not fully coped with this grief. Like most grief, it isn’t a linear process, and these cycles have ebbed and flowed at various times in the industry’s history.</p>
+
+<p>The first stage of grief is <strong>denial</strong> — clinging to a false, preferable reality. This manifested as companies being hesitant to deploy security solutions at all, believing that they weren’t truly at risk.</p>
+
+<p><strong>Anger</strong> — recognizing the denial cannot continue, and becoming frustrated — seeing security as an unwanted necessity. This manifested in harsh penalties and legislation, prosecuting and punishing vulnerability researchers — even ones doing work for free or disclosing responsibly.</p>
+
+<p><strong>Bargaining</strong> — the hope that the cause of grief can be avoided — resulted in the explosion of new security tools in an attempt to stop the problem</p>
+
+<p><strong>Depression</strong> — despair at the recognition of the predicament — led to the refrain of more recent years in the vein of, “You’re going to get hacked, there’s nothing you can do about it.”</p>
+
+<p>Finally, <strong>acceptance</strong> — the stage into which I believe we are now transitioning, understanding that there is an inevitability of successful attack, but recognition that there is an ability to prepare and that not all is hopeless.</p>
+
+<p>Unfortunately, I fear the bargaining stage has set us up for a challenging road to implementing acceptance. The explosion of security tools in an attempt to avoid the problem has resulted in an untenable <a href="https://en.wikipedia.org/wiki/The_Market_for_Lemons">market for lemons</a> in which tools and services are prescribed regardless of real need.</p>
+
+<p>Fear, uncertainty, and doubt (FUD) specifically preys on this desperation to bargain, and its use by marketing departments is little different than selling hope of a cure to those who are chronically ill and in their own bargaining stage of grief through alternative, disproved methods. More simply put, the bargaining stage is the demand for which snake oil is the supply.</p>
+
+<p>The resulting depression is unfortunately not the antidote for snake oil — security nihilism is an inaccurate conclusion and does little to incentivize practitioners to pursue more resilient strategies than unproven ones. Therefore, in this blossoming acceptance phase, it is important we have a conversation about what actually works — and to begin, I’d like to delve into what resilience has meant before we as an industry began to espouse it.</p>
+
+<hr />
+
+<h2 id="etymology-of-resilience">Etymology of Resilience</h2>
+
+<p>Up until the early 19th century, the primary meaning of resilience was to “rebound.” Its first use in the context of engineering was in 1858, to imply strength and ductility, or a material’s ability to stretch under tensile stress.[1] The abstraction from this physical characteristic — the time it takes for a system to return to a pre-determined, single equilibrium — is the one which has persisted in the common understanding of resilience.</p>
+
+<p>However, in the 1970s, resilience began being used in psychology — understood as a process of changing current behaviors to cope with an adverse condition, for reverting to a prior psychological state post-incident is unrealistic and can actually represent unhealthy coping strategies. The 1970s also saw the beginning of resilience’s use in ecology, but over time, the concept gradually expanded into use across the social sciences and with the two domains’ coupling, or socio-ecological systems.</p>
+
+<p>Most recently, it began to be applied to climate change adaption in the early 2010s, including the natural disaster risk management space due to increases in natural disasters that by all evidence are caused by climate change.</p>
+
+<h3 id="what-does-resilience-mean-for-complex-systems">What does resilience mean for complex systems?</h3>
+
+<p>A complex system is one in which many of its underlying components interact with each other, and one in which it is very difficult to predict behavior. More simply put, it is a system with non-linear activity in the aggregate. Examples of complex systems in our daily lives include our universe, our planet’s climate, our cities, our brains, and even living cells.</p>
+
+<p>Information security is also complex system. Defensively speaking, it is plagued by an inability to predict attacker actions, and it also consists of highly interconnected, dynamic relationships. Both sides of the security equation — defenders and attackers — are human. But there are additional relationships beyond the direct conflict, including users, governments, software vendors, service providers, and so forth. To unfurl these relationships and attempt to fit them into a predictive model is very simply prohibitive.</p>
+
+<p>The first application of resilience through the lens of complex systems was by C.S. Holling in 1973, an ecologist who was one of the founders of ecological economics. Ecological resilience, he said, is measured by the amount of change that could be absorbed before the system’s underlying structure changes.[2] He asserted that an ecological system can be highly resilient, but also exhibit a high degree of instability — and, in fact, that the proper reaction of an ecological system was to continually adapt, rather than attempt to return to a static equilibrium.[1]
+Heidelbach, W. (September 28, 2016). Chestnut.</p>
+
+<p>For example, eastern North American forests were once full of chestnut trees until a chestnut blight in the first half of the 20th century wiped them out.[3] However, oak and hickory trees began spreading in its stead. The forests changed in appearance and composition, but still survived as forests.</p>
+
+<p>Evolutionary resilience, borne from analyzing socio-ecological systems, operates under the assumption of complex systems that co-evolve, focusing on adaptation and transformation. Rejecting the idea of thresholds within which a system should fluctuate, it instead suggests multiple levels of controls and the ability to adapt the status quo by reorganizing or regenerating around the change, thereby creating a new status quo.</p>
+
+<p>For example, communities can diversify their agricultural landscapes and production systems, designating some areas for soil conservation and organic agriculture while promoting multicropping in others. They can protect some forested areas while designating others for the community and focusing reforestation efforts there.</p>
+
+<p>This notion of evolutionary resilience can be summarized as consisting of three central characteristics: robustness, adaptability, and transformability.[4] The core notion is that in order for a complex system to be resilient, it must be able to withstand a shock, adjust so as to incur less damage, and be open to challenging previous decisions and goals.</p>
+
+<p>I will be keeping in mind these three core characteristics in the context of information security. With robustness, you must be able to withstand an attack; with adaptability, you must be able to adjust your environment so you incur less damage when attacked; with transformability, you challenge your existing assumptions and decisions, and potentially migrate from existing infrastructure as well as defensive strategies or current methods used in the way you model and understand your threats.
+NASA/NOAA. (August 26, 2017). Hurricane Harvey’s Eye.</p>
+
+<p>In most domains, robustness proved dominant in defensive strategy, and can be linked to the concept of engineering resilience — a mistake from the evolutionary resilience perspective. For example, barriers are a form of robustness, blocking storm surges. However, as seen recently with Hurricane Harvey, the primary source of damage was flooding from ongoing rain — highlighting the need for adaptability and transformability to incur less damage going forward and rethink your existing strategies.[5]</p>
+
+<p>Instead, evolutionary resilience must also include adaptation and dynamic change towards the goal of preservation, with robustness as an ingredient rather than the sole objective.</p>
+
+<p>Although the expression, “it’s not about the destination, it’s about the journey” is somewhat trite, it’s quite true for resilience. Resilience must be framed as a continuous, evolving, but sustainable process rather than a goal. As ecological economics scholar Peter Timmerman described, resilience is the building of “buffering capacity” into a system, to improve its ability to continually cope going forward.[6]</p>
+
+<p>A focus only on robustness can also lead to a misleading presentation of the problem as one only based on reducing the risk itself. As in the previous example, the problem could be seen only as, “how can we withstand the hurricane?” instead of “we know the hurricane will hit us, how can we change so that it doesn’t damage our community as much?” This highlights the contrast between robustness and the adaptability and transformability characteristics, which accept that the risk will exist, and instead stress the need to reduce the potential damage from the risk and restructure around the risk.</p>
+
+<p>Furthermore, the efforts around attack prediction represent yet another symptom of collective grief — it’s an endeavor to regain the illusion of control. I’ve given another related presentation at length about <a href="https://swagitda.com/speaking/Dangerous-Folly-Attack-Prediction-Shortridge-Art-into-Science-2018.pdf">why attack prediction should not be our goal</a>, so I will not elaborate further here. Suffice to say, prediction was attempted in other complex systems and not only failed miserably, but wasted precious time, money, and brainpower that could have been spent on a pragmatic aim: resilience — the need to design systems under the assumption the negative shock will not be predicted. As eloquently stated by Susan Elizabeth Hough,</p>
+
+<blockquote>
+<p>“A building doesn’t care if an earthquake or shaking was predicted or not; it will withstand the shaking, or it won’t.”[7]</p>
+</blockquote>
+
+<p>While our industry has come to accept that there are many “unknown unknowns,” our strategy is still one based in hubris — that we can save ourselves in a breach with systems that can withstand unknown risks at unknown times with unknown faces. The evolutionary resilience approach embraces these unknowns, understanding that change is inevitable — ensuring the system survives by absorbing these unknown changes, naturally adapting and reorganizing around this unknown risk, keeping the option open of bearing its own new, unknown face.</p>
+
+<hr />
+
+<h2 id="robustness">Robustness</h2>
+
+<p>Robustness involves withstanding and resisting a negative event. Engineering used the concept of resilience only in terms of robustness, measured by how long it takes a system to return to its equilibrium after a shock. However, experiencing an acute stress event implies the normal state was vulnerable to the stress, and that it is thus an “undesirable state to go back to because it would perpetuate this vulnerability.”[8]</p>
+
+<p>In disaster recovery, it’s dangerous to present the problem of flooding, for example, as simply one about excess water. If it’s simply about a physical issue, then solutions are presented that are restricted to just the physical issue. In reality, flooding is a problem because of people, who understandably don’t want to lose their homes or drown. It is unnecessarily restrictive to only consider technical solutions to address the excess water, rather than broader solutions to address the problem in a societal context.[9]</p>
+
+<p>When it is believed that a technical control will help prevent a shock, then it tends to lead to larger potential damage. This is called the safe development paradox.[10] The reason why it’s a paradox is that the stability and presumed safety gained by building a structural mitigation to the problem actually allows risk to accumulate over time due to the false sense of security, leading to a higher chance of catastrophic consequences.</p>
+
+<p>The safe development paradox represents a maladaptive feedback loop — once a structural mitigation is in place, more development happens where it should not.[11] As the development becomes entrenched, the need for structural mitigations becomes even greater — and once the mitigation is in place, more development occurs.</p>
+
+<p>When fires are suppressed in forests that are fire-adapted, fuel builds up in the form of trees or shrubs.[12] As more time passes without a fire, the probability of a ruinously-intense fire grows, posing more danger to nearby human settlements. This is exactly what happened in the mid-1990s in Florida as urban development expanded into fire-adapted pine forests and enjoyed trees and shrubs in their yards.[12] The result was fires during dry periods that resulted in higher damage than usual, destroying many homes in the process.</p>
+
+<p>In security, implementing technical controls can lead to increased damage as well. Retroactively hardening or patching legacy systems in which vulnerabilities are frequently found, can lead to further development on top of these systems, and further entrenchment of those systems within the organization. Feeling like the threat is being prevented leads to development that relies on that assumption — and thus isn’t designed to absorb an attack.</p>
+
+<p>In flood risk management, it’s known as the “levee paradox.”[13] Building a levee can lead to a sense of the problem being prevented, supporting further development and construction on the risky floodplain.[9] For example, less than 3% of people living in Illinois in floodplains with levees in place carry flood insurance.[13] The levee clearly lowers people’s awareness of the risk and ability to respond appropriately to it.[14]</p>
+
+<p>When implementing a robustness control, it’s essential to ensure that it isn’t encouraging further development within a vulnerable system that leaves it open to cataclysmic risk when the control fails. Don’t focus just on resistance in your controls. Doing so will simply “treat the symptoms of bad planning with structures.”[11]</p>
+
+<p>There’s also a lesson here for cyber insurance. Back to the levee paradox, oftentimes areas with levees in place aren’t categorized as official floodplains. This means that homes or offices in those areas don’t have flood-related insurance requirements. The clear lesson I see is: firms offering cyber insurance should consider very carefully whether they exempt companies from certain requirements based on technical controls being in place.</p>
+
+<p>Related to the safe development paradox is the fact that preventing a system from negative exposure means that the system will only function in the artificially stable state. In the levee paradox, it actually creates an artificially stable system which can only survive in dry conditions.</p>
+
+<p>Another example is with coral reefs. Marine reserves are maintained to protect coral from the damaging effects of climate change, such as ocean acidification and thermally-induced coral bleaching. However, unprotected coral actually proves more resilient to climate disturbance, since they’ve faced ongoing degradation due to exposure to the stressor and thus recomposed to have more disturbance-tolerant species.[15]</p>
+
+<p>In information security, you must likewise expose your systems to stressors. Even if you’re building something to be internal-only, like APIs, you should design them with the same threat model as an externally-facing service — for instance, making sure you have data sanitization. Test your systems as if they were externally-exposed, to see if they are sufficiently resilient to global stressors. If it would take years to rebuild, reconsider what data you allow within the system.</p>
+
+<p>The overwhelming focus to date in information security has been on robustness — how to withstand or resist an attack, before rebounding back to “normal.” The traditional components of security — firewalls, anti-virus, system hardening — are all components of a robustness strategy. Even when examining how startup security products are marketed, the words “stop,” or the more creative “thwart” are used, implying an improved ability to withstand an attack.</p>
+
+<p>Remediation even plays into this singular focus on robustness. The goal of remediation within security is to most often fix any vulnerabilities, and, ideally, to return to “business as usual” by reversing damage from an attack. As we saw with the Equifax breach, there is absolutely no chance of “business as usual” when immutable data is compromised. Penetration tests often solely focus on vulnerabilities and what is needed to fix them, rather than proposing new technologies or architecture that would prove less vulnerable long-term.</p>
+
+<p>Other domains have typically held this singular focus, as well. The engineering-led approaches sought to defy nature itself rather than allow the system to flux with nature. For example, the single equilibrium in flood risk management is to have dry conditions in floodplains so that people can continue living in them. Dikes, storm-surge barriers, and dams are all attempts to withstand a flood, and reflect engineering resilience approaches. Their goal is to keep the same artificial equilibrium, in spite of the water system’s natural behavior.[9]</p>
+
+<p>An engineering-only focus leads to the current challenge of companies needing to constantly stay up to date on patches, but facing many hurdles in doing so — and having this be their primary line of defense. The model that must be embraced is one in which the system can survive even if patches aren’t immediately updated, or users still click on phishing links. Your systems must survive even if users download a pdf.zip.exe.</p>
+
+<p>As we saw with coral, without palpable vulnerability through exposure to risk, it is unlikely that resilience will develop.[11] You need to assume that attackers will gain access to a system, and figure out how to reduce the impact. You need to actually practice and embrace disaster recovery, rather than just having a plan.</p>
+
+<p>With all that said, robustness is absolutely important to resilience. But robustness needs to be performed correctly. Drawing from flood risk management, diversity is a cornerstone of robustness — there needs to be layers of controls and diversity of solutions.[9] For example, there are storm surge barriers, dikes, and dams for flood prevention.</p>
+
+<p>New York City has published guidelines for climate change resiliency which also recommend a combination of controls. For example, for dealing with excess heat, they recommend backup generators to hybrid-power systems, using systems with higher heat tolerance, as well as passive cooling and ventilation through window shades or high-performance glazing.[16]</p>
+
+<p>Diversity of controls helps provide redundancy in uncertain conditions. When complementing measures are in place, it’s less likely that there will be catastrophic damage through the failure of a singular control. But, the tradeoff is between efficiency and effectiveness. The easier route with lower upfront costs is to implement a single control. The effective route is to implement layered controls, which may cost more now, but will pay dividends in reduced consequences long-term.</p>
+
+<p>I don’t believe this will be a new concept for many of you. For example, you could deploy a so-called APT-blocking appliance (aka the BlinkyBoxTM) on your network that purports to stop all attacks. However, what then happens when legitimate credentials are used to access a cloud-based service? Or, as we’ve seen recently with Kaspersky, what happens when the APT-blocking-box is hacked by the APT itself to gain access?</p>
+
+<p>Diversity can also be seen through the lens of systems. While we think of fragmentation generally as poor to have, particularly in the context of asset management, there is an argument in its favor. Shared hosting providers can increase correlated risk. If there is a breach at one provider, or vulnerability in a key component or library used across all applications, then your risk exposure is far greater than it might have been otherwise.</p>
+
+<p>The financial crisis in 2008 serves as a pertinent example of the dangers of ignoring correlated risk. There is something to be said for ensuring you have some level of diversity in your architecture. I am by no means the first to suggest that heterogeneity is important — Dan Geer was fired from @stake in 2003 for making that suggestion, specifically in regards to Microsoft’s hegemony.[17]</p>
+
+<p>This sort of diversity also plays into the efficiency vs. effectiveness tradeoff. However, efficiency can actually lead to a more limited space in which you can operate. Being able to function using fragmented technologies and controls will ensure you can adapt much better to uncertainty. Systems diversity, through this lens, can provide the instability that can ensure survival. I posit that it is up for debate whether it is more optimal to have manageability through uniformity or limited impact of any one stressor through diversity.</p>
+
+<p>Thinking in decision trees can help ensure robustness through proper diversity of controls. I’ve discussed decision trees towards information security strategy in prior talks, <a href="https://swagitda.com/speaking/us-17-Shortridge-Big-Game-Theory-Hunting.pdf">most notably at Black Hat</a>. Briefly, the goal should be to <a href="/blog/posts/choice-architecture-infosec-blue-teams">walk through what steps</a> an attacker would take to reach their goal in your organization. Naturally, there is not just one path an attacker will take; you have to consider what path they will take if they encounter a mitigation as well. From there, you can begin determining what cascading controls are necessary in order to raise the cost to the attacker as much as possible.</p>
+
+<p>Raising the cost to the attacker serves as a bridge between robustness and adaptability. As frequently referenced, Dino Dai Zovi said, “Attackers will take the least cost path through an attack graph from their start node to their goal node.”[18] If you can raise attacker cost, you can begin deterring attackers. Attackers will need greater resources and a greater level of sophistication if you do so. One way to raise cost is through robustness with strong, diversified controls. Another way is through adaptability.</p>
+
+<hr />
+
+<h2 id="adaptability">Adaptability</h2>
+
+<p>Adaptability concerns reducing the costs of damage incurred and keeping your options open to support transformability. The evolutionary approach is one in which the assumption is that conditions will naturally change over time, and thus the system itself needs to incur long-term change. Reversion to the preexisting state is not necessarily — and often wholly — undesirable.</p>
+
+<p>The Intergovernmental Panel on Climate Change (IPCC) highlights the need for realism and warns about the dangers of incremental changes under the guise of adaptation.[19] They specifically recommend questioning underlying assumptions and existing structures, acknowledging the inevitability of macro-level change, and making managed transformation the goal. Pretending you’re adapting while only undergoing incremental change creates a false sense of security — similar to the safe development paradox. You may alleviate symptoms in the short-term, but you can only cultivate resilience through meaningful change towards adapting to reality.</p>
+
+<p>A macro-level example of adaptability is in the realm of climate change. While traditional protection strategies for wildlife at risk due to climate change have been focused on preserving their existing habitats, more recent research proposes alternative approaches. Protected areas are in static locations, and tend to become increasingly isolated, leaving nowhere to go. Preserving a species in such an isolated, at-risk area results in “genetic ghettos.”[20] The species becomes increasingly acclimated to this limited environment, which consequently staves off any potential for evolutionary adaptation.</p>
+
+<p>Instead, wildlife naturally has shifted ranges in response to previous instances of climate change, in which preferable conditions are “tracked.” Recommendations now include helping connect disparate ecosystems together so that wildlife can more easily migrate. For example, in areas with urban environments, a narrow strip of land can be preserved, or another sort of route created, so that populations can connect to a different climactic area.</p>
+
+<p>One can think of existing territories like legacy systems. We try to “preserve” these habitats through patching and retroactive hardening. The adaptive model from nature is to move to new territories that fit preferred conditions — ones in which the species can survive — which is similar, in effect, to moving to new infrastructure or a new mode of operation that is more resilient to the new threat.</p>
+
+<p>As a highly tangible example, consider the case of database queries. The organization’s status quo might be that they use inline PHP code within the HTML of their web apps to perform database queries. If an injection vulnerability is discovered in an instance of this inline PHP code, they’ll fix that instance, but likely not conduct a full review across all of their inline PHP code. In this case, they’d be improving robustness by patching the code, but they’d be returning to their so-called “stable equilibrium.”</p>
+
+<p>In contrast, embracing adaptability would mean the organization should instead remove inline queries, and use one class that accesses the database. This one class would be completely responsible for all sanitization. The result is not only that now you only have to fix issues in one place, but also that developer turnover can be managed — rather than writing their own new inline code, they can use the new library that you’ve built instead.</p>
+
+<p>Preservation can also lead to misleading indicators of resilience. For example, static measurements such as high coral cover or fish abundance can be poor indicators of coral reef resilience.[21] These measures can just reflect favorable conditions in the past and not accurately reflect when resilience is being eroded.</p>
+
+<p>Likewise, in information security, organizations using a library with no known vulnerabilities may currently treat their security model as complete and not perform continuous revisions. The issue is that the release of new vulnerabilities or attacker methods is not always well-publicized. Instead, organizations should frequently review their security posture to ensure threat models are not based on past favorable conditions, even if the product does not change. As a recent example, you likely had to update your threat models after the release of <a href="https://en.wikipedia.org/wiki/EternalBlue">EternalBlue</a> — but it was still privately operational well before disclosure.</p>
+
+<p>In the realm of climate change, moving members of a species that are used to warm areas to intermingle with its kind who live in colder locations can help the cold-adapted population actually survive long-term.[20] Applications built using legacy systems and libraries which have never been exposed to the outside world, which suddenly need exposure to external APIs, tend to fare extremely poorly in security terms.</p>
+
+<p>As mentioned in the example of unprotected coral, the lack of the system’s exposure to the threat over their lifespan has led them to exist in a weakened, unpatched state. Security-wise, you should intermingle your internally-facing systems with your externally-facing systems to ensure they meet the standards of the evolving “global” threat model.</p>
+
+<p>The goal for cities in the face of natural disasters is to maintain a flexible approach in order to properly adapt their response to the changing nature of their risks. If cities do not cultivate a process which assumes uncertainty and surprise in their model, then it’s safe to say they are being wholly unrealistic about the ways of the world.</p>
+
+<p>As defenders, you should test attacker playbooks against yourself to determine how quickly you can adapt to attacker methods. I’m sure many of you wish you could have in-house red teams. For those who do have them, use them to your advantage in this way. I mentioned decision trees earlier as a way to determine which diverse set of controls to use — have your red teams map out the decision trees they created during their course of action to add realistic data into your own trees.</p>
+
+<p>You also must test your ability to absorb the impact of an attack, and minimize the damage. One such test is through failure injection. <a href="https://github.com/Netflix/SimianArmy/wiki/Chaos-Monkey">Chaos Monkey</a>, part of Netflix’s suite of tools called the “Simian Army,” is a service which randomly kills instances in order to test their ability to withstand failure. In fact, Chaos Monkey is described as a resiliency tool.</p>
+
+<p>While it was designed with a performance use case in mind, it can be repurposed for security. If your infrastructure is continually fluctuating, with instances killed at random, it makes it exceptionally difficult for attackers to persist. Attackers would have to conduct whatever they needed within an uncertain time frame. This is, of course, not impossible, but it absolutely raises the attacker’s cost and level of skill required.</p>
+
+<p>Netflix’s goal with Chaos Monkey is to “design a cloud architecture where individual components can fail without affecting the availability of the entire system.”[22] Defenders should make it their goal to design a security architecture where individual controls can fail without affecting the security of the entire system. As I mentioned earlier, if your system becomes completely compromised because a user clicks on a malicious link, you must rethink your security architecture.</p>
+
+<p>Rethinking security architecture is no easy feat. Defenders are considerably hindered in their ability to be adaptive and flexible. Most commonly, people think of organizational pressure as the key deterrent, but I would argue the infosec industry itself is the primary limiter. Defenders face an overwhelming level of complexity and uncertainty due to the sheer number of security vendors and the fragmentation of the solution space.</p>
+
+<p>I believe some of the challenges can be solved by changing the types of infrastructure that are used to promote adaptability and support transformability. Deploying Chaos Monkey is one such example centered on adaptability, but a grander example that blends into transformability is using a container-based ecosystem.</p>
+
+<p>Many of you have likely heard of the container revolution, though may not have used them yourselves. While I’m not a container expert, I’ll explain why containers are a natural fit for evolutionary resilience. Jess Frazelle — “the Keyser Söze of containers”— highlighted in her DevOpsDays talk that containers represent potential salvation from the tradeoff between usability and security.[23] I believe she’s absolutely correct.</p>
+
+<p>As per Microsoft, containers are “a way to wrap up an application in its own isolated box” and are “an isolated, resource-controlled, and portable runtime environment.”[24] A container serves as a layer of abstraction between an application and the host server — which can be of any kind, whether virtualized or bare metal. Because of this, it allows for easier migration to and from underlying infrastructure without having to rebuild applications.</p>
+
+<p>The most common buzzwords I hear for containers are flexibility, portability, and scalability, making them a natural fit for both the adaptability and transformability characteristics. Just as attackers need repeatability and scalability, so do defenders — as well as something that can adapt over time to changes in attacker methods. It cannot be overstated how much a container environment bolsters flexibility and flattens complexity.</p>
+
+<p>When something goes wrong — whether security related or not — the legacy approach makes determining the root cause an effort in untangling and dependency management. With containers, verifiably working systems are available in one neat package, facilitating far less messy remediation. Even implementing them into existing legacy systems can help more easily manage dependencies and licenses.</p>
+
+<p>In the vein of Chaos Monkey, if applications are attacked while running inside a container, all that must be done is kill the container and restart it. There is no need for vulnerability scanning, firewalls, anti-virus, and all the other fragments of the security solution space. You can instead isolate and shut down infected containers as it happens.</p>
+
+<p>You have to ensure adaptability to manage resilience erosion as well. In the case of coral, there are “pulse-type stressors,” or acute stressors, which include tropical cyclones, coral bleaching events, and destructive fishing.[21] But there are also “press-type stressors,” which are stressors occurring over longer periods of time, such as pollution, sedimentation, overfishing, ocean warming, and acidification. With enough of the press-type stressors wearing it down, coral reef resilience is overwhelmed when a pulse-type stressor occurs.</p>
+
+<p>Pulse-type stressors in information security can be thought of as new vulnerabilities or a new data breach. Press-type stressors can include large turnover of employees — particularly ones working on large projects — but I would say the most prevalent is complexity. As you add complexity to your applications and systems, it becomes more difficult to test every possible path to compromise, because the paths begin trending towards infinity. If you can no longer test every path because your system is too complex, you have eroded your resilience, a key part of which is flexibility — and will have neither adaptability or transformability.</p>
+
+<hr />
+
+<h2 id="transformability">Transformability</h2>
+
+<p>Transformability can be thought of challenging your existing assumptions and reorganizing your system.</p>
+
+<p>Returning to our previous example of an organization removing inline PHP database queries in favor of a single class, the latter approach also bolsters transformability. Because it is just one library, it allows for easier migration as-needed depending on how the company’s environment, or the threat environment, changes. You are not leaving your options open when your web app is riddled with inline code. You must be able to review and revise your previous choices — for example by moving to new tools or libraries.</p>
+
+<p>Research from other domains has explored the policy implications of transformability, and how to implement the concept on a practical level. Disaster recovery in urban areas is one of the most well-researched domains in this regard. Given urban areas are dynamic systems, evolutionary resilience suggests that policy should encourage recovery efforts that prioritize re-building the urban area into an improved — or even better, optimized — system.[8] For example, in flood-prone areas, the policy should be to change the location and not build in those areas, while also implementing flood-proof construction for periphery areas.</p>
+
+<p>As a tangible example of transformability, let’s explore Christchurch. In 2011, a devastating magnitude 6.3 earthquake hit Christchurch, the second most populous city in New Zealand at the time. It killed 185 people and damaged over 100,000 houses, with a financial cost to rebuild estimated at over $40 billion.</p>
+
+<p>After the quake, the Canterbury Earthquake Recovery Authority (CERA) designated a new “red zone” throughout the area. This red zone includes damaged or vulnerable land where they believe rebuilding would be “prolonged and uneconomic.”[25] The assessment embraces transformability, rejecting the need to return to the status quo, and instead challenging the assumption that there should be buildings on the land at all.</p>
+
+<p>As security professionals, you should work to identify what the red zones are within your IT systems. Organizations should identify which infrastructure or technologies present the most security challenges — whether through vulnerabilities or ongoing maintenance costs — and put them in the red zone for being phased out.</p>
+
+<p>Defining the components of your own red zone calculation will be subjective, but I submit the following as potential criteria — systems that are directly exposed to external attacks, or entirely public facing, in particular:</p>
+
+<ul>
+<li>Those which expose complex or critical functionality and are accessible publicly</li>
+<li>Newly deployed systems or architectures, particularly those developed by inexperienced professionals</li>
+<li>Legacy systems using outdated libraries, software, or languages</li>
+<li>Systems with no backups, or which can’t easily be restored</li>
+<li>Any system with critical personally identifiable information (PII) or immutable data — such as in Equifax’s case</li>
+<li>Systems with privileged access to other systems or accounts</li>
+<li>Any system that has known or “accepted” risk associated with it</li>
+<li>Easily fingerprintable or overly verbose systems</li>
+<li>Anything that could be deemed a single point of failure for your organization</li>
+<li>Systems that are prohibitive to patch or update</li>
+</ul>
+
+<p>Defining your security red zones isn’t about examining potential vulnerabilities or path to compromise in each of your systems. Instead, you want to identify any assets that fall under the red zone criteria, and attempt to move them out of the zone, into healthier systems.</p>
+
+<p>For example, an organization might have an existing asset built using legacy technology, which now has to be exposed to public APIs. Furthermore, this asset consumes critical data and also has privileged access to backend APIs. This asset should likely be classified as being in the “red zone,” without actually assessing whether or not there are vulnerabilities. The goal is to move or rebuild the asset outside of the red zone and make it a safer system.</p>
+
+<p>In this case, such measures could include:</p>
+
+<ul>
+<li>Locking down public exposure so that it’s only accessible via VPN</li>
+<li>Rebuilding the asset using newer, non-legacy technologies (such as containers)</li>
+<li>Avoiding storing critical data on this asset and proxy encrypted data further into the architecture’s core</li>
+<li>Introducing security logging and monitoring</li>
+<li>Locking down privileged access and enforcing the principle of least privilege</li>
+</ul>
+
+<p>By implementing all, or at least some, of these, the system would no longer be in the red zone. This would be similar to moving a power plant out of a flood plain, and instead building it in an elevated area with fortified materials and an early warning system.</p>
+
+<p>Using the example of levees, researchers have proposed having planned decommission of levees ahead of known maintenance hurdles. This way, levees can be used as a stop-gap as communities embrace transformability and relocate. It’s unrealistic to assume that a community could uproot overnight, but it’s important that it isn’t treated as a permanent Band-Aid.</p>
+
+<p>In security, it’s similarly unrealistic to assume you can transform overnight — and your organization would probably not be pleased with you. But, you need to be able to migrate. Like levees, you could have planned decommission of retroactive hardening and patching before moving off of legacy systems. This ensures you don’t renew on software or hardware before it becomes too embedded in your organization or costly to maintain.</p>
+
+<p>In general, you should have plans in place to decommission technologies that will eventually be obsolete or replaced, even down to libraries, hashes, and software versions. Continually consider how you can prepare in advance for migration.</p>
+
+<p>Evolutionary resilience research has highlighted the need for more collaborative planning across stakeholders in a complex system. Rather than relying on inferred knowledge towards a pre-defined goal, local groups should work together and compile their own information towards optimizing relevant processes in their system.</p>
+
+<p>Drawing from flood risk management, those in charge of risk management should be the ones to communicate what realistic level of protection each sort of approach provides.[9] Otherwise, it’s difficult for communities to cultivate knowledge on their own of what protection is in place and what limitations remain for risk reduction.</p>
+
+<p>The security function within an organization is also not an isolated unit. Security should foster collaboration across the business towards optimizing security processes. You all should also be open in sharing knowledge of what protections are in place, what risks the protection realistically reduces, what risk remains, and any uncertainties around the approach.</p>
+
+<p>The most obvious group with whom security should partner is engineering, which I discuss further in another keynote, <a href="/blog/posts/security-as-a-product">Security as Product</a>. As is in the aforementioned case of containers, it’s possible that there are improvements engineering desires that might facilitate more adaptable security as well. The trend towards flexibility is perhaps the strongest in software development and engineering today, and security must embrace this trend as well. I highly recommend reading the recently released O’Reilly book on Agile Application Security for more in this vein.[26]</p>
+
+<p>In this collaborative setting, the role of planners should be to manage transitions between states rather than create or mediate.[27] I don’t think security professionals can fully remove the need to create or implement solutions to some extent. Focusing on managing the transition from the current state to a more secure state can potentially reduce some labor burden, however.</p>
+
+<p>For example, drawing again on the transition to containers, the engineering group will conduct the majority of the labor towards this endeavor. Security should manage the project to ensure necessary controls are in place, such as detection of container compromise.</p>
+
+<p>As another example, security ideally should work with engineering to implement solutions like two-factor authentication. John “Four” Flynn at Facebook gave a great talk a few years ago about implementing 2FA at Facebook. Their goal was to put 2FA on SSH to make it hard for attackers to pivot into Facebook’s production environment.[28] During the process, they thought very carefully about the user experience, realizing they needed to support frequent use, allow for a flexible range of factors, and minimize help desk requests.</p>
+
+<p>They decided to use DuoSecurity and YubiKey Nano — with the YubiKey, the developers only needed to touch the side of their laptop to SSH, and DuoSec’s cloud-based tokens ensured they’d still have access even if they lost the YubiKey. One of their key discoveries during this project was that:</p>
+
+<blockquote>
+<p>“You can actually implement security controls that affect every single thing people are doing and still make them love it in the process.”</p>
+</blockquote>
+
+<p>I recognize that while “software is eating the world,” not every company is yet a technology company. Potentially, you will have a limited IT group with whom to collaborate on technical efforts. This doesn’t mean you can’t collaborate, however. It’s well recognized that there is division between even security and risk or fraud groups, let alone general counsel and financial functions. There is someone at your organization who wants their job to be easier. Your job then needs to be how security can make that happen, or at least fit into their existing workflows.</p>
+
+<p>For this sort of transformability to happen, responsive governance systems are needed. Defenders must implement decision-making processes that are quick to identify and respond to emerging threats. Part of this in ensuring that your organization is learning from prior experiences — such as through the decision tree process I mentioned before, in which you can update your models after a breach.</p>
+
+<p>However, your organization’s entire community must be involved in this learning process and be prepared to continually evaluate strategy. Implementing a security culture in your organization is perhaps the best chance of doing so.</p>
+
+<hr />
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>This is my humble attempt at a definition of resilience in information security:</p>
+
+<blockquote>
+<p><strong>Resilience in security means a flexible system that can absorb an attack and reorganize around the threat.</strong></p>
+</blockquote>
+
+<p>The system, in this case, likely is your organization, although this can apply to its underlying systems as well. Crucially, resilience in security is not the ability to withstand or prevent an attack. That’s the blue pill.</p>
+
+<p>The red pill is that the reality is that attacks will happen to you, and you must architect your security around this fact. I showed you how deep the rabbit hole goes on what security strategy fits this reality. Robustness, adaptability, and transformability are the keys to survival in Wonderland.</p>
+
+<p><strong>Robustness</strong>, while not the silver bullet, should be optimized through diversity of controls. <strong>Adaptability</strong> seeks to minimize the impact of an attack and keep your options open, and new types of infrastructure, such as containers, can enable it. <strong>Transformability</strong> demands you challenge your assumptions and reorganize your system around the reality — a reality that affects communities, which requires a collaborative effort.</p>
+
+<p>My favorite fictional character growing up was Ian Malcolm, from Michael Crichton’s “Jurassic Park” novels. I believe the full quote of one of his most notable lines summarizes how you, as defenders, should think of your strategy:</p>
+
+<blockquote>
+<p>“Because the history of evolution is that life escapes all barriers. Life breaks free. Life expands to new territories. Painfully, perhaps even dangerously. But life finds a way.”[29]</p>
+</blockquote>
+
+<p>Consider how you can escape barriers, consider how you can expand to new territories, consider how you can find a way to evolve — because attackers are doing all of these things. Doing so will likely be painful at first for your organization. Your job, as part of implementing transformability, is to manage these transitions and minimize the pain and danger. Much like with life, as per Malcolm’s quote, you can think of it as the survival of your organization’s data being at stake.</p>
+
+<p>Attacks will happen. Attackers will continue to evolve their methods. We can evolve our methods, too. We face a choice, as an industry: we can either continue to indulge ourselves in anger, bargaining, and depression, or strive towards acceptance.</p>
+
+<p>If we take this red pill of resilience, we can defend ourselves effectively and realistically. If we take the blue pill, we will keep attempting to rebound to an artificial equilibrium — relegating us to the role of a firefighting cat who is drunk on snake oil.</p>
+
+<p>I am certain most of you are fed up with these dynamics. Instead of accepting snake oil, I encourage you to take the red pill of resilience instead.</p>
+
+<hr />
+
+<h2 id="references">References</h2>
+
+<p>[1] Alexander, D. E. (2013). Resilience and disaster risk reduction: an etymological journey. Natural hazards and earth system sciences, 13(11), 2707–2716.</p>
+
+<p>[2] Holling, C. S. (1996). Engineering resilience versus ecological resilience. Engineering within ecological constraints, 31(1996), 32.</p>
+
+<p>[3] The American Chestnut Foundation. How Chestnut Blight Devastated the American Chestnut. Retrieved from <a href="https://www.acf.org/the-american-chestnut/">https://www.acf.org/the-american-chestnut/</a> (accessed September 2017).</p>
+
+<p>[4] Restemeyer, B., Woltjer, J., &amp; van den Brink, M. (2015). A strategy-based framework for assessing the flood resilience of cities–A Hamburg case study. Planning Theory &amp; Practice, 16(1), 45–62.</p>
+
+<p>[5] Blake, E.S. &amp; Zelinsky, D.A. (2018). National Hurricane Center Tropical Cyclone Report: Hurricane Harvey. National Oceanic and Atmospheric Administration.</p>
+
+<p>[6] Timmermann, P. (1981). Vulnerability, resilience and the collapse of society. Environmental Monograph, 1, 1–42.</p>
+
+<p>[7] Hough, S. E. (2016). Predicting the unpredictable: the tumultuous science of earthquake prediction. Princeton University Press.</p>
+
+<p>[8] Sanchez, A. X., Osmond, P., &amp; van der Heijden, J. (2017). Are some forms of resilience more sustainable than others?. Procedia engineering, 180, 881–889.</p>
+
+<p>[9] Tempels, B. (2016). Flood resilience: a co-evolutionary approach. Residents, spatial developments and flood risk management in the Dender basin.</p>
+
+<p>[10] Burby, R. J. (2006). Hurricane Katrina and the paradoxes of government disaster policy: bringing about wise governmental decisions for hazardous areas. The Annals of the American Academy of Political and Social Science, 604(1), 171–191.</p>
+
+<p>[11] Wenger, C. (2017). The oak or the reed: how resilience theories are translated into disaster management policies. Ecology and Society 22(3):18.</p>
+
+<p>[12] Gunderson, L. (2010). Ecological and Human Community Resilience in Response to Natural Disasters. Ecology and Society 15(2): 18.</p>
+
+<p>[13] Martindale, B., &amp; Osman P. (2007) Why the concerns with levees? They’re safe, right?. IASFM Fall 2007 Newsletter.</p>
+
+<p>[14] Liao, K. H. (2012). A theory on urban resilience to floods — a basis for alternative planning practices. Ecology and Society 17(4): 48.</p>
+
+<p>[15] Côté, I. M., &amp; Darling, E. S. (2010). Rethinking ecosystem resilience in the face of climate change. PLoS biology, 8(7), e1000438.</p>
+
+<p>[16] NYC Mayor’s Office of Recovery and Resiliency. (2018). Climate Resiliency Design Guidelines.</p>
+
+<p>[17] Verton, D. (October 1, 2003). Former @stake CTO Dan Geer on Microsoft report, firing. Retrieved from <a href="https://www.computerworld.com/article/2572315/security0/former--stake-cto-dan-geer-on-microsoft-report--firing.html">https://www.computerworld.com/article/2572315/security0/former--stake-cto-dan-geer-on-microsoft-report--firing.html</a></p>
+
+<p>[18] Dai Zovi, D. Attacker “Math” 101.</p>
+
+<p>[19] Intergovernmental Panel on Climate Change. (2014). Climate Change 2014 Synthesis Report Summary for Policymakers.</p>
+
+<p>[20] Sgro, C. M., Lowe, A. J., &amp; Hoffmann, A. A. (2011). Building evolutionary resilience for conserving biodiversity under climate change. Evolutionary Applications, 4(2), 326–337.</p>
+
+<p>[21] Anthony, K. R., Marshall, P. A., Abdulla, A., Beeden, R., Bergh, C., Black, R., … &amp; Green, A. (2015). Operationalizing resilience for adaptive coral reef management under global environmental change. Global change biology, 21(1), 48–61.</p>
+
+<p>[22] Izrailevsky, Y., &amp; Tseitlin A. (July 18, 2011). The Netflix Simian Army. Retrieved from <a href="https://medium.com/netflix-techblog/the-netflix-simian-army-16e57fbab116">https://medium.com/netflix-techblog/the-netflix-simian-army-16e57fbab116</a>.</p>
+
+<p>[23] Frazelle, J. (July 27, 2017). A Rant on Usable Security. Retrieved from <a href="https://blog.jessfraz.com/post/a-rant-on-usable-security/">https://blog.jessfraz.com/post/a-rant-on-usable-security/</a></p>
+
+<p>[24] Brown, T., et al. Windows Containers. Retrieved from <a href="https://docs.microsoft.com/en-us/virtualization/windowscontainers/about/">https://docs.microsoft.com/en-us/virtualization/windowscontainers/about/</a> (accessed October 2017).</p>
+
+<p>[25] Blundell, S. (April 19, 2016). Christchurch’s Game of Zones. Retrieved from <a href="https://www.noted.co.nz/currently/social-issues/christchurchs-game-of-zones/">https://www.noted.co.nz/currently/social-issues/christchurchs-game-of-zones/</a></p>
+
+<p>[26] Bell, L., Bird, J., Brunton-Spall, M., Smith, R. (2017). Agile Application Security. O’Reilly Media.</p>
+
+<p>[27] Batty, M. (2013). Complexity and Planning: Systems, Assemblages and Simulations, edited by Gert de Roo, Jean Hillier, and Joris van Wezemael. 2012. Farnham, UK and Burlington, Vermont: Ashgate Publishing. 443+ xviii. Journal of Regional Science, 53(4), 724–727.</p>
+
+<p>[28] Flynn, J. (February 6, 2014). 2FAC: Facebook’s Internal Multi-factor Auth Platform — Security @ Scale 2014. Retrieved from <a href="https://www.youtube.com/watch?v=pY4FBGI7bHM">https://www.youtube.com/watch?v=pY4FBGI7bHM</a></p>
+
+<p>[29] Crichton, M. (1990). Jurassic Park. Random House.</p>
 ]]></content>
         </item>
         
