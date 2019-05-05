@@ -16,7 +16,7 @@ Table of Contents:  So what is &amp;ldquo;space data&amp;rdquo; and &amp;ldquo;s
 
 <title>
     
-    WTFunding: Space Data (Satellite Imagery) : Kelly Shortridge 
+    WTFunding: Space Data (Satellite Imagery) | Kelly Shortridge 
     
 </title>
 
@@ -131,7 +131,7 @@ Table of Contents:  So what is &ldquo;space data&rdquo; and &ldquo;satellite ima
             <div class="post-content">
                 
 
-<p><img src="/img/satellite-01.jpg" alt="Satellite observing Earth" /></p>
+<p><img src="/blog/img/satellite-01.jpg" alt="Satellite observing Earth" /></p>
 
 <p><em>WTFunding is one of my “spare time” projects to delve into tech sectors attracting VC funding that pique my curiosity. I like connecting dots between disparate things, it’s also pretty useful.</em></p>
 
@@ -159,7 +159,7 @@ Table of Contents:  So what is &ldquo;space data&rdquo; and &ldquo;satellite ima
 
 <h3 id="step-1-launch-to-orbit">Step 1: Launch to Orbit</h3>
 
-<p><img src="/img/satellite-02.jpg" alt="Landsat 8, an Earth Observation satellite operated by NASA" /><em>Landsat 8, an Earth Observation satellite operated by NASA.</em></p>
+<p><img src="/blog/img/satellite-02.jpg" alt="Landsat 8, an Earth Observation satellite operated by NASA" /><em>Landsat 8, an Earth Observation satellite operated by NASA.</em></p>
 
 <p>I’ll be focusing on remote sensing satellites, but there are also communications and weather satellites and reconnaissance (aka spy) satellites and maybe even satellites that can shoot lasers out of the sky (<a href="https://commons.wikimedia.org/wiki/File:Nothing_is_beyond_our_reach.svg">nothing is beyond their reach</a>, after all). First, let’s cover some basics about satellites.</p>
 
@@ -171,13 +171,13 @@ Table of Contents:  So what is &ldquo;space data&rdquo; and &ldquo;satellite ima
 
 <p>Objects on Earth reflect energy from the Sun. This energy is in different “bands,” typically visible, infrared and water vapor. Each object reflects a different amount of energy, giving them a “spectral signature.” “Remote sensing” is how satellites collects these reflections — and just means sensing the energy bands from a remote place (like the Earth’s orbit).</p>
 
-<p><img src="/img/energy-reflection.png" alt="How remote sensing works, diagram by Kelly Shortridge" /><em>How remote sensing works (no animals were harmed in the making of this image).</em></p>
+<p><img src="/blog/img/energy-reflection.png" alt="How remote sensing works, diagram by Kelly Shortridge" /><em>How remote sensing works (no animals were harmed in the making of this image).</em></p>
 
 <p>Satellites carry sensors that allow them to do this remote sensing. Passive sensors just collect the reflections (radiation) that are emitted from Earth, using the Sun’s energy as its source of electromagnetic radiation. Active sensing systems carry their own source of electromagnetic radiation, which is directed to the Earth’s surface. Just like the passive sensing system, it then measures the amount of energy that is reflected back.</p>
 
 <p>Different sensors are designed to measure different parts of the electromagnetic spectrum. For example, the 450nm - 495nm wavelength band would measure the visible color blue. The 570nm - 590nm wavelength band would measure the visible color yellow. And near-infrared is the ~700nm - 1mm wavelength band.</p>
 
-<p><img src="/img/EM-spectrum.png" alt="The Electromagnetic Spectrum" /><em>The Electromagnetic Spectrum</em></p>
+<p><img src="/blog/img/EM-spectrum.png" alt="The Electromagnetic Spectrum" /><em>The Electromagnetic Spectrum</em></p>
 
 <p>Luckily, the electromagnetic spectrum is pretty handy for identifying objects. The way objects reflect back energy is consistent and tends to be unique. Water doesn’t reflect much visible or infrared energy, but vegetation strongly reflects infrared.</p>
 
@@ -197,15 +197,15 @@ Table of Contents:  So what is &ldquo;space data&rdquo; and &ldquo;satellite ima
 
 <p>Another important thing to keep in mind is that satellites are not necessarily taking photographs; these sensors are not cameras (though those spy satellites sometimes do use long-focus lenses). The mechanism is through sensing energy bands. Hence the industry lingo is remote sensing. Each image represents a lot of pixels arranged in rows and columns — think of it like putting a fragment of an image into 1,000 rows by 1,000 columns in Excel, and then zooming way out to see the full picture.</p>
 
-<p><img src="/img/pixel.png" alt="One pixel example" /></p>
+<p><img src="/blog/img/pixel.png" alt="One pixel example" /></p>
 
 <p>To continue that analogy, that Excel file would then represent what’s called a “scene.” Scenes can represent over 2,000km on each side. These scenes are what most people buy since they want the “big picture,” not a tiny snippet of whatever is being observed.</p>
 
-<p><img src="/img/pixel-to-scene.png" alt="Showing how one pixel becomes a scene" /></p>
+<p><img src="/blog/img/pixel-to-scene.png" alt="Showing how one pixel becomes a scene" /></p>
 
 <p>Again, this scene represents a physical object on the Earth’s surface. In our cat’s case, let’s say it’s just over a foot tall sitting upright, which is about 0.33m. In the scene, we can see the entire physical object (the cat) and features as small as its nose, so using its nose as a proxy for the smallest detectable feature, our resolution is approximately 0.01m — meaning we’re likely using a super secret spy satellite to spot Mr. Whiskers.</p>
 
-<p><img src="/img/pixel-and-resolution.png" alt="Showing how pixel and resolution relate" /></p>
+<p><img src="/blog/img/pixel-and-resolution.png" alt="Showing how pixel and resolution relate" /></p>
 
 <p>Multispectral scenes can represent a large amount of data, often with tens of millions of bytes (10MB+) per scene. This is because the intensity of each pixels is stored as a single byte (an 8-bit digital number), and there are typically millions of pixels in any given scene. Recorded video can hog even more data, and high quality video is a more newly available product — and typically no longer than two minutes. How video can be used to track objects on the ground is a longer discussion that mostly talks about error correction.</p>
 
@@ -215,7 +215,7 @@ Table of Contents:  So what is &ldquo;space data&rdquo; and &ldquo;satellite ima
 
 <p>Why is there a human required, you might ask? While it’d be fantastic to have automated image analysis software that can intelligently scan images and highlight relevant objects or issues, that’s not the current state of things at all. Humans still sadly need to be involved to help with filtering and classification based on their project goals.</p>
 
-<p><img src="/img/satellite-03.png" alt="Satellite imagery of wildfires in Idaho" /><em>Satellite imagery of wildfires in Idaho</em></p>
+<p><img src="/blog/img/satellite-03.png" alt="Satellite imagery of wildfires in Idaho" /><em>Satellite imagery of wildfires in Idaho</em></p>
 
 <p>Processing is part of image analysis, which requires special types of statistics and analytical methods that are tailored for spatial data — though primarily anchored around interpolation (predicting new, unknown data points within a group of some known data points). There’s an emphasis in geostatistics in being able to estimate how much the gaps that are filled in via prediction might be wrong; things like elevation for 3D modeling are particularly tricky to determine aerially, so there is ripe opportunity for error. One example method is kriging, which helps predict the appropriate values in unobserved locations by using a weighted average of surrounding areas and estimating its accuracy.</p>
 
@@ -225,7 +225,7 @@ Table of Contents:  So what is &ldquo;space data&rdquo; and &ldquo;satellite ima
 
 <p>The typical chain of image processing is data import, image restoration &amp; rectification, image enhancement and information extraction. The methods for performing this processing chain have been shifting somewhat in recent years. Now, satellite data can be retrieved via APIs and similarly are various tools for processing made available via APIs. But, to understand some of the challenges, it’s important to walk through these steps.</p>
 
-<p><img src="/img/image-processing-chain.png" alt="Showing the steps in satellite image processing" /></p>
+<p><img src="/blog/img/image-processing-chain.png" alt="Showing the steps in satellite image processing" /></p>
 
 <h4 id="data-import">Data Import</h4>
 
@@ -233,7 +233,7 @@ Table of Contents:  So what is &ldquo;space data&rdquo; and &ldquo;satellite ima
 
 <p>The images the satellites take are generally compressed on-board, with their total storage nearing a terabyte. Some can even perform image fusion (which is discussed shortly) before transmission to help improve the image’s resolution.</p>
 
-<p>There are various GIS data formats and different types of data that can be imported. Much like <a href="/posts/wtfunding-industrial-manufacturing-analytics/">in my prior post</a>, a number of different vendors have their own data formats, and they are often proprietary, making a lot of big data analysis stuff a lot harder. There are also unique data formats for specific parts of imagery &ndash; such as the feature geometry, feature attributes, topology, etc.</p>
+<p>There are various GIS data formats and different types of data that can be imported. Much like <a href="/blog/posts/wtfunding-industrial-manufacturing-analytics/">in my prior post</a>, a number of different vendors have their own data formats, and they are often proprietary, making a lot of big data analysis stuff a lot harder. There are also unique data formats for specific parts of imagery &ndash; such as the feature geometry, feature attributes, topology, etc.</p>
 
 <p>Satellite imagery is commonly stored in digital numbers (DN), which means each pixel gets a value in 8-16 bits for a physical value (like color or temperature). This helps minimizing the storage volume.</p>
 
@@ -245,7 +245,7 @@ Table of Contents:  So what is &ldquo;space data&rdquo; and &ldquo;satellite ima
 
 <p>Analysis techniques are used to create and define models of relationships between different data sets. The traditionally used technique is the entity-relationship model. In this, there are specific entities, like buildings, forests, and agricultural land, which have different attributes and “members” of the entities (like government, residential or religious buildings). The relationship part of entity-relationship just means members of these entities are compared; for example, you could compare different residential buildings in New York City to determine what attributes they have in common (perhaps they have rooftop gardens, are thinner, etc.).</p>
 
-<p><img style="float: right;" src="/img/relational-model.png" alt="relational database model"/></p>
+<p><img style="float: right;" src="/blog/img/relational-model.png" alt="relational database model"/></p>
 
 <p>The relational model works well for this sort of data, since it allows for different datasets to be compared. The key (pun intended) here is that there are keys for each entry in the data sets that link the data sets between each other.</p>
 
@@ -275,7 +275,7 @@ Table of Contents:  So what is &ldquo;space data&rdquo; and &ldquo;satellite ima
 
 <p>Processing might start with getting true color on the images (i.e. making it look like a photograph, with blue water, green forests, etc.). You might be familiar with RGB values, (255, 255, 255 being white), which represent an 8-bit image color range. Sometimes it’s better to have false color, which just means using unnatural colors to help highlight differences between energy bands. If your goal is to see levels of vegetation, then you may prefer a false-color composite (FCC) that lets the infrared bands really pop.</p>
 
-<p><img src="/img/satellite-04.png" alt="False color satellite imagery" /><em>False color imagery</em></p>
+<p><img src="/blog/img/satellite-04.png" alt="False color satellite imagery" /><em>False color imagery</em></p>
 
 <p>After that, you might want to make sure your image is accurate, or what is called “georectification.” You can use what are called ground control points (GCP), which just means using the coordinates of known locations on a map in order to make sure the image’s coordinates map the real physical location. There’s also “orthorectification,” which removes issues of scale by accounting for different tilts and terrains — the more diverse the Earth’s surface is, the more likely there will be distortions in the image.</p>
 
@@ -287,7 +287,7 @@ Table of Contents:  So what is &ldquo;space data&rdquo; and &ldquo;satellite ima
 
 <p>The image enhancement phase is to improve the quality of the imagery. Some enhancements are familiar due to their use in photography, such as contrast enhancement to help highlight the differences within an image. Spatial filtering involves directly manipulating pixels for some effect. If you’ve ever played around with filters in Photoshop, or even on your phone, you get the picture. These can include image sharpening or softening, embossing, etc.</p>
 
-<p><img src="/img/satellite-imagery-fusion.png" alt="Satellite image fusion diagram by Kelly Shortridge" /></p>
+<p><img src="/blog/img/satellite-imagery-fusion.png" alt="Satellite image fusion diagram by Kelly Shortridge" /></p>
 
 <p>A common technique for enhancement is image fusion, which seeks to create a single, more detailed image out of multiple images. It’s also one of the ways that the tradeoff between spatial and spectral resolution can be solved.</p>
 
@@ -311,7 +311,7 @@ Table of Contents:  So what is &ldquo;space data&rdquo; and &ldquo;satellite ima
 
 <p>There’s also object-oriented image classification, or “multi-resolution segmentation,” which is a non-traditional approach (meaning it’s only come into use in the past decade or so). As the name suggests, it creates objects by grouping pixels rather than classifying individual pixels. The resulting objects have different shapes and scales, and thus can be classified more flexibly using different image layers (e.g. population density, infrared, elevation, etc.). The user is still doing supervised classification using samples and fancy algorithms, but with more accuracy when dealing with objects vs. individual pixels.</p>
 
-<p><img src="/img/satellite-05.jpg" alt="Example of how object-based image analysis works." /><em>Example of how object-based image analysis works.</em></p>
+<p><img src="/blog/img/satellite-05.jpg" alt="Example of how object-based image analysis works." /><em>Example of how object-based image analysis works.</em></p>
 
 <p>The general rule of thumb is that object-oriented classification is best for higher spatial resolution, since objects might consist of multiple pixels, and the other methods work fine for lower resolution (in which objects are just a pixel). Of course, as spatial resolution improves, this means that object-oriented classification might be increasingly adopted in kind.</p>
 
@@ -339,7 +339,7 @@ Table of Contents:  So what is &ldquo;space data&rdquo; and &ldquo;satellite ima
 
 <p>It can be hard to measure agricultural trends on the ground, so satellite imagery is immensely helpful in assessing crop health and yields, environmental changes and trends pertaining to livestock. Even when planning and maintaining agricultural sites, this imagery can map irrigation and analyze soil — even showing variations in soil’s organic matter.</p>
 
-<p><img src="/img/satellite-06.jpg" alt="Imagery highlighting irrigation" /><em>Imagery highlighting irrigation.</em></p>
+<p><img src="/blog/img/satellite-06.jpg" alt="Imagery highlighting irrigation" /><em>Imagery highlighting irrigation.</em></p>
 
 <p>Aside from optimizing costs and boosting productivity at large agricultural companies, there’s a general global need for improved agricultural production and better utilization of resources. Having a better sense of what and where these resources are to improve their management has significant benefits on a macro scale.</p>
 
@@ -347,7 +347,7 @@ Table of Contents:  So what is &ldquo;space data&rdquo; and &ldquo;satellite ima
 
 <p>Along with companies in the mining and oil &amp; gas industries, engineering &amp; construction companies have high capital costs relating to physical projects. So, geospatial imagery can help these companies visualize their projects, not just for evaluating and planning construction sites, but also for maintaining them. This helps reduce construction costs and also minimize environmental impact.</p>
 
-<p><img src="/img/satellite-07.jpg" alt="Digital elevation model of a construction site" /><em>Digital elevation model of a construction site.</em></p>
+<p><img src="/blog/img/satellite-07.jpg" alt="Digital elevation model of a construction site" /><em>Digital elevation model of a construction site.</em></p>
 
 <p>Being able to model construction sites in 3D is crucial for planning purposes, but also ensuring ongoing safety. And for certain project types, like airstrips, dams, power plants and sewers, you need data beyond just the visual. For example, when building an airport, not only do you need to make sure the terrain is appropriate for an airstrip, but also have 3D models for flight simulation to make sure pilots aren’t going to run into recurring issues.</p>
 
@@ -355,7 +355,7 @@ Table of Contents:  So what is &ldquo;space data&rdquo; and &ldquo;satellite ima
 
 <p>On the “save the world,” side of things, environmental monitoring helps assess damage from natural disasters as well as help manage natural resources. Governments can use satellite imagery to help develop disaster response plans, as well as improve environmental planning and conservation.</p>
 
-<p><img src="/img/satellite-08.jpg" alt="Imagery highlighting deforestation" /><em>Imagery highlighting deforestation.</em></p>
+<p><img src="/blog/img/satellite-08.jpg" alt="Imagery highlighting deforestation" /><em>Imagery highlighting deforestation.</em></p>
 
 <p>Being able to see high-level trends, like deforestation, is helpful to monitor local environmental health but even more so to evaluate potential long-term impacts. After all, trees don’t grow back overnight, so excessive “forest farming” can have devastating effects on future generations’ economic wellbeing. Not to mention being a harbinger of global climate change.</p>
 
@@ -363,7 +363,7 @@ Table of Contents:  So what is &ldquo;space data&rdquo; and &ldquo;satellite ima
 
 <p>Logistics and shipping companies, port operators, fishers, trade organizations and governments all have an interest in geospatial imagery relating to maritime and weather patterns. On the pure logistics side, being able to track ships in transit is highly useful, as tracking systems can fail when far enough away from ports. Weather patterns and other spatial data (like terrain mapping) can also help optimize shipping routes.</p>
 
-<p><img src="/img/satellite-09.png" alt="Search for MH370 by satellites" /><em>Search for MH370; odd given the number of global recon satellites that it’s still missing.</em></p>
+<p><img src="/blog/img/satellite-09.png" alt="Search for MH370 by satellites" /><em>Search for MH370; odd given the number of global recon satellites that it’s still missing.</em></p>
 
 <p>Being able to monitor trading, spot illegal fishing or piracy, and help with search and rescue missions are of particular importance from a global trade perspective. Even the “little guy” can win — local fishers and fisheries are often put out of business by illegal fishing, which is more widespread than you might think.</p>
 
@@ -371,7 +371,7 @@ Table of Contents:  So what is &ldquo;space data&rdquo; and &ldquo;satellite ima
 
 <p>Multispectral satellite imagery has the ability to differentiate between different types of rocks, vegetation and soil, which helps mining and geology projects in a few different ways.</p>
 
-<p><img src="/img/satellite-10.jpg" alt="Imagery optimized to show rare earth elements" /><em>Imagery optimized to show rare earth elements.</em></p>
+<p><img src="/blog/img/satellite-10.jpg" alt="Imagery optimized to show rare earth elements" /><em>Imagery optimized to show rare earth elements.</em></p>
 
 <p>First and most obviously, this imagery can help identify clays, oxides and soils for mineral mapping and exploration. This is in contrast to most humans, who would walk to the location and say, “yep, that looks like ground.” All the different energy bands will show both different types of rocks and elements as well as structural aspects of the Earth’s surface that may influence ease of mining.</p>
 
@@ -381,7 +381,7 @@ Table of Contents:  So what is &ldquo;space data&rdquo; and &ldquo;satellite ima
 
 <p>Satellite imagery can help oil and gas companies reduce risk in oil exploration as well as monitor ongoing projects. The level of detail is pretty impressive, from generally detecting areas that are most productive down to even detecting seismic lines or offshore oil seepage.</p>
 
-<p><img src="/img/satellite-11.jpg" alt="Deepwater Horizon oil spill by satellite" /><em>The Deepwater Horizon spill being just a bit more than seepage.</em></p>
+<p><img src="/blog/img/satellite-11.jpg" alt="Deepwater Horizon oil spill by satellite" /><em>The Deepwater Horizon spill being just a bit more than seepage.</em></p>
 
 <p>But not only does it help find areas most likely to be rich with oil, but it also helps these companies assess the potential costs and pitfalls associated with drilling in a particular area. For example, satellite imagery shows which areas have rock formations, heavy forest coverage, unfavorable weather conditions and whether they are in more remote or developed locations.</p>
 
@@ -405,7 +405,7 @@ Table of Contents:  So what is &ldquo;space data&rdquo; and &ldquo;satellite ima
 
 <p>Getting satellites into orbit so there is more imagery available is step one. The goal of many of these imagery companies is to have a constellation of satellites in orbit to allow for daily imaging of the whole planet. Launching these satellites into orbit is currently expensive, and ups the cost of the end imagery (which thereby reduces the potential customer set). So, a lot depends on SpaceX’s (and others’) ability to cut down on the cost of satellite launches. The recent successful Falcon 9 launch and landing will very likely pave the way for rocket reuse, which will help bring down these costs substantially.</p>
 
-<p><img src="/img/rocketlaunch.gif" alt="Cinemagraph of the American flag waving while a rocket launches" /><em>Obligatory cinemagraph in the name of ‘Murica.</em></p>
+<p><img src="/blog/img/rocketlaunch.gif" alt="Cinemagraph of the American flag waving while a rocket launches" /><em>Obligatory cinemagraph in the name of ‘Murica.</em></p>
 
 <p>The delivery of imagery is historically quite slow as well. Not only do satellites capture a small part of the Earth at a time, but there’s also the issue of sending down large file sizes over transmissions speeds that are just in the hundreds of MB per second range. Assuming there’s no pre-processing before the customer receives the image, the customer still has to download the image for themselves, which takes time…and any processing work needed only adds to that time. This is starting to change, as images are increasingly available online and some images are pre-processed, saving customers from having to do the image processing themselves.</p>
 
@@ -425,7 +425,7 @@ Table of Contents:  So what is &ldquo;space data&rdquo; and &ldquo;satellite ima
 
 <p>The government has cared a lot for a long time, and I’d have to assume they’d be a little nervous about a bunch of new satellites being sent into orbit that may risk having spy satellites uncovered. But, they would also be able to benefit from innovations, particularly on the software-side, that are spurred by greater commercial adoption. Though based on how homely most government-facing software looks, maybe government analysts would disprove of UI improvements.</p>
 
-<p><img src="/img/satellite-12.jpg" alt="Satellite imagery via the CIA of Osama bin Ladin’s compound." /><em>Satellite imagery via the CIA of Osama bin Ladin’s compound.</em></p>
+<p><img src="/blog/img/satellite-12.jpg" alt="Satellite imagery via the CIA of Osama bin Ladin’s compound." /><em>Satellite imagery via the CIA of Osama bin Ladin’s compound.</em></p>
 
 <p>Any of the commercial industries from earlier might care, as it can help them cut costs, curtail risks and arguably even improve revenues. So, they care to the extent that better satellite imagery and analysis can help them optimize their business, but the degree to which it does may vary. I’d imagine it’s a “nice to have,” maybe even “would love to have,” but not a “necessary to have” in most of these cases.</p>
 
@@ -439,7 +439,7 @@ Table of Contents:  So what is &ldquo;space data&rdquo; and &ldquo;satellite ima
 
 <h2 id="a-name-risks-a-what-are-the-risks"><a name="risks"></a>What are the risks?</h2>
 
-<p><img src="/img/satellite-13.jpg" alt="How a satellite constellation looks" /><em>How a satellite constellation looks.</em>
+<p><img src="/blog/img/satellite-13.jpg" alt="How a satellite constellation looks" /><em>How a satellite constellation looks.</em>
 A lot depends on getting satellites into orbit, at least to make this a huge opportunity. The successful Falcon 9 launch and re-landing helps mitigate those risks a bit, but that happened only weeks ago. So, to get more satellites into orbit, thus increasing not only the amount of imagery, but quality of imagery, you have to hope that SpaceX really has their stuff together and in a hurry. You actually probably need to hope that more than just SpaceX does rocket reuse successfully.</p>
 
 <p>Satellite imagery, at least as it stands today, also isn’t that big of an industry. The satellite industry as a whole is a hefty market ($200 billion), particularly because of consumer communications and entertainment. But right now the Earth Observation (EO) market, which includes the satellite imagery portion, is still quite small.</p>
@@ -508,7 +508,7 @@ A lot depends on getting satellites into orbit, at least to make this a huge opp
 
 <h2 id="a-name-conclusion-a-conclusion"><a name="conclusion"></a>Conclusion</h2>
 
-<p><img src="/img/satellite-14.jpg" alt="Satellite looking over Earth at night" />
+<p><img src="/blog/img/satellite-14.jpg" alt="Satellite looking over Earth at night" />
 There’s a reason why I like using the term “space data” — this is really cool stuff. But, there are huge capital costs involved for a market that as of yet isn’t very big at all. Or, for companies that are improving just the software part, there’s a lot of reliance on third parties to provide the actual imagery.</p>
 
 <p>Automation does seem like the most legitimate opportunity for a 10x improvement on what is available today, so that companies don’t need GIS experts in-house to still glean intelligence from satellite imagery. It seems like this software vertical is particularly behind in many of the infrastructure developments made in the past decade, so there’s certainly room for disruption just in that regard.</p>
@@ -521,7 +521,7 @@ There’s a reason why I like using the term “space data” — this is re
 
 <p>My prediction is that many of the software-only companies will remain quite small, while those pursuing the entire chain (like Planet Labs) have a good shot at a big long-term payoff (with bigger capital requirements, of course). DigitalGlobe itself only has a $1 billion market cap, with about $100mm cash, so they can’t just gobble up the new software companies. There’s always the chance a cash-rich tech giant like IBM or Facebook decides they’re interested in the space data game, too. Or perhaps I’m wrong and space mining comes sooner rather than later, with space data crucial for any level of success.</p>
 
-<p><img src="/img/satellite-15.jpg" alt="Rendering of asteroid mining" /><em>Asteroid mining — the not so distant future?</em></p>
+<p><img src="/blog/img/satellite-15.jpg" alt="Rendering of asteroid mining" /><em>Asteroid mining — the not so distant future?</em></p>
 
             </div>
         </article>

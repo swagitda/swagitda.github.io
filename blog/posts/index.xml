@@ -22,7 +22,7 @@ As you can tell from this list, I became a bit obsessed with afrofuturism and am
 
 <p>As you can tell from this list, I became a bit obsessed with <a href="https://en.wikipedia.org/wiki/Afrofuturism">afrofuturism</a> and am still in awe of the immersive worldbuilding within the genre’s novels I read. I gravitated more towards fiction this year in general, which meant I snuck in fewer non-fiction books than usual (I did read more academic papers this year, but they’re far more arid).</p>
 
-<p>If you’re looking for more science fiction, speculative fiction, or non-fiction recommendations, check out <a href="/posts/2017-reading-list">my 2017</a> and <a href="/posts/2016-reading-list">my 2016</a> reading lists.</p>
+<p>If you’re looking for more science fiction, speculative fiction, or non-fiction recommendations, check out <a href="/blog/posts/2017-reading-list">my 2017</a> and <a href="/blog/posts/2016-reading-list">my 2016</a> reading lists.</p>
 
 <hr />
 
@@ -76,7 +76,7 @@ As you can tell from this list, I became a bit obsessed with afrofuturism and am
 Security is a product, but we treat it like a sacred, immutable grail to preserve, unblemished by the sublunary needs of users. And yet, we wonder why defense remains stagnant, why we fail so consistently in progressing towards the glorious ideal of a “secure organization.” We will continue to fail — unless we treat security as a product. Are we trying to respect the phantasmal Elder Deities of Infosec and their stringent doctrine, or are we trying to ensure our organization can still thrive while operating in a perilous digital world?</description>
             <content type="html"><![CDATA[<p><em>Originally given as <a href="https://www.youtube.com/watch?v=Ia80fg7ivN4">the keynote</a> at BSides Knoxville.</em></p>
 
-<p><img src="/img/ball-of-lights.jpeg" alt="person clutching a ball of lights" /></p>
+<p><img src="/blog/img/ball-of-lights.jpeg" alt="person clutching a ball of lights" /></p>
 
 <p>Security is a product, but we treat it like a sacred, immutable grail to preserve, unblemished by the sublunary needs of users. And yet, we wonder why defense remains stagnant, why we fail so consistently in progressing towards the glorious ideal of a “secure organization.” We will continue to fail — unless we treat security as a product. Are we trying to respect the phantasmal Elder Deities of Infosec and their stringent doctrine, or are we trying to ensure our organization can still thrive while operating in a perilous digital world?</p>
 
@@ -348,7 +348,7 @@ In 2018, security. Cyber security people will die. We’ve long debated where se
 
 <p><em>Fed up with ridiculous infosec predictions for the upcoming year, I decided to aggregate them all and use the power of Markov Chains to generate my own list. What follows is the result, lightly edited solely for readability. I hope to be pioneering the next-gen AI-powered thought leadering market segment.</em></p>
 
-<p><img src="/img/cyber-dynomite.png" alt="cyber dynomite" /></p>
+<p><img src="/blog/img/cyber-dynomite.png" alt="cyber dynomite" /></p>
 
 <p>In 2018, security. Cyber security people will die. We’ve long debated where security people will die. We expect this lucrative trend to continue through 2018.</p>
 
@@ -366,7 +366,7 @@ In 2018, security. Cyber security people will die. We’ve long debated where se
 
 <h2 id="prediction-1-the-dark-but-lucrative-trend-in-ransomware-will-continue-to-explode-in-the-cloud">Prediction #1: THE DARK BUT LUCRATIVE TREND IN RANSOMWARE WILL CONTINUE TO EXPLODE IN THE CLOUD</h2>
 
-<p><img style="float: right; max-width:50%; padding: 5px" src="/img/trinity-0day.gif" alt="Trinity's 0day in the Matrix">
+<p><img style="float: right; max-width:50%; padding: 5px" src="/blog/img/trinity-0day.gif" alt="Trinity's 0day in the Matrix">
 The dark but lucrative trend in ransomware will emerge from the shadows and escalate, directly impacting the legal challenge of IT professionals, which will deepen. With this rise in ransomware solutions, businesses will exploit models that will ignite a bit of fun! While we predicted increases in ransomware last year, companies scrambled to update vision and strategy against each other.</p>
 
 <p>Ransomware protects expensive and often inefficient perimeter defenses. FAKEAV and ransomware — like peanut butter and jelly or Thelma and Louise, the two go together. The integration has been to encourage the use of human behavior-directed attacks in the war on cybercriminal technology and help them find a better way for vulnerabilities to require security prediction.</p>
@@ -377,7 +377,7 @@ The dark but lucrative trend in ransomware will emerge from the shadows and esca
 
 <h2 id="prediction-2-bitcoin-wallet-exploits-will-result-in-another-major-ddos-attack-against-critical-infrastructure">Prediction #2: BITCOIN WALLET EXPLOITS WILL RESULT IN ANOTHER MAJOR DDOS ATTACK AGAINST CRITICAL INFRASTRUCTURE</h2>
 
-<p><img style="float: right; max-width:50%; padding: 5px" src="/img/crypto-mining.gif" alt="Doge mining dogecoin">
+<p><img style="float: right; max-width:50%; padding: 5px" src="/blog/img/crypto-mining.gif" alt="Doge mining dogecoin">
 In 2018, the cryptocurrency escalates. The value of cryptocurrency exchanges and the age of them becomes a top priority for organizations to get the basics of cyber security prediction. They’ve become the payment method of choice for cyberattacks with security experts. Blockchain technology makes them attractive to hackers, as opposed to PCs.</p>
 
 <p>The industry will ultimately find a cheap, dirty, and effective way to monitor sugar levels, and blockchain technologies will increasingly come under mounting pressure to better combat the new threat that will emerge in 2018. Vendor-agnostic implemented blockchain technology underpins the transaction ledgers used by most cryptocurrencies and will increase, driven by third-party security policies that will still lack teeth.</p>
@@ -424,7 +424,7 @@ In 2018, the cryptocurrency escalates. The value of cryptocurrency exchanges and
 
 <h2 id="prediction-6-cyber-recycling">Prediction #6: CYBER RECYCLING</h2>
 
-<p><img style="float: right; max-width:50%; padding: 5px" src="/img/machine-learning-oprah.gif" alt="Oprah saying 'And you get a machine learning'">
+<p><img style="float: right; max-width:50%; padding: 5px" src="/blog/img/machine-learning-oprah.gif" alt="Oprah saying 'And you get a machine learning'">
 AI is a tool that can and will be exploited much more than just a convenient way to learn about today’s weather or get the latest sports scores. AI is a tool that can show genuine concern for protecting the privacy debate. AI will also open the way to new vulnerabilities. AI will permit attacks to scale far beyond the techniques that are frequently used. Insurance companies will continue to target holes in machine learning, AI, analyzing our smart devices, and even multi-factor solutions.</p>
 
 <p>Machine learning may also be a powerful tool, and those wielding it will believe that it should not completely take over security mechanisms. It should be considered an additional security layer incorporated into an in-depth defense strategy, and not a silver bullet.</p>
@@ -439,7 +439,7 @@ AI is a tool that can and will be exploited much more than just a convenient way
 
 <p>We will see increased adoption of cyber security frameworks. Cloud Access Service Brokers (CASB) and other cloud security frameworks have been acquiring certificates that make UEFI an attractive target for cyberattacks. A prime example is Windows 10.</p>
 
-<p><img style="float: right; max-width:50%; padding: 5px" src="/img/oh-no-hackers.gif" alt="Oh no, hackers in the mainframe">
+<p><img style="float: right; max-width:50%; padding: 5px" src="/blog/img/oh-no-hackers.gif" alt="Oh no, hackers in the mainframe">
 Next-generation security incident response exercise projects will face lawsuits. Sadly, it’s simply to notify them, and report to the fire department. As such, it is not about embedding cybersecurity practices, and large companies are not secure by design. Users and enterprises are advised to routinely check for software.</p>
 
 <p>Managed security processes will deploy a defense-in-depth strategy. Unfortunately, GDPR will provide accurate detection and Response (MDR) services, including techniques such as advanced phishing and social media to help stories spread rapidly. Action: Try shopping at the reconnaissance phase before it’s too late.</p>
@@ -464,7 +464,7 @@ Next-generation security incident response exercise projects will face lawsuits.
 In the vein of last year’s post, I sought out non-fiction and science / speculative fiction books by a diverse set of authors.</description>
             <content type="html"><![CDATA[
 
-<p>As I <a href="/posts/2016-reading-list">wrote about last year</a>, my ongoing New Year’s resolution is to try to read one non-fiction and one fiction book per month. I was unable to fully accomplish this goal for 2017 (I tend to gravitate more towards fiction in tumultuous times), but I loved the books I did manage to read along the way.</p>
+<p>As I <a href="/blog/posts/2016-reading-list">wrote about last year</a>, my ongoing New Year’s resolution is to try to read one non-fiction and one fiction book per month. I was unable to fully accomplish this goal for 2017 (I tend to gravitate more towards fiction in tumultuous times), but I loved the books I did manage to read along the way.</p>
 
 <p>In the vein of last year’s post, I sought out non-fiction and science / speculative fiction books by a diverse set of authors. While last year I aimed to discover as many new female authors as possible, this year I specifically strove to experience sci-fi from other cultural perspectives and underrepresented voices, as well as learn more about the history of non-Western civilizations.</p>
 
@@ -650,7 +650,7 @@ Be able to regenerate security even when you have no idea what’s going wrong. 
 
 <p>The last part of the presentation focused on the “what to do about it” — I developed a choice architecture for blue teams in information security. Choice architecture is a term coined by Richard Thaler and Cass Sunstein in their famous book “Nudge,” and means the design of how choices can be presented to people.</p>
 
-<p>The implication is that it can be designed in a way that impacts decision making, and more specifically in a way that minimizes errors due to cognitive biases. It’s basically a “how do we fix it?” response to the flaws in thinking that behavioral economics exposes (see <a href="/posts/behavioral-models-infosec-prospect-theory/">my post on Prospect Theory &amp; Information Security</a> for a primer on some of these flaws as they appear in infosec).</p>
+<p>The implication is that it can be designed in a way that impacts decision making, and more specifically in a way that minimizes errors due to cognitive biases. It’s basically a “how do we fix it?” response to the flaws in thinking that behavioral economics exposes (see <a href="/blog/posts/behavioral-models-infosec-prospect-theory/">my post on Prospect Theory &amp; Information Security</a> for a primer on some of these flaws as they appear in infosec).</p>
 
 <p>I’ll walk you through my proposed choice architecture for how blue teams can develop a decision-making process that is resilient to cognitive biases, or you can just skip to the conclusion for the 6-step guide.</p>
 
@@ -665,7 +665,7 @@ Be able to regenerate security even when you have no idea what’s going wrong. 
 
 <h2 id="a-name-belief-prompting-a-belief-prompting"><a name="belief-prompting"></a>Belief Prompting</h2>
 
-<p><img src="/img/thinking-clueless.gif" alt="Gif of Cher from Clueless thinking" /><em>Get your thinky thinky face on</em></p>
+<p><img src="/blog/img/thinking-clueless.gif" alt="Gif of Cher from Clueless thinking" /><em>Get your thinky thinky face on</em></p>
 
 <p>People have beliefs about their opponents in any confrontation. People also tend to believe their opponents are less rational than they actually are — and often make imprudent decisions as if their opponent is randomly choosing their decisions. A counter to this blunder is asking players for their explicit beliefs about what their opponents will do, known as <a href="https://books.google.com/books?id=bMWHDAAAQBAJ&amp;pg=PA132&amp;lpg=PA132&amp;dq=%22belief-prompting%22&amp;source=bl&amp;ots=QsfBOYXBlM&amp;sig=EDB2DND3JdfbnXJG7CJycLQOMjk&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwjlupiu7fTRAhXq5YMKHfzxClgQ6AEIKjAD"><strong>belief prompting</strong></a>. Think of it as increasing one’s thinking by an additional step — how will your opponent respond to your move?</p>
 
@@ -687,13 +687,13 @@ Be able to regenerate security even when you have no idea what’s going wrong. 
 
 <p>As an example of where these questions might lead you, here’s a belief prompting process for exfiltration, with defensive moves in blue and offensive moves in orange:</p>
 
-<p><img src="/img/belief-prompting-example.png" alt="An example of belief prompting for information security, by Kelly Shortridge" /></p>
+<p><img src="/blog/img/belief-prompting-example.png" alt="An example of belief prompting for information security, by Kelly Shortridge" /></p>
 
 <hr />
 
 <h2 id="a-name-decision-trees-a-decision-trees"><a name="decision-trees"></a>Decision Trees</h2>
 
-<p><img src="/img/jared-swot.gif" alt="Jared from the show Silicon Valley presenting a SWOT analysis" /><em>I’m basically Jared for the infosec industry</em></p>
+<p><img src="/blog/img/jared-swot.gif" alt="Jared from the show Silicon Valley presenting a SWOT analysis" /><em>I’m basically Jared for the infosec industry</em></p>
 
 <p>Creating a decision tree allows for a feedback loop that is invaluable in aiding the decision-making process, particularly in prioritizing strategies. I believe a decision tree model is the most efficient means of solving a few challenges in decision-making, as it:</p>
 
@@ -711,7 +711,7 @@ Be able to regenerate security even when you have no idea what’s going wrong. 
 
 <p>The left branches in each set of moves represent the lower-cost moves, while the right branches represent the more expensive moves (cost here meaning monetary, human and time capital). For example, “#YOLO” means doing absolutely nothing, while “Privilege Separation” requires doing more than nothing, thus making it the more expensive option.</p>
 
-<p><img src="/img/decision-tree-example.png" alt="An example of a decision tree for information security, by Kelly Shortridge" /></p>
+<p><img src="/blog/img/decision-tree-example.png" alt="An example of a decision tree for information security, by Kelly Shortridge" /></p>
 
 <p>For those who need a walkthrough — if you start with the “Criminal Group” adversary that has just arrived on one of your servers, you can consider a preemptive defensive move being either: implementing privilege separation, which has an guesstimated 60% chance of deterring or thwarting the attacker; or “implementing” the #YOLO strategy of doing nothing, which has a 0% chance of deterring the attacker.</p>
 
@@ -727,7 +727,7 @@ Be able to regenerate security even when you have no idea what’s going wrong. 
 
 <h2 id="social-tactics">Social Tactics</h2>
 
-<p><img src="/img/kittens-meeting.gif" alt="A gif of kittens having a &quot;meeting&quot;" /><em>omg it&rsquo;s kittens having a meeting</em></p>
+<p><img src="/blog/img/kittens-meeting.gif" alt="A gif of kittens having a &quot;meeting&quot;" /><em>omg it&rsquo;s kittens having a meeting</em></p>
 
 <p>I won’t cover the social dynamics of teams here (<a href="https://swagitda.com/speaking/Know-Thyself-Kelly-Shortridge-ACoD-2017.pdf">check out the presentation</a> to read about it if interested), but belief-prompting vis a vis probability-labeled decision-trees ameliorates team-based biases as well. However, blue team leaders need to consider a few additional tactics to round out their decision-making model — most of which are in the vein of framing, i.e. how choices are presented (see <a href="https://en.wikipedia.org/wiki/Framing_effect_%28psychology%29">framing effects</a> for more).</p>
 
@@ -770,13 +770,13 @@ Be able to regenerate security even when you have no idea what’s going wrong. 
             <guid>//swagitda.github.io/blog/posts/russia-used-us-influence-ops-playbook/</guid>
             <description>Roger Trinquier, the French counterinsurgency theorist, said, “The sine qua non of victory in [insurgent/counterinsurgent] warfare is the unconditional support of the people.” In Influence Operations, success is ultimately about the ability to overcome one’s status as an outsider.
 The past few months have seen cyberwar intersect with Influence Operations, in Russia using chicanery along these lines to influence the U.S. presidential election. In wanting to learn more about Influence Ops, I stumbled across a paper from the Naval War College entitled “Influence Operations &amp;amp; the Human Domain.</description>
-            <content type="html"><![CDATA[<p><img src="/img/spy-vs-spy.png" alt="An image of the two spys from the comic &quot;Spy vs. Spy&quot; shaking hands" /></p>
+            <content type="html"><![CDATA[<p><img src="/blog/img/spy-vs-spy.png" alt="An image of the two spys from the comic &quot;Spy vs. Spy&quot; shaking hands" /></p>
 
 <p>Roger Trinquier, the French counterinsurgency theorist, said, “The <a href="https://en.wikipedia.org/wiki/Sine_qua_non">sine qua non</a> of victory in [insurgent/counterinsurgent] warfare is the unconditional support of the people.” In Influence Operations, success is ultimately about the ability to overcome one’s status as an outsider.</p>
 
 <p>The past few months have seen cyberwar intersect with Influence Operations, in Russia using chicanery along these lines to influence the U.S. presidential election. In wanting to learn more about Influence Ops, I stumbled across a paper from the Naval War College entitled <a href="https://www.usnwc.edu/getattachment/Departments---Colleges/Center-on-Irregular-Warfare---Armed-Groups/Publications/Scanzillo-and-Lopacienski---Influence-Operations-and-the-Human-Domain.pdf.aspx">“Influence Operations &amp; the Human Domain.”</a> They helpfully give an example of their offensive playbook, from their Influence Ops campaign in the Philippines. But as I read it, I felt my expression of horror intensifying.</p>
 
-<p><img src="/img/britney-shock.gif" alt="A gif of Britney Spears reacting with shock, of the negative kind" /></p>
+<p><img src="/blog/img/britney-shock.gif" alt="A gif of Britney Spears reacting with shock, of the negative kind" /></p>
 
 <p>The similarities in the U.S.’s Influence Ops strategy in the Philippines and Russia’s Influence Ops strategy for the U.S. presidential election are stark. The primary difference is the Philippines campaign mentions leveraging social media, but it occurred at the dawn of its ubiquity, whereas Russia had access to social media’s fuller potency. I’ve pulled quotes on the U.S. strategy from the paper, and written my thoughts on how it maps to the Russian ops below — judge for yourself.</p>
 
@@ -939,7 +939,7 @@ The past few months have seen cyberwar intersect with Influence Operations, in R
 
 <hr />
 
-<p><img src="/img/fancy-bear.jpg" alt="The fancy bear logo by Crowdstrike" /></p>
+<p><img src="/blog/img/fancy-bear.jpg" alt="The fancy bear logo by Crowdstrike" /></p>
 
 <h2 id="a-name-what-happened-a-what-actually-happened-in-2016"><a name="what-happened"></a>What actually happened in 2016?</h2>
 
@@ -979,7 +979,7 @@ The past few months have seen cyberwar intersect with Influence Operations, in R
 
 <hr />
 
-<p><img src="/img/bad-cyberart-09.jpg" alt="A crystal ball" /></p>
+<p><img src="/blog/img/bad-cyberart-09.jpg" alt="A crystal ball" /></p>
 
 <h2 id="a-name-correct-predictions-a-which-predictions-were-right-naming-names"><a name="correct-predictions"></a>Which predictions were right? (naming names)</h2>
 
@@ -1027,7 +1027,7 @@ The past few months have seen cyberwar intersect with Influence Operations, in R
 
 <hr />
 
-<p><img src="/img/bad-cyberart-10.png" alt="A digital thumbs down" /></p>
+<p><img src="/blog/img/bad-cyberart-10.png" alt="A digital thumbs down" /></p>
 
 <h2 id="a-name-wrong-predictions-a-which-predictions-were-off-not-naming-names"><a name="wrong-predictions"></a>Which predictions were off? (not naming names)</h2>
 
@@ -1088,7 +1088,7 @@ In 2016 many companies will turn to cyber insurance as another layer of protecti
 
 <p>While many of the predictions highlighted mobile as an attack vector in general, where they specifically got it wrong is in thinking that vulnerabilities in mobile apps would be exploited. Why expend the effort when malicious apps still work just fine? See: <a href="https://www.crowdstrike.com/blog/danger-close-fancy-bear-tracking-ukrainian-field-artillery-units/">the poisoned app Fancy Bear used to hack Ukranian field artillery units</a>. There haven’t been any major corporate breaches directly tied to mobile malware, though I’ll concede it’s possible they just aren’t public. Mobile malware grew at a very healthy pace in 2016, however:</p>
 
-<p><img src="/img/new-mobile-malware-2016.png" alt="Chart of new mobile malware by McAfee Labs" /></p>
+<p><img src="/blog/img/new-mobile-malware-2016.png" alt="Chart of new mobile malware by McAfee Labs" /></p>
 
 <h3 id="wearables-as-the-new-sexy-attack-vector">Wearables as the new sexy attack vector</h3>
 
@@ -1207,7 +1207,7 @@ But, it was also clear from the responses, such as bringing up Daesh’s use of 
             <content type="html"><![CDATA[
 
 <p><em>A citizen’s guide (or to sound smart at cocktail parties)</em>
-<img src="/img/code-murica-flag.jpg" alt="Murica flag, cyber edition" /></p>
+<img src="/blog/img/code-murica-flag.jpg" alt="Murica flag, cyber edition" /></p>
 
 <p>While the first U.S. presidential debate included an open-ended, broad question about each candidate’s stance on cybersecurity, it accomplished little in helping citizens understand the candidates’ actual policy positions — nor why cybersecurity policies are relevant at all on the national scale. Saying “cybersecurity is important” for the U.S. today is like saying “having a military is important.”</p>
 
@@ -1227,7 +1227,7 @@ But, it was also clear from the responses, such as bringing up Daesh’s use of 
 
 <hr />
 
-<p><img src="/img/bad-cyberart-05.jpg" alt="Code dripping over the White House" /></p>
+<p><img src="blog/img/bad-cyberart-05.jpg" alt="Code dripping over the White House" /></p>
 
 <h2 id="a-name-crypto-backdoors-a-do-you-support-federally-mandated-encryption-back-doors"><a name="crypto-backdoors"></a>Do you support federally mandated encryption back doors?</h2>
 
@@ -1245,7 +1245,7 @@ But, it was also clear from the responses, such as bringing up Daesh’s use of 
 
 <p>The implications for an encryption backdoor are even worse than that analogy — at least in the physical lock case, there’s a slight barrier in that physical proximity is still needed to use the master key. In the digital case, a hacker doesn’t even have to move in order to use the master key across a bunch of different digital “locks” in any location in the world.</p>
 
-<p>The FBI has been the most notable proponent of encryption backdoors, as highlighted in their <a href="/posts/apple-vs-fbi-privacy-inequality/">battle with Apple earlier this year</a>. Further, in 2007, a <a href="http://www.nytimes.com/2013/09/06/us/nsa-foils-much-internet-encryption.html">backdoor was discovered in the encryption algorithm supported by the NSA</a>, which would have meant that companies who adopted the NSA’s recommend encryption algorithm would have developed software susceptible to attack or data interception. The argument in favor of encryption backdoors generally rests on the use of encryption by criminals or other bad actors, and the worry that encryption allows them to “go dark” (i.e. make it harder for someone to intercept or access their data).</p>
+<p>The FBI has been the most notable proponent of encryption backdoors, as highlighted in their <a href="/blog/posts/apple-vs-fbi-privacy-inequality/">battle with Apple earlier this year</a>. Further, in 2007, a <a href="http://www.nytimes.com/2013/09/06/us/nsa-foils-much-internet-encryption.html">backdoor was discovered in the encryption algorithm supported by the NSA</a>, which would have meant that companies who adopted the NSA’s recommend encryption algorithm would have developed software susceptible to attack or data interception. The argument in favor of encryption backdoors generally rests on the use of encryption by criminals or other bad actors, and the worry that encryption allows them to “go dark” (i.e. make it harder for someone to intercept or access their data).</p>
 
 <p>However, the overwhelming majority of cybersecurity experts are against backdoors, primarily because there’s absolutely no way to ensure that these “trap doors” aren’t discovered by hackers, criminals or combative nation-states and used against American citizens, corporations, banks, utilities, troops or the government itself. It cannot be stressed enough that the <a href="http://docs.house.gov/meetings/IF/IF02/20160419/104812/HHRG-114-IF02-Wstate-BlazeM-20160419-U3.pdf">“harsh technical realities make a [lawful access only] solution effectively impossible.”</a></p>
 
@@ -1283,7 +1283,7 @@ But, it was also clear from the responses, such as bringing up Daesh’s use of 
 
 <hr />
 
-<p><img src="/img/bad-cyberart-06.jpg" alt="Power lines, but with code on them for some reason" /></p>
+<p><img src="blog/img/bad-cyberart-06.jpg" alt="Power lines, but with code on them for some reason" /></p>
 
 <h2 id="a-name-critical-infra-a-how-would-you-improve-protection-of-critical-infrastructure-from-cyber-attacks"><a name="critical-infra"></a>How would you improve protection of critical infrastructure from cyber attacks?</h2>
 
@@ -1323,7 +1323,7 @@ But, it was also clear from the responses, such as bringing up Daesh’s use of 
 
 <hr />
 
-<p><img src="/img/bad-cyberart-07.jpg" alt="AFB Central Control facility" /></p>
+<p><img src="blog/img/bad-cyberart-07.jpg" alt="AFB Central Control facility" /></p>
 
 <h2 id="a-name-deterrence-offense-a-what-balance-would-you-strike-between-cyber-deterrence-and-offensive-cyber-operations-on-other-nations"><a name="deterrence-offense"></a>What balance would you strike between cyber deterrence and offensive cyber operations on other nations?</h2>
 
@@ -1364,7 +1364,7 @@ But, it was also clear from the responses, such as bringing up Daesh’s use of 
 
 <hr />
 
-<p><img src="/img/bad-cyberart-08.jpg" alt="Map of the USA but with code on it" /></p>
+<p><img src="blog/img/bad-cyberart-08.jpg" alt="Map of the USA but with code on it" /></p>
 
 <h2 id="conclusion">Conclusion</h2>
 
@@ -1422,7 +1422,7 @@ But, I’ve seen less in the way of seeking to understand defenders’ irrationa
 
 <p>C’s expected outcome is losing $3,000 while D’s is losing $3,200. Homo Economicus naturally chooses C, but turns out 92% of people choose D for having the small chance of losing nothing.</p>
 
-<p><img src="/img/prospect-theory-01.jpg" alt="A standard Prospect Theory graph" /><em>A standard Prospect Theory graph</em></p>
+<p><img src="/blog/img/prospect-theory-01.jpg" alt="A standard Prospect Theory graph" /><em>A standard Prospect Theory graph</em></p>
 
 <p>People are inconsistent in their choices based on whether decisions result in a loss or gain, as well as how the decisions are framed. There are four key tenets resulting from Prospect Theory that I’ll examine with the lens of infosec:</p>
 
@@ -1435,7 +1435,7 @@ But, I’ve seen less in the way of seeking to understand defenders’ irrationa
 
 <h2 id="a-name-defense-vs-offense-a-defense-vs-offense"><a name="defense-vs-offense"></a>Defense vs. Offense</h2>
 
-<p><img src="/img/bad-cyberart-01.jpg" alt="Toy soliders fighting on a keyboard" /><em>Get ready for more terrible cyber art throughout the post</em></p>
+<p><img src="/blog/img/bad-cyberart-01.jpg" alt="Toy soliders fighting on a keyboard" /><em>Get ready for more terrible cyber art throughout the post</em></p>
 
 <p>Through the lens of Prospect Theory, my own theory is that defenders operate in the “realm of losses” while attackers operate in the “realm of gains.” As shown above, people in the domain of losses tend to be more risk-seeking, while those in the gain domain tend to be risk averse. In fact, losses felt by those in the gain domain are overvalued by 3:1 relative to those in the loss domain. The further defenders get away from their reference point, the more they’ll opt for small probabilities of a big leap closer to it instead of more certain, incremental improvements — that is, become more risk-seeking and pay more attention to potential payoffs rather than probabilistic outcomes.</p>
 
@@ -1443,7 +1443,7 @@ But, I’ve seen less in the way of seeking to understand defenders’ irrationa
 
 <h2 id="a-name-infosec-ref-points-a-infosec-reference-points"><a name="infosec-ref-points"></a>InfoSec Reference Points</h2>
 
-<p><img src="/img/bad-cyberart-02.jpg" alt="Arrows that look oh-so-cyber" /><em>Look, they&rsquo;re pointing</em></p>
+<p><img src="/blog/img/bad-cyberart-02.jpg" alt="Arrows that look oh-so-cyber" /><em>Look, they&rsquo;re pointing</em></p>
 
 <p>In order to figure out the behavioral predilections of defenders and attackers within the infosec arena, we need to determine the reference points that guide their behavior. My theory on infosec reference points is the following:</p>
 
@@ -1461,7 +1461,7 @@ But, I’ve seen less in the way of seeking to understand defenders’ irrationa
 
 <h2 id="a-name-infosec-examples-a-empirical-examples-from-infosec"><a name="infosec-examples"></a>Empirical Examples from InfoSec</h2>
 
-<p><img src="/img/threatbutt-map.PNG" alt="Threatbutt's Cyber Attribution Map" /><em>ThreatButt: the #1 must-have, best-of-breed, military-grade enterprise cyber defense-in-derpth platform</em></p>
+<p><img src="/blog/img/threatbutt-map.PNG" alt="Threatbutt's Cyber Attribution Map" /><em>ThreatButt: the #1 must-have, best-of-breed, military-grade enterprise cyber defense-in-derpth platform</em></p>
 
 <p>It’s important to highlight some examples of “irrational” behavior within infosec as a frame of reference for general theory, specifically focusing on differences in adoption (and hype) of various defensive security products. Irrational can be a subjective term, so I mean it in both the “counter to one’s own benefit” way and the “most outside observers think this is illogical” way.</p>
 
@@ -1483,7 +1483,7 @@ But, I’ve seen less in the way of seeking to understand defenders’ irrationa
 
 <h2 id="a-name-infosec-incentives-a-incentives-in-infosec"><a name="infosec-incentives"></a>Incentives in InfoSec</h2>
 
-<p><img src="/img/bad-cyberart-03.jpg" alt="It's a compass whose needle is pointing to &quot;security&quot;" /><em>Helps determine the direction of a cyber object from the observer</em></p>
+<p><img src="/blog/img/bad-cyberart-03.jpg" alt="It's a compass whose needle is pointing to &quot;security&quot;" /><em>Helps determine the direction of a cyber object from the observer</em></p>
 
 <p>With the above as a reference, I’m going to walk through each of the four key tenets and examine their likely implications in infosec, and how they can explain the “irrational” decision making that many bemoan.</p>
 
@@ -1555,7 +1555,7 @@ But, I’ve seen less in the way of seeking to understand defenders’ irrationa
 
 <h2 id="a-name-conclusion-a-conclusion"><a name="conclusion"></a>Conclusion</h2>
 
-<p><img src="/img/bad-cyberart-04.gif" alt="A very stupid looking gif of &quot;hacking&quot;" /><em>Real hackers use this leet virtual reality module for their attacks</em></p>
+<p><img src="/blog/img/bad-cyberart-04.gif" alt="A very stupid looking gif of &quot;hacking&quot;" /><em>Real hackers use this leet virtual reality module for their attacks</em></p>
 
 <p>I really believe understanding the motivations behind this “irrational” defensive behavior is empowering. While even I tend to veer towards hyperbole when describing offense’s advantages, the offense isn’t invisible nor is their decision-making flawless, and I think Prospect Theory helps identify those vulnerabilities — so now the challenge is for defense to start exploiting them.</p>
 
@@ -1575,7 +1575,7 @@ But, I’ve seen less in the way of seeking to understand defenders’ irrationa
 Table of Contents:  So what is bioinformatics? What are the applications? What&amp;rsquo;s hindering adoption? Who cares? What are the risks? What&amp;rsquo;s the current scene? Conclusion  So what is bioinformatics? Simply put, bioinformatics is software used to understand biological data, including (but not limited to) genomic sequences.</description>
             <content type="html"><![CDATA[
 
-<p><img src="/img/bioinformatics-02.jpg" alt="stylized pic of a double helix" /></p>
+<p><img src="/blog/img/bioinformatics-02.jpg" alt="stylized pic of a double helix" /></p>
 
 <p><em>WTFunding is one of my “spare time” projects to delve into tech sectors attracting VC funding that pique my curiosity. I like connecting dots between disparate things, it’s also pretty useful.</em></p>
 
@@ -1599,7 +1599,7 @@ Table of Contents:  So what is bioinformatics? What are the applications? What&a
 
 <h3 id="how-are-living-things-made">How are living things made?</h3>
 
-<p><img src="/img/bioinformatics-01.gif" alt="Mr. DNA from Jurassic Park gif" /><em>The <a href="https://www.youtube.com/watch?v=qUaFYzFFbBU">reference</a>, for those who have had the misfortune of never watching “Jurassic Park.”</em></p>
+<p><img src="/blog/img/bioinformatics-01.gif" alt="Mr. DNA from Jurassic Park gif" /><em>The <a href="https://www.youtube.com/watch?v=qUaFYzFFbBU">reference</a>, for those who have had the misfortune of never watching “Jurassic Park.”</em></p>
 
 <p>Let’s start with what constitutes life. The simplest unit of a living thing is a cell; some living things just have one cell, whereas others, like humans, have something like 37.2 trillion cells. Each cell has a nucleus, which is home to most of the genetic material within cells. Within the nucleus lies chromosomes, which are made of protein and DNA.</p>
 
@@ -1614,7 +1614,7 @@ Table of Contents:  So what is bioinformatics? What are the applications? What&a
 <p>Introns, in contrast, don’t code for proteins. Their relevance to this discussion is that they happen to also show where individual genes are separated. That isn’t to say that they are useless otherwise — they’re quite important for regulating how proteins show up in cells, but that’s not important for what I’ll be covering.</p>
 
 <p>This is a good illustration of how all these things link:
-<img src="/img/bioinformatics-03.png" alt="Reference pic about chromosomes, DNA, nucleosome, etc." /></p>
+<img src="/blog/img/bioinformatics-03.png" alt="Reference pic about chromosomes, DNA, nucleosome, etc." /></p>
 
 <p>When you put all the genes within a living thing together, you get its genome. You might be familiar with the Human Genome Project, which is an international research body launched in 1990 dedicated towards mapping out the “human genome.” I have “human genome” in quotes because what they mapped out is an amalgamation of genomes — each human being has a unique genome with special variants in genes. They accomplished their goal in 2003, making it a warm and fuzzy example of the world banding together towards the common good.</p>
 
@@ -1622,7 +1622,7 @@ Table of Contents:  So what is bioinformatics? What are the applications? What&a
 
 <h3 id="dna-sequencing-process">DNA Sequencing Process</h3>
 
-<p><img src="/img/bioinformatics-04.png" alt="Pic of DNA encoding" /></p>
+<p><img src="/blog/img/bioinformatics-04.png" alt="Pic of DNA encoding" /></p>
 
 <p>Before you can figure out the purpose of specific genes, the DNA in question must first be sequenced. For simplicity’s sake I’m sticking with DNA sequencing in this section vs. other types of sequencing, because an already lengthy post would have to become a novel.</p>
 
@@ -1634,7 +1634,7 @@ Table of Contents:  So what is bioinformatics? What are the applications? What&a
 
 <p>First you have to start with some sort of sample from which to extract DNA. It can be from blood, fossils, saliva or tissues, although saliva is now the go-to for collecting samples from humans given its ease of procurement.</p>
 
-<p><img src="/img/bioinformatics-05.jpg" alt="DNA purification" /></p>
+<p><img src="/blog/img/bioinformatics-05.jpg" alt="DNA purification" /></p>
 
 <h5 id="2-starting-material">2. Starting Material</h5>
 
@@ -1658,7 +1658,7 @@ Table of Contents:  So what is bioinformatics? What are the applications? What&a
 
 <p>First, let’s take a look at how a DNA molecule looks, broken apart by its ribbons (or strands):</p>
 
-<p><img src="/img/dna-molecule.png" alt="Diagram of a DNA molecule broken apart by its ribbons / strands, by Kelly Shortridge" /></p>
+<p><img src="/blog/img/dna-molecule.png" alt="Diagram of a DNA molecule broken apart by its ribbons / strands, by Kelly Shortridge" /></p>
 
 <p>Each arrow represents one strand of DNA; I’ve laid this out linearly, but as you very likely know (and if the abundance of pictures in this post hasn’t reinforced it), the strands twist to form a double helix. The 3’ end of one of the DNA strands aligns with the 5’ end of its partner strand.The way the DNA molecule is “read” is from 5’ to 5’. So, if the 5’ ends of both strands stick out farther than each other, the strands will be “repaired” by combining them together and filling in the gaps (A with T and C with G).</p>
 
@@ -1668,13 +1668,13 @@ Table of Contents:  So what is bioinformatics? What are the applications? What&a
 
 <h4 id="amplification">Amplification</h4>
 
-<p>Polymerase chain reactions (PCR) is used effectively as a copy machine for a DNA sequence, or what’s known as “amplification.” This thinking is actually somewhat similar to the methods for improving image quality within satellite imagery that <a href="/posts/wtfunding-space-data-satellite-imagery/">I discussed in my prior post</a>. If you think of the target DNA as an object to be captured within a landscape, it’s far easier to take a bunch of quick pictures of it than take one big, detailed picture of the landscape and try to extract the object from it.</p>
+<p>Polymerase chain reactions (PCR) is used effectively as a copy machine for a DNA sequence, or what’s known as “amplification.” This thinking is actually somewhat similar to the methods for improving image quality within satellite imagery that <a href="/blog/posts/wtfunding-space-data-satellite-imagery/">I discussed in my prior post</a>. If you think of the target DNA as an object to be captured within a landscape, it’s far easier to take a bunch of quick pictures of it than take one big, detailed picture of the landscape and try to extract the object from it.</p>
 
 <p>This process follows an exponential curve, too, since you’re making copies of the copies. After just 6 cycles, you have 64 copies of the target gene. After ten, you have 1,024. These copies then make up a “DNA colony” to be sequenced.</p>
 
 <h4 id="sequence-reaction">Sequence Reaction</h4>
 
-<p><img src="/img/bioinformatics-06.gif" alt="DNA sequencing gif" /><em>Note: this is a sequencing UI from a TV show and thus should be disregarded entirely as resembling reality</em></p>
+<p><img src="/blog/img/bioinformatics-06.gif" alt="DNA sequencing gif" /><em>Note: this is a sequencing UI from a TV show and thus should be disregarded entirely as resembling reality</em></p>
 
 <p>NGS is also known as high-throughput sequencing, which just means that there’s tons more data that comes out of the sequencing process, and it’s due to parallelization. There are a few different sub-methods of NGS, the most common of which seems to be Illumina’s sequencing by synthesis (SBS) — though the others also depend on the sort of library preparation and amplification discussed above.</p>
 
@@ -1697,11 +1697,11 @@ Table of Contents:  So what is bioinformatics? What are the applications? What&a
 <p>The other primary assembly algorithm is the de Bruijn graph (DBG), which also is based on graph theory. First, the reads are broken into smaller pieces of the same size (called k-mers). Then, the graph is created by ordering from the pieces that overlap at the beginning of the sequence to those that overlap at the end. This sounds linear, but isn’t.</p>
 
 <p>The image below should help visualize each algorithm and compare how they differ:
-<img src="/img/overlap-consensus-de-bruijn-graph.png" alt="Visualizing the de Bruijn graph and overlap-layout-consensus algorithms, by Kelly Shortridge" /></p>
+<img src="/blog/img/overlap-consensus-de-bruijn-graph.png" alt="Visualizing the de Bruijn graph and overlap-layout-consensus algorithms, by Kelly Shortridge" /></p>
 
 <p>To move on, let’s assume for now you’ve done a pretty good job sequencing and assembling the DNA in question. It’s not just there to be admired, but to gain something useful out of it, which leads into sequence analysis.</p>
 
-<p><img src="/img/velociraptor-dna.jpg" alt="Raptor with DNA overlayed" /><em>An example of a DNA sequence and foreshadowing of my “what are the risks” section</em></p>
+<p><img src="/blog/img/velociraptor-dna.jpg" alt="Raptor with DNA overlayed" /><em>An example of a DNA sequence and foreshadowing of my “what are the risks” section</em></p>
 
 <h3 id="sequence-analysis">Sequence Analysis</h3>
 
@@ -1717,13 +1717,13 @@ Table of Contents:  So what is bioinformatics? What are the applications? What&a
 
 <p>The most commonly used tool for homology search is BLAST, for “Basic Local Alignment Search Tool,” which is favored due to its speed, at the expense of some accuracy. For those familiar with statistics, it’s a heuristic algorithm. The way it compares a query sequence to a sequence database is by finding “high-scoring pairs,” or HSPs for short, which represent overlaps that seem statistically significant. The speed comes from creating “words” within a sequence, which are generally 11 letters long in DNA sequences, and running the search on each word, narrowing down which HSPs fit as the search moves through the letters. This constitutes a substitution matrix, and would look something like this in BLAST:</p>
 
-<p><img src="/img/substitution-matrix-dna.png" alt="An illustration of a substitution matrix for DNA sequence analysis, by Kelly Shortridge" /></p>
+<p><img src="/blog/img/substitution-matrix-dna.png" alt="An illustration of a substitution matrix for DNA sequence analysis, by Kelly Shortridge" /></p>
 
 <p>While BLAST is the current market leader, improving upon it is clearly an area of interest within academia. Like in many data science projects, making an algorithm both faster and more accurate is the holy grail. For projects with lots of sequence data, BLAST becomes computationally expensive — and given the explosion of sequence data in recent years, researchers have developed and proposed alternatives that potentially offer greater efficiency and ameliorate computational cost concerns. I could publish an academic journal on all the approaches proposed, but I’ll explain one I find particularly neat and badassly-named, GHOSTX.</p>
 
 <p>GHOSTX’s speed advantage is by analyzing both length and match score — the algorithm will only ingest sequences that are both close to the appropriate length of the target sequence and deemed to be statistically similar content-wise. To oversimplify a bit, it’s able to do this by using suffix arrays, an example of which is below:</p>
 
-<p><img src="/img/suffix-array-dna.png" alt="An illustration of GHOSTX and suffix arrays for DNA sequence analysis, by Kelly Shortridge" /></p>
+<p><img src="/blog/img/suffix-array-dna.png" alt="An illustration of GHOSTX and suffix arrays for DNA sequence analysis, by Kelly Shortridge" /></p>
 
 <p>This is much more efficient for searching, since now you just have an array with pointers to text snippets (suffixes) that are sorted in alphabetical order. So, what’s being stored isn’t “A$,” “ATA$” and so forth, but “7” or “5”, that is, what’s stored is only the code for where in the list the suffix lies. In other words, you now have an index for all the different suffixes, making it easy to find where your sequence matches others in the database.</p>
 
@@ -1759,7 +1759,7 @@ Table of Contents:  So what is bioinformatics? What are the applications? What&a
 
 <h4 id="upload-stop-collaborate-and-listen">Upload &amp; Stop, Collaborate and Listen</h4>
 
-<p><img src="/img/cold-storage-dino-dna.jpg" alt="Cold storage of dino DNA" /><em>This is not the sort of DNA data storage I mean.</em></p>
+<p><img src="/blog/img/cold-storage-dino-dna.jpg" alt="Cold storage of dino DNA" /><em>This is not the sort of DNA data storage I mean.</em></p>
 
 <p>Once the DNA has been sequenced and annotated, it has to be stored…which sounds simple enough, but isn’t quite. In a brief crossover to my industry, security and compliance is actually pretty important when considering biological storage; after all, someone’s genome is extremely private information (though admittedly a mouse probably doesn’t care if their genomic data gets hacked).</p>
 
@@ -1769,7 +1769,7 @@ Table of Contents:  So what is bioinformatics? What are the applications? What&a
 
 <p>Collaboration is another key part of the bioinformatics end-stage. For example, when designing a pharmaceutical drug, the R&amp;D team needs to collaborate with the clinical trials team, who needs to collaborate with the clinical team in order to maintain a complete feedback loop. So, bioinformatics software is also about optimizing workflows to produce more robust results — which may sound ridiculously outmoded to techies at the cutting edge, but, well, there it is.</p>
 
-<p><img src="/img/ian-malcolm-there-it-is.gif" alt="Ian Malcolm gif saying &quot;Well, there it is&quot;" /><em>The O.G. thought leader.</em></p>
+<p><img src="/blog/img/ian-malcolm-there-it-is.gif" alt="Ian Malcolm gif saying &quot;Well, there it is&quot;" /><em>The O.G. thought leader.</em></p>
 
 <p>Now with these query-able databases of annotated genes, i.e. you have your sequenced DNA handy and know more or less what the random letters mean in a biological sense, you can now get to work on using them towards a variety of use cases.</p>
 
@@ -1783,7 +1783,7 @@ Table of Contents:  So what is bioinformatics? What are the applications? What&a
 
 <h3 id="pharmaceuticals">Pharmaceuticals</h3>
 
-<p><img src="/img/bioinformatics-07.JPG" alt="Pharmaceutical person doing something" /></p>
+<p><img src="/blog/img/bioinformatics-07.JPG" alt="Pharmaceutical person doing something" /></p>
 
 <p>Pharmaceutical companies can leverage bioinformatics for a variety of applications, from target discovery and drug design to improving the efficacy of existing drugs.</p>
 
@@ -1801,7 +1801,7 @@ Table of Contents:  So what is bioinformatics? What are the applications? What&a
 
 <h3 id="precision-personalized-medicine">Precision / Personalized Medicine</h3>
 
-<p><img src="/img/bioinformatics-08.jpg" alt="Doctor with an adorable puppy" /><em>In 2030, scientists will discover the key to all health issues is giving someone a puppy.</em></p>
+<p><img src="/blog/img/bioinformatics-08.jpg" alt="Doctor with an adorable puppy" /><em>In 2030, scientists will discover the key to all health issues is giving someone a puppy.</em></p>
 
 <p>“Personalized” or “precision” medicine is all about tailoring treatment and prevention based on an individual’s unique characteristics, including their genes. It’s unrealistic (or so my 2016 brain believes) to assume that in 2100 AD there will be a unique drug for each person and their conditions, but it is realistic to assume, even in the nearish future, that populations can be segmented in a way to substantially improve treatment. This isn’t just about drugs, either — it extends to medical devices along with prevention of diseases, too.</p>
 
@@ -1815,7 +1815,7 @@ Table of Contents:  So what is bioinformatics? What are the applications? What&a
 
 <h3 id="genetic-testing">Genetic Testing</h3>
 
-<p><img src="/img/bioinformatics-09.jpg" alt="Newborn baby's foot" /></p>
+<p><img src="/blog/img/bioinformatics-09.jpg" alt="Newborn baby's foot" /></p>
 
 <p>Genetic testing arguably must serve as the basis for any personalized medicine initiative, as only by knowing an individual’s genes can any treatment plans be tailored. A genetic test is simply a test that identifies either the person’s genes or changes in their genes (including proteins). There are currently a few uses for genetic tests, or at least uses cases leveraged in marketing.</p>
 
@@ -1833,7 +1833,7 @@ Table of Contents:  So what is bioinformatics? What are the applications? What&a
 
 <p>The next part is using CRISPR-associated proteins, or “Cas,” that will actually chop virus DNA in half like a pair of scissors upon confrontation, the result being that the virus can no longer replicate.</p>
 
-<p><img src="/img/crispr.gif" alt="Gif of how Crispr works" /></p>
+<p><img src="/blog/img/crispr.gif" alt="Gif of how Crispr works" /></p>
 
 <p>This is pretty cool stuff, and while most of the research leveraging this technology is towards curing diseases, this could make the “designer baby” fears a reality, or even facilitate genetically engineered bioweapons (more on the latter in the “risks” section).</p>
 
@@ -1841,7 +1841,7 @@ Table of Contents:  So what is bioinformatics? What are the applications? What&a
 
 <h2 id="a-name-adoption-a-what-s-hindering-adoption"><a name="adoption"></a>What&rsquo;s hindering adoption?</h2>
 
-<p><img src="/img/bioinformatics-12.jpg" alt="A faceless person in a latex suit with DNA printed on them" /><em>In the future, apparently we’ll be featureless and wear latex suits with our genomes printed on them.</em></p>
+<p><img src="/blog/img/bioinformatics-12.jpg" alt="A faceless person in a latex suit with DNA printed on them" /><em>In the future, apparently we’ll be featureless and wear latex suits with our genomes printed on them.</em></p>
 
 <p>Now that sequencing costs have decreased, what are the other barriers to progress? A common theme that’s emerging from these WTFunding pieces it that being able to manage and analyze a lot of complex data turns out to be really hard…and bioinformatics is not different.</p>
 
@@ -1859,7 +1859,7 @@ Table of Contents:  So what is bioinformatics? What are the applications? What&a
 
 <h2 id="a-name-who-cares-a-who-cares"><a name="who-cares"></a>Who cares?</h2>
 
-<p><img src="/img/bioinformatics-11.jpg" alt="Image of pills over twenty dollar bills" /><em>Pillz on ya billz</em></p>
+<p><img src="/blog/img/bioinformatics-11.jpg" alt="Image of pills over twenty dollar bills" /><em>Pillz on ya billz</em></p>
 
 <p>VCs love numbers, so I’m going to present the big, high-level ones first:</p>
 
@@ -1889,7 +1889,7 @@ Table of Contents:  So what is bioinformatics? What are the applications? What&a
 
 <h2 id="a-name-risks-a-what-are-the-risks"><a name="risks"></a>What are the risks?</h2>
 
-<p><img src="/img/ian-malcolm-warning.gif" alt="Ian Malcolm saying &quot;yeah, yeah, but your scientists were so preoccupied with whether or not they could that they didn't stop to think if they should&quot;" /><em>And we all know how well Jurassic Park turned out</em></p>
+<p><img src="/blog/img/ian-malcolm-warning.gif" alt="Ian Malcolm saying &quot;yeah, yeah, but your scientists were so preoccupied with whether or not they could that they didn't stop to think if they should&quot;" /><em>And we all know how well Jurassic Park turned out</em></p>
 
 <p>There’s a pretty clear incentive problem on the pharmaceutical side. Pharma companies’ goal is to have more people buy their drugs. One way to incentivize more people to buy your drugs is by recommending certain drugs based on a person’s genetic profile. In a world in which genetic testing was performed by an altruistic, neutral third party, people might only be prescribed the drugs they need. In a world in which pharma companies have massive budgets, particularly for marketing, it isn’t difficult to imagine that they might “sponsor” genetic testing recommendations to ensure that their drugs are recommended.</p>
 
@@ -1903,7 +1903,7 @@ Table of Contents:  So what is bioinformatics? What are the applications? What&a
 
 <p>On a geopolitical note, improvements in understanding the human genome also open up nefarious applications. At the “mildly evil” end of the evil scale, there’s genetic modification to win sporting events like the Olympics; at the “really evil” end of the evil scale, there’s creating highly targeted biological weapons to conduct warfare against a specific subpopulation, i.e. biological genocide. In fact, this year the U.S. Intelligence Community added gene editing to its <a href="https://www.dni.gov/files/documents/SASC_Unclassified_2016_ATA_SFR_FINAL.pdf">“Worldwide Threat Assessment”</a> report.</p>
 
-<p><img src="/img/bioinformatics-10.jpg" alt="Snake with needles for fangs, it's pretty weird" /><em>Implanting needles in snakes’ mouths as fangs is clearly the most efficient bioweapon distribution mechanism…</em></p>
+<p><img src="/blog/img/bioinformatics-10.jpg" alt="Snake with needles for fangs, it's pretty weird" /><em>Implanting needles in snakes’ mouths as fangs is clearly the most efficient bioweapon distribution mechanism…</em></p>
 
 <p>Heretofore, the scale needed for biological weapons has limited it due to the rigorous research and development process that synthetic pathogens require. But thanks to improvements in sequencing technology and analysis, it’s far easier to sequence viruses, which means it’s potentially easier to create new viruses, too!</p>
 
@@ -1988,7 +1988,7 @@ Table of Contents:  So what is bioinformatics? What are the applications? What&a
 
 <h2 id="a-name-conclusion-a-conclusion"><a name="conclusion"></a>Conclusion</h2>
 
-<p><img src="/img/life-finds-a-way.gif" alt="Ian Malcolm saying &quot;Life finds a way&quot;" /><em>Bioinformatics startups will find a way</em></p>
+<p><img src="/blog/img/life-finds-a-way.gif" alt="Ian Malcolm saying &quot;Life finds a way&quot;" /><em>Bioinformatics startups will find a way</em></p>
 
 <p>The implications of a more mature bioinformatics industry are pretty radical — from curing cancer to having vastly improved patient outcomes resulting from personalized medicine. I think it’s evident from the simplicity of some current solutions, such as basic data management and collaboration tools, that there’s a long way to go until this area becomes sufficiently sophisticated and automated.</p>
 
@@ -2012,7 +2012,7 @@ Table of Contents:  So what is bioinformatics? What are the applications? What&a
             <guid>//swagitda.github.io/blog/posts/apple-vs-fbi-privacy-inequality/</guid>
             <description>In recent news, there’s been a fiery public relations battle between the FBI and Apple. While there has been vocal protest by the technology community, and particularly the information security community, against the FBI’s request, it has largely been rooted in (very valid) concerns over the degradation of software security, national security and privacy in a general sense. However, there’s a larger societal concern that cannot be ignored.
 By way of brief background, the gist of the legal fight is that the FBI wants Apple to create a custom version of its operating system for iPhones, iOS, that would allow it to circumvent the safety measure of reducing the frequency with which the device’s passcode can be guessed when locked.</description>
-            <content type="html"><![CDATA[<p><img src="/img/apple-privacy-scales.png" alt="Scales of justice, with an iPhone on one side" /></p>
+            <content type="html"><![CDATA[<p><img src="/blog/img/apple-privacy-scales.png" alt="Scales of justice, with an iPhone on one side" /></p>
 
 <p>In recent news, there’s been a fiery public relations battle between the FBI and Apple. While there has been vocal protest by the technology community, and particularly the information security community, against the FBI’s request, it has largely been rooted in (very valid) concerns over the degradation of software security, national security and privacy in a general sense. However, there’s a larger societal concern that cannot be ignored.</p>
 
@@ -2060,7 +2060,7 @@ By way of brief background, the gist of the legal fight is that the FBI wants Ap
 Table of Contents:  So what is &amp;ldquo;space data&amp;rdquo; and &amp;ldquo;satellite imagery&amp;rdquo;? What are the applications? What&amp;rsquo;s hindering adoption? Who cares? What are the risks? What&amp;rsquo;s the current scene? Conclusion  So what is &amp;ldquo;space data&amp;rdquo; and &amp;ldquo;satellite imagery&amp;rdquo;?</description>
             <content type="html"><![CDATA[
 
-<p><img src="/img/satellite-01.jpg" alt="Satellite observing Earth" /></p>
+<p><img src="/blog/img/satellite-01.jpg" alt="Satellite observing Earth" /></p>
 
 <p><em>WTFunding is one of my “spare time” projects to delve into tech sectors attracting VC funding that pique my curiosity. I like connecting dots between disparate things, it’s also pretty useful.</em></p>
 
@@ -2088,7 +2088,7 @@ Table of Contents:  So what is &amp;ldquo;space data&amp;rdquo; and &amp;ldquo;s
 
 <h3 id="step-1-launch-to-orbit">Step 1: Launch to Orbit</h3>
 
-<p><img src="/img/satellite-02.jpg" alt="Landsat 8, an Earth Observation satellite operated by NASA" /><em>Landsat 8, an Earth Observation satellite operated by NASA.</em></p>
+<p><img src="/blog/img/satellite-02.jpg" alt="Landsat 8, an Earth Observation satellite operated by NASA" /><em>Landsat 8, an Earth Observation satellite operated by NASA.</em></p>
 
 <p>I’ll be focusing on remote sensing satellites, but there are also communications and weather satellites and reconnaissance (aka spy) satellites and maybe even satellites that can shoot lasers out of the sky (<a href="https://commons.wikimedia.org/wiki/File:Nothing_is_beyond_our_reach.svg">nothing is beyond their reach</a>, after all). First, let’s cover some basics about satellites.</p>
 
@@ -2100,13 +2100,13 @@ Table of Contents:  So what is &amp;ldquo;space data&amp;rdquo; and &amp;ldquo;s
 
 <p>Objects on Earth reflect energy from the Sun. This energy is in different “bands,” typically visible, infrared and water vapor. Each object reflects a different amount of energy, giving them a “spectral signature.” “Remote sensing” is how satellites collects these reflections — and just means sensing the energy bands from a remote place (like the Earth’s orbit).</p>
 
-<p><img src="/img/energy-reflection.png" alt="How remote sensing works, diagram by Kelly Shortridge" /><em>How remote sensing works (no animals were harmed in the making of this image).</em></p>
+<p><img src="/blog/img/energy-reflection.png" alt="How remote sensing works, diagram by Kelly Shortridge" /><em>How remote sensing works (no animals were harmed in the making of this image).</em></p>
 
 <p>Satellites carry sensors that allow them to do this remote sensing. Passive sensors just collect the reflections (radiation) that are emitted from Earth, using the Sun’s energy as its source of electromagnetic radiation. Active sensing systems carry their own source of electromagnetic radiation, which is directed to the Earth’s surface. Just like the passive sensing system, it then measures the amount of energy that is reflected back.</p>
 
 <p>Different sensors are designed to measure different parts of the electromagnetic spectrum. For example, the 450nm - 495nm wavelength band would measure the visible color blue. The 570nm - 590nm wavelength band would measure the visible color yellow. And near-infrared is the ~700nm - 1mm wavelength band.</p>
 
-<p><img src="/img/EM-spectrum.png" alt="The Electromagnetic Spectrum" /><em>The Electromagnetic Spectrum</em></p>
+<p><img src="/blog/img/EM-spectrum.png" alt="The Electromagnetic Spectrum" /><em>The Electromagnetic Spectrum</em></p>
 
 <p>Luckily, the electromagnetic spectrum is pretty handy for identifying objects. The way objects reflect back energy is consistent and tends to be unique. Water doesn’t reflect much visible or infrared energy, but vegetation strongly reflects infrared.</p>
 
@@ -2126,15 +2126,15 @@ Table of Contents:  So what is &amp;ldquo;space data&amp;rdquo; and &amp;ldquo;s
 
 <p>Another important thing to keep in mind is that satellites are not necessarily taking photographs; these sensors are not cameras (though those spy satellites sometimes do use long-focus lenses). The mechanism is through sensing energy bands. Hence the industry lingo is remote sensing. Each image represents a lot of pixels arranged in rows and columns — think of it like putting a fragment of an image into 1,000 rows by 1,000 columns in Excel, and then zooming way out to see the full picture.</p>
 
-<p><img src="/img/pixel.png" alt="One pixel example" /></p>
+<p><img src="/blog/img/pixel.png" alt="One pixel example" /></p>
 
 <p>To continue that analogy, that Excel file would then represent what’s called a “scene.” Scenes can represent over 2,000km on each side. These scenes are what most people buy since they want the “big picture,” not a tiny snippet of whatever is being observed.</p>
 
-<p><img src="/img/pixel-to-scene.png" alt="Showing how one pixel becomes a scene" /></p>
+<p><img src="/blog/img/pixel-to-scene.png" alt="Showing how one pixel becomes a scene" /></p>
 
 <p>Again, this scene represents a physical object on the Earth’s surface. In our cat’s case, let’s say it’s just over a foot tall sitting upright, which is about 0.33m. In the scene, we can see the entire physical object (the cat) and features as small as its nose, so using its nose as a proxy for the smallest detectable feature, our resolution is approximately 0.01m — meaning we’re likely using a super secret spy satellite to spot Mr. Whiskers.</p>
 
-<p><img src="/img/pixel-and-resolution.png" alt="Showing how pixel and resolution relate" /></p>
+<p><img src="/blog/img/pixel-and-resolution.png" alt="Showing how pixel and resolution relate" /></p>
 
 <p>Multispectral scenes can represent a large amount of data, often with tens of millions of bytes (10MB+) per scene. This is because the intensity of each pixels is stored as a single byte (an 8-bit digital number), and there are typically millions of pixels in any given scene. Recorded video can hog even more data, and high quality video is a more newly available product — and typically no longer than two minutes. How video can be used to track objects on the ground is a longer discussion that mostly talks about error correction.</p>
 
@@ -2144,7 +2144,7 @@ Table of Contents:  So what is &amp;ldquo;space data&amp;rdquo; and &amp;ldquo;s
 
 <p>Why is there a human required, you might ask? While it’d be fantastic to have automated image analysis software that can intelligently scan images and highlight relevant objects or issues, that’s not the current state of things at all. Humans still sadly need to be involved to help with filtering and classification based on their project goals.</p>
 
-<p><img src="/img/satellite-03.png" alt="Satellite imagery of wildfires in Idaho" /><em>Satellite imagery of wildfires in Idaho</em></p>
+<p><img src="/blog/img/satellite-03.png" alt="Satellite imagery of wildfires in Idaho" /><em>Satellite imagery of wildfires in Idaho</em></p>
 
 <p>Processing is part of image analysis, which requires special types of statistics and analytical methods that are tailored for spatial data — though primarily anchored around interpolation (predicting new, unknown data points within a group of some known data points). There’s an emphasis in geostatistics in being able to estimate how much the gaps that are filled in via prediction might be wrong; things like elevation for 3D modeling are particularly tricky to determine aerially, so there is ripe opportunity for error. One example method is kriging, which helps predict the appropriate values in unobserved locations by using a weighted average of surrounding areas and estimating its accuracy.</p>
 
@@ -2154,7 +2154,7 @@ Table of Contents:  So what is &amp;ldquo;space data&amp;rdquo; and &amp;ldquo;s
 
 <p>The typical chain of image processing is data import, image restoration &amp; rectification, image enhancement and information extraction. The methods for performing this processing chain have been shifting somewhat in recent years. Now, satellite data can be retrieved via APIs and similarly are various tools for processing made available via APIs. But, to understand some of the challenges, it’s important to walk through these steps.</p>
 
-<p><img src="/img/image-processing-chain.png" alt="Showing the steps in satellite image processing" /></p>
+<p><img src="/blog/img/image-processing-chain.png" alt="Showing the steps in satellite image processing" /></p>
 
 <h4 id="data-import">Data Import</h4>
 
@@ -2162,7 +2162,7 @@ Table of Contents:  So what is &amp;ldquo;space data&amp;rdquo; and &amp;ldquo;s
 
 <p>The images the satellites take are generally compressed on-board, with their total storage nearing a terabyte. Some can even perform image fusion (which is discussed shortly) before transmission to help improve the image’s resolution.</p>
 
-<p>There are various GIS data formats and different types of data that can be imported. Much like <a href="/posts/wtfunding-industrial-manufacturing-analytics/">in my prior post</a>, a number of different vendors have their own data formats, and they are often proprietary, making a lot of big data analysis stuff a lot harder. There are also unique data formats for specific parts of imagery &ndash; such as the feature geometry, feature attributes, topology, etc.</p>
+<p>There are various GIS data formats and different types of data that can be imported. Much like <a href="/blog/posts/wtfunding-industrial-manufacturing-analytics/">in my prior post</a>, a number of different vendors have their own data formats, and they are often proprietary, making a lot of big data analysis stuff a lot harder. There are also unique data formats for specific parts of imagery &ndash; such as the feature geometry, feature attributes, topology, etc.</p>
 
 <p>Satellite imagery is commonly stored in digital numbers (DN), which means each pixel gets a value in 8-16 bits for a physical value (like color or temperature). This helps minimizing the storage volume.</p>
 
@@ -2174,7 +2174,7 @@ Table of Contents:  So what is &amp;ldquo;space data&amp;rdquo; and &amp;ldquo;s
 
 <p>Analysis techniques are used to create and define models of relationships between different data sets. The traditionally used technique is the entity-relationship model. In this, there are specific entities, like buildings, forests, and agricultural land, which have different attributes and “members” of the entities (like government, residential or religious buildings). The relationship part of entity-relationship just means members of these entities are compared; for example, you could compare different residential buildings in New York City to determine what attributes they have in common (perhaps they have rooftop gardens, are thinner, etc.).</p>
 
-<p><img style="float: right;" src="/img/relational-model.png" alt="relational database model"/></p>
+<p><img style="float: right;" src="/blog/img/relational-model.png" alt="relational database model"/></p>
 
 <p>The relational model works well for this sort of data, since it allows for different datasets to be compared. The key (pun intended) here is that there are keys for each entry in the data sets that link the data sets between each other.</p>
 
@@ -2204,7 +2204,7 @@ Table of Contents:  So what is &amp;ldquo;space data&amp;rdquo; and &amp;ldquo;s
 
 <p>Processing might start with getting true color on the images (i.e. making it look like a photograph, with blue water, green forests, etc.). You might be familiar with RGB values, (255, 255, 255 being white), which represent an 8-bit image color range. Sometimes it’s better to have false color, which just means using unnatural colors to help highlight differences between energy bands. If your goal is to see levels of vegetation, then you may prefer a false-color composite (FCC) that lets the infrared bands really pop.</p>
 
-<p><img src="/img/satellite-04.png" alt="False color satellite imagery" /><em>False color imagery</em></p>
+<p><img src="/blog/img/satellite-04.png" alt="False color satellite imagery" /><em>False color imagery</em></p>
 
 <p>After that, you might want to make sure your image is accurate, or what is called “georectification.” You can use what are called ground control points (GCP), which just means using the coordinates of known locations on a map in order to make sure the image’s coordinates map the real physical location. There’s also “orthorectification,” which removes issues of scale by accounting for different tilts and terrains — the more diverse the Earth’s surface is, the more likely there will be distortions in the image.</p>
 
@@ -2216,7 +2216,7 @@ Table of Contents:  So what is &amp;ldquo;space data&amp;rdquo; and &amp;ldquo;s
 
 <p>The image enhancement phase is to improve the quality of the imagery. Some enhancements are familiar due to their use in photography, such as contrast enhancement to help highlight the differences within an image. Spatial filtering involves directly manipulating pixels for some effect. If you’ve ever played around with filters in Photoshop, or even on your phone, you get the picture. These can include image sharpening or softening, embossing, etc.</p>
 
-<p><img src="/img/satellite-imagery-fusion.png" alt="Satellite image fusion diagram by Kelly Shortridge" /></p>
+<p><img src="/blog/img/satellite-imagery-fusion.png" alt="Satellite image fusion diagram by Kelly Shortridge" /></p>
 
 <p>A common technique for enhancement is image fusion, which seeks to create a single, more detailed image out of multiple images. It’s also one of the ways that the tradeoff between spatial and spectral resolution can be solved.</p>
 
@@ -2240,7 +2240,7 @@ Table of Contents:  So what is &amp;ldquo;space data&amp;rdquo; and &amp;ldquo;s
 
 <p>There’s also object-oriented image classification, or “multi-resolution segmentation,” which is a non-traditional approach (meaning it’s only come into use in the past decade or so). As the name suggests, it creates objects by grouping pixels rather than classifying individual pixels. The resulting objects have different shapes and scales, and thus can be classified more flexibly using different image layers (e.g. population density, infrared, elevation, etc.). The user is still doing supervised classification using samples and fancy algorithms, but with more accuracy when dealing with objects vs. individual pixels.</p>
 
-<p><img src="/img/satellite-05.jpg" alt="Example of how object-based image analysis works." /><em>Example of how object-based image analysis works.</em></p>
+<p><img src="/blog/img/satellite-05.jpg" alt="Example of how object-based image analysis works." /><em>Example of how object-based image analysis works.</em></p>
 
 <p>The general rule of thumb is that object-oriented classification is best for higher spatial resolution, since objects might consist of multiple pixels, and the other methods work fine for lower resolution (in which objects are just a pixel). Of course, as spatial resolution improves, this means that object-oriented classification might be increasingly adopted in kind.</p>
 
@@ -2268,7 +2268,7 @@ Table of Contents:  So what is &amp;ldquo;space data&amp;rdquo; and &amp;ldquo;s
 
 <p>It can be hard to measure agricultural trends on the ground, so satellite imagery is immensely helpful in assessing crop health and yields, environmental changes and trends pertaining to livestock. Even when planning and maintaining agricultural sites, this imagery can map irrigation and analyze soil — even showing variations in soil’s organic matter.</p>
 
-<p><img src="/img/satellite-06.jpg" alt="Imagery highlighting irrigation" /><em>Imagery highlighting irrigation.</em></p>
+<p><img src="/blog/img/satellite-06.jpg" alt="Imagery highlighting irrigation" /><em>Imagery highlighting irrigation.</em></p>
 
 <p>Aside from optimizing costs and boosting productivity at large agricultural companies, there’s a general global need for improved agricultural production and better utilization of resources. Having a better sense of what and where these resources are to improve their management has significant benefits on a macro scale.</p>
 
@@ -2276,7 +2276,7 @@ Table of Contents:  So what is &amp;ldquo;space data&amp;rdquo; and &amp;ldquo;s
 
 <p>Along with companies in the mining and oil &amp; gas industries, engineering &amp; construction companies have high capital costs relating to physical projects. So, geospatial imagery can help these companies visualize their projects, not just for evaluating and planning construction sites, but also for maintaining them. This helps reduce construction costs and also minimize environmental impact.</p>
 
-<p><img src="/img/satellite-07.jpg" alt="Digital elevation model of a construction site" /><em>Digital elevation model of a construction site.</em></p>
+<p><img src="/blog/img/satellite-07.jpg" alt="Digital elevation model of a construction site" /><em>Digital elevation model of a construction site.</em></p>
 
 <p>Being able to model construction sites in 3D is crucial for planning purposes, but also ensuring ongoing safety. And for certain project types, like airstrips, dams, power plants and sewers, you need data beyond just the visual. For example, when building an airport, not only do you need to make sure the terrain is appropriate for an airstrip, but also have 3D models for flight simulation to make sure pilots aren’t going to run into recurring issues.</p>
 
@@ -2284,7 +2284,7 @@ Table of Contents:  So what is &amp;ldquo;space data&amp;rdquo; and &amp;ldquo;s
 
 <p>On the “save the world,” side of things, environmental monitoring helps assess damage from natural disasters as well as help manage natural resources. Governments can use satellite imagery to help develop disaster response plans, as well as improve environmental planning and conservation.</p>
 
-<p><img src="/img/satellite-08.jpg" alt="Imagery highlighting deforestation" /><em>Imagery highlighting deforestation.</em></p>
+<p><img src="/blog/img/satellite-08.jpg" alt="Imagery highlighting deforestation" /><em>Imagery highlighting deforestation.</em></p>
 
 <p>Being able to see high-level trends, like deforestation, is helpful to monitor local environmental health but even more so to evaluate potential long-term impacts. After all, trees don’t grow back overnight, so excessive “forest farming” can have devastating effects on future generations’ economic wellbeing. Not to mention being a harbinger of global climate change.</p>
 
@@ -2292,7 +2292,7 @@ Table of Contents:  So what is &amp;ldquo;space data&amp;rdquo; and &amp;ldquo;s
 
 <p>Logistics and shipping companies, port operators, fishers, trade organizations and governments all have an interest in geospatial imagery relating to maritime and weather patterns. On the pure logistics side, being able to track ships in transit is highly useful, as tracking systems can fail when far enough away from ports. Weather patterns and other spatial data (like terrain mapping) can also help optimize shipping routes.</p>
 
-<p><img src="/img/satellite-09.png" alt="Search for MH370 by satellites" /><em>Search for MH370; odd given the number of global recon satellites that it’s still missing.</em></p>
+<p><img src="/blog/img/satellite-09.png" alt="Search for MH370 by satellites" /><em>Search for MH370; odd given the number of global recon satellites that it’s still missing.</em></p>
 
 <p>Being able to monitor trading, spot illegal fishing or piracy, and help with search and rescue missions are of particular importance from a global trade perspective. Even the “little guy” can win — local fishers and fisheries are often put out of business by illegal fishing, which is more widespread than you might think.</p>
 
@@ -2300,7 +2300,7 @@ Table of Contents:  So what is &amp;ldquo;space data&amp;rdquo; and &amp;ldquo;s
 
 <p>Multispectral satellite imagery has the ability to differentiate between different types of rocks, vegetation and soil, which helps mining and geology projects in a few different ways.</p>
 
-<p><img src="/img/satellite-10.jpg" alt="Imagery optimized to show rare earth elements" /><em>Imagery optimized to show rare earth elements.</em></p>
+<p><img src="/blog/img/satellite-10.jpg" alt="Imagery optimized to show rare earth elements" /><em>Imagery optimized to show rare earth elements.</em></p>
 
 <p>First and most obviously, this imagery can help identify clays, oxides and soils for mineral mapping and exploration. This is in contrast to most humans, who would walk to the location and say, “yep, that looks like ground.” All the different energy bands will show both different types of rocks and elements as well as structural aspects of the Earth’s surface that may influence ease of mining.</p>
 
@@ -2310,7 +2310,7 @@ Table of Contents:  So what is &amp;ldquo;space data&amp;rdquo; and &amp;ldquo;s
 
 <p>Satellite imagery can help oil and gas companies reduce risk in oil exploration as well as monitor ongoing projects. The level of detail is pretty impressive, from generally detecting areas that are most productive down to even detecting seismic lines or offshore oil seepage.</p>
 
-<p><img src="/img/satellite-11.jpg" alt="Deepwater Horizon oil spill by satellite" /><em>The Deepwater Horizon spill being just a bit more than seepage.</em></p>
+<p><img src="/blog/img/satellite-11.jpg" alt="Deepwater Horizon oil spill by satellite" /><em>The Deepwater Horizon spill being just a bit more than seepage.</em></p>
 
 <p>But not only does it help find areas most likely to be rich with oil, but it also helps these companies assess the potential costs and pitfalls associated with drilling in a particular area. For example, satellite imagery shows which areas have rock formations, heavy forest coverage, unfavorable weather conditions and whether they are in more remote or developed locations.</p>
 
@@ -2334,7 +2334,7 @@ Table of Contents:  So what is &amp;ldquo;space data&amp;rdquo; and &amp;ldquo;s
 
 <p>Getting satellites into orbit so there is more imagery available is step one. The goal of many of these imagery companies is to have a constellation of satellites in orbit to allow for daily imaging of the whole planet. Launching these satellites into orbit is currently expensive, and ups the cost of the end imagery (which thereby reduces the potential customer set). So, a lot depends on SpaceX’s (and others’) ability to cut down on the cost of satellite launches. The recent successful Falcon 9 launch and landing will very likely pave the way for rocket reuse, which will help bring down these costs substantially.</p>
 
-<p><img src="/img/rocketlaunch.gif" alt="Cinemagraph of the American flag waving while a rocket launches" /><em>Obligatory cinemagraph in the name of ‘Murica.</em></p>
+<p><img src="/blog/img/rocketlaunch.gif" alt="Cinemagraph of the American flag waving while a rocket launches" /><em>Obligatory cinemagraph in the name of ‘Murica.</em></p>
 
 <p>The delivery of imagery is historically quite slow as well. Not only do satellites capture a small part of the Earth at a time, but there’s also the issue of sending down large file sizes over transmissions speeds that are just in the hundreds of MB per second range. Assuming there’s no pre-processing before the customer receives the image, the customer still has to download the image for themselves, which takes time…and any processing work needed only adds to that time. This is starting to change, as images are increasingly available online and some images are pre-processed, saving customers from having to do the image processing themselves.</p>
 
@@ -2354,7 +2354,7 @@ Table of Contents:  So what is &amp;ldquo;space data&amp;rdquo; and &amp;ldquo;s
 
 <p>The government has cared a lot for a long time, and I’d have to assume they’d be a little nervous about a bunch of new satellites being sent into orbit that may risk having spy satellites uncovered. But, they would also be able to benefit from innovations, particularly on the software-side, that are spurred by greater commercial adoption. Though based on how homely most government-facing software looks, maybe government analysts would disprove of UI improvements.</p>
 
-<p><img src="/img/satellite-12.jpg" alt="Satellite imagery via the CIA of Osama bin Ladin’s compound." /><em>Satellite imagery via the CIA of Osama bin Ladin’s compound.</em></p>
+<p><img src="/blog/img/satellite-12.jpg" alt="Satellite imagery via the CIA of Osama bin Ladin’s compound." /><em>Satellite imagery via the CIA of Osama bin Ladin’s compound.</em></p>
 
 <p>Any of the commercial industries from earlier might care, as it can help them cut costs, curtail risks and arguably even improve revenues. So, they care to the extent that better satellite imagery and analysis can help them optimize their business, but the degree to which it does may vary. I’d imagine it’s a “nice to have,” maybe even “would love to have,” but not a “necessary to have” in most of these cases.</p>
 
@@ -2368,7 +2368,7 @@ Table of Contents:  So what is &amp;ldquo;space data&amp;rdquo; and &amp;ldquo;s
 
 <h2 id="a-name-risks-a-what-are-the-risks"><a name="risks"></a>What are the risks?</h2>
 
-<p><img src="/img/satellite-13.jpg" alt="How a satellite constellation looks" /><em>How a satellite constellation looks.</em>
+<p><img src="/blog/img/satellite-13.jpg" alt="How a satellite constellation looks" /><em>How a satellite constellation looks.</em>
 A lot depends on getting satellites into orbit, at least to make this a huge opportunity. The successful Falcon 9 launch and re-landing helps mitigate those risks a bit, but that happened only weeks ago. So, to get more satellites into orbit, thus increasing not only the amount of imagery, but quality of imagery, you have to hope that SpaceX really has their stuff together and in a hurry. You actually probably need to hope that more than just SpaceX does rocket reuse successfully.</p>
 
 <p>Satellite imagery, at least as it stands today, also isn’t that big of an industry. The satellite industry as a whole is a hefty market ($200 billion), particularly because of consumer communications and entertainment. But right now the Earth Observation (EO) market, which includes the satellite imagery portion, is still quite small.</p>
@@ -2437,7 +2437,7 @@ A lot depends on getting satellites into orbit, at least to make this a huge opp
 
 <h2 id="a-name-conclusion-a-conclusion"><a name="conclusion"></a>Conclusion</h2>
 
-<p><img src="/img/satellite-14.jpg" alt="Satellite looking over Earth at night" />
+<p><img src="/blog/img/satellite-14.jpg" alt="Satellite looking over Earth at night" />
 There’s a reason why I like using the term “space data” — this is really cool stuff. But, there are huge capital costs involved for a market that as of yet isn’t very big at all. Or, for companies that are improving just the software part, there’s a lot of reliance on third parties to provide the actual imagery.</p>
 
 <p>Automation does seem like the most legitimate opportunity for a 10x improvement on what is available today, so that companies don’t need GIS experts in-house to still glean intelligence from satellite imagery. It seems like this software vertical is particularly behind in many of the infrastructure developments made in the past decade, so there’s certainly room for disruption just in that regard.</p>
@@ -2450,7 +2450,7 @@ There’s a reason why I like using the term “space data” — this is re
 
 <p>My prediction is that many of the software-only companies will remain quite small, while those pursuing the entire chain (like Planet Labs) have a good shot at a big long-term payoff (with bigger capital requirements, of course). DigitalGlobe itself only has a $1 billion market cap, with about $100mm cash, so they can’t just gobble up the new software companies. There’s always the chance a cash-rich tech giant like IBM or Facebook decides they’re interested in the space data game, too. Or perhaps I’m wrong and space mining comes sooner rather than later, with space data crucial for any level of success.</p>
 
-<p><img src="/img/satellite-15.jpg" alt="Rendering of asteroid mining" /><em>Asteroid mining — the not so distant future?</em></p>
+<p><img src="/blog/img/satellite-15.jpg" alt="Rendering of asteroid mining" /><em>Asteroid mining — the not so distant future?</em></p>
 ]]></content>
         </item>
         
@@ -2464,7 +2464,7 @@ There’s a reason why I like using the term “space data” — this is re
 Table of Contents:  So what is &amp;ldquo;industrial / manufacturing analytics&amp;rdquo;? What are the applications? What&amp;rsquo;s hindering adoption? Who cares? What are the risks? What&amp;rsquo;s the current scene? Final thoughts  So what is “industrial / manufacturing analytics”? There doesn’t seem to be a great catch-all term for it yet, but there are a few different terms for and related to the sector I’m discussing: smart manufacturing, infrastructure analytics, manufacturing analytics, industrial analytics and, though it’s a broader term, IoT analytics.</description>
             <content type="html"><![CDATA[
 
-<p><img src="/img/sparks.jpg" alt="Image of Sparks" /></p>
+<p><img src="/blog/img/sparks.jpg" alt="Image of Sparks" /></p>
 
 <p><em>WTFunding is one of my “spare time” projects to delve into tech sectors attracting VC funding that pique my curiosity. I like connecting dots between disparate things, it’s also pretty useful.</em></p>
 
@@ -2497,9 +2497,9 @@ Table of Contents:  So what is &amp;ldquo;industrial / manufacturing analytics&a
 <table>
 <thead>
 <tr>
-<th align="center"><img src="/img/industrial-01.png" alt="machine vision systems" /></th>
-<th align="center"><img src="/img/industrial-02.png" alt="RFID/barcode scanners" /></th>
-<th align="center"><img src="/img/industrial-03.png" alt="welding machines" /></th>
+<th align="center"><img src="/blog/img/industrial-01.png" alt="machine vision systems" /></th>
+<th align="center"><img src="/blog/img/industrial-02.png" alt="RFID/barcode scanners" /></th>
+<th align="center"><img src="/blog/img/industrial-03.png" alt="welding machines" /></th>
 </tr>
 </thead>
 
@@ -2517,9 +2517,9 @@ Table of Contents:  So what is &amp;ldquo;industrial / manufacturing analytics&a
 <table>
 <thead>
 <tr>
-<th align="center"><img src="/img/industrial-04.jpeg" alt="PLCs" /></th>
-<th align="center"><img src="/img/industrial-05.jpeg" alt="Robots" /></th>
-<th align="center"><img src="/img/industrial-06.jpg" alt="Plasma cutters" /></th>
+<th align="center"><img src="/blog/img/industrial-04.jpeg" alt="PLCs" /></th>
+<th align="center"><img src="/blog/img/industrial-05.jpeg" alt="Robots" /></th>
+<th align="center"><img src="/blog/img/industrial-06.jpg" alt="Plasma cutters" /></th>
 </tr>
 </thead>
 
@@ -2536,7 +2536,7 @@ Table of Contents:  So what is &amp;ldquo;industrial / manufacturing analytics&a
 
 <p>Let’s walk through an example manufacturing process to get a sense of what data is generated; for example, putting together the chassis (the car’s frame) on an automobile.</p>
 
-<p><img style="float: right; max-width:50%; padding: 5px" src="/img/industrial-07.png"></p>
+<p><img style="float: right; max-width:50%; padding: 5px" src="/blog/img/industrial-07.png"></p>
 
 <p>Robots will put together the chassis by welding different parts together. Then, the robots will typically put in the engine, transmission and suspension. Building the rest of the body operates in much the same way — putting in parts and welding them together (some human interaction is still involved).</p>
 
@@ -2567,9 +2567,9 @@ Table of Contents:  So what is &amp;ldquo;industrial / manufacturing analytics&a
 <table>
 <thead>
 <tr>
-<th align="center"><img src="/img/industrial-08.png" alt="PLCs" /></th>
-<th align="center"><img src="/img/industrial-09.png" alt="Robots" /></th>
-<th align="center"><img src="/img/industrial-10.png" alt="Plasma cutters" /></th>
+<th align="center"><img src="/blog/img/industrial-08.png" alt="PLCs" /></th>
+<th align="center"><img src="/blog/img/industrial-09.png" alt="Robots" /></th>
+<th align="center"><img src="/blog/img/industrial-10.png" alt="Plasma cutters" /></th>
 </tr>
 </thead>
 
@@ -2602,7 +2602,7 @@ Table of Contents:  So what is &amp;ldquo;industrial / manufacturing analytics&a
 
 <h2 id="a-name-adoption-a-what-s-hindering-adoption"><a name="adoption"></a>What&rsquo;s hindering adoption?</h2>
 
-<p><img src="/img/industrial-11.jpeg" alt="Image of a man watching a car fly through a screen" /><em>Maybe one day humans can just think of a bunch of dots and have it turn into a sportscar that shoots out of random screens, disrupting manufacturing entirely.</em></p>
+<p><img src="/blog/img/industrial-11.jpeg" alt="Image of a man watching a car fly through a screen" /><em>Maybe one day humans can just think of a bunch of dots and have it turn into a sportscar that shoots out of random screens, disrupting manufacturing entirely.</em></p>
 
 <p>As foreshadowed above, one of the largest barriers to adoption of these technologies is in data collection. Though it can be treated as a distinct part of the big data chain, the “data cleanup” aspect is extremely challenging, as it is difficult to combine and centralize sensor data emanating from disparate machines and devices.</p>
 
@@ -2614,7 +2614,7 @@ Table of Contents:  So what is &amp;ldquo;industrial / manufacturing analytics&a
 
 <p>When you visualize the manufacturing floor, it becomes super easy to understand why this is the state of the world. Ignoring the fact that there are lots of different kinds of machines involved in any particular manufacturing process, individual machines themselves will have different types of sensors recording tons of data points on different things involved in its operation. Considering then that an individual machine will have thousands of data points in a single operation, an entire manufacturing floor will have millions — so just imagine the sheer scale of how much data is generated from ongoing operations.</p>
 
-<p align="center"><img src="/img/industrial-12.jpg"/ alt="Spock sobbing mathematically"></p>
+<p align="center"><img src="/blog/img/industrial-12.jpg"/ alt="Spock sobbing mathematically"></p>
 
 <p>It’s a frustrating realization, and if you’re like me, then your mind begins to furtively think of how to fix it. Starting at a small scale, theoretically vendors could ensure that all sensor data generated from a single machine adhered to the same data architecture. Let’s be bold and optimistic and even say that a vendor could ensure that all their different machines adhered to the same data architecture, so if you had a floor with only their equipment, you could collect and combine all this juicy data with ease.</p>
 
@@ -2644,7 +2644,7 @@ Table of Contents:  So what is &amp;ldquo;industrial / manufacturing analytics&a
 
 <h2 id="a-name-risks-a-what-are-the-risks"><a name="risks"></a>What are the risks?</h2>
 
-<p><img src="/img/more-sparks.jpg" alt="more sparks" /><em>Our lizard brains are programmed to like pictures of sparks.</em></p>
+<p><img src="/blog/img/more-sparks.jpg" alt="more sparks" /><em>Our lizard brains are programmed to like pictures of sparks.</em></p>
 
 <p>Being early to the party is no fun, and even though the “Fourth Industrial Revolution” has had its cue music on for a while, it’s still extremely early and somewhat speculative. Nanotechnology is an example industry that’s had an excessively long drumroll, to the point that now legitimately exciting advances are met by many with indifference. And many of the early “plays” in it never took off or lived up to the hype.</p>
 

@@ -15,7 +15,7 @@
 
 <title>
     
-    Choice Architecture for InfoSec Blue Teams : Kelly Shortridge 
+    Choice Architecture for InfoSec Blue Teams | Kelly Shortridge 
     
 </title>
 
@@ -132,7 +132,7 @@
 
 <p>The last part of the presentation focused on the “what to do about it” — I developed a choice architecture for blue teams in information security. Choice architecture is a term coined by Richard Thaler and Cass Sunstein in their famous book “Nudge,” and means the design of how choices can be presented to people.</p>
 
-<p>The implication is that it can be designed in a way that impacts decision making, and more specifically in a way that minimizes errors due to cognitive biases. It’s basically a “how do we fix it?” response to the flaws in thinking that behavioral economics exposes (see <a href="/posts/behavioral-models-infosec-prospect-theory/">my post on Prospect Theory &amp; Information Security</a> for a primer on some of these flaws as they appear in infosec).</p>
+<p>The implication is that it can be designed in a way that impacts decision making, and more specifically in a way that minimizes errors due to cognitive biases. It’s basically a “how do we fix it?” response to the flaws in thinking that behavioral economics exposes (see <a href="/blog/posts/behavioral-models-infosec-prospect-theory/">my post on Prospect Theory &amp; Information Security</a> for a primer on some of these flaws as they appear in infosec).</p>
 
 <p>I’ll walk you through my proposed choice architecture for how blue teams can develop a decision-making process that is resilient to cognitive biases, or you can just skip to the conclusion for the 6-step guide.</p>
 
@@ -147,7 +147,7 @@
 
 <h2 id="a-name-belief-prompting-a-belief-prompting"><a name="belief-prompting"></a>Belief Prompting</h2>
 
-<p><img src="/img/thinking-clueless.gif" alt="Gif of Cher from Clueless thinking" /><em>Get your thinky thinky face on</em></p>
+<p><img src="/blog/img/thinking-clueless.gif" alt="Gif of Cher from Clueless thinking" /><em>Get your thinky thinky face on</em></p>
 
 <p>People have beliefs about their opponents in any confrontation. People also tend to believe their opponents are less rational than they actually are — and often make imprudent decisions as if their opponent is randomly choosing their decisions. A counter to this blunder is asking players for their explicit beliefs about what their opponents will do, known as <a href="https://books.google.com/books?id=bMWHDAAAQBAJ&amp;pg=PA132&amp;lpg=PA132&amp;dq=%22belief-prompting%22&amp;source=bl&amp;ots=QsfBOYXBlM&amp;sig=EDB2DND3JdfbnXJG7CJycLQOMjk&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwjlupiu7fTRAhXq5YMKHfzxClgQ6AEIKjAD"><strong>belief prompting</strong></a>. Think of it as increasing one’s thinking by an additional step — how will your opponent respond to your move?</p>
 
@@ -169,13 +169,13 @@
 
 <p>As an example of where these questions might lead you, here’s a belief prompting process for exfiltration, with defensive moves in blue and offensive moves in orange:</p>
 
-<p><img src="/img/belief-prompting-example.png" alt="An example of belief prompting for information security, by Kelly Shortridge" /></p>
+<p><img src="/blog/img/belief-prompting-example.png" alt="An example of belief prompting for information security, by Kelly Shortridge" /></p>
 
 <hr />
 
 <h2 id="a-name-decision-trees-a-decision-trees"><a name="decision-trees"></a>Decision Trees</h2>
 
-<p><img src="/img/jared-swot.gif" alt="Jared from the show Silicon Valley presenting a SWOT analysis" /><em>I’m basically Jared for the infosec industry</em></p>
+<p><img src="/blog/img/jared-swot.gif" alt="Jared from the show Silicon Valley presenting a SWOT analysis" /><em>I’m basically Jared for the infosec industry</em></p>
 
 <p>Creating a decision tree allows for a feedback loop that is invaluable in aiding the decision-making process, particularly in prioritizing strategies. I believe a decision tree model is the most efficient means of solving a few challenges in decision-making, as it:</p>
 
@@ -193,7 +193,7 @@
 
 <p>The left branches in each set of moves represent the lower-cost moves, while the right branches represent the more expensive moves (cost here meaning monetary, human and time capital). For example, “#YOLO” means doing absolutely nothing, while “Privilege Separation” requires doing more than nothing, thus making it the more expensive option.</p>
 
-<p><img src="/img/decision-tree-example.png" alt="An example of a decision tree for information security, by Kelly Shortridge" /></p>
+<p><img src="/blog/img/decision-tree-example.png" alt="An example of a decision tree for information security, by Kelly Shortridge" /></p>
 
 <p>For those who need a walkthrough — if you start with the “Criminal Group” adversary that has just arrived on one of your servers, you can consider a preemptive defensive move being either: implementing privilege separation, which has an guesstimated 60% chance of deterring or thwarting the attacker; or “implementing” the #YOLO strategy of doing nothing, which has a 0% chance of deterring the attacker.</p>
 
@@ -209,7 +209,7 @@
 
 <h2 id="social-tactics">Social Tactics</h2>
 
-<p><img src="/img/kittens-meeting.gif" alt="A gif of kittens having a &quot;meeting&quot;" /><em>omg it&rsquo;s kittens having a meeting</em></p>
+<p><img src="/blog/img/kittens-meeting.gif" alt="A gif of kittens having a &quot;meeting&quot;" /><em>omg it&rsquo;s kittens having a meeting</em></p>
 
 <p>I won’t cover the social dynamics of teams here (<a href="https://swagitda.com/speaking/Know-Thyself-Kelly-Shortridge-ACoD-2017.pdf">check out the presentation</a> to read about it if interested), but belief-prompting vis a vis probability-labeled decision-trees ameliorates team-based biases as well. However, blue team leaders need to consider a few additional tactics to round out their decision-making model — most of which are in the vein of framing, i.e. how choices are presented (see <a href="https://en.wikipedia.org/wiki/Framing_effect_%28psychology%29">framing effects</a> for more).</p>
 
