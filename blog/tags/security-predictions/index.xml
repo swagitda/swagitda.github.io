@@ -6,13 +6,23 @@
     <description>Recent content in Security Predictions on Kelly Shortridge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 Dec 2017 16:52:25 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 05 Dec 2018 20:07:01 -0400</lastBuildDate>
     
 	<atom:link href="//swagitda.github.io/blog/tags/security-predictions/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>2018 Cybersecurity Predictions</title>
+      <title>2019 Cyber Security Predictions</title>
+      <link>//swagitda.github.io/blog/posts/2019-cyber-security-predictions/</link>
+      <pubDate>Wed, 05 Dec 2018 20:07:01 -0400</pubDate>
+      
+      <guid>//swagitda.github.io/blog/posts/2019-cyber-security-predictions/</guid>
+      <description>Fed up with ridiculous infosec predictions for the upcoming year, I decided to aggregate them all and use the power of Markov Chains to generate my own list. What follows is the result, very lightly edited solely for readability. You can see last year’s edition here.
+In 2019, we predict 2019. Cyber espionage, cybercriminals — in 2019, they materialize. What if this is a dangerous reality? For example, consider how the world feels sometimes.</description>
+    </item>
+    
+    <item>
+      <title>2018 Cyber Security Predictions</title>
       <link>//swagitda.github.io/blog/posts/2018-cybersecurity-predictions/</link>
       <pubDate>Thu, 21 Dec 2017 16:52:25 -0400</pubDate>
       
@@ -27,7 +37,8 @@ In 2018, security. Cyber security people will die. We’ve long debated where se
       <pubDate>Fri, 30 Dec 2016 21:08:55 -0400</pubDate>
       
       <guid>//swagitda.github.io/blog/posts/revisiting-2016-security-predictions/</guid>
-      <description>I totally get it — it’d be boring to say year after year, “Yep, phishing definitely still works,” so security vendors instead pour creative thinking and marketing pizzazz into their annual security predictions. Most seem to aim to match the majority of their predictions to other vendors’, with generally one or two unique predictions thrown in to show off their innovative thought leadering. Sometimes those unique ones are spot-on and glorify their authors, and other times we can look back a year later and share a good chuckle.</description>
+      <description>The flaming word cloud of the cyberpocalypse, from 16 of the larger security vendors’ 2016 predictions
+I totally get it — it’d be boring to say year after year, “Yep, phishing definitely still works,” so security vendors instead pour creative thinking and marketing pizzazz into their annual security predictions. Most seem to aim to match the majority of their predictions to other vendors’, with generally one or two unique predictions thrown in to show off their innovative thought leadering.</description>
     </item>
     
   </channel>

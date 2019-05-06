@@ -17,8 +17,29 @@
       <pubDate>Wed, 13 Mar 2019 21:28:01 -0400</pubDate>
       
       <guid>//swagitda.github.io/blog/posts/my-reflections-on-rsac-2019/</guid>
-      <description>Reflecting on my existential crisis during RSAC, I tried to distill what exactly was so troublesome about the conference. The expo floor was less two separate halls, as per years prior, and more like Mordor, with a befouled sprawl connecting Minas Morgul and the Black Gate — but instead of orcs and Uruk-hai, vendors crammed the hallways that used to serve as open breathing space.
-The RSAC Innovation Sandbox’s “natural” lighting (featuring me and my buzzword bingo card)  The color of RSAC itself is royal purple — fitting as hosts of this ostentatious banquet — with a splash of cyber-turquoise.</description>
+      <description>Artist’s rendition of how I felt by Thursday morning of the con
+Reflecting on my existential crisis during RSAC, I tried to distill what exactly was so troublesome about the conference. The expo floor was less two separate halls, as per years prior, and more like Mordor, with a befouled sprawl connecting Minas Morgul and the Black Gate — but instead of orcs and Uruk-hai, vendors crammed the hallways that used to serve as open breathing space.</description>
+    </item>
+    
+    <item>
+      <title>InfoSec Startup Buzzword Bingo: 2019 Edition</title>
+      <link>//swagitda.github.io/blog/posts/infosec-buzzword-bingo-2019-edition/</link>
+      <pubDate>Wed, 27 Feb 2019 16:57:23 -0400</pubDate>
+      
+      <guid>//swagitda.github.io/blog/posts/infosec-buzzword-bingo-2019-edition/</guid>
+      <description>This is the third edition of my Infosec Buzzword Bingo, just in time for 2019’s RSA Conference (RSAC). Rather than relying on my keenly tuned snake oil spidey senses to generate the words populating the bingo card, I took a more data-driven approach this year.
+I surveyed 100 companies’ websites[1], the vast majority of which are exhibiting at RSAC and possess VC funding. I did not include any of the large security vendors[2], who probably could populate their own bingo cards across their mastodonian websites.</description>
+    </item>
+    
+    <item>
+      <title>Analyzing the 2019 RSA Innovation Sandbox Finalists</title>
+      <link>//swagitda.github.io/blog/posts/analyzing-2019-rsa-innovation-sandbox-finalists/</link>
+      <pubDate>Tue, 05 Feb 2019 19:02:53 -0400</pubDate>
+      
+      <guid>//swagitda.github.io/blog/posts/analyzing-2019-rsa-innovation-sandbox-finalists/</guid>
+      <description>This year’s nominees for the 2019 edition of the RSA Conference’s Innovation Sandbox were announced this morning. As I’m wont to do, I wanted to explore the funding side of these ten startups.
+Total Funding Raised &amp;amp; the Latest Stage for each 2019 RSA Innovation Sandbox Finalist ($USD millions)
+The median funding raised by all ten startups is $10.5 million (mean of $10.3 million), which makes sense for an early stage-flavored competition.</description>
     </item>
     
     <item>
@@ -30,6 +51,25 @@ The RSAC Innovation Sandbox’s “natural” lighting (featuring me and my buzz
       <description>This is probably how a Cyber Tub looks, right?
 People struggle to understand how risk accumulates in complex systems, thereby also not understanding the extent to which risk must be reduced. This misapprehension can lead to “wait and see” decisions that cause a problem to snowball, or mitigations that don’t meaningfully reduce risk, creating the feeling of just barely treading water in your security program.
 It is challenging for people to understand risk dynamics conceptually for two primary reasons.</description>
+    </item>
+    
+    <item>
+      <title>2019 Cyber Security Predictions</title>
+      <link>//swagitda.github.io/blog/posts/2019-cyber-security-predictions/</link>
+      <pubDate>Wed, 05 Dec 2018 20:07:01 -0400</pubDate>
+      
+      <guid>//swagitda.github.io/blog/posts/2019-cyber-security-predictions/</guid>
+      <description>Fed up with ridiculous infosec predictions for the upcoming year, I decided to aggregate them all and use the power of Markov Chains to generate my own list. What follows is the result, very lightly edited solely for readability. You can see last year’s edition here.
+In 2019, we predict 2019. Cyber espionage, cybercriminals — in 2019, they materialize. What if this is a dangerous reality? For example, consider how the world feels sometimes.</description>
+    </item>
+    
+    <item>
+      <title>Analyzing the Black Hat USA 2018 Business Hall</title>
+      <link>//swagitda.github.io/blog/posts/analyzing-blackhatusa-business-hall-2018/</link>
+      <pubDate>Mon, 06 Aug 2018 18:40:42 -0400</pubDate>
+      
+      <guid>//swagitda.github.io/blog/posts/analyzing-blackhatusa-business-hall-2018/</guid>
+      <description>What type of vendors are showing themselves off in the Business Hall? Are they mostly startups? Not quite “mostly,” but 46% of vendors in the hall are indeed VC-backed companies at varying stages of maturity. Privately held companies are a non-trivial segment at 17%, and there are 30 Private Equity-owned companies making up 12% of the hall. There are also 12 companies who are acquisitions, primarily those who were acquired within the past year; booths require being booked far in advance, leaving insufficient time to be assimilated into their acquiror’s booth (if so desired).</description>
     </item>
     
     <item>
@@ -54,7 +94,7 @@ Security is a product, but we treat it like a sacred, immutable grail to preserv
     </item>
     
     <item>
-      <title>2018 Cybersecurity Predictions</title>
+      <title>2018 Cyber Security Predictions</title>
       <link>//swagitda.github.io/blog/posts/2018-cybersecurity-predictions/</link>
       <pubDate>Thu, 21 Dec 2017 16:52:25 -0400</pubDate>
       
@@ -98,7 +138,8 @@ The past few months have seen cyberwar intersect with Influence Operations, in R
       <pubDate>Fri, 30 Dec 2016 21:08:55 -0400</pubDate>
       
       <guid>//swagitda.github.io/blog/posts/revisiting-2016-security-predictions/</guid>
-      <description>I totally get it — it’d be boring to say year after year, “Yep, phishing definitely still works,” so security vendors instead pour creative thinking and marketing pizzazz into their annual security predictions. Most seem to aim to match the majority of their predictions to other vendors’, with generally one or two unique predictions thrown in to show off their innovative thought leadering. Sometimes those unique ones are spot-on and glorify their authors, and other times we can look back a year later and share a good chuckle.</description>
+      <description>The flaming word cloud of the cyberpocalypse, from 16 of the larger security vendors’ 2016 predictions
+I totally get it — it’d be boring to say year after year, “Yep, phishing definitely still works,” so security vendors instead pour creative thinking and marketing pizzazz into their annual security predictions. Most seem to aim to match the majority of their predictions to other vendors’, with generally one or two unique predictions thrown in to show off their innovative thought leadering.</description>
     </item>
     
     <item>

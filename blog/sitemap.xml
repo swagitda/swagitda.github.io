@@ -38,6 +38,16 @@
   </url>
   
   <url>
+    <loc>//swagitda.github.io/blog/posts/infosec-buzzword-bingo-2019-edition/</loc>
+    <lastmod>2019-02-27T16:57:23-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//swagitda.github.io/blog/posts/analyzing-2019-rsa-innovation-sandbox-finalists/</loc>
+    <lastmod>2019-02-05T19:02:53-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>//swagitda.github.io/blog/tags/risk-management/</loc>
     <lastmod>2018-12-20T22:02:49-04:00</lastmod>
     <priority>0</priority>
@@ -60,6 +70,22 @@
   </url>
   
   <url>
+    <loc>//swagitda.github.io/blog/posts/2019-cyber-security-predictions/</loc>
+    <lastmod>2018-12-05T20:07:01-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//swagitda.github.io/blog/tags/security-predictions/</loc>
+    <lastmod>2018-12-05T20:07:01-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//swagitda.github.io/blog/posts/analyzing-blackhatusa-business-hall-2018/</loc>
+    <lastmod>2018-08-06T18:40:42-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>//swagitda.github.io/blog/tags/keynote/</loc>
     <lastmod>2018-08-01T17:26:47-04:00</lastmod>
     <priority>0</priority>
@@ -78,12 +104,6 @@
   <url>
     <loc>//swagitda.github.io/blog/posts/2018-cybersecurity-predictions/</loc>
     <lastmod>2017-12-21T16:52:25-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//swagitda.github.io/blog/tags/security-predictions/</loc>
-    <lastmod>2017-12-21T16:52:25-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
