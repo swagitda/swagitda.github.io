@@ -6,10 +6,19 @@
     <description>Recent content on Kelly Shortridge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 13 Mar 2019 21:28:01 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 05 May 2019 08:30:09 -0400</lastBuildDate>
     
 	<atom:link href="//swagitda.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Darth Jar Jar: a Model for Infosec Innovation</title>
+      <link>//swagitda.github.io/blog/posts/darth-jar-jar-model-infosec-innovation/</link>
+      <pubDate>Sun, 05 May 2019 08:30:09 -0400</pubDate>
+      
+      <guid>//swagitda.github.io/blog/posts/darth-jar-jar-model-infosec-innovation/</guid>
+      <description>Despite its seeming absurdity and superficiality, the theory of Darth Jar Jar can serve as a poignant parable for security innovation. For those unfamiliar, the notion of a Darth Jar Jar springs from a meticulously researched fan theory from the Star Wars subreddit. While I do not wish to spoil the breathtaking beauty of the fleshed-out theory, the underlying legend is one of an ostensibly bumbling fool who, in reality, is an insidious puppet master full of cunning and strength.</description>
+    </item>
     
     <item>
       <title>My Reflections on the 2019 RSA Conference</title>
