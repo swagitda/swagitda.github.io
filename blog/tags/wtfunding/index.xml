@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>WTFunding on Kelly Shortridge</title>
-    <link>//swagitda.github.io/blog/tags/wtfunding/</link>
+    <link>//swagitda.com/blog/tags/wtfunding/</link>
     <description>Recent content in WTFunding on Kelly Shortridge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 17 May 2016 19:35:10 -0400</lastBuildDate>
     
-	<atom:link href="//swagitda.github.io/blog/tags/wtfunding/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//swagitda.com/blog/tags/wtfunding/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>WTFunding: Bioinformatics &amp; Genetic Data</title>
-      <link>//swagitda.github.io/blog/posts/wtfunding-bioinformatics-genetic-data/</link>
+      <link>//swagitda.com/blog/posts/wtfunding-bioinformatics-genetic-data/</link>
       <pubDate>Tue, 17 May 2016 19:35:10 -0400</pubDate>
       
-      <guid>//swagitda.github.io/blog/posts/wtfunding-bioinformatics-genetic-data/</guid>
+      <guid>//swagitda.com/blog/posts/wtfunding-bioinformatics-genetic-data/</guid>
       <description>WTFunding is one of my “spare time” projects to delve into tech sectors attracting VC funding that pique my curiosity. I like connecting dots between disparate things, it’s also pretty useful.
 Table of Contents:  So what is bioinformatics? What are the applications? What&amp;rsquo;s hindering adoption? Who cares? What are the risks? What&amp;rsquo;s the current scene? Conclusion  So what is bioinformatics? Simply put, bioinformatics is software used to understand biological data, including (but not limited to) genomic sequences.</description>
     </item>
     
     <item>
       <title>WTFunding: Space Data (Satellite Imagery)</title>
-      <link>//swagitda.github.io/blog/posts/wtfunding-space-data-satellite-imagery/</link>
+      <link>//swagitda.com/blog/posts/wtfunding-space-data-satellite-imagery/</link>
       <pubDate>Mon, 04 Jan 2016 18:49:24 -0400</pubDate>
       
-      <guid>//swagitda.github.io/blog/posts/wtfunding-space-data-satellite-imagery/</guid>
+      <guid>//swagitda.com/blog/posts/wtfunding-space-data-satellite-imagery/</guid>
       <description>WTFunding is one of my “spare time” projects to delve into tech sectors attracting VC funding that pique my curiosity. I like connecting dots between disparate things, it’s also pretty useful.
 Table of Contents:  So what is &amp;ldquo;space data&amp;rdquo; and &amp;ldquo;satellite imagery&amp;rdquo;? What are the applications? What&amp;rsquo;s hindering adoption? Who cares? What are the risks? What&amp;rsquo;s the current scene? Conclusion  So what is &amp;ldquo;space data&amp;rdquo; and &amp;ldquo;satellite imagery&amp;rdquo;?</description>
     </item>
     
     <item>
       <title>WTFunding: Industrial / Manufacturing Analytics</title>
-      <link>//swagitda.github.io/blog/posts/wtfunding-industrial-manufacturing-analytics/</link>
+      <link>//swagitda.com/blog/posts/wtfunding-industrial-manufacturing-analytics/</link>
       <pubDate>Tue, 13 Oct 2015 17:24:07 -0400</pubDate>
       
-      <guid>//swagitda.github.io/blog/posts/wtfunding-industrial-manufacturing-analytics/</guid>
+      <guid>//swagitda.com/blog/posts/wtfunding-industrial-manufacturing-analytics/</guid>
       <description>WTFunding is one of my “spare time” projects to delve into tech sectors attracting VC funding that pique my curiosity. I like connecting dots between disparate things, it’s also pretty useful.
 Table of Contents:  So what is &amp;ldquo;industrial / manufacturing analytics&amp;rdquo;? What are the applications? What&amp;rsquo;s hindering adoption? Who cares? What are the risks? What&amp;rsquo;s the current scene? Final thoughts  So what is “industrial / manufacturing analytics”? There doesn’t seem to be a great catch-all term for it yet, but there are a few different terms for and related to the sector I’m discussing: smart manufacturing, infrastructure analytics, manufacturing analytics, industrial analytics and, though it’s a broader term, IoT analytics.</description>
     </item>
