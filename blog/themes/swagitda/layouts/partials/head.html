@@ -1,0 +1,16 @@
+<meta charset="utf-8" />
+	<meta name="description" content="Personal Site of Kelly Shortridge">
+	<meta name="theme-color" content="#7CD9FF">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/static/css/style.css" />
+	<link rel="shortcut icon" href="favicon.ico" /> 
+
+{{ block "title" . }}
+<title>
+    {{ if .IsHome }}
+    {{ $.Site.Title }} {{ with $.Site.Params.Subtitle }} — {{ . }} {{ end }}
+    {{ else }}
+    {{ .Title }} : {{ $.Site.Title }} {{ with $.Site.Params.Subtitle }} — {{ . }}{{ end }}
+    {{ end }}
+</title>
+{{ end }}

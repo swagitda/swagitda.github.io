@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Kelly Shortridge</title>
+    <link>//swagitda.com/blog/tags/</link>
+    <description>Recent content in Tags on Kelly Shortridge</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Aug 2019 08:35:54 -0400</lastBuildDate>
+    
+	<atom:link href="//swagitda.com/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>InfoSec</title>
+      <link>//swagitda.com/blog/tags/infosec/</link>
+      <pubDate>Fri, 02 Aug 2019 08:35:54 -0400</pubDate>
+      
+      <guid>//swagitda.com/blog/tags/infosec/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Market Analysis</title>
+      <link>//swagitda.com/blog/tags/market-analysis/</link>
+      <pubDate>Fri, 02 Aug 2019 08:35:54 -0400</pubDate>
+      
+      <guid>//swagitda.com/blog/tags/market-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Risk Management</title>
+      <link>//swagitda.com/blog/tags/risk-management/</link>
+      <pubDate>Thu, 20 Dec 2018 22:02:49 -0400</pubDate>
+      
+      <guid>//swagitda.com/blog/tags/risk-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reading List</title>
+      <link>//swagitda.com/blog/tags/reading-list/</link>
+      <pubDate>Mon, 17 Dec 2018 18:35:02 -0400</pubDate>
+      
+      <guid>//swagitda.com/blog/tags/reading-list/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Security Predictions</title>
+      <link>//swagitda.com/blog/tags/security-predictions/</link>
+      <pubDate>Wed, 05 Dec 2018 20:07:01 -0400</pubDate>
+      
+      <guid>//swagitda.com/blog/tags/security-predictions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Keynote</title>
+      <link>//swagitda.com/blog/tags/keynote/</link>
+      <pubDate>Wed, 01 Aug 2018 17:26:47 -0400</pubDate>
+      
+      <guid>//swagitda.com/blog/tags/keynote/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Behavioral InfoSec</title>
+      <link>//swagitda.com/blog/tags/behavioral-infosec/</link>
+      <pubDate>Wed, 08 Feb 2017 16:17:34 -0400</pubDate>
+      
+      <guid>//swagitda.com/blog/tags/behavioral-infosec/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WTFunding</title>
+      <link>//swagitda.com/blog/tags/wtfunding/</link>
+      <pubDate>Tue, 17 May 2016 19:35:10 -0400</pubDate>
+      
+      <guid>//swagitda.com/blog/tags/wtfunding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Privacy</title>
+      <link>//swagitda.com/blog/tags/privacy/</link>
+      <pubDate>Thu, 17 Mar 2016 19:29:13 -0400</pubDate>
+      
+      <guid>//swagitda.com/blog/tags/privacy/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

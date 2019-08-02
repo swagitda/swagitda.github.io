@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Privacy on Kelly Shortridge</title>
+    <link>//swagitda.com/blog/tags/privacy/</link>
+    <description>Recent content in Privacy on Kelly Shortridge</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 17 Mar 2016 19:29:13 -0400</lastBuildDate>
+    
+	<atom:link href="//swagitda.com/blog/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Apple vs. FBI: Privacy &amp; Inequality</title>
+      <link>//swagitda.com/blog/posts/apple-vs-fbi-privacy-inequality/</link>
+      <pubDate>Thu, 17 Mar 2016 19:29:13 -0400</pubDate>
+      
+      <guid>//swagitda.com/blog/posts/apple-vs-fbi-privacy-inequality/</guid>
+      <description>In recent news, there’s been a fiery public relations battle between the FBI and Apple. While there has been vocal protest by the technology community, and particularly the information security community, against the FBI’s request, it has largely been rooted in (very valid) concerns over the degradation of software security, national security and privacy in a general sense. However, there’s a larger societal concern that cannot be ignored.
+By way of brief background, the gist of the legal fight is that the FBI wants Apple to create a custom version of its operating system for iPhones, iOS, that would allow it to circumvent the safety measure of reducing the frequency with which the device’s passcode can be guessed when locked.</description>
+    </item>
+    
+  </channel>
+</rss>
