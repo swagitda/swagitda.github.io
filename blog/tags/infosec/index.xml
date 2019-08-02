@@ -6,10 +6,20 @@
     <description>Recent content in InfoSec on Kelly Shortridge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 May 2019 08:30:09 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 02 Aug 2019 08:35:54 -0400</lastBuildDate>
     
 	<atom:link href="//swagitda.com/blog/tags/infosec/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Analyzing the Black Hat USA 2019 Business Hall</title>
+      <link>//swagitda.com/blog/posts/analyzing-blackhatusa-business-hall-2019/</link>
+      <pubDate>Fri, 02 Aug 2019 08:35:54 -0400</pubDate>
+      
+      <guid>//swagitda.com/blog/posts/analyzing-blackhatusa-business-hall-2019/</guid>
+      <description>Prerequisite plug that you should come see my talk with Dr. Nicole Forsgren at Black Hat next week (16:00 in South Pacific)!
+What type of vendors are showing themselves off in the Business Hall? Are they mostly startups? Exactly like last year, 46% of the vendors in the Business Hall are startups backed by venture capital (VC) firms. Private companies represent only 13% of total vendors this year (vs. 17% last year), and there are far more acquired companies (&amp;ldquo;M&amp;amp;A&amp;rdquo; within the chart) this year (8% vs.</description>
+    </item>
     
     <item>
       <title>Darth Jar Jar: a Model for Infosec Innovation</title>
