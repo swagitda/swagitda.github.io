@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Keynote on Kelly Shortridge</title>
-    <link>//swagitda.com/blog/tags/keynote/</link>
+    <link>https://swagitda.com/blog/tags/keynote/</link>
     <description>Recent content in Keynote on Kelly Shortridge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 01 Aug 2018 17:26:47 -0400</lastBuildDate>
     
-	<atom:link href="//swagitda.com/blog/tags/keynote/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://swagitda.com/blog/tags/keynote/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>The Red Pill of Resilience in InfoSec</title>
-      <link>//swagitda.com/blog/posts/red-pill-of-resilience-infosec/</link>
+      <link>https://swagitda.com/blog/posts/red-pill-of-resilience-infosec/</link>
       <pubDate>Wed, 01 Aug 2018 17:26:47 -0400</pubDate>
       
-      <guid>//swagitda.com/blog/posts/red-pill-of-resilience-infosec/</guid>
+      <guid>https://swagitda.com/blog/posts/red-pill-of-resilience-infosec/</guid>
       <description>What follows is the full text of my keynote, also available as a video and as slides.
 There has been insufficient exploration of the first principles of resilience in the context of information security, despite the term being superficially peppered in our common discourse. Too often, resilience is conflated with robustness — to the detriment of us all.
 To state more poetically, through the pen of the notable fantasy author Robert Jordan referencing one of Aesop’s fables, “The oak fought the wind and was broken, the willow bent when it must and survived.</description>
@@ -24,10 +24,10 @@ To state more poetically, through the pen of the notable fantasy author Robert J
     
     <item>
       <title>Security as a Product</title>
-      <link>//swagitda.com/blog/posts/security-as-a-product/</link>
+      <link>https://swagitda.com/blog/posts/security-as-a-product/</link>
       <pubDate>Fri, 18 May 2018 17:15:09 -0400</pubDate>
       
-      <guid>//swagitda.com/blog/posts/security-as-a-product/</guid>
+      <guid>https://swagitda.com/blog/posts/security-as-a-product/</guid>
       <description>Originally given as the keynote at BSides Knoxville.
 Security is a product, but we treat it like a sacred, immutable grail to preserve, unblemished by the sublunary needs of users. And yet, we wonder why defense remains stagnant, why we fail so consistently in progressing towards the glorious ideal of a “secure organization.” We will continue to fail — unless we treat security as a product. Are we trying to respect the phantasmal Elder Deities of Infosec and their stringent doctrine, or are we trying to ensure our organization can still thrive while operating in a perilous digital world?</description>
     </item>
