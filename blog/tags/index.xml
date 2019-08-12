@@ -7,15 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 02 Aug 2019 08:35:54 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 12 Aug 2019 08:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://swagitda.com/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Behavioral InfoSec</title>
+      <link>https://swagitda.com/blog/tags/behavioral-infosec/</link>
+      <pubDate>Mon, 12 Aug 2019 08:00:00 -0400</pubDate>
+      
+      <guid>https://swagitda.com/blog/tags/behavioral-infosec/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>InfoSec</title>
       <link>https://swagitda.com/blog/tags/infosec/</link>
-      <pubDate>Fri, 02 Aug 2019 08:35:54 -0400</pubDate>
+      <pubDate>Mon, 12 Aug 2019 08:00:00 -0400</pubDate>
       
       <guid>https://swagitda.com/blog/tags/infosec/</guid>
       <description></description>
@@ -63,15 +72,6 @@
       <pubDate>Wed, 01 Aug 2018 17:26:47 -0400</pubDate>
       
       <guid>https://swagitda.com/blog/tags/keynote/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Behavioral InfoSec</title>
-      <link>https://swagitda.com/blog/tags/behavioral-infosec/</link>
-      <pubDate>Wed, 08 Feb 2017 16:17:34 -0400</pubDate>
-      
-      <guid>https://swagitda.com/blog/tags/behavioral-infosec/</guid>
       <description></description>
     </item>
     

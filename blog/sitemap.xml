@@ -3,36 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://swagitda.com/blog/posts/analyzing-blackhatusa-business-hall-2019/</loc>
-    <lastmod>2019-08-02T08:35:54-04:00</lastmod>
+    <loc>https://swagitda.com/blog/tags/behavioral-infosec/</loc>
+    <lastmod>2019-08-12T08:00:00-04:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://swagitda.com/blog/tags/infosec/</loc>
-    <lastmod>2019-08-02T08:35:54-04:00</lastmod>
+    <lastmod>2019-08-12T08:00:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://swagitda.com/blog/</loc>
-    <lastmod>2019-08-02T08:35:54-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://swagitda.com/blog/tags/market-analysis/</loc>
-    <lastmod>2019-08-02T08:35:54-04:00</lastmod>
+    <lastmod>2019-08-12T08:00:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://swagitda.com/blog/posts/</loc>
-    <lastmod>2019-08-02T08:35:54-04:00</lastmod>
+    <lastmod>2019-08-12T08:00:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://swagitda.com/blog/tags/</loc>
+    <lastmod>2019-08-12T08:00:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/posts/when-prospect-theory-meets-chaos-engineering/</loc>
+    <lastmod>2019-08-12T08:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/posts/analyzing-blackhatusa-business-hall-2019/</loc>
+    <lastmod>2019-08-02T08:35:54-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/tags/market-analysis/</loc>
     <lastmod>2019-08-02T08:35:54-04:00</lastmod>
     <priority>0</priority>
   </url>
@@ -124,12 +135,6 @@
   <url>
     <loc>https://swagitda.com/blog/posts/first-principles-building-security-products/</loc>
     <lastmod>2017-06-12T16:32:41-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://swagitda.com/blog/tags/behavioral-infosec/</loc>
-    <lastmod>2017-02-08T16:17:34-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

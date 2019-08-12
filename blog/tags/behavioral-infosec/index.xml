@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 08 Feb 2017 16:17:34 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 12 Aug 2019 08:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://swagitda.com/blog/tags/behavioral-infosec/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>When Prospect Theory Meets Chaos Engineering</title>
+      <link>https://swagitda.com/blog/posts/when-prospect-theory-meets-chaos-engineering/</link>
+      <pubDate>Mon, 12 Aug 2019 08:00:00 -0400</pubDate>
+      
+      <guid>https://swagitda.com/blog/posts/when-prospect-theory-meets-chaos-engineering/</guid>
+      <description>There is a connection between my research into behavioral models of information security and my Black Hat USA talk with Dr. Forsgren from last week regarding DevOps and the future of information security that might not be immediately obvious. However, it is a connection I believe is worth illuminating.
+Adopting the “chaotic infosec” philosophy (the application of chaos engineering to information security) can influence those who build and secure systems to operate more like attackers – that is, to be more risk averse and to more quickly update their mental models given new inputs.</description>
+    </item>
     
     <item>
       <title>Choice Architecture for InfoSec Blue Teams</title>

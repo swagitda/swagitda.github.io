@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 02 Aug 2019 08:35:54 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 12 Aug 2019 08:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://swagitda.com/blog/tags/infosec/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>When Prospect Theory Meets Chaos Engineering</title>
+      <link>https://swagitda.com/blog/posts/when-prospect-theory-meets-chaos-engineering/</link>
+      <pubDate>Mon, 12 Aug 2019 08:00:00 -0400</pubDate>
+      
+      <guid>https://swagitda.com/blog/posts/when-prospect-theory-meets-chaos-engineering/</guid>
+      <description>There is a connection between my research into behavioral models of information security and my Black Hat USA talk with Dr. Forsgren from last week regarding DevOps and the future of information security that might not be immediately obvious. However, it is a connection I believe is worth illuminating.
+Adopting the “chaotic infosec” philosophy (the application of chaos engineering to information security) can influence those who build and secure systems to operate more like attackers – that is, to be more risk averse and to more quickly update their mental models given new inputs.</description>
+    </item>
     
     <item>
       <title>Analyzing the Black Hat USA 2019 Business Hall</title>
@@ -150,16 +160,6 @@ A printout of Adi Shamir’s 10 Commandments of Commercial Security has been my 
       <guid>https://swagitda.com/blog/posts/russia-used-us-influence-ops-playbook/</guid>
       <description>Roger Trinquier, the French counterinsurgency theorist, said, “The sine qua non of victory in [insurgent/counterinsurgent] warfare is the unconditional support of the people.” In Influence Operations, success is ultimately about the ability to overcome one’s status as an outsider.
 The past few months have seen cyberwar intersect with Influence Operations, in Russia using chicanery along these lines to influence the U.S. presidential election. In wanting to learn more about Influence Ops, I stumbled across a paper from the Naval War College entitled “Influence Operations &amp;amp; the Human Domain.</description>
-    </item>
-    
-    <item>
-      <title>Revisiting 2016 Security Predictions</title>
-      <link>https://swagitda.com/blog/posts/revisiting-2016-security-predictions/</link>
-      <pubDate>Fri, 30 Dec 2016 21:08:55 -0400</pubDate>
-      
-      <guid>https://swagitda.com/blog/posts/revisiting-2016-security-predictions/</guid>
-      <description>The flaming word cloud of the cyberpocalypse, from 16 of the larger security vendors’ 2016 predictions
-I totally get it — it’d be boring to say year after year, “Yep, phishing definitely still works,” so security vendors instead pour creative thinking and marketing pizzazz into their annual security predictions. Most seem to aim to match the majority of their predictions to other vendors’, with generally one or two unique predictions thrown in to show off their innovative thought leadering.</description>
     </item>
     
   </channel>
