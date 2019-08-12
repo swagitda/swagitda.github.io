@@ -6,6 +6,7 @@
     <description>Recent content in InfoSec on Kelly Shortridge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Fri, 02 Aug 2019 08:35:54 -0400</lastBuildDate>
     
 	<atom:link href="https://swagitda.com/blog/tags/infosec/index.xml" rel="self" type="application/rss+xml" />
@@ -159,36 +160,6 @@ The past few months have seen cyberwar intersect with Influence Operations, in R
       <guid>https://swagitda.com/blog/posts/revisiting-2016-security-predictions/</guid>
       <description>The flaming word cloud of the cyberpocalypse, from 16 of the larger security vendors’ 2016 predictions
 I totally get it — it’d be boring to say year after year, “Yep, phishing definitely still works,” so security vendors instead pour creative thinking and marketing pizzazz into their annual security predictions. Most seem to aim to match the majority of their predictions to other vendors’, with generally one or two unique predictions thrown in to show off their innovative thought leadering.</description>
-    </item>
-    
-    <item>
-      <title>3 questions on cybersecurity that should be asked in the debates</title>
-      <link>https://swagitda.com/blog/posts/3-questions-cybersecurity-debates/</link>
-      <pubDate>Fri, 30 Sep 2016 20:41:38 -0400</pubDate>
-      
-      <guid>https://swagitda.com/blog/posts/3-questions-cybersecurity-debates/</guid>
-      <description>A citizen’s guide (or to sound smart at cocktail parties) While the first U.S. presidential debate included an open-ended, broad question about each candidate’s stance on cybersecurity, it accomplished little in helping citizens understand the candidates’ actual policy positions — nor why cybersecurity policies are relevant at all on the national scale. Saying “cybersecurity is important” for the U.S. today is like saying “having a military is important.”
-But, it was also clear from the responses, such as bringing up Daesh’s use of the internet for recruitment or using the term “the cyber,” that there’s a lack of mainstream understanding of what cybersecurity actually means in a policy context (the argument against the term “cyber” and its derivatives is left for another day).</description>
-    </item>
-    
-    <item>
-      <title>Behavioral Models of InfoSec: Prospect Theory</title>
-      <link>https://swagitda.com/blog/posts/behavioral-models-infosec-prospect-theory/</link>
-      <pubDate>Mon, 01 Aug 2016 20:20:59 -0400</pubDate>
-      
-      <guid>https://swagitda.com/blog/posts/behavioral-models-infosec-prospect-theory/</guid>
-      <description>To those in the information security / cyber security industry, it’s an accepted truth that there exists a pernicious incentive structure that overwhelmingly puts the odds in the attacker’s favor. The consistent narrative is that defenders make irrational decisions and focus on the wrong problems while vendors peddle FUD and snake oil that not just fails to bolster the defensive cause, but inflicts ongoing harm.
-But, I’ve seen less in the way of seeking to understand defenders’ irrational decision making patterns and why the industry is the way it currently is…and even less about how to fix this toxic feedback loop.</description>
-    </item>
-    
-    <item>
-      <title>Apple vs. FBI: Privacy &amp; Inequality</title>
-      <link>https://swagitda.com/blog/posts/apple-vs-fbi-privacy-inequality/</link>
-      <pubDate>Thu, 17 Mar 2016 19:29:13 -0400</pubDate>
-      
-      <guid>https://swagitda.com/blog/posts/apple-vs-fbi-privacy-inequality/</guid>
-      <description>In recent news, there’s been a fiery public relations battle between the FBI and Apple. While there has been vocal protest by the technology community, and particularly the information security community, against the FBI’s request, it has largely been rooted in (very valid) concerns over the degradation of software security, national security and privacy in a general sense. However, there’s a larger societal concern that cannot be ignored.
-By way of brief background, the gist of the legal fight is that the FBI wants Apple to create a custom version of its operating system for iPhones, iOS, that would allow it to circumvent the safety measure of reducing the frequency with which the device’s passcode can be guessed when locked.</description>
     </item>
     
   </channel>
