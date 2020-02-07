@@ -37,10 +37,9 @@ Adopting the “chaotic infosec” philosophy (the application of chaos engineer
 Adopting the “chaotic infosec” philosophy (the application of chaos engineering to information security) can influence those who build and secure systems to operate more like attackers – that is, to be more risk averse and to more quickly update their mental models given new inputs." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://swagitda.com/blog/posts/when-prospect-theory-meets-chaos-engineering/" />
-
-<meta property="og:image" content="https://swagitda.com/blog/img/kelly.jpg" />
-<meta property="article:published_time" content="2019-08-12T08:00:00-04:00"/>
-<meta property="article:modified_time" content="2019-08-12T08:00:00-04:00"/><meta property="og:site_name" content="Kelly Shortridge" />
+<meta property="og:image" content="https://swagitda.com/blog/img/kelly.jpg"/>
+<meta property="article:published_time" content="2019-08-12T08:00:00-04:00" />
+<meta property="article:modified_time" content="2019-08-12T08:00:00-04:00" /><meta property="og:site_name" content="Kelly Shortridge" />
  
 
 
@@ -59,7 +58,7 @@ Adopting the “chaotic infosec” philosophy (the application of chaos engineer
 
 
 
-<link rel="stylesheet" href="/blog/main.min.1e082fda87f0631325a31062ed720fe4d2f59a8ad073f94135cd9e2c110835e1.css">
+<link rel="stylesheet" href="/blog/main.min.ed05eed32979207e9adf8fe8adcbb7e30bc01be96f21baf28d07a82e9edde374.css">
 
 
 
@@ -69,20 +68,17 @@ Adopting the “chaotic infosec” philosophy (the application of chaos engineer
 <link rel="manifest" href="/blog/site.webmanifest">
 <link rel="mask-icon" href="/blog/safari-pinned-tab.svg" color="#252627">
 <link rel="shortcut icon" href="/blog/favicon.ico">
-<meta name="theme-color" content="#252627">
-<meta itemprop="name" content="When Prospect Theory Meets Chaos Engineering">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="When Prospect Theory Meets Chaos Engineering">
 <meta itemprop="description" content="There is a connection between my research into behavioral models of information security and my Black Hat USA talk with Dr. Forsgren from last week regarding DevOps and the future of information security that might not be immediately obvious. However, it is a connection I believe is worth illuminating.
 Adopting the “chaotic infosec” philosophy (the application of chaos engineering to information security) can influence those who build and secure systems to operate more like attackers – that is, to be more risk averse and to more quickly update their mental models given new inputs.">
-
-
 <meta itemprop="datePublished" content="2019-08-12T08:00:00-04:00" />
 <meta itemprop="dateModified" content="2019-08-12T08:00:00-04:00" />
 <meta itemprop="wordCount" content="956">
+<meta itemprop="image" content="https://swagitda.com/blog/img/kelly.jpg"/>
 
 
 
 <meta itemprop="keywords" content="InfoSec,Behavioral InfoSec," />
-
 
 
 
@@ -181,42 +177,23 @@ Adopting the “chaotic infosec” philosophy (the application of chaos engineer
             
 
             <div class="post-content">
-                
-
-<p>There is a connection between my research into <a href="https://swagitda.com/blog/tags/behavioral-infosec/">behavioral models of information security</a> and <a href="https://swagitda.com/speaking/us-19-Shortridge-Forsgren-Controlled-Chaos-the-Inevitable-Marriage-of-DevOps-and-Security.pdf">my Black Hat USA talk</a> with Dr. Forsgren from last week regarding DevOps and the future of information security that might not be immediately obvious. However, it is a connection I believe is worth illuminating.</p>
-
+                <p>There is a connection between my research into <a href="https://swagitda.com/blog/tags/behavioral-infosec/">behavioral models of information security</a> and <a href="https://swagitda.com/speaking/us-19-Shortridge-Forsgren-Controlled-Chaos-the-Inevitable-Marriage-of-DevOps-and-Security.pdf">my Black Hat USA talk</a> with Dr. Forsgren from last week regarding DevOps and the future of information security that might not be immediately obvious. However, it is a connection I believe is worth illuminating.</p>
 <p>Adopting the “chaotic infosec” philosophy (the application of chaos engineering to information security) can influence those who build and secure systems to operate more like attackers – that is, to be more risk averse and to more quickly update their mental models given new inputs. This post will explore what exactly this means, and why it represents a valuable mindshift for organizational security.</p>
-
 <h2 id="how-does-prospect-theory-apply-to-security">How does Prospect Theory apply to security?</h2>
-
 <p>While I encourage you to read my prior post on applying <a href="https://swagitda.com/blog/posts/behavioral-models-infosec-prospect-theory">Prospect Theory to information security</a>, I recognize it is a bit long. I will thus summarize its relevant points here.</p>
-
 <p>Humans make decisions by setting a reference point (their view of the status quo) against which they measure the decisions’ potential outcomes. Empirical evidence shows that people generally prefer options that provide a small but certain gain rather than options that provide a larger but uncertain gain. They also generally prefer options that provide a miniscule chance of losing nothing (with a larger chance of losing a lot) rather than options that provide a certain chance of losing less.</p>
-
 <p>These results, which are modelled by <a href="https://en.wikipedia.org/wiki/Prospect_theory">Prospect Theory</a>, suggest that people are risk averse when making decisions with positive potential outcomes (when they are in the “Gain Domain”), and risk seeking when making decisions with negative potential outcomes (when they are in the “Loss Domain”). The further people get away from their reference point (again, their perceived status quo), these trends exaggerate. People who experience heavy losses become even more risk seeking in an attempt to jump out of the figurative hole, and people who experience substantial gains become even more risk averse to preserve their winnings.</p>
-
 <p><a href="https://swagitda.com/blog/posts/behavioral-models-infosec-prospect-theory/#infosec-ref-points">My hypothesis was</a> that defenders set their reference point based on a status quo where their organization is perceived to be secure and uncompromised (to simplify a bit). The nature of enterprise defense means that defenders will operate in the Loss Domain as a result – compromises are inevitable, as are failures to maintain a level of security posture that defenders find acceptable. Attackers, in contrast, operate in the Gain Domain – because their reference point is their current level of compromise, and, generally, they are likely to positively further their position of pwnage.</p>
-
 <p><a href="https://swagitda.com/blog/posts/behavioral-models-infosec-prospect-theory/#infosec-examples">As a result</a>, defenders are more risk seeking, leading them to adopt more speculative solutions to attempt to reach their reference point of perfect prevention instead of adopting more basic solutions with larger probabilities of success but a perception of being less likely to stop a big, sexy attack. Attackers, on the other hand, are more risk averse, moving more cautiously to achieve their goals, opting first for inexpensive methods before moving to expensive methods.</p>
-
 <h2 id="how-does-chaos-transform-reference-points">How does chaos transform reference points?</h2>
-
 <p>Applying the principles of chaos engineering to information security, as outlined in <a href="https://swagitda.com/speaking/us-19-Shortridge-Forsgren-Controlled-Chaos-the-Inevitable-Marriage-of-DevOps-and-Security.pdf">my Black Hat USA 2019 talk</a>, changes the reference point for defenders. If you extend the chaos engineering philosophy of “things will fail” to “things will be pwned,” then the status quo for security teams becomes the assumption of compromise.</p>
-
 <p>For traditional enterprise security programs, mapping Prospect Theory to security shows a state of being that is fragile to reality. This state anchors those involved in enterprise defense to the Loss Domain, as shown in the graph below, encouraging risk seeking and reactive behaviors.</p>
-
-<p><img style="display:block; margin-right:auto; margin-left:auto; max-width:75%;" src="/blog/img/prospect-theory-infosec-today.png" alt="A Prospect Theory graph representing how infosec lives in the Loss Domain today"></p>
-
+<img style="display:block; margin-right:auto; margin-left:auto; max-width:75%;" src="/blog/img/prospect-theory-infosec-today.png" alt="A Prospect Theory graph representing how infosec lives in the Loss Domain today">
 <p>In contrast, applying chaos engineering to security transforms security&rsquo;s Prospect Theory graph into being resilient to reality, encouraging risk averse and strategic behaviors. A dearth of significant compromises at your organization now feels like a gain, as shown in the graph below, incentivizing the preservation of that gain – which can be achieved in part through some of the <a href="https://swagitda.com/speaking/us-19-Shortridge-Forsgren-Controlled-Chaos-the-Inevitable-Marriage-of-DevOps-and-Security.pdf">strategies and testing</a> I enumerated in the Black Hat talk (see the “A Phoenix Rises” section).</p>
-
-<p><img style="display:block; margin-right:auto; margin-left:auto; max-width:75%;" src="/blog/img/prospect-theory-infosec-chaos.png" alt="A Prospect Theory graph for infosec when influenced by the chaos philosophy of things will be pwned"></p>
-
+<img style="display:block; margin-right:auto; margin-left:auto; max-width:75%;" src="/blog/img/prospect-theory-infosec-chaos.png" alt="A Prospect Theory graph for infosec when influenced by the chaos philosophy of things will be pwned">
 <p>As demonstrated in these graphs, by assuming “things will be pwned,” there is really only upside – so those who architect and secure their organizations’ systems can begin feeling less defeated and instead feel proud of their efforts. Implementing security “basics” can feel unrewarding, but successfully increasing the cost of attack deserves a sense of accomplishment. While I use the term “stopping” on the Gain Domain side of the graphs for brevity, I do not literally mean preventing attacks by skiddies or APTs from happening. Rather, I mean stopping these attacks from negatively impacting your organization, which is ultimately what matters.</p>
-
 <p>Just as failure-based metrics, such as Time Between Failure, inhibit innovation and make systems more brittle, allowing an organization&rsquo;s security contributors to languish in the Loss Domain similarly hinders resilience and, ultimately, organizational performance. Instead, a success-oriented metric like Time to Recovery promotes innovation and resilience – and operating in the Gain Domain incentivizes similar behaviors. Therefore, switching your reference point from “maintaining secure systems” to “things will be pwned” – despite seeming like trivial semantics – has the potential to subtly transform how your teams design systems.</p>
-
 <h2 id="conclusion">Conclusion</h2>
-
 <p>The most effective way to engender cultural change is by changing what people do, not what they think. By altering the security mental model through this path of chaos, you change behavioral vectors – harnessing people’s embedded wetware – to promote the type of strategic, innovative, and perceptive decision-making that we so desperately need to build and maintain secure systems. Adopting the mantle of chaos through the philosophy of “things will be pwned” can reorient team perception to operate in a more strategic, less frenetic fashion by re-architecting their relationship between risk and reward.</p>
 
             </div>
@@ -272,7 +249,7 @@ Adopting the “chaotic infosec” philosophy (the application of chaos engineer
                 <footer class="footer">
     <div class="footer__inner">
         <div class="footer__content">
-            <span>&copy; 2019</span>
+            <span>&copy; 2020</span>
             
                 <span><a href="https://swagitda.com/blog/">Kelly Shortridge</a></span>
             
@@ -295,7 +272,7 @@ Adopting the “chaotic infosec” philosophy (the application of chaos engineer
 
 
 
-<script type="text/javascript" src="/blog/bundle.min.cf7871ed49474a80ed457154d24e61f7881adbe0f9384951a74ac46b688a39a4dbfa68bc6d37baeb058186de354ead3487d4ee7f083ea4cba860c48600b694f3.js" integrity="sha512-z3hx7UlHSoDtRXFU0k5h94ga2&#43;D5OElRp0rEa2iKOaTb&#43;mi8bTe66wWBht41Tq00h9Tufwg&#43;pMuoYMSGALaU8w=="></script>
+<script type="text/javascript" src="/blog/bundle.min.c3134e4a0a3d5ff628f7e932e4d6846626cad5e9457046b58e07c6036133ea0d788e9d330d51e709b43a7a8a22e1a4cf28aff9dbf27756a6a12b9c135260726a.js" integrity="sha512-wxNOSgo9X/Yo9&#43;ky5NaEZibK1elFcEa1jgfGA2Ez6g14jp0zDVHnCbQ6eooi4aTPKK/52/J3VqahK5wTUmByag=="></script>
 
 
 

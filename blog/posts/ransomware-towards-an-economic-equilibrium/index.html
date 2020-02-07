@@ -34,10 +34,9 @@
 <meta property="og:description" content="This post will explore my thoughts on how the economics of physical ransom translate to digital ransom, and how we as an industry might want to reconceive our current approaches to considering and dealing with ransomware – and the criminals who run ransomware campaigns." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://swagitda.com/blog/posts/ransomware-towards-an-economic-equilibrium/" />
-
-<meta property="og:image" content="https://swagitda.com/blog/img/kelly.jpg" />
-<meta property="article:published_time" content="2019-12-15T20:58:46-05:00"/>
-<meta property="article:modified_time" content="2019-12-15T20:58:46-05:00"/><meta property="og:site_name" content="Kelly Shortridge" />
+<meta property="og:image" content="https://swagitda.com/blog/img/kelly.jpg"/>
+<meta property="article:published_time" content="2019-12-15T20:58:46-05:00" />
+<meta property="article:modified_time" content="2019-12-15T20:58:46-05:00" /><meta property="og:site_name" content="Kelly Shortridge" />
  
 
 
@@ -56,7 +55,7 @@
 
 
 
-<link rel="stylesheet" href="/blog/main.min.1e082fda87f0631325a31062ed720fe4d2f59a8ad073f94135cd9e2c110835e1.css">
+<link rel="stylesheet" href="/blog/main.min.ed05eed32979207e9adf8fe8adcbb7e30bc01be96f21baf28d07a82e9edde374.css">
 
 
 
@@ -66,19 +65,16 @@
 <link rel="manifest" href="/blog/site.webmanifest">
 <link rel="mask-icon" href="/blog/safari-pinned-tab.svg" color="#252627">
 <link rel="shortcut icon" href="/blog/favicon.ico">
-<meta name="theme-color" content="#252627">
-<meta itemprop="name" content="Ransomware: Towards an Economic Equilibrium">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="Ransomware: Towards an Economic Equilibrium">
 <meta itemprop="description" content="This post will explore my thoughts on how the economics of physical ransom translate to digital ransom, and how we as an industry might want to reconceive our current approaches to considering and dealing with ransomware – and the criminals who run ransomware campaigns.">
-
-
 <meta itemprop="datePublished" content="2019-12-15T20:58:46-05:00" />
 <meta itemprop="dateModified" content="2019-12-15T20:58:46-05:00" />
 <meta itemprop="wordCount" content="1765">
+<meta itemprop="image" content="https://swagitda.com/blog/img/kelly.jpg"/>
 
 
 
 <meta itemprop="keywords" content="InfoSec,Behavioral InfoSec," />
-
 
 
 
@@ -177,90 +173,65 @@
             
 
             <div class="post-content">
-                
-
-<p><img src="/blog/img/ransomware.JPG" alt="Image of someone giving money in exchange for a key" /></p>
-
+                <p><img src="/blog/img/ransomware.JPG" alt="Image of someone giving money in exchange for a key"></p>
 <p>On my vacation to Namibia earlier this year, I caught up on podcasts during the long stretches of driving (albeit in breathtaking scenery). One episode in particular jolted my mental juices – the <a href="http://www.econtalk.org/anja-shortland-on-kidnap/">EconTalk episode featuring Dr. Anja Shortland</a> discussing her book <em><a href="https://www.amazon.com/Kidnap-Inside-Business-Anja-Shortland/dp/0198815476">Kidnap</a></em>. The fascinating chat between Dr. Shortland and host Russ Roberts delved into the incentive mechanisms between kidnappers who demand ransom and insurers, and the economic paradigm that results.</p>
-
 <p>Naturally, there are implications for ransomware, the digital counterpart to physical ransom. In particular, I believe the role cyber insurance should play deserves closer examination, but there are other spicy takes that fomented as I listened to and digested the podcast episode. This post will explore my thoughts on how the economics of physical ransom translate to digital ransom, and how we as an industry might want to reconceive our current approaches to considering and dealing with ransomware – and the criminals who run ransomware campaigns.</p>
-
-<hr />
-
+<hr>
 <h1 id="the-shadow-of-the-future">The Shadow of the Future</h1>
-
-<p>First, let us set the stage with a discussion of the “shadow of the future” and how it applies to the ransom market. The “shadow of the future” is a game theoretic concept that explains how people will behave differently if they believe they will need to interact with their current counterparty again (“repeated games” in game theory lingo). This belief encourages cooperation between counterparties, as they will play much nicer in the hope of receiving better treatment in future interactions.<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup> Thus, the future lingers like a “shadow” over current interactions.</p>
-
+<p>First, let us set the stage with a discussion of the “shadow of the future” and how it applies to the ransom market. The “shadow of the future” is a game theoretic concept that explains how people will behave differently if they believe they will need to interact with their current counterparty again (“repeated games” in game theory lingo). This belief encourages cooperation between counterparties, as they will play much nicer in the hope of receiving better treatment in future interactions.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> Thus, the future lingers like a “shadow” over current interactions.</p>
 <p>In the kidnapping for ransom world, criminals cast a shadow of the future. If they desire to kidnap again, they want to “behave” in the immediate interaction to help them in their future business. If kidnappers demonstrate they will honor their demands upon receipt of a ransom, then future victims will be more likely to pay ransoms, believing that promises are more likely to be kept. This, Dr. Shortland surmises, is why 97.5% of kidnapping cases “go right” – which is better than the success rate of many <em>legitimate</em> transactions.</p>
-
 <p>An example Dr. Shortland gives is that Somali pirates, upon receiving ransom for multimillion-dollar sea vessels, are repeatedly seen to leave the vessels and not re-hijack them again. The exchange of hijacked sea vessels for cash consistently goes right for all parties involved – even in a situation that is rife with mistrust and conflict. The Somali pirates are now trustable in a twisted way, as owners of sea vessels know that they will indeed have their ships returned reliably if they pay the ransom. As Dr. Shortland points out, this shadow of the future applies to kidnapping gangs within cities as well, through the power of local gossip.</p>
-
 <p>How does the shadow of the future apply to ransomware? It certainly <em>should</em> apply, as few attackers run ransomware campaigns against only one target, thus creating the opportunity for future interactions with victims. Victims, at least in theory, would be more likely to pay ransoms to criminal groups who were known to reliably decrypt data, especially those who do so without any data loss.</p>
-
-<p>Unfortunately, the data on ransomware and success rates (on both sides) is limited, particularly when getting as granular as specific ransomware types. At first blush, the statistic from the first quarter of 2019 that 96%<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup> of ransomware payments were successful seems to match the high success rate of kidnapping cases. However, that just represents the number of victims who received a decryption tool. The recovery rate in the same survey ranges from 80% to 100%, depending on the ransomware type. Other surveys suggest the data recovery rate is as low as 66%<sup class="footnote-ref" id="fnref:3"><a href="#fn:3">3</a></sup> to 75%<sup class="footnote-ref" id="fnref:4"><a href="#fn:4">4</a></sup>.</p>
-
-<p>These statistics suggest a far more inefficient market for ransomware than exists for physical ransom. Additional supporting evidence of this inefficiency arises from the mismatch of ransomware campaigns with the most reliable data recovery and campaigns with the highest ransom demanded. Ryuk requests $286,557 on average<sup class="footnote-ref" id="fnref:5"><a href="#fn:5">5</a></sup>, despite their approximately 80% data recovery rate, due to targeting larger enterprises. Grand Crab, in contrast, demands just under $8,000 but offers an approximately 100% data recovery rate. This seems like a far cry from a “nice equilibrium” as exists in the physical sphere.</p>
-
-<hr />
-
+<p>Unfortunately, the data on ransomware and success rates (on both sides) is limited, particularly when getting as granular as specific ransomware types. At first blush, the statistic from the first quarter of 2019 that 96%<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> of ransomware payments were successful seems to match the high success rate of kidnapping cases. However, that just represents the number of victims who received a decryption tool. The recovery rate in the same survey ranges from 80% to 100%, depending on the ransomware type. Other surveys suggest the data recovery rate is as low as 66%<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> to 75%<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</p>
+<p>These statistics suggest a far more inefficient market for ransomware than exists for physical ransom. Additional supporting evidence of this inefficiency arises from the mismatch of ransomware campaigns with the most reliable data recovery and campaigns with the highest ransom demanded. Ryuk requests $286,557 on average<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>, despite their approximately 80% data recovery rate, due to targeting larger enterprises. Grand Crab, in contrast, demands just under $8,000 but offers an approximately 100% data recovery rate. This seems like a far cry from a “nice equilibrium” as exists in the physical sphere.</p>
+<hr>
 <h1 id="encouraging-better-attackers">Encouraging Better Attackers</h1>
-
 <p>This kind of illegal activity is an inevitability – neither physical nor digital ransom can be fully prevented. Therefore, we must optimize given the constraints of this reality. Just like you want to encourage kidnappers that do not kill their victims, we want to encourage attackers that do not lose ransomed data.</p>
-
-<p>With this grounding aspiration in mind, let me offer you my ghost pepper-level take. There is some level of attacker activity that represents a healthy equilibrium, and defining that equilibrium (perhaps “only teams that can discover and weaponize 0day”) is healthier than trying to stop attacker activity. That is, if we can eliminate the <a href="https://en.wikipedia.org/wiki/Script_kiddie">script kiddies</a> and #basicbitch<sup class="footnote-ref" id="fnref:6"><a href="#fn:6">6</a></sup> attackers who lack the operational resources to ensure data fidelity when conducting digital ransom, organizations will be better off – even if they are still hit by sophisticated attackers who will receive payments but reliably facilitate data recovery.</p>
-
+<p>With this grounding aspiration in mind, let me offer you my ghost pepper-level take. There is some level of attacker activity that represents a healthy equilibrium, and defining that equilibrium (perhaps “only teams that can discover and weaponize 0day”) is healthier than trying to stop attacker activity. That is, if we can eliminate the <a href="https://en.wikipedia.org/wiki/Script_kiddie">script kiddies</a> and #basicbitch<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup> attackers who lack the operational resources to ensure data fidelity when conducting digital ransom, organizations will be better off – even if they are still hit by sophisticated attackers who will receive payments but reliably facilitate data recovery.</p>
 <p>As Dr. Shortland cited, the presence of armed guards in the Niger delta creates a “nice equilibrium,” because it, in essence, raises the cost of attack. Disorganized, resource-constrained street gangs cannot pursue physical ransom as one of their normal activities when they must contend with armed guards. Only more sophisticated criminal organizations will possess the means to pursue physical ransom – and they are vastly more likely to adhere to the aforementioned shadow of the future, leading them to behave professionally and responsibly.</p>
-
-<hr />
-
+<hr>
 <h1 id="the-role-of-cyber-insurance">The Role of Cyber Insurance</h1>
-
 <p>How can we encourage this kind of equilibrium? If we look to the physical ransom domain, insurance companies play a critical role. Kidnap insurance creates stability in the market, reducing the friction between “buyers” (the victim’s representatives) and “sellers” (the kidnappers). Of course, it would be remiss of me not to acknowledge the dark side of insurance – the creation of macro-level moral hazard. Kidnap insurance’s very existence allows kidnapping to be an especially profitable ongoing activity. However, the safer ends – based on current evidence – seem to suitably justify the means.</p>
-
-<p>The insurers’ goal, in the kidnapping market, is to eliminate stupid or irrational kidnappers from the market – those who make errors in process or judgment, such as cutting off fingers to hasten payment of ransom. Likewise, cyber insurance’s goal should be the same, to eliminate the skidiots<sup class="footnote-ref" id="fnref:7"><a href="#fn:7">7</a></sup> who could accidentally brick systems or delete data and to encourage more sophisticated attackers who are true to their promises and conduct their operations reliably and professionally.</p>
-
+<p>The insurers’ goal, in the kidnapping market, is to eliminate stupid or irrational kidnappers from the market – those who make errors in process or judgment, such as cutting off fingers to hasten payment of ransom. Likewise, cyber insurance’s goal should be the same, to eliminate the skidiots<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup> who could accidentally brick systems or delete data and to encourage more sophisticated attackers who are true to their promises and conduct their operations reliably and professionally.</p>
 <p>One can envision a world in which a cyber insurance company negotiates a flat rate to receive the decryptor, then sending a bonus if all data is recovered. Such a scheme would incentivize attackers to maximize victim data recovery upon receipt of payment. This, of course, relies on the “shadow of the future” – but it is in the best interests of the victims, cyber insurance firms, and attackers to develop the trust that full payments will be received and data will be fully recovered.</p>
-
 <p>You may be thinking to yourself, “This feels really icky – aren’t the attackers winning here?” Attackers will continue to be a reality, as, likely, will ransomware. By accepting reality, we can depart from the unrealistic goal of “eliminate all ransomware attacks” to “maximize reliability of data recovery in ransomware attacks.” Part of maximizing reliability is encouraging better attackers, which is done by raising the cost of attack.</p>
-
 <p>Naturally, there are caveats. Both physical and digital ransom are examples of markets in which imperfect information is actually advantageous to the “good” side, as insurance companies benefit from information being withheld from criminals. Accordingly, insurance companies should withhold the extent to which individuals are insured to prevent victims from divulging how much money the attackers could receive. The attackers will logically ask for the maximum ransom payment based on their expectations – so it is better to minimize their expectations as much as possible.</p>
-
 <p>As Dr. Shortland advises, the goal is to “manage the size of the towel the [attackers] think they’re squeezing.” We – ideally, through insurance companies – must convince the attacker that they have reaped everything they could from their attack. Therein lies the beautiful pragmatism of this strategy: we focus on the elements we can control (perceptions) rather than the elements we cannot (motivations, resources, etc.). Yes, implementing proper backup and recovery solutions is within defenders’ control, too, but as we can see from the seemingly weekly headlines about ransomware incidents, we need a sane Plan B.</p>
-
-<hr />
-
+<hr>
 <h1 id="conclusion">Conclusion</h1>
-
 <p>In general, there is much information security can learn from domains which have a rich history of experimenting with solutions to similar problems. Physical ransom, in which a rather efficient market between attackers, victims, and insurance companies exists, is a pertinent exemplar for how infosec can more efficiently deal with ransomware.</p>
-
 <p>While it may feel uncomfortable to accept a healthy level of malicious activity, at a certain point, we must become pragmatic rather than wallowing in sententious idealism. We can never fully prevent attacks, and that goes for ransomware as well. But we do have a chance to encourage more intelligent attackers – who operate professionally, incentivized by ongoing business interests – so that the ultimate impact of ransomware is less deleterious than what transpires under the claws of disorganized, incompetent attackers.</p>
-
-<p>This may not be the safer world we imagined, but, as Machiavelli advised centuries ago, “Prudence consists in knowing how to distinguish the character of troubles, and for choice to take the lesser evil.”<sup class="footnote-ref" id="fnref:8"><a href="#fn:8">8</a></sup> We owe it to those who depend on our expertise to think more boldly in how we can build a sustainable equilibrium in a world – digital and otherwise – that will always be troubled by aggressors.</p>
-
-<hr />
-<div class="footnotes">
-
-<hr />
-
+<p>This may not be the safer world we imagined, but, as Machiavelli advised centuries ago, “Prudence consists in knowing how to distinguish the character of troubles, and for choice to take the lesser evil.”<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup> We owe it to those who depend on our expertise to think more boldly in how we can build a sustainable equilibrium in a world – digital and otherwise – that will always be troubled by aggressors.</p>
+<hr>
+<section class="footnotes" role="doc-endnotes">
+<hr>
 <ol>
-<li id="fn:1">This, as with many things in economics and game theory, does not always hold true, depending on the context. In the realm of international relations, where the shadow of the future is commonly studied, <a href="https://www.sciencedirect.com/science/article/pii/0167268195000771">some researchers</a> <a href="https://www.sciencedirect.com/science/article/pii/0167268195000771">suggest</a> the shadow can actually harm cooperation.
- <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
-<li id="fn:2">Statistic sourced <a href="https://www.coveware.com/blog/2019/4/15/ransom-amounts-rise-90-in-q1-as-ryuk-ransomware-increases">via Coveware</a>
- <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
-<li id="fn:3"><a href="https://blog.trendmicro.com/paying-for-ransomware-could-cost-you-more-than-just-the-ransom/">Trend Micro, 2016</a>
- <a class="footnote-return" href="#fnref:3"><sup>[return]</sup></a></li>
-<li id="fn:4"><a href="https://www.fortinet.com/content/dam/fortinet/assets/white-papers/WP-Mapping-The-Ransomware-Landscape.pdf">Fortinet, 2016</a>
- <a class="footnote-return" href="#fnref:4"><sup>[return]</sup></a></li>
-<li id="fn:5">Both Ryuk and Grand Crab&rsquo;s monetary amounts are taken from the Coveware report in footnote 2.
- <a class="footnote-return" href="#fnref:5"><sup>[return]</sup></a></li>
-<li id="fn:6">I still have yet to find a word or term that so immediately evokes the blend of insipidness, mediocrity, and formulaicity that “basic bitch” conveys.
- <a class="footnote-return" href="#fnref:6"><sup>[return]</sup></a></li>
-<li id="fn:7">Credit to <a href="https://twitter.com/r00tkillah">@r00tkillah</a> for this delightful term for script kiddies.
- <a class="footnote-return" href="#fnref:7"><sup>[return]</sup></a></li>
-<li id="fn:8">This quote is, of course, from <a href="https://www.gutenberg.org/files/1232/1232-h/1232-h.htm">&ldquo;The Prince.&rdquo;</a>
- <a class="footnote-return" href="#fnref:8"><sup>[return]</sup></a></li>
+<li id="fn:1" role="doc-endnote">
+<p>This, as with many things in economics and game theory, does not always hold true, depending on the context. In the realm of international relations, where the shadow of the future is commonly studied, <a href="https://www.sciencedirect.com/science/article/pii/0167268195000771">some researchers</a> <a href="https://www.sciencedirect.com/science/article/pii/0167268195000771">suggest</a> the shadow can actually harm cooperation. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>Statistic sourced <a href="https://www.coveware.com/blog/2019/4/15/ransom-amounts-rise-90-in-q1-as-ryuk-ransomware-increases">via Coveware</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p><a href="https://blog.trendmicro.com/paying-for-ransomware-could-cost-you-more-than-just-the-ransom/">Trend Micro, 2016</a> <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p><a href="https://www.fortinet.com/content/dam/fortinet/assets/white-papers/WP-Mapping-The-Ransomware-Landscape.pdf">Fortinet, 2016</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p>Both Ryuk and Grand Crab&rsquo;s monetary amounts are taken from the Coveware report in footnote 2. <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p>I still have yet to find a word or term that so immediately evokes the blend of insipidness, mediocrity, and formulaicity that “basic bitch” conveys. <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7" role="doc-endnote">
+<p>Credit to <a href="https://twitter.com/r00tkillah">@r00tkillah</a> for this delightful term for script kiddies. <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8" role="doc-endnote">
+<p>This quote is, of course, from <a href="https://www.gutenberg.org/files/1232/1232-h/1232-h.htm">&ldquo;The Prince.&quot;</a> <a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
 </ol>
-</div>
+</section>
 
             </div>
         </article>
@@ -315,7 +286,7 @@
                 <footer class="footer">
     <div class="footer__inner">
         <div class="footer__content">
-            <span>&copy; 2019</span>
+            <span>&copy; 2020</span>
             
                 <span><a href="https://swagitda.com/blog/">Kelly Shortridge</a></span>
             
@@ -338,7 +309,7 @@
 
 
 
-<script type="text/javascript" src="/blog/bundle.min.cf7871ed49474a80ed457154d24e61f7881adbe0f9384951a74ac46b688a39a4dbfa68bc6d37baeb058186de354ead3487d4ee7f083ea4cba860c48600b694f3.js" integrity="sha512-z3hx7UlHSoDtRXFU0k5h94ga2&#43;D5OElRp0rEa2iKOaTb&#43;mi8bTe66wWBht41Tq00h9Tufwg&#43;pMuoYMSGALaU8w=="></script>
+<script type="text/javascript" src="/blog/bundle.min.c3134e4a0a3d5ff628f7e932e4d6846626cad5e9457046b58e07c6036133ea0d788e9d330d51e709b43a7a8a22e1a4cf28aff9dbf27756a6a12b9c135260726a.js" integrity="sha512-wxNOSgo9X/Yo9&#43;ky5NaEZibK1elFcEa1jgfGA2Ez6g14jp0zDVHnCbQ6eooi4aTPKK/52/J3VqahK5wTUmByag=="></script>
 
 
 

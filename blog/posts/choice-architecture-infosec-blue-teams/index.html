@@ -34,8 +34,9 @@
 <meta property="og:description" content="I recently spoke at Art into Science: A Conference for Defense, which was an intellectually-stimulating (and delightfully quirky) conference focused on moving towards a professional discipline for defensive infosec. Sadly, I had to rush through the last part of my presentation, so I wanted to do it justice by fleshing out my thoughts here. I’m going to skip through the first two sections of my talk— an introduction to cognitive biases and how they manifest in infosec, then challenges that arise due to the group nature of blue teams — but feel free to check out the slides here." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://swagitda.com/blog/posts/choice-architecture-infosec-blue-teams/" />
-<meta property="article:published_time" content="2017-02-08T16:17:34-04:00"/>
-<meta property="article:modified_time" content="2017-02-08T16:17:34-04:00"/><meta property="og:site_name" content="Kelly Shortridge" />
+<meta property="og:image" content="https://swagitda.com/blog/img/kelly.jpg"/>
+<meta property="article:published_time" content="2017-02-08T16:17:34-04:00" />
+<meta property="article:modified_time" content="2017-02-08T16:17:34-04:00" /><meta property="og:site_name" content="Kelly Shortridge" />
  
 
 
@@ -54,7 +55,7 @@
 
 
 
-<link rel="stylesheet" href="/blog/main.min.1e082fda87f0631325a31062ed720fe4d2f59a8ad073f94135cd9e2c110835e1.css">
+<link rel="stylesheet" href="/blog/main.min.ed05eed32979207e9adf8fe8adcbb7e30bc01be96f21baf28d07a82e9edde374.css">
 
 
 
@@ -64,19 +65,16 @@
 <link rel="manifest" href="/blog/site.webmanifest">
 <link rel="mask-icon" href="/blog/safari-pinned-tab.svg" color="#252627">
 <link rel="shortcut icon" href="/blog/favicon.ico">
-<meta name="theme-color" content="#252627">
-<meta itemprop="name" content="Choice Architecture for InfoSec Blue Teams">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="Choice Architecture for InfoSec Blue Teams">
 <meta itemprop="description" content="I recently spoke at Art into Science: A Conference for Defense, which was an intellectually-stimulating (and delightfully quirky) conference focused on moving towards a professional discipline for defensive infosec. Sadly, I had to rush through the last part of my presentation, so I wanted to do it justice by fleshing out my thoughts here. I’m going to skip through the first two sections of my talk— an introduction to cognitive biases and how they manifest in infosec, then challenges that arise due to the group nature of blue teams — but feel free to check out the slides here.">
-
-
 <meta itemprop="datePublished" content="2017-02-08T16:17:34-04:00" />
 <meta itemprop="dateModified" content="2017-02-08T16:17:34-04:00" />
 <meta itemprop="wordCount" content="1705">
+<meta itemprop="image" content="https://swagitda.com/blog/img/kelly.jpg"/>
 
 
 
 <meta itemprop="keywords" content="InfoSec,Behavioral InfoSec," />
-
 
 
 
@@ -175,39 +173,24 @@
             
 
             <div class="post-content">
-                
-
-<p><img src="/blog/img/frederic-audet-161331.jpg" alt="Image of Darth Jar Jar" /></p>
-
+                <p><img src="/blog/img/frederic-audet-161331.jpg" alt="Image of Darth Jar Jar"></p>
 <p>I recently spoke at Art into Science: A Conference for Defense, which was an intellectually-stimulating (and delightfully quirky) conference focused on moving towards a professional discipline for defensive infosec. Sadly, I had to rush through the last part of my presentation, so I wanted to do it justice by fleshing out my thoughts here. I’m going to skip through the first two sections of my talk— an introduction to cognitive biases and how they manifest in infosec, then challenges that arise due to the group nature of blue teams — but feel free to <a href="https://swagitda.com/speaking/Know-Thyself-Kelly-Shortridge-ACoD-2017.pdf">check out the slides here</a>.</p>
-
 <p>The last part of the presentation focused on the “what to do about it” — I developed a choice architecture for blue teams in information security. Choice architecture is a term coined by Richard Thaler and Cass Sunstein in their famous book “Nudge,” and means the design of how choices can be presented to people.</p>
-
 <p>The implication is that it can be designed in a way that impacts decision making, and more specifically in a way that minimizes errors due to cognitive biases. It’s basically a “how do we fix it?” response to the flaws in thinking that behavioral economics exposes (see <a href="/blog/posts/behavioral-models-infosec-prospect-theory/">my post on Prospect Theory &amp; Information Security</a> for a primer on some of these flaws as they appear in infosec).</p>
-
 <p>I’ll walk you through my proposed choice architecture for how blue teams can develop a decision-making process that is resilient to cognitive biases, or you can just skip to the conclusion for the 6-step guide.</p>
-
 <ol>
 <li><a href="#belief-prompting">Belief Prompting</a></li>
 <li><a href="#decision-trees">Decision Trees</a></li>
 <li><a href="#social-tactics">Social Tactics</a></li>
 <li><a href="#conclusion">Conclusion</a></li>
 </ol>
-
-<hr />
-
-<h2 id="a-name-belief-prompting-a-belief-prompting"><a name="belief-prompting"></a>Belief Prompting</h2>
-
-<p><img src="/blog/img/thinking-clueless.gif" alt="Gif of Cher from Clueless thinking" /><em>Get your thinky thinky face on</em></p>
-
+<hr>
+<h2 id="a-namebelief-promptingabelief-prompting"><a name="belief-prompting"></a>Belief Prompting</h2>
+<p><img src="/blog/img/thinking-clueless.gif" alt="Gif of Cher from Clueless thinking"><em>Get your thinky thinky face on</em></p>
 <p>People have beliefs about their opponents in any confrontation. People also tend to believe their opponents are less rational than they actually are — and often make imprudent decisions as if their opponent is randomly choosing their decisions. A counter to this blunder is asking players for their explicit beliefs about what their opponents will do, known as <a href="https://books.google.com/books?id=bMWHDAAAQBAJ&amp;pg=PA132&amp;lpg=PA132&amp;dq=%22belief-prompting%22&amp;source=bl&amp;ots=QsfBOYXBlM&amp;sig=EDB2DND3JdfbnXJG7CJycLQOMjk&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwjlupiu7fTRAhXq5YMKHfzxClgQ6AEIKjAD"><strong>belief prompting</strong></a>. Think of it as increasing one’s thinking by an additional step — how will your opponent respond to your move?</p>
-
 <p>What beliefs about adversaries need to be evaluated in information security? I believe the answer is capital, time, equipment and risk aversion. You can also use the kill chain as a guide for the timeline of moves you need to consider. It’s critical to keep in mind that attackers aren’t profligate; as Dino Dai Zovi said, “attackers will take the least cost path through an attack graph from their start node to their goal node.”</p>
-
 <p>Thus, theorizing probabilities of each type of move is necessary in order to consider weighted risk — for example, your adversary using iOS 0day on one of your employees may have a 1% chance (probably even less) of successfully occurring, so it most likely shouldn’t be the top influence in your decision making.</p>
-
 <p>Some example questions to ask yourself, or when discussing with team members, are:</p>
-
 <ul>
 <li>Which of our assets will attackers want?</li>
 <li>How does our adversary choose and craft their delivery method?</li>
@@ -217,19 +200,12 @@
 <li>What are the cost / resources required for an attacker to make [insert type of offensive move]?</li>
 <li>What is the probability that an attacker will conduct [insert type of offensive move here]?</li>
 </ul>
-
 <p>As an example of where these questions might lead you, here’s a belief prompting process for exfiltration, with defensive moves in blue and offensive moves in orange:</p>
-
-<p><img src="/blog/img/belief-prompting-example.png" alt="An example of belief prompting for information security, by Kelly Shortridge" /></p>
-
-<hr />
-
-<h2 id="a-name-decision-trees-a-decision-trees"><a name="decision-trees"></a>Decision Trees</h2>
-
-<p><img src="/blog/img/jared-swot.gif" alt="Jared from the show Silicon Valley presenting a SWOT analysis" /><em>I’m basically Jared for the infosec industry</em></p>
-
+<p><img src="/blog/img/belief-prompting-example.png" alt="An example of belief prompting for information security, by Kelly Shortridge"></p>
+<hr>
+<h2 id="a-namedecision-treesadecision-trees"><a name="decision-trees"></a>Decision Trees</h2>
+<p><img src="/blog/img/jared-swot.gif" alt="Jared from the show Silicon Valley presenting a SWOT analysis"><em>I’m basically Jared for the infosec industry</em></p>
 <p>Creating a decision tree allows for a feedback loop that is invaluable in aiding the decision-making process, particularly in prioritizing strategies. I believe a decision tree model is the most efficient means of solving a few challenges in decision-making, as it:</p>
-
 <ol>
 <li>Forces you to belief-prompt and increase your thinking by many additional steps</li>
 <li>Provides an auditable risk model so you can identify where your assumptions broke down (and thus mitigate the “doubling down” effect and self-justification) in event of a breach — an attempt to remove politics out of security strategy (e.g. favoring a product because you implemented it)</li>
@@ -237,47 +213,26 @@
 <li>Lets you see commonalities between attack trees where certain solutions might counter multiple moves</li>
 <li>Helps you visualize the hardest path for attackers so you can tune your strategy to force them down that path</li>
 </ol>
-
 <p>In creating the decision tree, you need to map out how attackers will respond to each of your countermeasures and to assign probabilities to the likelihood that they will pursue a certain option, as well as what options defenders have and the probability that these countermeasures will successfully prevent the offensive move.</p>
-
 <p>The decision tree below from my presentation is for illustrative purposes— it covers a criminal group gaining access to a company’s server. It’s based on a Defender-Attacker-Defender model (see <a href="https://swagitda.com/speaking/Volatile-Memory-Kelly-Shortridge-Troopers-2017.pdf">my upcoming talk at Troopers</a> to go deeper!), with potential countermeasures by defense in blue and potential moves by attackers in gold.</p>
-
 <p>The left branches in each set of moves represent the lower-cost moves, while the right branches represent the more expensive moves (cost here meaning monetary, human and time capital). For example, “#YOLO” means doing absolutely nothing, while “Privilege Separation” requires doing more than nothing, thus making it the more expensive option.</p>
-
-<p><img src="/blog/img/decision-tree-example.png" alt="An example of a decision tree for information security, by Kelly Shortridge" /></p>
-
+<p><img src="/blog/img/decision-tree-example.png" alt="An example of a decision tree for information security, by Kelly Shortridge"></p>
 <p>For those who need a walkthrough — if you start with the “Criminal Group” adversary that has just arrived on one of your servers, you can consider a preemptive defensive move being either: implementing privilege separation, which has an guesstimated 60% chance of deterring or thwarting the attacker; or “implementing” the #YOLO strategy of doing nothing, which has a 0% chance of deterring the attacker.</p>
-
 <p>If you decide to implement Privilege Separation, the attacker’s response will either be the lower cost option — to scan for reachable data from their lower-privilege vantage with a guesstimated 50% likelihood of leading the attacker to a valuable box — or they could pursue the more resource-intensive option of throwing a known exploit, which has a guesstimated 50% chance of successfully working.</p>
-
 <p>Following the “hard path,” whereby the attacker chooses using the known known exploit, the defender then contemplates what countermeasures they can put in place to challenge the attacker further. For example, they could implement seccomp, which filters sys calls and has a guesstimated rate of thwarting the known exploits 50% of the time, or they could implement GRSec, which bears the higher cost of being barely usable but blocks basically all known exploits.</p>
-
 <p>If you go down the GRSec path, the attacker’s only option becomes “elite” 0day (meaning 0day that requires certain level of finesse and reliability), which takes significantly more time to craft — and the probability of it being deployed successfully is very low.</p>
-
 <p>I know how y’all can be, so let me emphasize: <strong>the goal is not to quibble over exact probabilities until you can prove who is the better pedant</strong>. It’s meant to be a framework to aid in decision-making by visualizing your belief-prompting and is a starting point from which you can tweak your assumptions as you ingest real-world data.</p>
-
-<hr />
-
+<hr>
 <h2 id="social-tactics">Social Tactics</h2>
-
-<p><img src="/blog/img/kittens-meeting.gif" alt="A gif of kittens having a &quot;meeting&quot;" /><em>omg it&rsquo;s kittens having a meeting</em></p>
-
+<p><img src="/blog/img/kittens-meeting.gif" alt="A gif of kittens having a &ldquo;meeting&rdquo;"><em>omg it&rsquo;s kittens having a meeting</em></p>
 <p>I won’t cover the social dynamics of teams here (<a href="https://swagitda.com/speaking/Know-Thyself-Kelly-Shortridge-ACoD-2017.pdf">check out the presentation</a> to read about it if interested), but belief-prompting vis a vis probability-labeled decision-trees ameliorates team-based biases as well. However, blue team leaders need to consider a few additional tactics to round out their decision-making model — most of which are in the vein of framing, i.e. how choices are presented (see <a href="https://en.wikipedia.org/wiki/Framing_effect_%28psychology%29">framing effects</a> for more).</p>
-
 <p>First and foremost, leaders shouldn’t state their own views before soliciting feedback, lest it anchor the rest of the team’s opinions. It could lead to the team then guessing, “Ok, what do I think the boss believes?” but hopefully there’s a sufficient culture of respect that there isn’t that sort of paranoia. In that vein, using a decision tree can also serve as a starting point to solicit dissenting feedback — it can be easier to disagree with a probability or label on a tree rather than words coming out of someone’s mouth.</p>
-
 <p>A key challenge for blue teams is how to deter short-termism and overly risky decisions. The nebulousness of costs and benefits of certain strategies or implementing solutions results in uncertainty of blue team members in regards to how their performance is evaluated. Soliciting longer-term views on these decisions, clearly articulating what constitutes success and failure for them, and agreeing on these figures with whomever is the “doer” for the project would alleviate much of this uncertainty.</p>
-
 <p>The goal is to not pressure team members into agreeing to something just to show off their skill level, or because they fear they will look incompetent if they refuse, but to foster a sense of buy-in to the plan and maintain explicit expectations.</p>
-
 <p>Finally, blue teams can leverage the decision trees when weighing different types of strategies or solution options, by estimating how much of a difference it would make in decreasing the probability of an attack succeeding vs. its cost — including monetary cost as well as personnel cost (having to hire a new person just to manage a product would require a hefty reduction in risk to justify).</p>
-
-<hr />
-
+<hr>
 <h2 id="conclusion">Conclusion</h2>
-
 <p>Ultimately, the ideal bias-resilient decision making process for blue teams in information security looks something like:</p>
-
 <ol>
 <li>State beliefs about your adversaries</li>
 <li>Model decision trees</li>
@@ -286,11 +241,8 @@
 <li>Prioritize rationality and overall benefit over risk-taking</li>
 <li>Revisit and refine your decision trees after each incident</li>
 </ol>
-
 <p>I don’t claim to have all the answers, and welcome any and all feedback on how to refine this model of a decision-making model. In the spirit of the Art into Science con, we need to collaborate in order to move the ball forward meaningfully in the philosophy of defense and ultimately give defenders a more auspicious foundation upon which to architect their security strategy.</p>
-
-<hr />
-
+<hr>
 <p>Many thanks to <a href="https://twitter.com/snare?lang=en">snare</a> for reviewing.</p>
 
             </div>
@@ -346,7 +298,7 @@
                 <footer class="footer">
     <div class="footer__inner">
         <div class="footer__content">
-            <span>&copy; 2019</span>
+            <span>&copy; 2020</span>
             
                 <span><a href="https://swagitda.com/blog/">Kelly Shortridge</a></span>
             
@@ -369,7 +321,7 @@
 
 
 
-<script type="text/javascript" src="/blog/bundle.min.cf7871ed49474a80ed457154d24e61f7881adbe0f9384951a74ac46b688a39a4dbfa68bc6d37baeb058186de354ead3487d4ee7f083ea4cba860c48600b694f3.js" integrity="sha512-z3hx7UlHSoDtRXFU0k5h94ga2&#43;D5OElRp0rEa2iKOaTb&#43;mi8bTe66wWBht41Tq00h9Tufwg&#43;pMuoYMSGALaU8w=="></script>
+<script type="text/javascript" src="/blog/bundle.min.c3134e4a0a3d5ff628f7e932e4d6846626cad5e9457046b58e07c6036133ea0d788e9d330d51e709b43a7a8a22e1a4cf28aff9dbf27756a6a12b9c135260726a.js" integrity="sha512-wxNOSgo9X/Yo9&#43;ky5NaEZibK1elFcEa1jgfGA2Ez6g14jp0zDVHnCbQ6eooi4aTPKK/52/J3VqahK5wTUmByag=="></script>
 
 
 

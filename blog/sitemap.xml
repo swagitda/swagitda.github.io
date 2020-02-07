@@ -1,11 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://swagitda.com/blog/posts/analyzing-2020-rsa-innovation-sandbox/</loc>
+    <lastmod>2020-02-06T21:33:26-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/tags/infosec/</loc>
+    <lastmod>2020-02-06T21:33:26-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://swagitda.com/blog/</loc>
-    <lastmod>2019-12-17T20:00:00-05:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2020-02-06T21:33:26-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/tags/market-analysis/</loc>
+    <lastmod>2020-02-06T21:33:26-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/posts/</loc>
+    <lastmod>2020-02-06T21:33:26-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/tags/</loc>
+    <lastmod>2020-02-06T21:33:26-05:00</lastmod>
   </url>
   
   <url>
@@ -14,33 +38,13 @@
   </url>
   
   <url>
-    <loc>https://swagitda.com/blog/posts/</loc>
-    <lastmod>2019-12-17T20:00:00-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://swagitda.com/blog/tags/reading-list/</loc>
     <lastmod>2019-12-17T20:00:00-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://swagitda.com/blog/tags/</loc>
-    <lastmod>2019-12-17T20:00:00-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://swagitda.com/blog/tags/behavioral-infosec/</loc>
     <lastmod>2019-12-15T20:58:46-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://swagitda.com/blog/tags/infosec/</loc>
-    <lastmod>2019-12-15T20:58:46-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -56,12 +60,6 @@
   <url>
     <loc>https://swagitda.com/blog/posts/analyzing-blackhatusa-business-hall-2019/</loc>
     <lastmod>2019-08-02T08:35:54-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://swagitda.com/blog/tags/market-analysis/</loc>
-    <lastmod>2019-08-02T08:35:54-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -87,7 +85,6 @@
   <url>
     <loc>https://swagitda.com/blog/tags/risk-management/</loc>
     <lastmod>2018-12-20T22:02:49-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -108,7 +105,6 @@
   <url>
     <loc>https://swagitda.com/blog/tags/security-predictions/</loc>
     <lastmod>2018-12-05T20:07:01-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -119,7 +115,6 @@
   <url>
     <loc>https://swagitda.com/blog/tags/keynote/</loc>
     <lastmod>2018-08-01T17:26:47-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -180,7 +175,6 @@
   <url>
     <loc>https://swagitda.com/blog/tags/wtfunding/</loc>
     <lastmod>2016-05-17T19:35:10-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -196,7 +190,6 @@
   <url>
     <loc>https://swagitda.com/blog/tags/privacy/</loc>
     <lastmod>2016-03-17T19:29:13-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -211,7 +204,6 @@
   
   <url>
     <loc>https://swagitda.com/blog/categories/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>

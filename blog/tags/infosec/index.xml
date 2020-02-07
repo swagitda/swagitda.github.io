@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>InfoSec on Kelly Shortridge</title>
@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 15 Dec 2019 20:58:46 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 06 Feb 2020 21:33:26 -0500</lastBuildDate>
     
 	<atom:link href="https://swagitda.com/blog/tags/infosec/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Analyzing the 2020 RSA Innovation Sandbox Finalists</title>
+      <link>https://swagitda.com/blog/posts/analyzing-2020-rsa-innovation-sandbox/</link>
+      <pubDate>Thu, 06 Feb 2020 21:33:26 -0500</pubDate>
+      
+      <guid>https://swagitda.com/blog/posts/analyzing-2020-rsa-innovation-sandbox/</guid>
+      <description>How do the nominees for the 2020 RSA Conference’s Innovation Sandbox look compared to prior years? Like last year, I decided to explore the funding profile of the ten selected startups – but with the benefit of comparison this year.
+Total Funding Raised &amp;amp; the Latest Stage for each 2019 RSA Innovation Sandbox Finalist ($USD millions)
+The median funding raised by all ten startups this year is $14.3 million (mean of $21.</description>
+    </item>
     
     <item>
       <title>Ransomware: Towards an Economic Equilibrium</title>
@@ -38,7 +49,7 @@ Adopting the “chaotic infosec” philosophy (the application of chaos engineer
       
       <guid>https://swagitda.com/blog/posts/analyzing-blackhatusa-business-hall-2019/</guid>
       <description>Prerequisite plug that you should come see my talk with Dr. Nicole Forsgren at Black Hat next week (16:00 in South Pacific)!
-What type of vendors are showing themselves off in the Business Hall? Are they mostly startups? Exactly like last year, 46% of the vendors in the Business Hall are startups backed by venture capital (VC) firms. Private companies represent only 13% of total vendors this year (vs. 17% last year), and there are far more acquired companies (&amp;ldquo;M&amp;amp;A&amp;rdquo; within the chart) this year (8% vs.</description>
+What type of vendors are showing themselves off in the Business Hall? Are they mostly startups? Exactly like last year, 46% of the vendors in the Business Hall are startups backed by venture capital (VC) firms. Private companies represent only 13% of total vendors this year (vs. 17% last year), and there are far more acquired companies (&#34;</description>
     </item>
     
     <item>
@@ -118,7 +129,7 @@ In 2019, we predict 2019. Cyber espionage, cybercriminals — in 2019, they 
       
       <guid>https://swagitda.com/blog/posts/red-pill-of-resilience-infosec/</guid>
       <description>What follows is the full text of my keynote, also available as a video and as slides.
-There has been insufficient exploration of the first principles of resilience in the context of information security, despite the term being superficially peppered in our common discourse. Too often, resilience is conflated with robustness — to the detriment of us all.
+ There has been insufficient exploration of the first principles of resilience in the context of information security, despite the term being superficially peppered in our common discourse. Too often, resilience is conflated with robustness — to the detriment of us all.
 To state more poetically, through the pen of the notable fantasy author Robert Jordan referencing one of Aesop’s fables, “The oak fought the wind and was broken, the willow bent when it must and survived.</description>
     </item>
     
@@ -150,15 +161,6 @@ In 2018, security. Cyber security people will die. We’ve long debated where se
       <guid>https://swagitda.com/blog/posts/first-principles-building-security-products/</guid>
       <description>Using Shamir’s 10 Commandments of Commercial Security to build better security products
 A printout of Adi Shamir’s 10 Commandments of Commercial Security has been my #1 office essential since I first stumbled upon them, and I argue it should be yours, too. Shamir outlined these commandments in his talk at the Crypto ‘95 conference (yes, way back in 1995), and they not only spell out the first principles of enterprise security, but serve as a poignant reminder that although it feels as if the industry is evolving around us at a feverish pace, the fundamentals of building security products are true even two decades later.</description>
-    </item>
-    
-    <item>
-      <title>Choice Architecture for InfoSec Blue Teams</title>
-      <link>https://swagitda.com/blog/posts/choice-architecture-infosec-blue-teams/</link>
-      <pubDate>Wed, 08 Feb 2017 16:17:34 -0400</pubDate>
-      
-      <guid>https://swagitda.com/blog/posts/choice-architecture-infosec-blue-teams/</guid>
-      <description>I recently spoke at Art into Science: A Conference for Defense, which was an intellectually-stimulating (and delightfully quirky) conference focused on moving towards a professional discipline for defensive infosec. Sadly, I had to rush through the last part of my presentation, so I wanted to do it justice by fleshing out my thoughts here. I’m going to skip through the first two sections of my talk— an introduction to cognitive biases and how they manifest in infosec, then challenges that arise due to the group nature of blue teams — but feel free to check out the slides here.</description>
     </item>
     
   </channel>

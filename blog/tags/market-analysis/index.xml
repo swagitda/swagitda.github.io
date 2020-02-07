@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Market Analysis on Kelly Shortridge</title>
@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 02 Aug 2019 08:35:54 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 06 Feb 2020 21:33:26 -0500</lastBuildDate>
     
 	<atom:link href="https://swagitda.com/blog/tags/market-analysis/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Analyzing the 2020 RSA Innovation Sandbox Finalists</title>
+      <link>https://swagitda.com/blog/posts/analyzing-2020-rsa-innovation-sandbox/</link>
+      <pubDate>Thu, 06 Feb 2020 21:33:26 -0500</pubDate>
+      
+      <guid>https://swagitda.com/blog/posts/analyzing-2020-rsa-innovation-sandbox/</guid>
+      <description>How do the nominees for the 2020 RSA Conference’s Innovation Sandbox look compared to prior years? Like last year, I decided to explore the funding profile of the ten selected startups – but with the benefit of comparison this year.
+Total Funding Raised &amp;amp; the Latest Stage for each 2019 RSA Innovation Sandbox Finalist ($USD millions)
+The median funding raised by all ten startups this year is $14.3 million (mean of $21.</description>
+    </item>
     
     <item>
       <title>Analyzing the Black Hat USA 2019 Business Hall</title>
@@ -19,7 +30,7 @@
       
       <guid>https://swagitda.com/blog/posts/analyzing-blackhatusa-business-hall-2019/</guid>
       <description>Prerequisite plug that you should come see my talk with Dr. Nicole Forsgren at Black Hat next week (16:00 in South Pacific)!
-What type of vendors are showing themselves off in the Business Hall? Are they mostly startups? Exactly like last year, 46% of the vendors in the Business Hall are startups backed by venture capital (VC) firms. Private companies represent only 13% of total vendors this year (vs. 17% last year), and there are far more acquired companies (&amp;ldquo;M&amp;amp;A&amp;rdquo; within the chart) this year (8% vs.</description>
+What type of vendors are showing themselves off in the Business Hall? Are they mostly startups? Exactly like last year, 46% of the vendors in the Business Hall are startups backed by venture capital (VC) firms. Private companies represent only 13% of total vendors this year (vs. 17% last year), and there are far more acquired companies (&#34;</description>
     </item>
     
     <item>
