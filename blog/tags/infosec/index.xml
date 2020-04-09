@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 06 Feb 2020 21:33:26 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2020 20:22:57 -0400</lastBuildDate>
     
 	<atom:link href="https://swagitda.com/blog/tags/infosec/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shall We Play a Coordination Game?</title>
+      <link>https://swagitda.com/blog/posts/shall-we-play-a-coordination-game/</link>
+      <pubDate>Wed, 08 Apr 2020 20:22:57 -0400</pubDate>
+      
+      <guid>https://swagitda.com/blog/posts/shall-we-play-a-coordination-game/</guid>
+      <description>Examining the relationship between enterprise security and DevOps teams through the lens of game theory, specifically coordinative games.</description>
+    </item>
     
     <item>
       <title>Analyzing the 2020 RSA Innovation Sandbox Finalists</title>
@@ -149,16 +158,6 @@ Security is a product, but we treat it like a sacred, immutable grail to preserv
       <guid>https://swagitda.com/blog/posts/2018-cybersecurity-predictions/</guid>
       <description>Fed up with ridiculous infosec predictions for the upcoming year, I decided to aggregate them all and use the power of Markov Chains to generate my own list. What follows is the result, lightly edited solely for readability. I hope to be pioneering the next-gen AI-powered thought leadering market segment.
 In 2018, security. Cyber security people will die. We’ve long debated where security people will die. We expect this lucrative trend to continue through 2018.</description>
-    </item>
-    
-    <item>
-      <title>First Principles of Building Security Products</title>
-      <link>https://swagitda.com/blog/posts/first-principles-building-security-products/</link>
-      <pubDate>Mon, 12 Jun 2017 16:32:41 -0400</pubDate>
-      
-      <guid>https://swagitda.com/blog/posts/first-principles-building-security-products/</guid>
-      <description>Using Shamir’s 10 Commandments of Commercial Security to build better security products
-A printout of Adi Shamir’s 10 Commandments of Commercial Security has been my #1 office essential since I first stumbled upon them, and I argue it should be yours, too. Shamir outlined these commandments in his talk at the Crypto ‘95 conference (yes, way back in 1995), and they not only spell out the first principles of enterprise security, but serve as a poignant reminder that although it feels as if the industry is evolving around us at a feverish pace, the fundamentals of building security products are true even two decades later.</description>
     </item>
     
   </channel>

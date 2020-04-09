@@ -3,32 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://swagitda.com/blog/tags/behavioral-infosec/</loc>
+    <lastmod>2020-04-08T20:22:57-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/tags/infosec/</loc>
+    <lastmod>2020-04-08T20:22:57-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/</loc>
+    <lastmod>2020-04-08T20:22:57-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/posts/</loc>
+    <lastmod>2020-04-08T20:22:57-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/posts/shall-we-play-a-coordination-game/</loc>
+    <lastmod>2020-04-08T20:22:57-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/tags/</loc>
+    <lastmod>2020-04-08T20:22:57-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://swagitda.com/blog/posts/analyzing-2020-rsa-innovation-sandbox/</loc>
     <lastmod>2020-02-06T21:33:26-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://swagitda.com/blog/tags/infosec/</loc>
-    <lastmod>2020-02-06T21:33:26-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://swagitda.com/blog/</loc>
-    <lastmod>2020-02-06T21:33:26-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://swagitda.com/blog/tags/market-analysis/</loc>
-    <lastmod>2020-02-06T21:33:26-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://swagitda.com/blog/posts/</loc>
-    <lastmod>2020-02-06T21:33:26-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://swagitda.com/blog/tags/</loc>
     <lastmod>2020-02-06T21:33:26-05:00</lastmod>
   </url>
   
@@ -40,11 +50,6 @@
   <url>
     <loc>https://swagitda.com/blog/tags/reading-list/</loc>
     <lastmod>2019-12-17T20:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://swagitda.com/blog/tags/behavioral-infosec/</loc>
-    <lastmod>2019-12-15T20:58:46-05:00</lastmod>
   </url>
   
   <url>

@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 15 Dec 2019 20:58:46 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2020 20:22:57 -0400</lastBuildDate>
     
 	<atom:link href="https://swagitda.com/blog/tags/behavioral-infosec/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shall We Play a Coordination Game?</title>
+      <link>https://swagitda.com/blog/posts/shall-we-play-a-coordination-game/</link>
+      <pubDate>Wed, 08 Apr 2020 20:22:57 -0400</pubDate>
+      
+      <guid>https://swagitda.com/blog/posts/shall-we-play-a-coordination-game/</guid>
+      <description>Examining the relationship between enterprise security and DevOps teams through the lens of game theory, specifically coordinative games.</description>
+    </item>
     
     <item>
       <title>Ransomware: Towards an Economic Equilibrium</title>
