@@ -6,8 +6,22 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-        <lastBuildDate>Wed, 08 Apr 2020 20:22:57 -0400</lastBuildDate>
+        <lastBuildDate>Tue, 05 May 2020 07:57:42 -0400</lastBuildDate>
         <atom:link href="https://swagitda.com/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Kelly&#39;s Hierarchy of Security Product Needs &amp; Vendor Selection v1.0</title>
+            <link>https://swagitda.com/blog/posts/kellys-hierarchy-of-security-product-needs/</link>
+            <pubDate>Tue, 05 May 2020 07:57:42 -0400</pubDate>
+            
+            <guid>https://swagitda.com/blog/posts/kellys-hierarchy-of-security-product-needs/</guid>
+            <description>A look at the infosec industry&amp;rsquo;s hierarchy of product needs and what drives vendor selection. #antisec</description>
+            <content type="html"><![CDATA[<p><img src="/blog/img/hierarchy-infosec-product-needs-2020.png" alt="A triangle, similar to Maslow&rsquo;s hierarchy of needs, but for infosec. Starting at the bottom, the first row includes: single PAIN of glass, AI / Deep Learning / Galactic Magic, less than 100 percent false positive rate, STOPS ALL ZERO DAY, introduces 0day, founded in Silly Valley or Tel Aviv. The second row includes: celeb meet and greet at RSA, Gartner sycophant (crossed out) vassal (crossed out) Magic Quadrant Leader, NBAD / SINBAD. The third row includes: acquired by Cisco or Palo Alto Networks, PERIMETER DEFENSE BUT CLOUD, friend is on the advisory board, sent you a free Apple Watch for a demo. The fourth row includes: published a branded vulnerability, business plan or child&rsquo;s fingerpaint art?, AI less accurate than nested if statements, feature as a product. The fifth row includes: security posture chiropractor, solves the OWASP top 10, less painful than a swarm of literal wasps, the Miss Cleo of Cyber. The sixth row includes: 60 percent of the time, it works every time. The seventh row includes: MITRE ATT&CK namedrop, whatever tf platform means, outlining clouds in crayon as asset management. The eighth row includes: has a zero trust whitepaper, greater than 10 percent not-a-white-dudes on the leadership team. The ninth row includes: next-gen, &ldquo;Shift Left,&rdquo; enterprise-grade. The tenth row includes: threat model being addressed isn&rsquo;t from a DMT trip, subscription model. The eleventh row includes: will be obsolete after re:Invent or Cloud Next. The twelfth row includes: FUD-free marketing, UX that isn&rsquo;t just demoware. The thirteenth row includes: IAM as the new perimeter. The fourteenth row includes: doesn&rsquo;t cause a kernel panic. The fifteenth row includes: helps satisfy SOC2. The sixteenth row includes: resilience. The seventeenth row includes: developers don&rsquo;t hate it. The eighteenth row includes: product works. There is also an eye with a hot pink iris and a hexagram pupil at the top, for flare."></p>
+<p>What more is there to say, really?</p>
+<hr>
+<p>Thanks to Chris Hoff in 2013 for the <a href="https://www.rationalsurvivability.com/blog/2013/11/maslows-hierarchy-of-security-product-needs-vendor-selection/">original inspiration</a>.</p>
+]]></content>
+        </item>
         
         <item>
             <title>Shall We Play a Coordination Game?</title>

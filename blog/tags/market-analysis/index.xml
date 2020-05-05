@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 06 Feb 2020 21:33:26 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2020 07:57:42 -0400</lastBuildDate>
     
 	<atom:link href="https://swagitda.com/blog/tags/market-analysis/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Kelly&#39;s Hierarchy of Security Product Needs &amp; Vendor Selection v1.0</title>
+      <link>https://swagitda.com/blog/posts/kellys-hierarchy-of-security-product-needs/</link>
+      <pubDate>Tue, 05 May 2020 07:57:42 -0400</pubDate>
+      
+      <guid>https://swagitda.com/blog/posts/kellys-hierarchy-of-security-product-needs/</guid>
+      <description>A look at the infosec industry&amp;rsquo;s hierarchy of product needs and what drives vendor selection. #antisec</description>
+    </item>
     
     <item>
       <title>Analyzing the 2020 RSA Innovation Sandbox Finalists</title>
