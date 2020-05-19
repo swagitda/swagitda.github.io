@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 05 May 2020 07:57:42 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2020 16:00:41 -0400</lastBuildDate>
     
 	<atom:link href="https://swagitda.com/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>InfoSec</title>
       <link>https://swagitda.com/blog/tags/infosec/</link>
-      <pubDate>Tue, 05 May 2020 07:57:42 -0400</pubDate>
+      <pubDate>Mon, 18 May 2020 16:00:41 -0400</pubDate>
       
       <guid>https://swagitda.com/blog/tags/infosec/</guid>
       <description></description>
@@ -40,7 +40,7 @@
     </item>
     
     <item>
-      <title>Reading List</title>
+      <title>Reading-List</title>
       <link>https://swagitda.com/blog/tags/reading-list/</link>
       <pubDate>Tue, 17 Dec 2019 20:00:00 -0500</pubDate>
       

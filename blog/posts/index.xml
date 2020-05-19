@@ -6,8 +6,67 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-        <lastBuildDate>Tue, 05 May 2020 07:57:42 -0400</lastBuildDate>
+        <lastBuildDate>Mon, 18 May 2020 16:00:41 -0400</lastBuildDate>
         <atom:link href="https://swagitda.com/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Resilience in Security 101</title>
+            <link>https://swagitda.com/blog/posts/resilience-in-security-101/</link>
+            <pubDate>Mon, 18 May 2020 16:00:41 -0400</pubDate>
+            
+            <guid>https://swagitda.com/blog/posts/resilience-in-security-101/</guid>
+            <description>A short primer on what resilience means in information security, inteded as a resilience 101 resource for people who build, maintain, and secure systems or lead teams who do.</description>
+            <content type="html"><![CDATA[<p>This post highlights the key things you need to know about what resilience means in an information security context. It’s intended to serve as a 101 for people involved in building, maintaining, and securing systems.</p>
+<p>It&rsquo;s also meant to serve as an antidote for the recent twisting of the term by self-serving vendors and #thotleaders who are blisteringly unaware of the decades of research outside of infosec on the topic.</p>
+<blockquote>
+<p>tl;dr &ndash; Resilience in security means a flexible system that can absorb an attack and reorganize around the threat.</p>
+</blockquote>
+<hr>
+<h2 id="the-basics-of-resilience-in-infosec">The basics of resilience in infosec</h2>
+<p>Resilience in information security (and in other domains) consists of three characteristics: robustness, adaptability, and transformability.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p><strong>Robustness</strong> = withstanding and resisting a negative event. Think of this as your systems’ ability to prevent or block pwnage.</p>
+<p><strong>Adaptability</strong> = managing your current systems&rsquo; response to negative events. Think of this as minimizing event impact in your systems, optimizing for system recovery, and minimizing friction involved in changing your systems.</p>
+<p><strong>Transformability</strong> = reorganizing your system in response to updated assumptions. Think of this as moving to a new system configuration or trajectory when existing conditions are indefensible.</p>
+<hr>
+<h2 id="once-more-but-less-abstractly">Once more, but less abstractly</h2>
+<p>Let’s walk through a brief practical example to show how each of these characteristics of resilience work together.</p>
+<p>Your organization delivers a PHP application to customers. You use inline PHP code within the HTML of your web apps to perform database queries. An injection vulnerability is found in an instance of this inline PHP code.</p>
+<p><strong>Robustness</strong> manifests as implementation of a web application firewall to stop exploitation of the vuln, along with patching that instance of the vuln. These actions return things to “normal” – the prevailing status quo before discovery of the vuln (the negative event).</p>
+<p><strong>Adaptability</strong> manifests as removing inline queries from the application, then replacing them with one class that accesses the database and is responsible for all sanitization. This reduces potential incident impact and, by only requiring issues to be fixed in one place, minimizes friction involved in changing the system going forward.</p>
+<p><strong>Transformability</strong> manifests as re-architecting the application in a different language, like Java, to solve PHP’s endemic security problems. Evidence from application monitoring or publicly-disclosed vulnerabilities in PHP leads to updated assumptions about PHP’s suitability for the application. These assumptions motivate revision of previous choices that result in reorganization of the system to optimize for the evolving reality.</p>
+<p>Piecing it together, these activities result in a more flexibly-designed application that can absorb an attack and be reorganized based on its evolving threat context.</p>
+<hr>
+<h2 id="what-most-of-the-industry-gets-wrong">What most of the industry gets wrong</h2>
+<ol>
+<li>
+<p><strong>Robustness does not equal resilience.</strong> Robustness is insufficient on its own to foster resilience. Prevention is not resilience. Prevention is insufficient on its own to foster resilience. Being able to block or withstand an attack is not resilience. Being able to block or withstand an attack is insufficient on its own to foster resilience.</p>
+<p>I am spelling this out as plainly as I can because I see this misconception all the time now. Resilience is being used as a substitution for robustness, prevention, and “stopping threats” by marketing teams to make their stale pitches feel fresh again. Don’t be bamboozled by these misleading claims.</p>
+<p>If you want to understand more why this is such a dangerous conflation, read <a href="https://swagitda.com/blog/posts/red-pill-of-resilience-infosec/#robustness">the Robustness section</a> in my keynote on resilience.</p>
+</li>
+<li>
+<p><strong>Resilience is not a tech stack or set of tools.</strong> Given people still think DevOps is achieved by implementing a certain tech stack, I don’t hold much faith that people will let go of similar notions about resilience. Just like DevOps, resilience is a set of principles and practices. It’s an approach that aims to help you evolve your security as your environment and context evolves.</p>
+<p>Certain tools can support your resilience practices &ndash; such as transformability via migrating systems from on-prem to the cloud &ndash; but you will not be able to “do resilience” just by purchasing tech.</p>
+</li>
+</ol>
+<hr>
+<h2 id="in-conclusion">In Conclusion</h2>
+<p>I’ll repeat my definition again: Resilience in security means a flexible system that can absorb an attack and reorganize around the threat.</p>
+<p>I firmly believe resilience is the future of information security. Alas, the term is actively being bastardized by some vendors to serve their pestilent purposes. To the practitioners reading (whether you build systems or secure systems), remember that attackers are continuously evolving their methods based on changing context, and it is imperative for you to evolve your methods, too.</p>
+<p>Adopting a resilience approach will help you survive – and hopefully even thrive – in this dynamic digital world of ours.</p>
+<hr>
+<hr>
+<p>Thanks to my engineering and security friends for their feedback on drafts, especially Camille, James, and Vladimir!</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>I recommend reading the seminal paper <a href="https://www.ecologyandsociety.org/vol9/iss2/art5/">&ldquo;Resilience, adaptability and transformability in social–ecological systems&rdquo;</a> by B Walker, CS Holling, SR Carpenter, A Kinzig (2004).</p>
+<p>For a longer discussion about resilience in infosec, check out the <a href="https://swagitda.com/blog/posts/red-pill-of-resilience-infosec/">full text of my keynote</a> on the topic from 2017. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+]]></content>
+        </item>
         
         <item>
             <title>Kelly&#39;s Hierarchy of Security Product Needs &amp; Vendor Selection v1.0</title>

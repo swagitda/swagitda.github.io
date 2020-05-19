@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author"
+    content="Kelly Shortridge ">
+<meta name="description"
+    content="A short primer on what resilience means in information security, inteded as a resilience 101 resource for people who build, maintain, and secure systems or lead teams who do." />
+<meta name="keywords" content="blog, technology, infosec, cybersecurity, information security" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://swagitda.com/blog/posts/resilience-in-security-101/" />
+
+
+<title>
+    
+    Resilience in Security 101 | Kelly Shortridge 
+    
+</title>
+
+
+
+<meta name="twitter:title" content="Resilience in Security 101"/>
+<meta name="twitter:description" content="A short primer on what resilience means in information security, inteded as a resilience 101 resource for people who build, maintain, and secure systems or lead teams who do."/><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://swagitda.com/blog/img/napoleon-crossing-the-alps.jpg"/>
+
+
+
+<meta property="og:title" content="Resilience in Security 101" />
+<meta property="og:description" content="A short primer on what resilience means in information security, inteded as a resilience 101 resource for people who build, maintain, and secure systems or lead teams who do." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://swagitda.com/blog/posts/resilience-in-security-101/" />
+	
+<meta property="article:published_time" content="2020-05-18T16:00:41-04:00" />
+<meta property="article:modified_time" content="2020-05-18T16:00:41-04:00" /><meta property="og:site_name" content="Kelly Shortridge" />
+
+
+<meta property="og:title" content="Resilience in Security 101" />
+<meta property="og:description" content="A short primer on what resilience means in information security, inteded as a resilience 101 resource for people who build, maintain, and secure systems or lead teams who do." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://swagitda.com/blog/posts/resilience-in-security-101/" />
+<meta property="article:published_time" content="2020-05-18T16:00:41-04:00" />
+<meta property="article:modified_time" content="2020-05-18T16:00:41-04:00" /><meta property="og:site_name" content="Kelly Shortridge" />
+ 
+
+
+  <meta property="og:type" content="website" />
+   <meta property="og:title" content="Kelly Shortridge"/>
+   <meta property="og:description" content="Blog by Kelly Shortridge"/>
+   <meta property="og:site_name" content="Kelly Shortridge"/>
+   <meta property="og:url" content="https://swagitda.com/blog/"/>
+   <meta property="og:locale" content="en">
+   <meta name="image" property="og:image" content="https://swagitda.com/blog/img/napoleon-crossing-the-alps.jpg"/>
+   <meta property="og:type" content="website"/>
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/blog/main.min.ed05eed32979207e9adf8fe8adcbb7e30bc01be96f21baf28d07a82e9edde374.css">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/blog/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/blog/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/blog/favicon-16x16.png">
+<link rel="manifest" href="/blog/site.webmanifest">
+<link rel="mask-icon" href="/blog/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="/blog/favicon.ico">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="Resilience in Security 101">
+<meta itemprop="description" content="A short primer on what resilience means in information security, inteded as a resilience 101 resource for people who build, maintain, and secure systems or lead teams who do.">
+<meta itemprop="datePublished" content="2020-05-18T16:00:41-04:00" />
+<meta itemprop="dateModified" content="2020-05-18T16:00:41-04:00" />
+<meta itemprop="wordCount" content="822">
+
+
+
+<meta itemprop="keywords" content="InfoSec," />
+
+
+
+
+<meta property="article:published_time" content="2020-05-18 16:00:41 -0400 EDT" />
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  var _paq = window._paq || [];
+   
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setCookieDomain", "*.swagitda.com"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//swagitda.com/skynet/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//swagitda.com/skynet/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /swagitda.com/</span>
+            <span class="logo__cursor"></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://swagitda.com/blog/posts">Blog</a></li><li><a href="https://kellyshortridge.com/">About</a></li><li><a href="https://twitter.com/swagitda_"><img src='/blog/img/twitter.svg'></a></li><li><a href="https://www.linkedin.com/in/kellyshortridge"><img src='/blog/img/linkedin.svg'></a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>4 minutes
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title"><a href="https://swagitda.com/blog/posts/resilience-in-security-101/">Resilience in Security 101</a></h1>
+
+            
+
+            <div class="post-content">
+                <p>This post highlights the key things you need to know about what resilience means in an information security context. It’s intended to serve as a 101 for people involved in building, maintaining, and securing systems.</p>
+<p>It&rsquo;s also meant to serve as an antidote for the recent twisting of the term by self-serving vendors and #thotleaders who are blisteringly unaware of the decades of research outside of infosec on the topic.</p>
+<blockquote>
+<p>tl;dr &ndash; Resilience in security means a flexible system that can absorb an attack and reorganize around the threat.</p>
+</blockquote>
+<hr>
+<h2 id="the-basics-of-resilience-in-infosec">The basics of resilience in infosec</h2>
+<p>Resilience in information security (and in other domains) consists of three characteristics: robustness, adaptability, and transformability.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p><strong>Robustness</strong> = withstanding and resisting a negative event. Think of this as your systems’ ability to prevent or block pwnage.</p>
+<p><strong>Adaptability</strong> = managing your current systems&rsquo; response to negative events. Think of this as minimizing event impact in your systems, optimizing for system recovery, and minimizing friction involved in changing your systems.</p>
+<p><strong>Transformability</strong> = reorganizing your system in response to updated assumptions. Think of this as moving to a new system configuration or trajectory when existing conditions are indefensible.</p>
+<hr>
+<h2 id="once-more-but-less-abstractly">Once more, but less abstractly</h2>
+<p>Let’s walk through a brief practical example to show how each of these characteristics of resilience work together.</p>
+<p>Your organization delivers a PHP application to customers. You use inline PHP code within the HTML of your web apps to perform database queries. An injection vulnerability is found in an instance of this inline PHP code.</p>
+<p><strong>Robustness</strong> manifests as implementation of a web application firewall to stop exploitation of the vuln, along with patching that instance of the vuln. These actions return things to “normal” – the prevailing status quo before discovery of the vuln (the negative event).</p>
+<p><strong>Adaptability</strong> manifests as removing inline queries from the application, then replacing them with one class that accesses the database and is responsible for all sanitization. This reduces potential incident impact and, by only requiring issues to be fixed in one place, minimizes friction involved in changing the system going forward.</p>
+<p><strong>Transformability</strong> manifests as re-architecting the application in a different language, like Java, to solve PHP’s endemic security problems. Evidence from application monitoring or publicly-disclosed vulnerabilities in PHP leads to updated assumptions about PHP’s suitability for the application. These assumptions motivate revision of previous choices that result in reorganization of the system to optimize for the evolving reality.</p>
+<p>Piecing it together, these activities result in a more flexibly-designed application that can absorb an attack and be reorganized based on its evolving threat context.</p>
+<hr>
+<h2 id="what-most-of-the-industry-gets-wrong">What most of the industry gets wrong</h2>
+<ol>
+<li>
+<p><strong>Robustness does not equal resilience.</strong> Robustness is insufficient on its own to foster resilience. Prevention is not resilience. Prevention is insufficient on its own to foster resilience. Being able to block or withstand an attack is not resilience. Being able to block or withstand an attack is insufficient on its own to foster resilience.</p>
+<p>I am spelling this out as plainly as I can because I see this misconception all the time now. Resilience is being used as a substitution for robustness, prevention, and “stopping threats” by marketing teams to make their stale pitches feel fresh again. Don’t be bamboozled by these misleading claims.</p>
+<p>If you want to understand more why this is such a dangerous conflation, read <a href="https://swagitda.com/blog/posts/red-pill-of-resilience-infosec/#robustness">the Robustness section</a> in my keynote on resilience.</p>
+</li>
+<li>
+<p><strong>Resilience is not a tech stack or set of tools.</strong> Given people still think DevOps is achieved by implementing a certain tech stack, I don’t hold much faith that people will let go of similar notions about resilience. Just like DevOps, resilience is a set of principles and practices. It’s an approach that aims to help you evolve your security as your environment and context evolves.</p>
+<p>Certain tools can support your resilience practices &ndash; such as transformability via migrating systems from on-prem to the cloud &ndash; but you will not be able to “do resilience” just by purchasing tech.</p>
+</li>
+</ol>
+<hr>
+<h2 id="in-conclusion">In Conclusion</h2>
+<p>I’ll repeat my definition again: Resilience in security means a flexible system that can absorb an attack and reorganize around the threat.</p>
+<p>I firmly believe resilience is the future of information security. Alas, the term is actively being bastardized by some vendors to serve their pestilent purposes. To the practitioners reading (whether you build systems or secure systems), remember that attackers are continuously evolving their methods based on changing context, and it is imperative for you to evolve your methods, too.</p>
+<p>Adopting a resilience approach will help you survive – and hopefully even thrive – in this dynamic digital world of ours.</p>
+<hr>
+<hr>
+<p>Thanks to my engineering and security friends for their feedback on drafts, especially Camille, James, and Vladimir!</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>I recommend reading the seminal paper <a href="https://www.ecologyandsociety.org/vol9/iss2/art5/">&ldquo;Resilience, adaptability and transformability in social–ecological systems&rdquo;</a> by B Walker, CS Holling, SR Carpenter, A Kinzig (2004).</p>
+<p>For a longer discussion about resilience in infosec, check out the <a href="https://swagitda.com/blog/posts/red-pill-of-resilience-infosec/">full text of my keynote</a> on the topic from 2017. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://swagitda.com/blog/tags/infosec">InfoSec</a></span>
+                </p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>822 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-05-18 16:00 -0400</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h">Read other posts</span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+
+                    
+                        <span class="button next">
+                            <a href="https://swagitda.com/blog/posts/kellys-hierarchy-of-security-product-needs/">
+                                <span class="button__text">Kelly&#39;s Hierarchy of Security Product Needs &amp; Vendor Selection v1.0</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://swagitda.com/blog/">Kelly Shortridge</a></span>
+            
+            <span>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</span>
+            <span> <a href="https://swagitda.com/blog/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/blog/bundle.min.c3134e4a0a3d5ff628f7e932e4d6846626cad5e9457046b58e07c6036133ea0d788e9d330d51e709b43a7a8a22e1a4cf28aff9dbf27756a6a12b9c135260726a.js" integrity="sha512-wxNOSgo9X/Yo9&#43;ky5NaEZibK1elFcEa1jgfGA2Ez6g14jp0zDVHnCbQ6eooi4aTPKK/52/J3VqahK5wTUmByag=="></script>
+
+
+
+    </body>
+</html>
