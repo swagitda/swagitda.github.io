@@ -6,16 +6,16 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-        <lastBuildDate>Mon, 18 May 2020 16:00:41 -0400</lastBuildDate>
+        <lastBuildDate>Mon, 18 May 2020 20:00:41 -0400</lastBuildDate>
         <atom:link href="https://swagitda.com/blog/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
             <title>Resilience in Security 101</title>
             <link>https://swagitda.com/blog/posts/resilience-in-security-101/</link>
-            <pubDate>Mon, 18 May 2020 16:00:41 -0400</pubDate>
+            <pubDate>Mon, 18 May 2020 20:00:41 -0400</pubDate>
             
             <guid>https://swagitda.com/blog/posts/resilience-in-security-101/</guid>
-            <description>A short primer on what resilience means in information security, inteded as a resilience 101 resource for people who build, maintain, and secure systems or lead teams who do.</description>
+            <description>A short primer on what resilience means in information security, intended as a resilience 101 resource for people who build, maintain, and secure systems or lead teams who do.</description>
             <content type="html"><![CDATA[<p>This post highlights the key things you need to know about what resilience means in an information security context. It’s intended to serve as a 101 for people involved in building, maintaining, and securing systems.</p>
 <p>It&rsquo;s also meant to serve as an antidote for the recent twisting of the term by self-serving vendors and #thotleaders who are blisteringly unaware of the decades of research outside of infosec on the topic.</p>
 <blockquote>
