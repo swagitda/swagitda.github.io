@@ -6,8 +6,30 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-        <lastBuildDate>Mon, 18 May 2020 20:00:41 -0400</lastBuildDate>
+        <lastBuildDate>Wed, 05 Aug 2020 12:47:37 -0400</lastBuildDate>
         <atom:link href="https://swagitda.com/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Infosec Buzzword Bingo: All Editions</title>
+            <link>https://swagitda.com/blog/posts/buzzword-bingo-all-editions/</link>
+            <pubDate>Wed, 05 Aug 2020 12:47:37 -0400</pubDate>
+            
+            <guid>https://swagitda.com/blog/posts/buzzword-bingo-all-editions/</guid>
+            <description>Every edition of Infosec Startup Buzzword Bingo thus far (2017 through 2020).</description>
+            <content type="html"><![CDATA[<p>Every year, I attempt to distill the infosec zeitgeist into a bingo card filled with all the obnoxious, flamboyant, and inane buzzwords permeating the industry. This blog post includes all editions of the bingo card for your amusement and / or existential crises, and will be updated annually.</p>
+<h2 id="2020-infosec-buzzword-bingo-card">2020 Infosec Buzzword Bingo Card</h2>
+<p>See <a href="https://www.vice.com/en_us/article/epgp9j/infosec-buzzword-bingo-2020-edition">my article in VICE Motherboard</a> for detailed analysis.</p>
+<p><img src="/blog/img/infosec-startup-buzzword-bingo-2020.png" alt="Infosec Startup Buzzword Bingo card for 2020"></p>
+<h2 id="2019-infosec-buzzword-bingo-card">2019 Infosec Buzzword Bingo Card</h2>
+<p>See <a href="https://swagitda.com/blog/posts/infosec-buzzword-bingo-2019-edition/">my blog post</a> for detailed analysis.</p>
+<p><img src="/blog/img/infosec-startup-bingo-2019.png" alt="Infosec Startup Buzzword Bingo card for 2019"></p>
+<h2 id="2018-infosec-buzzword-bingo-card">2018 Infosec Buzzword Bingo Card</h2>
+<p><img src="/blog/img/infosec-startup-buzzword-bingo-2018.png" alt="Infosec Startup Buzzword Bingo card for 2018"></p>
+<h2 id="2017-infosec-buzzword-bingo-card">2017 Infosec Buzzword Bingo Card</h2>
+<p>It all started with <a href="https://twitter.com/swagitda_/status/912494974779973632">a Tweet</a>.
+<img src="/blog/img/infosec-startup-buzzword-bingo-2017.png" alt="Infosec Startup Buzzword Bingo card for 2017"></p>
+]]></content>
+        </item>
         
         <item>
             <title>Resilience in Security 101</title>

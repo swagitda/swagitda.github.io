@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 05 May 2020 07:57:42 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 05 Aug 2020 12:47:37 -0400</lastBuildDate>
     
 	<atom:link href="https://swagitda.com/blog/tags/market-analysis/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Infosec Buzzword Bingo: All Editions</title>
+      <link>https://swagitda.com/blog/posts/buzzword-bingo-all-editions/</link>
+      <pubDate>Wed, 05 Aug 2020 12:47:37 -0400</pubDate>
+      
+      <guid>https://swagitda.com/blog/posts/buzzword-bingo-all-editions/</guid>
+      <description>Every edition of Infosec Startup Buzzword Bingo thus far (2017 through 2020).</description>
+    </item>
     
     <item>
       <title>Kelly&#39;s Hierarchy of Security Product Needs &amp; Vendor Selection v1.0</title>

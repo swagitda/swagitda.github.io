@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 18 May 2020 20:00:41 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 05 Aug 2020 12:47:37 -0400</lastBuildDate>
     
 	<atom:link href="https://swagitda.com/blog/tags/infosec/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Infosec Buzzword Bingo: All Editions</title>
+      <link>https://swagitda.com/blog/posts/buzzword-bingo-all-editions/</link>
+      <pubDate>Wed, 05 Aug 2020 12:47:37 -0400</pubDate>
+      
+      <guid>https://swagitda.com/blog/posts/buzzword-bingo-all-editions/</guid>
+      <description>Every edition of Infosec Startup Buzzword Bingo thus far (2017 through 2020).</description>
+    </item>
     
     <item>
       <title>Resilience in Security 101</title>
@@ -145,17 +154,6 @@ In 2019, we predict 2019. Cyber espionage, cybercriminals — in 2019, they 
       
       <guid>https://swagitda.com/blog/posts/analyzing-blackhatusa-business-hall-2018/</guid>
       <description>What type of vendors are showing themselves off in the Business Hall? Are they mostly startups? Not quite “mostly,” but 46% of vendors in the hall are indeed VC-backed companies at varying stages of maturity. Privately held companies are a non-trivial segment at 17%, and there are 30 Private Equity-owned companies making up 12% of the hall. There are also 12 companies who are acquisitions, primarily those who were acquired within the past year; booths require being booked far in advance, leaving insufficient time to be assimilated into their acquiror’s booth (if so desired).</description>
-    </item>
-    
-    <item>
-      <title>The Red Pill of Resilience in InfoSec</title>
-      <link>https://swagitda.com/blog/posts/red-pill-of-resilience-infosec/</link>
-      <pubDate>Wed, 01 Aug 2018 17:26:47 -0400</pubDate>
-      
-      <guid>https://swagitda.com/blog/posts/red-pill-of-resilience-infosec/</guid>
-      <description>What follows is the full text of my keynote, also available as a video and as slides.
- There has been insufficient exploration of the first principles of resilience in the context of information security, despite the term being superficially peppered in our common discourse. Too often, resilience is conflated with robustness — to the detriment of us all.
-To state more poetically, through the pen of the notable fantasy author Robert Jordan referencing one of Aesop’s fables, “The oak fought the wind and was broken, the willow bent when it must and survived.</description>
     </item>
     
   </channel>
