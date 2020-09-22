@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 08 Apr 2020 20:22:57 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2020 08:00:41 -0400</lastBuildDate>
     
 	<atom:link href="https://swagitda.com/blog/tags/behavioral-infosec/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>On YOLOsec and FOMOsec</title>
+      <link>https://swagitda.com/blog/posts/on-yolosec-and-fomosec/</link>
+      <pubDate>Tue, 22 Sep 2020 08:00:41 -0400</pubDate>
+      
+      <guid>https://swagitda.com/blog/posts/on-yolosec-and-fomosec/</guid>
+      <description>This post will explore why both YOLO security (YOLOsec) and FOMO security (FOMOsec) are pernicious disservices to infosec defense and how you can spot them so that you may yeet them from your organization’s security strategy.</description>
+    </item>
     
     <item>
       <title>Shall We Play a Coordination Game?</title>

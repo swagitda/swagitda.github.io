@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 05 Aug 2020 12:47:37 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2020 08:00:41 -0400</lastBuildDate>
     
 	<atom:link href="https://swagitda.com/blog/tags/infosec/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>On YOLOsec and FOMOsec</title>
+      <link>https://swagitda.com/blog/posts/on-yolosec-and-fomosec/</link>
+      <pubDate>Tue, 22 Sep 2020 08:00:41 -0400</pubDate>
+      
+      <guid>https://swagitda.com/blog/posts/on-yolosec-and-fomosec/</guid>
+      <description>This post will explore why both YOLO security (YOLOsec) and FOMO security (FOMOsec) are pernicious disservices to infosec defense and how you can spot them so that you may yeet them from your organization’s security strategy.</description>
+    </item>
     
     <item>
       <title>Infosec Buzzword Bingo: All Editions</title>
@@ -145,15 +154,6 @@ It is challenging for people to understand risk dynamics conceptually for two pr
       <guid>https://swagitda.com/blog/posts/2019-cyber-security-predictions/</guid>
       <description>Fed up with ridiculous infosec predictions for the upcoming year, I decided to aggregate them all and use the power of Markov Chains to generate my own list. What follows is the result, very lightly edited solely for readability. You can see last year’s edition here.
 In 2019, we predict 2019. Cyber espionage, cybercriminals — in 2019, they materialize. What if this is a dangerous reality? For example, consider how the world feels sometimes.</description>
-    </item>
-    
-    <item>
-      <title>Analyzing the Black Hat USA 2018 Business Hall</title>
-      <link>https://swagitda.com/blog/posts/analyzing-blackhatusa-business-hall-2018/</link>
-      <pubDate>Mon, 06 Aug 2018 18:40:42 -0400</pubDate>
-      
-      <guid>https://swagitda.com/blog/posts/analyzing-blackhatusa-business-hall-2018/</guid>
-      <description>What type of vendors are showing themselves off in the Business Hall? Are they mostly startups? Not quite “mostly,” but 46% of vendors in the hall are indeed VC-backed companies at varying stages of maturity. Privately held companies are a non-trivial segment at 17%, and there are 30 Private Equity-owned companies making up 12% of the hall. There are also 12 companies who are acquisitions, primarily those who were acquired within the past year; booths require being booked far in advance, leaving insufficient time to be assimilated into their acquiror’s booth (if so desired).</description>
     </item>
     
   </channel>
