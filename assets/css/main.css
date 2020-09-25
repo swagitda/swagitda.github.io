@@ -1,6 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 
+/* new color scheme:
+periwinkle: #3772E1;
+hot pink: #FF47DA;
+purple: #8884FF;
+electric purple: #C04CFD;
+teal: #89D2DC;
+dark: #171A21;
+light: #EDF8FF;
+*/
+
+
 * {
 	vertical-align: baseline;
 	font-weight: inherit;
@@ -21,7 +32,7 @@ body {
 	font-size: 1.6em;
 	line-height: 1.6em;
 	font-family: 'Open Sans', sans-serif;
-	color: #C8EFFF
+	color: #EDF8FF
 }
 
 html, body {
@@ -330,7 +341,7 @@ body::before {
 h1, h2, h3, h4, h5, h6 {
 	margin-top: 0;
 	margin-bottom: 2rem;
-	color: #3E6D7F;
+	color: #AFC7F3;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -396,13 +407,13 @@ p {
 }
 
 a {
-	color: #63AECC;
+	color: #89D2DC;
 	text-decoration: none;
 	transition: 0.3s ease all
 }
 
 a:hover {
-	color: #7CD9FF;
+	color: #FFB5F0;
 	text-decoration: none
 }
 
@@ -645,12 +656,12 @@ li {
 }
 
 .main-page h1 {
-	color: #C8EFFF
+	color: #E7EAF0;
 }
 
 @media (min-width:768px) {
 	.main-page {
-		width: 75%
+		width: 75%;
 	}
 
 }
@@ -661,7 +672,7 @@ img {
 }
 
 .name {
-	color: #7CD9FF;
+	color: #CFCEFF;
 	text-align: left;
 	display: inline-block;
 	float: left;
@@ -694,22 +705,22 @@ img {
 
 }
 
-li a {
+/*li a {
 	font-size: 1.8rem;
-	color: #C8EFFF
+	color: #C8EFFF;
 }
 
 li p {
 	color: #b3b3b3
-}
+}*/
 
 .intro-blurb {
 	margin-bottom: 4rem;
-	font-size: 1.8rem
+	font-size: 1.8rem;
 }
 
 .talk {
 	font-size: 2.0rem;
 	margin-bottom: 0;
-	color: #7cd9ff
+	color: #7cd9ff;
 }
