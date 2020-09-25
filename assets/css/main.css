@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 
 /* new color scheme:
@@ -25,12 +25,12 @@ light: #EDF8FF;
 }
 
 html {
-	font-size: 62.5%
+	font-size: 62.5%;
 }
 
 body {
-	font-size: 1.6em;
-	line-height: 1.6em;
+	font-size: 1.6rem;
+	line-height: 2;
 	font-family: 'Open Sans', sans-serif;
 	color: #EDF8FF
 }
@@ -128,14 +128,14 @@ body::before {
 
 @media (min-width:1024px) {
 	.container {
-		width: calc(80% + 10rem)
+		width: calc(70% + 10rem)
 	}
 
 }
 
 @media (min-width:1920px) {
 	.container {
-		width: 90%
+		width: calc(90% + 10rem)
 	}
 
 }
@@ -622,13 +622,9 @@ a.nav-button {
 
 }
 
-ul {
-	list-style: none
-}
-
-ol {
-	list-style: decimal inside
-}
+/* ol {
+	list-style: decimal inside;
+} */
 
 ol, ul {
 	padding-left: 0;
@@ -640,7 +636,15 @@ ul ul, ul ol, ol ol, ol ul {
 }
 
 li {
-	margin-bottom: 2rem
+	display: list-item;
+	list-style: circle;
+	margin-bottom: 2rem;
+	margin-left: 2rem;
+}
+
+.talks li {
+	list-style: none;
+	margin-left: 0;
 }
 
 .main-page {
@@ -705,15 +709,6 @@ img {
 
 }
 
-/*li a {
-	font-size: 1.8rem;
-	color: #C8EFFF;
-}
-
-li p {
-	color: #b3b3b3
-}*/
-
 .intro-blurb {
 	margin-bottom: 4rem;
 	font-size: 1.8rem;
@@ -722,5 +717,11 @@ li p {
 .talk {
 	font-size: 2.0rem;
 	margin-bottom: 0;
-	color: #7cd9ff;
+	color: #C04CFD;
+}
+
+.about-pic {
+	width: 40%;
+	float: right;
+	margin-left: 2rem;
 }
