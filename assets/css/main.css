@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap");
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
 
 /* new color scheme:
 periwinkle: #3772E1;
@@ -637,9 +637,26 @@ ul ul, ul ol, ol ol, ol ul {
 
 li {
 	display: list-item;
-	list-style: circle;
 	margin-bottom: 2rem;
-	margin-left: 2rem;
+}
+
+/* .icon-list {
+	display: inline-block;
+	vertical-align: middle;
+}
+*/
+
+.fa-li i {
+	color: silver;
+	font-size: 5rem;
+	margin-right: 2rem;
+	line-height: inherit
+}
+
+@media (min-width:768px) {
+	.fa-li i {
+		font-size: 2rem;
+	}
 }
 
 .talks li {
@@ -684,13 +701,12 @@ img {
 	line-height: 5rem
 }
 
-.fa {
+.fab, .fas {
 	color: silver;
-	line-height: 5rem
 }
 
 .icons {
-	margin-top: 6rem
+	margin-top: 6rem;
 }
 
 .icons a {
@@ -721,7 +737,7 @@ img {
 }
 
 .about-pic {
-	width: 40%;
+	width: 25%;
 	float: right;
 	margin-left: 2rem;
 }
