@@ -106,7 +106,7 @@ body::before {
 
 @media (min-width:300px) {
 	.container {
-		width: 90%;
+		width: 85%;
 		padding: 0
 	}
 
@@ -664,15 +664,18 @@ li {
 	transform: translate(-50%, -50%)
 }
 
-.main-page h1 {
-	color: #E7EAF0;
-}
-
 @media (min-width:768px) {
 	.main-page {
 		width: 75%;
 	}
+}
 
+.main-page h1 {
+	color: #f3f5f8;
+}
+
+.main-page h2 {
+	color: #e0e8f8;
 }
 
 img {
@@ -701,6 +704,10 @@ img {
 .icons a {
 	margin-right: 3rem;
 	font-size: 3rem
+}
+
+.icons a:last-child {
+	margin-right: 0rem;
 }
 
 @media (min-width:768px) {
