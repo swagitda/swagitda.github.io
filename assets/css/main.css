@@ -569,6 +569,10 @@ a:hover {
 	transition-delay: 0.075s
 }
 
+.no-js .toggle-nav {
+	display: none
+}
+
 .toggle-nav {
 	display: inline-block;
 	position: relative;
@@ -622,9 +626,24 @@ a.nav-button {
 
 }
 
-/* ol {
-	list-style: decimal inside;
-} */
+.no-js .no-js-nav {
+	display: inline-block;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+@media (min-width: 1024px) {
+	.no-js .no-js-nav {
+		display:none;
+	}
+}
+
+.js .no-js-nav {
+	display: none;
+}
 
 ol, ul {
 	padding-left: 0;
@@ -763,7 +782,7 @@ img {
 
 /* Button */
 .buttons {
-		text-align: center;
+	text-align: center;
 }
 
 button {
@@ -845,4 +864,10 @@ button:hover:active {
 
 button:hover:active:after {
 	opacity: 0.1;
+}
+
+.no-js .no-js-nav button {
+	height: calc(2.75em + 2px);
+	line-height: 2.75em;
+	padding: 0 1.5em;
 }
