@@ -474,6 +474,10 @@ a:hover {
 
 }
 
+.no-js #body-nav {
+	display: none;
+}
+
 .show-nav #body-nav {
 	position: fixed;
 	background: rgb(51, 51, 51);
@@ -629,7 +633,6 @@ a.nav-button {
 .no-js .no-js-nav {
 	display: inline-block;
 	margin-top: 1rem;
-	margin-bottom: 2rem;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -671,7 +674,7 @@ li {
 	margin-left: 0;
 }
 
-.main-page {
+.js .main-page {
 	display: block;
 	text-align: center;
 	width: 75%;
@@ -683,8 +686,17 @@ li {
 	transform: translate(-50%, -50%)
 }
 
+.no-js .main-page {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	margin: 0;
+}
+
 @media (min-width:768px) {
-	.main-page {
+	.js .main-page {
 		width: 75%;
 	}
 }
