@@ -49,7 +49,7 @@ html, body {
 
 body::before {
 	content: "";
-	background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url("../../img/hyperspace-mobile.jpg");
+	background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url("../../img/hyperspace-mobile.jpg");
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -69,7 +69,7 @@ body::before {
 @media (min-width:768px) {
 	body::before {
 		content: "";
-		background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url("../../img/hyperspace.jpg");
+		background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url("../../img/hyperspace.jpg");
 		top: 0;
 		left: 0;
 		width: 100%;
@@ -106,7 +106,7 @@ body::before {
 
 @media (min-width:300px) {
 	.container {
-		width: 90%;
+		width: 85%;
 		padding: 0
 	}
 
@@ -569,6 +569,10 @@ a:hover {
 	transition-delay: 0.075s
 }
 
+.no-js .toggle-nav {
+	display: none
+}
+
 .toggle-nav {
 	display: inline-block;
 	position: relative;
@@ -622,9 +626,24 @@ a.nav-button {
 
 }
 
-/* ol {
-	list-style: decimal inside;
-} */
+.no-js .no-js-nav {
+	display: inline-block;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+@media (min-width: 1024px) {
+	.no-js .no-js-nav {
+		display:none;
+	}
+}
+
+.js .no-js-nav {
+	display: none;
+}
 
 ol, ul {
 	padding-left: 0;
@@ -640,23 +659,11 @@ li {
 	margin-bottom: 2rem;
 }
 
-/* .icon-list {
-	display: inline-block;
-	vertical-align: middle;
-}
-*/
-
 .fa-li i {
 	color: silver;
-	font-size: 5rem;
+	font-size: 2rem;
 	margin-right: 2rem;
 	line-height: inherit
-}
-
-@media (min-width:768px) {
-	.fa-li i {
-		font-size: 2rem;
-	}
 }
 
 .talks li {
@@ -676,15 +683,18 @@ li {
 	transform: translate(-50%, -50%)
 }
 
-.main-page h1 {
-	color: #E7EAF0;
-}
-
 @media (min-width:768px) {
 	.main-page {
 		width: 75%;
 	}
+}
 
+.main-page h1 {
+	color: #f3f5f8;
+}
+
+.main-page h2 {
+	color: #e0e8f8;
 }
 
 img {
@@ -713,6 +723,10 @@ img {
 .icons a {
 	margin-right: 3rem;
 	font-size: 3rem
+}
+
+.icons a:last-child {
+	margin-right: 0rem;
 }
 
 @media (min-width:768px) {
@@ -768,7 +782,7 @@ img {
 
 /* Button */
 .buttons {
-		text-align: center;
+	text-align: center;
 }
 
 button {
@@ -850,4 +864,10 @@ button:hover:active {
 
 button:hover:active:after {
 	opacity: 0.1;
+}
+
+.no-js .no-js-nav button {
+	height: calc(2.75em + 2px);
+	line-height: 2.75em;
+	padding: 0 1.5em;
 }
