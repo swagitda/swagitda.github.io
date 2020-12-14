@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author"
+    content="Kelly Shortridge ">
+<meta name="description"
+    content="This post explores how IBM is bamboozling the world (and possibly themselves) with their Red Hat-driven hybrid cloud &amp;lsquo;strategy&amp;rsquo; and heralded spinoff, featuring examination of the technological, financial, and market foozles of the past and of the forseeable future." />
+<meta name="keywords" content="blog, technology, infosec, cybersecurity, information security" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://swagitda.com/blog/posts/ibm-red-hat-bamboozles-foozles-and-the-hybrid-cloud-chimera/" />
+
+
+<title>
+    
+    IBM &#43; Red Hat: Bamboozles, Foozles, and the Hybrid Cloud Chimera | Kelly Shortridge 
+    
+</title>
+
+
+
+<meta name="twitter:title" content="IBM &#43; Red Hat: Bamboozles, Foozles, and the Hybrid Cloud Chimera"/>
+<meta name="twitter:description" content="This post explores how IBM is bamboozling the world (and possibly themselves) with their Red Hat-driven hybrid cloud &lsquo;strategy&rsquo; and heralded spinoff, featuring examination of the technological, financial, and market foozles of the past and of the forseeable future."/><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://swagitda.com/blog/img/ibm-hybrid-cloud/alexander-mokhov-chimera.jpg"/>
+
+
+
+<meta property="og:title" content="IBM &#43; Red Hat: Bamboozles, Foozles, and the Hybrid Cloud Chimera" />
+<meta property="og:description" content="This post explores how IBM is bamboozling the world (and possibly themselves) with their Red Hat-driven hybrid cloud &lsquo;strategy&rsquo; and heralded spinoff, featuring examination of the technological, financial, and market foozles of the past and of the forseeable future." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://swagitda.com/blog/posts/ibm-red-hat-bamboozles-foozles-and-the-hybrid-cloud-chimera/" />
+	
+<meta property="og:site_name" content="Kelly Shortridge" />
+
+
+<meta property="og:title" content="IBM &#43; Red Hat: Bamboozles, Foozles, and the Hybrid Cloud Chimera" />
+<meta property="og:description" content="This post explores how IBM is bamboozling the world (and possibly themselves) with their Red Hat-driven hybrid cloud &lsquo;strategy&rsquo; and heralded spinoff, featuring examination of the technological, financial, and market foozles of the past and of the forseeable future." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://swagitda.com/blog/posts/ibm-red-hat-bamboozles-foozles-and-the-hybrid-cloud-chimera/" />
+<meta property="og:site_name" content="Kelly Shortridge" />
+ 
+
+
+  <meta property="og:type" content="website" />
+   <meta property="og:title" content="Kelly Shortridge"/>
+   <meta property="og:description" content="Blog by Kelly Shortridge"/>
+   <meta property="og:site_name" content="Kelly Shortridge"/>
+   <meta property="og:url" content="https://swagitda.com/blog/"/>
+   <meta property="og:locale" content="en">
+   <meta name="image" property="og:image" content="https://swagitda.com/blog/img/ibm-hybrid-cloud/alexander-mokhov-chimera.jpg"/>
+   <meta property="og:type" content="website"/>
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/blog/main.min.d398c7adcb77dccdfccf9ba79a70e9fe6e01a373b0626cc68b9777bab5402a60.css">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/blog/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/blog/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/blog/favicon-16x16.png">
+<link rel="manifest" href="/blog/site.webmanifest">
+<link rel="mask-icon" href="/blog/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="/blog/favicon.ico">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="IBM &#43; Red Hat: Bamboozles, Foozles, and the Hybrid Cloud Chimera">
+<meta itemprop="description" content="This post explores how IBM is bamboozling the world (and possibly themselves) with their Red Hat-driven hybrid cloud &lsquo;strategy&rsquo; and heralded spinoff, featuring examination of the technological, financial, and market foozles of the past and of the forseeable future.">
+
+<meta itemprop="wordCount" content="4787">
+
+
+
+<meta itemprop="keywords" content="Infrastructure,Market Analysis," />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  var _paq = window._paq || [];
+   
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setCookieDomain", "*.swagitda.com"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//swagitda.com/skynet/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//swagitda.com/skynet/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /swagitda.com/</span>
+            <span class="logo__cursor"></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://swagitda.com/blog/posts">Blog</a></li><li><a href="https://kellyshortridge.com/">About</a></li><li><a href="https://twitter.com/swagitda_"><img src='/blog/img/twitter.svg'></a></li><li><a href="https://www.linkedin.com/in/kellyshortridge"><img src='/blog/img/linkedin.svg'></a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>23 minutes
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title"><a href="https://swagitda.com/blog/posts/ibm-red-hat-bamboozles-foozles-and-the-hybrid-cloud-chimera/">IBM + Red Hat: Bamboozles, Foozles, and the Hybrid Cloud Chimera</a></h1>
+
+            
+
+            <div class="post-content">
+                <figure>
+    <img src="/blog/img/ibm-hybrid-cloud/alexander-mokhov-chimera.jpg"
+         alt="Mythgard. Sideshow Chimera by Alexander Mokhov"/> <figcaption>
+            <p><a href="https://www.artstation.com/artwork/6aVRB5">Mythgard. Sideshow Chimera by Alexander Mokhov</a></p>
+        </figcaption>
+</figure>
+<p><a href="https://newsroom.ibm.com/2020-10-08-IBM-To-Accelerate-Hybrid-Cloud-Growth-Strategy-And-Execute-Spin-Off-Of-Market-Leading-Managed-Infrastructure-Services-Unit">IBM recently announced</a> that it is spinning off its “IT infrastructure services” unit so that it can streamline its focus solely towards IBM’s “open hybrid cloud platform” by the end of 2021. Leveraging this aggressive assertion, I’ll be referring to this rebranded IBM as “IBM Hybrid Cloud” (vs. current IBM as just “IBM”) throughout this post for clarity.</p>
+<p>I think most people – whether tech workers or investors – would agree that cloud stuff in general is far more riveting than IT services both intellectually and from a growth prospects perspective. With that said, public investors seem relatively unimpressed; while there was <a href="https://www.cnbc.com/2020/10/08/ibm-shares-surge-on-plans-to-spin-off-unit-into-separate-publicly-traded-company-.html">an initial stock price bump upon the announcement</a>, the price is back to where it was pre-announcement<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. In this post, I want to explore the answer to the question that seems to be floating around the market mindshare: what is IBM Hybrid Cloud’s future, really?</p>
+<p>The best place to start this peregrination is probably to evaluate the existing IBM Cloud offering in the context of the public cloud providers. IBM, as you all are assuredly aware, is not one of the “Big Three,” the moniker given to Amazon Web Services (AWS), Google Cloud Platform (GCP), and Microsoft Azure due to their outsized share of the market. Perhaps most inauspiciously, Gartner places IBM Public Cloud on their Magic Quadrant (MQ) for Cloud IaaS in the pitiable &ldquo;niche&rdquo; quadrant. To add insult to injury, IBM rests behind Oracle Cloud both in “Ability to Execute” and in “Completeness of Vision” – and IBM’s position as a languishing laggard on the MQ <a href="https://twitter.com/QuinnyPig/status/1303409576587309056">hasn&rsquo;t budged for three years</a>.</p>
+<p>Thus, we arrive at our next line of inquiry: What went wrong? How did IBM totally whiff execution on cloud offerings? Could they not discern the blindingly obvious writing in the stars<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>?</p>
+<hr>
+<h2 id="the-bare-metal-blunder">The Bare Metal Blunder</h2>
+<p>At least one ingredient in IBM&rsquo;s stew of ineptitude was (and still is) their predilection for all things Watson, which clouded<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> their judgment around the IaaS market.</p>
+<p>IBM simultaneously rebuffed public cloud by insisting on pursuing the bare metal opportunity – the market for single tenant (unshared) physical servers – while also neglecting it, attempting to eke out greater profitability by decreasing engineering spend at a time when competitors were firing their proverbial money cannons at the IaaS market. IBM pursued the bare metal opportunity vis a vis their acquisition of SoftLayer in 2013 for $2 billion, which perhaps added a salty sprinkle of <a href="https://en.wikipedia.org/wiki/Sunk_cost">sunk cost fallacy</a> to their clumsy calculus.</p>
+<p>Unfortunately, IBM betting on SoftLayer was like buying a racehorse which you simultaneously neglect and “transform” via bureaucracy so irresponsibly that by the day of the race, its hoofs have downgraded into flippers and the horse is “racing” so slowly that the spectators are confused whether to laugh or cry.</p>
+<p>Let’s set some quantitative context around this debacle. SoftLayer reportedly generated $335 million in revenue in 2012<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> (pre-acquisition) and its revenue is now bundled into IBM Cloud’s “Infrastructure-as-a-Service” offering within the (relatively) newly defined “Cloud and Cognitive Software” segment<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>. Given the segment’s overall revenue was $4.2 billion in 2019<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup> and Red Hat’s most recent fiscal year revenue pre-acquisition (more on that deal in a bit) was $3.4 billion<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>, the maximum revenue SoftLayer could have contributed in 2019 was around $1 billion.</p>
+<p><img src="/blog/img/ibm-hybrid-cloud/chart1.png" alt="A pie chart showing IBM&rsquo;s Cloud and Cognitive revenue in 2019. 81% for Red Hat and 19% for SoftLayer? Watson? Underpants Gnomes?"></p>
+<p>That is an impressively mediocre growth story. To wit, in 2013 (the same year as the SoftLayer acquisition), annual AWS revenues reached $3.8 billion<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup> and grew to $35 billion in 2019<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup> — reflecting a healthy compound annual growth rate (CAGR) of 44.8%. IBM’s bare metal bet via SoftLayer reflects, at best, a 13.2% CAGR<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup> — only 0.2% higher than the CAGR for the Trucking industry<sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup>. That is, as the kids say, a big oof.</p>
+<hr>
+<h2 id="red-hat-redemption">Red Hat Redemption?</h2>
+<p>While IBM was off hobbling its racehorse, their repudiation of the cloud opportunity led to a power vacuum in the “trustworthy provider with reliable long-term support” domain, which Microsoft was voracious and primed to fill. This is partially why, despite chatter of Azure presenting inferior value across a variety of facets relative to AWS or GCP, sales are still quite stellar<sup id="fnref:12"><a href="#fn:12" class="footnote-ref" role="doc-noteref">12</a></sup>.</p>
+<p>Presumably sensing their nebulous<sup id="fnref:13"><a href="#fn:13" class="footnote-ref" role="doc-noteref">13</a></sup> prospects in the cloud market, IBM completed the acquisition of Red Hat for a staggering <a href="https://www.redhat.com/en/about/press-releases/ibm-closes-landmark-acquisition-red-hat-34-billion-defines-open-hybrid-cloud-future">$34 billion</a> in summer 2019. This purchase price reflected a stock price premium of approximately 60%, which is double the typical premium<sup id="fnref:14"><a href="#fn:14" class="footnote-ref" role="doc-noteref">14</a></sup> and perhaps a rare moment of lucidity at IBM in recognizing that no one wants to be acquired by them.</p>
+<p>The surface rationale of the deal is that IBM can cross-sell Red Hat&rsquo;s offerings to its customers, which is&hellip; quite a bit harder without the managed infrastructure services business, especially given this was the rationale highlighted in <a href="https://www.ibm.com/investor/att/pdf/ibm-2019-investor-briefing-presentation.pdf">the investor presentation on the deal</a>. But we will pull on that paradox’s thread soon enough.</p>
+<p>What did IBM receive from Red Hat to cross-sell? Thankfully, Red Hat was publicly traded prior to the IBM acquisition, so we can delve into its financial profile by leveraging relatively recent data.</p>
+<p>Red Hat is a predominately subscription business – it was 88% of fiscal year (FY) 2019 revenue<sup id="fnref:15"><a href="#fn:15" class="footnote-ref" role="doc-noteref">15</a></sup>, growing by 14.6% year-over-year (y-o-y) – with the rest of revenue coming from “Training and Services.” The latter category is pretty self-explanatory and is growing at a decent rate (19.3% y-o-y), evidently due to customers needing some handholding around adopting OpenShift and Ansible.</p>
+<p>Red Hat’s subscription revenue is primarily generated by “Infrastructure-related” subscriptions, which made up 72.3% of all subscription revenue as of FY 2019. The critical driver of the “Infrastructure-related” category is almost assuredly subscriptions for Red Hat Enterprise Linux (RHEL), a Linux operating system (OS) favored by enterprises over the numerous open source Linux OSes due to the support provided with the subscription. With that said, “Infrastructure-related offerings” also includes Red Hat Satellite and Red Hat Virtualization and they don’t provide a further revenue breakdown.</p>
+<p>The remaining 27.7% of subscription revenue is from “Application Development-related and other emerging technology subscription,” which is a ridiculous mouthful and belies the importance of the offerings for Red Hat’s growth strategy. “Application Development-related” explicitly refers to Red Hat Middleware, whose most notable offering is JBoss, an open source Java application server. Red Hat’s definition of “Emerging Technology” explicitly defines it as tools to “build and manage hybrid IT computing environments,”<sup id="fnref:16"><a href="#fn:16" class="footnote-ref" role="doc-noteref">16</a></sup> and includes Red Hat OpenShift, Red Hat Cloud Infrastructure, Red Hat OpenStack Platform, Red Hat Ansible Automation, Red Hat CloudForms and Red Hat Storage technologies.</p>
+<p><img src="/blog/img/ibm-hybrid-cloud/chart2.png" alt="A pie chart showing Red Hat&rsquo;s Fiscal Year 2019 revenue breakdown. 64% for infrastructure-releated subscriptions, 24% for app development and &ldquo;emerging technology&rdquo; subscriptions, and 12% for training and services."></p>
+<p>Of those emerging technologies, OpenShift, Ansible, and OpenStack are, by my estimation, the highest sources of revenue growth. For instance, infrastructure-related subscription revenue grew 9.3% y-o-y from FY 2018 to FY 2019 – which certainly doesn’t count as “high growth” – while app dev-related &amp; other emerging tech subscription grew 30.9% y-o-y (double Red Hat&rsquo;s total revenue growth of 15.1% y-o-y). And it really is the emerging tech part of that second category fomenting that higher growth.</p>
+<p>The “emerging technology” offerings are actually cannibalizing the “application development-related” offerings<sup id="fnref:17"><a href="#fn:17" class="footnote-ref" role="doc-noteref">17</a></sup>. As more of the market leverages containerized environments for app development, they want a platform like OpenShift with orchestration capabilities, leading customers to replace JBoss spend with OpenShift spend<sup id="fnref:18"><a href="#fn:18" class="footnote-ref" role="doc-noteref">18</a></sup>.</p>
+<p>We now need to dig a little deeper into OpenShift to set the stage for spelunking through IBM’s hybrid cloud-dominated spinoff strategy. OpenShift is a container orchestration platform like Kubernetes, but provides professional support services around things like updates, patches, and integrations. Both OpenShift and Kubernetes manage clusters – groups of containers – to automatically handle the operations required to keep services running smoothly, like restarting failed containers, distributing network traffic across containers, mounting storage systems, optimizing resource usage, rolling out new container images, and so forth.</p>
+<p>How does this fit in with “hybrid cloud”? Containers package all the stuff (like libraries, dependencies, configuration files, etc.) needed for an application to run. By putting all this stuff in one package, the application is no longer dependent on specific infrastructure and can be run in different computing environments. So, a containerized application can run just as well on-prem or in a private or public cloud and on top of any Linux distribution – which means that containers are sufficiently flexible to work with whatever mix of systems an organization operates that constitute their “hybrid cloud.”</p>
+<p>This means OpenShift is perfect for “hybrid cloud,” right? Not quite. While Kubernetes works with any Linux distro and basically any cloud platform, OpenShift only works with CentOS<sup id="fnref:19"><a href="#fn:19" class="footnote-ref" role="doc-noteref">19</a></sup>, Fedora, or <a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux_atomic_host/7/html/installation_and_configuration_guide/introduction_to_atomic_host">Red Hat Enterprise Linux Atomic Host (RHELAH)</a>. Those distros are supported by AWS, Azure, and GCP, but it still obviously constrains one’s options and is discordant with the flexibility-first ethos of “hybrid cloud.” Similarly dissonant is the fact that OpenShift’s templates, a collection of files that define the resources needed to run an app, like a package manager, are largely unable to handle more complex deployments – and complex deployments are pretty common in a “hybrid cloud” environment.</p>
+<p>There are notable benefits of OpenShift relative to Kubernetes – like better security defaults and container image management – but the dream orchestration solution for “hybrid cloud” it is not.</p>
+<hr>
+<h2 id="ibms-hybrid-cloud-chimera">IBM&rsquo;s Hybrid Cloud Chimera</h2>
+<p>Now we arrive back to IBM’s grand ambitions around an unfettered IBM Hybrid Cloud business. In the <a href="https://www.ibm.com/investor/att/pdf/IBM-Strategic-Update-2020-charts.pdf">“Strategic Update” presentation</a> announcing the spinoff, IBM touts that they are “positioned for success in the hybrid cloud and AI market.”<sup id="fnref:20"><a href="#fn:20" class="footnote-ref" role="doc-noteref">20</a></sup> Given the rest of the presentation is almost exclusively focused on the hybrid cloud opportunity – for which they assign a $1 <em>trillion</em> total addressable market (TAM) – I suspect the “AI” portion of that proclamation is to save face regarding all the Watson investments.</p>
+<p>Before we dissect their hybrid cloud reveries, let’s solidify our notion of “hybrid cloud” beyond buzzphrasedom. “Hybrid cloud” is an environment that uses a mix of infrastructure, like on-prem servers, private or public clouds, containers, serverless functions, etc. In the spirit of vagueness that plagues all buzzphrases, “hybrid cloud” greedily represents the spectrum between “purely on-prem and bare metal” to “purely public cloud and containers.”</p>
+<p>IBM pretty clearly includes “multi-cloud” as part of the “hybrid cloud” opportunity given their mention of &ldquo;regardless of vendor&rdquo; in <a href="https://newsroom.ibm.com/2020-10-08-IBM-To-Accelerate-Hybrid-Cloud-Growth-Strategy-And-Execute-Spin-Off-Of-Market-Leading-Managed-Infrastructure-Services-Unit">the press release</a>. “Multi-cloud” refers to organizations using multiple cloud providers to support their software delivery – like using AWS S3 and EC2 with Google Compute Engine VMs with Azure Storage. As a beloved engineering VP friend quipped, &ldquo;Only a masochist voluntarily goes multi-cloud.&quot;<sup id="fnref:21"><a href="#fn:21" class="footnote-ref" role="doc-noteref">21</a></sup></p>
+<p>So, what should we make of this $1 trillion TAM?<sup id="fnref:22"><a href="#fn:22" class="footnote-ref" role="doc-noteref">22</a></sup> As is tradition in glossy corporate investor decks, no sources are cited for that figure in IBM’s presentation. Nevertheless, their TAM calculation includes $450 billion for “Cloud Software &amp; Platforms” (addressed by Red Hat and Cloud Paks<sup id="fnref:23"><a href="#fn:23" class="footnote-ref" role="doc-noteref">23</a></sup>), $300 billion for “Cloud Transformational Services” (addressed by “OpenShift Everywhere”), and $230 billion for “Cloud Infrastructure” (addressed by OpenShift on Z and Regulated Industry Clouds). Without any citations for those numbers, it’s impossible to tell whether this is truly the “<em>hybrid</em> cloud” opportunity or IBM performing Fantasy Math™<sup id="fnref:24"><a href="#fn:24" class="footnote-ref" role="doc-noteref">24</a></sup> with overall cloud market figures to kindle excitement among investors.</p>
+<p>Interestingly and farcically enough, IBM’s hybrid cloud TAM has decreased by $200 billion<sup id="fnref:25"><a href="#fn:25" class="footnote-ref" role="doc-noteref">25</a></sup> from 2019 until now! The breakdown back in 2019 was $550 billion for “Services for Cloud,” $350 billion for “Cloud Software,” $150 billion for “Infrastructure,” and $100 billion for “Component tech sold to Cloud Service Providers.” If we compare to the more recent breakdown, the TAM for “Cloud Software” increased by $100 billion and added <em>platforms</em> to the mix, “Cloud Services” added <em>transformational</em> to its name and shrunk by $250 billion, “Infrastructure” grew by $80 billion, and “Component tech” disappeared or perhaps represents the $100 billion added into “Cloud Software.” As I said: this is Fantasy Math™, where facts are discouraged and hand-waving an artform.</p>
+<p>To beleaguer the point, the TAM a still-independent Red Hat identified in 2018 for itself was $69 billion<sup id="fnref:26"><a href="#fn:26" class="footnote-ref" role="doc-noteref">26</a></sup>, which is a teensy-weensy 6.9%<sup id="fnref:27"><a href="#fn:27" class="footnote-ref" role="doc-noteref">27</a></sup> of the TAM that IBM boasts for what is largely just Red Hat-rebranded-as-IBM-Cloud. Red Hat’s breakdown of that TAM<sup id="fnref:28"><a href="#fn:28" class="footnote-ref" role="doc-noteref">28</a></sup> included $18.0 billion for Middleware, $16.0 billion for Storage, $17.6 billion for Operating System, $5.8 billion for “Cloud Management (including OpenStack)”, $4.7 billion for PaaS, $4.8 billion for Virtualization, and $1.9 billion for Infrastructure Management.</p>
+<p>Is the right lesson to learn here that the difference between a $30 billion company and a $110 billion company is held in your ability to abstract away market categories and inflate TAMs to the point of meaninglessness? Can you 3x your market cap by replacing “various analyst estimates” as the source of your TAM figures with no citations whatsoever? I’m sure we’ll see a pay-for-publication Forbes article about this inspiring finding soon.</p>
+<p>IBM claims that a hybrid cloud approach provides 2.5x the client value of an approach with “public-only cloud structures” – without citing any source data again, naturally<sup id="fnref:29"><a href="#fn:29" class="footnote-ref" role="doc-noteref">29</a></sup>. Red Hat OpenShift is called out specifically as the “hybrid cloud platform” that will deliver this “generational leap in client value.” This suggests that OpenShift is the essential element to secure success from the spinoff; unfortunately for IBM, I suspect that this element will be more like Unobtanium for them when executing on the opportunity. Even with Kubernetes’ deficiencies and the legitimate market need for a more enterprise-flavored orchestration solution, there is simply no way OpenShift can fulfill the astronomical aspirations a $1 trillion TAM imparts.</p>
+<p>Even if we assume that OpenShift – or even Red Hat’s “emerging technology” offerings more broadly – is indeed sufficiently promising to seize the platform part of the hybrid cloud market opportunity, successful realization of those prospects rests upon the assumption of IBM not being IBM. And, well, perhaps the only thing that IBM consistently does well is being reliably IBM about things. Would it really be a surprise if the same fate befalls Red Hat that befell SoftLayer?</p>
+<p>Undoing IBM’s calcified culture of cash grab contracts while minimizing engineering effort seems preposterously unlikely, despite it being an inherent necessity if they’re aiming to grab a sufficiently succulent bite of the $1 trillion total addressable market (TAM) pie<sup id="fnref:30"><a href="#fn:30" class="footnote-ref" role="doc-noteref">30</a></sup> <a href="https://www.ibm.com/investor/att/pdf/IBM-Strategic-Update-2020-charts.pdf">they&rsquo;ve plated</a> for public market investors.</p>
+<p>The assumption of efficient execution is also incongruent with IBM’s modus operandi of Standard Oil-style vertical integration – so do we expect them to deviate from their standard, stifling strategy? Because the success of this breakup – let alone the Red Hat acquisition – hinges upon that. If IBM Hybrid Cloud cannot play nicely in other clouds and with other tools – for instance, with organizations using Kubernetes instead of OpenShift – it seems reasonable to suggest that they will fall on their ass. And this, of course, is exacerbated by OpenShift&rsquo;s critical importance to IBM in the hybrid cloud Thunderdome, because it helps them capitalize on companies wanting to fluctuate between the big three providers.</p>
+<hr>
+<h2 id="what-could-have-been">What Could Have Been</h2>
+<p>If I had a time machine and eventually reached a mind-melting level of boredom (seems unlikely, but pretend with me), I could go back even a mere five years ago and give advice to those in charge of IBM&rsquo;s cloud strategy, which would simply be: just be yourself! Lean into the fact that people buy you because you’re the safe choice rather than pretending like you’re going to be the face of the hybrid cloud or AI revolution.</p>
+<p>There are plenty of organizations who want handholding, helmets, and full body armor just to tricycle their way into Baby’s First Container, and IBM can and should help them out rather than courting the sour, sulky engineer market who, like the stereotypical angsty teen, would rather, like, literally die than be seen in such dorky protective gear.</p>
+<p>Aside from the “Bubble Boy, but cloud native” opportunity, serving the needs of regulated industries was and still is an appropriate opportunity. IBM did mention in the strategic announcement that it would pursue the “regulated industry clouds” opportunity and that feels like the (only) appropriate fit out of the $1 trillion TAM they outline. Organizations in regulated industries may have no choice but to shun public clouds, needing instead to store and process data on-prem, and IBM (primarily vis a vis OpenShift) could help them still “modernize” applications within those confines.</p>
+<hr>
+<h2 id="its-just-a-flesh-wound">&ldquo;It&rsquo;s just a flesh wound!&rdquo;</h2>
+<p>With all that said, I think we need to take a step back and look at the splitting up of the two businesses in the first place… because is it really the right move? Are there any IBM Cloud customers who are there without IBM’s I.T. services involved? My hunch is that the managed services arm is IBM’s biggest lead gen for their cloud offerings – because product quality certainly isn’t generating the fledgling interest that exists – so what will they do when that arm is severed?</p>
+<p>Despite IBM’s cloying marketing hype around the birth of IBM 2: Hybrid Cloud Boogaloo<sup id="fnref:31"><a href="#fn:31" class="footnote-ref" role="doc-noteref">31</a></sup>, IBM <em>isn’t</em> fully amputating its services arm – nor even fully divesting the Global Technology Services (GTS) segment that will be deemed “New Co”. Despite the spinoff announcement theatrics boasting the sloughing of low-growth “managed infrastructure services,” the cloudified new IBM will still include:</p>
+<ul>
+<li>Technology Support Services (TSS): a wing of GTS (yes, the one being spun off…) that offers support and maintenance services for IBM’s hardware and software offerings – think if you need installation or troubleshooting help</li>
+<li>Global Business Services: consultants help customers figure out how to build things, which gets implemented by GBS’s Systems Integration and Application Management Services arms</li>
+<li>Global Financing: the home of IBM Credit<sup id="fnref:32"><a href="#fn:32" class="footnote-ref" role="doc-noteref">32</a></sup>, which helps customers figure out how to pay for the stuff they want (or that is being pushed on them by the consultants), including refurbished hardware<sup id="fnref:33"><a href="#fn:33" class="footnote-ref" role="doc-noteref">33</a></sup></li>
+<li>Systems: not a services segment, but it’s the home of IBM’s mainframes, semiconductors, power systems, and other hardware – which is also decidedly not cloud-flavored<sup id="fnref:34"><a href="#fn:34" class="footnote-ref" role="doc-noteref">34</a></sup></li>
+</ul>
+<p>If we put all the pieces of the “revitalized” IBM together, we can see the following year-over-year growth profile (from 2018 to 2019)<sup id="fnref:35"><a href="#fn:35" class="footnote-ref" role="doc-noteref">35</a></sup> and proportion of IBM Hybrid Cloud revenue made up of cloud software vs. services vs. hardware:</p>
+<p><img src="/blog/img/ibm-hybrid-cloud/chart3.png" alt="A bar chart showing the rebranded IBM&rsquo;s FY 2018 to 2019 revenue growth, in billions. Cloud & Cognitive Software grew 4.5% year over year. Global Business Services grew 0.2% year over year. Systems grew negative 5.4% year over year. TSS grew negative 4.8% year over year. Global Financing grew negative 11.9% year over year."></p>
+<p><img src="/blog/img/ibm-hybrid-cloud/chart4.png" alt="A pie chart showing the rebranded IBM&rsquo;s FY 2019 revenue breakdown. 46% for Snoozville Services, 42% for Cloud and Cognitive, 12% for Old-skool Hardware."></p>
+<p>This is hardly what one would picture when envisioning a plan to “accelerate hybrid cloud growth strategy” and reveals the fragility of IBM’s spinoff justification – because it’s difficult to claim that this is a refocused IBM dedicated to growthy hybrid cloud software offerings. As if that isn’t lame enough, this anemic portfolio is disgraceful in context of the revenue growth profiles of real cloud companies during the same period of time (FY 2018 to FY 2019), like 84% at Alibaba Cloud<sup id="fnref:36"><a href="#fn:36" class="footnote-ref" role="doc-noteref">36</a></sup>, 72% at Azure<sup id="fnref:37"><a href="#fn:37" class="footnote-ref" role="doc-noteref">37</a></sup>, 53% at Google Cloud<sup id="fnref:38"><a href="#fn:38" class="footnote-ref" role="doc-noteref">38</a></sup>, and 37% at AWS<sup id="fnref:39"><a href="#fn:39" class="footnote-ref" role="doc-noteref">39</a></sup>.</p>
+<p>It’s already plenty confusing from a strategic perspective that IBM is keeping a non-trivial amount of services for IBM Hybrid Cloud. But confounding matters further, the portion of the GTS business that IBM <em>is</em> severing seems like it was pretty critical in selling infrastructure solutions to customers, which, as foreshadowed earlier, was what IBM touted for ~*synergies*~ when buying RedHat.</p>
+<p>With that services-as-sales-engine strategy kaput, IBM’s self-described alternative for creating more opportunities for Red Hat is by&hellip; <checks notes><sup id="fnref:40"><a href="#fn:40" class="footnote-ref" role="doc-noteref">40</a></sup> &hellip; “strategic solutioning,” which is an awe-inspiring level of linguistic inanity<sup id="fnref:41"><a href="#fn:41" class="footnote-ref" role="doc-noteref">41</a></sup>. To avoid the shame of dignifying such a vacuous and frivolous statement, I will simply say that “strategic solutioning” sounds like it begets neither strategy nor solutions.</p>
+<p>Ultimately, it feels like IBM is both attempting to focus on Red Hat’s stuff – which is legitimately the most promising opportunity in IBM’s gargantuan portfolio – while still very much attempting to suckle at the frothy teat of customers via services the same way it always has. In the perspicacious words of Ron Swanson, “Never half-ass two things, whole-ass one thing.”<sup id="fnref:42"><a href="#fn:42" class="footnote-ref" role="doc-noteref">42</a></sup></p>
+<hr>
+<h2 id="in-conclusion">In Conclusion</h2>
+<p>Sometimes it’s difficult to tell if an organization is purposefully bamboozling external parties or just temerariously bamboozling themselves. In the case of this rebranded IBM, perhaps they actually believe that IBM Hybrid Cloud has a future once it can shed the leaden snakeskin of (some of) the legacy IBM business – like someone freed of a parasitic partner, IBM Hybrid Cloud can finally pursue their dreams and live, laugh, love, loathe, launder (money), liquidate (assets, not people) and whatever else substitutes for introspection in those wearisome Journey to Find Oneself stories<sup id="fnref:43"><a href="#fn:43" class="footnote-ref" role="doc-noteref">43</a></sup>.</p>
+<p>If IBM leadership doesn’t actually believe that this rebranded IBM has a real future, and it is indeed a bamboozle targeted at shareholders and whatever customers remain, then it’s a huge waste of everyone’s time and also a colossal amount of money, and I wish it was socially acceptable for them to be like,</p>
+<blockquote>
+<p>“Yep, we totally foozled execution on this cloud thing and what we have sucks. This IBM Hybrid Cloud thing is just going to be RedHat and we’re going to let them run the show now because that’s really better for everyone involved. And you’ll probably make more money off it anyway than the continuously-burning money-filled <a href="https://en.wikipedia.org/wiki/Darvaza_gas_crater">gas crater</a> of a business we would’ve created.”</p>
+</blockquote>
+<p>However, I kind of feel like IBM’s best use case for the tech industry at this point is to keep milking its despondent legacy business for cash and use it towards corporate VC into startups that can execute more efficiently and effectively with the capital than a provably languid behemoth like IBM. But my even spicier take is that abandoning the IBM Hybrid Cloud endeavor entirely might engender the most net-positive utility on a societal scale.</p>
+<p>There’s a macro point here that it’s kind of a shame there isn’t a feasible mechanism for companies to just give up because they realize continuing operations is pointless. Much like many of my ill-fated DIY projects, sometimes it’s far healthier to realize you are wholly unequipped and seriously outclassed by others’ skills<sup id="fnref:44"><a href="#fn:44" class="footnote-ref" role="doc-noteref">44</a></sup> so you can proceed to things that you can successfully execute rather than immolating more irreplaceable seconds of your life.</p>
+<p>I’m not necessarily saying trying to make IBM Hybrid Cloud a real thing is like trying to redo your own bathroom plumbing&hellip; but in both cases, shit is likely to go wrong.</p>
+<hr>
+<p>Thank you shoutouts to Halvar Flake and Ryan Petrich.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>The closing price of IBM’s stock on October 7 (the day before the announcement) was $124.07. The closing price on December 11 was $124.27, which is only 0.16% higher. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>Pun very much intended. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>This pun is also very much intended. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>Frier, S. (2013, June 4). IBM to Buy Cloud-Computing Firm SoftLayer for $2 Billion. <em>Bloomberg</em>. <a href="https://www.bloomberg.com/news/articles/2013-06-04/ibm-to-acquire-cloud-computing-provider-softlayer-technologies">https://www.bloomberg.com/news/articles/2013-06-04/ibm-to-acquire-cloud-computing-provider-softlayer-technologies</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p>IBM. <em>IBM Updates Reporting Segments in 2019</em>. <a href="https://www.ibm.com/investor/att/pdf/IBM_Updates_Reporting_Segments_March_2019.pdf">https://www.ibm.com/investor/att/pdf/IBM_Updates_Reporting_Segments_March_2019.pdf</a> <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p>Vellante, D. (2020, May 2). Big Blue in the cloud? IBM’s future rests on its innovation agenda. <em>SiliconANGLE</em>. <a href="https://siliconangle.com/2020/05/02/big-blue-cloud-ibms-future-rests-innovation-agenda/">https://siliconangle.com/2020/05/02/big-blue-cloud-ibms-future-rests-innovation-agenda/</a> <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7" role="doc-endnote">
+<p>Red Hat, Inc. (2019, March 25). <em>Red Hat Reports Fourth Quarter and Fiscal Year 2019 Results</em> [Press Release]. <a href="https://www.redhat.com/en/about/press-releases/red-hat-reports-fourth-quarter-and-fiscal-year-2019-results">https://www.redhat.com/en/about/press-releases/red-hat-reports-fourth-quarter-and-fiscal-year-2019-results</a> <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8" role="doc-endnote">
+<p>Dignan, L. (2013, January 7). Amazon&rsquo;s AWS: $3.8 billion revenue in 2013, says analyst. <em>ZDNet</em>. <a href="https://www.zdnet.com/article/amazons-aws-3-8-billion-revenue-in-2013-says-analyst/">https://www.zdnet.com/article/amazons-aws-3-8-billion-revenue-in-2013-says-analyst/</a> <a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:9" role="doc-endnote">
+<p>Amazon.com, Inc. (2020, January 30). <em>Amazon.com Announces Fourth Quarter Sales up 21% to $87.4 Billion</em> [Press Release]. <a href="https://press.aboutamazon.com/news-releases/news-release-details/amazoncom-announces-fourth-quarter-sales-21-874-billion">https://press.aboutamazon.com/news-releases/news-release-details/amazoncom-announces-fourth-quarter-sales-21-874-billion</a> <a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:10" role="doc-endnote">
+<p>Given “Cloud &amp; Cognitive Software” also includes “transaction processing platforms” and “cognitive applications” (which presumably are all the Watson things), SoftLayer’s revenue contribution is almost assuredly less than $1 billion. I suspect it is quite likely less than $650 million, which enters the territory of a sub-10% CAGR – the territory of industries like Broadcasting, Home Furnishings, Hotel &amp; Gaming, Shipbuilding &amp; Marine, etc. but certainly not software (which has an average CAGR of 30.9%). Professor Aswath Damodaran of NYU Stern helpfully hosts this page full of revenue and net income CAGRs across industries: <a href="http://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/histgr.html">http://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/histgr.html</a> <a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:11" role="doc-endnote">
+<p>This is entirely shade at IBM, not the Trucking sector. The Trucking sector is vital to our economy, but is also not known for being high-growth. Thanks again to Professor Damodaran’s helpful page for these stats: <a href="http://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/histgr.html">http://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/histgr.html</a> <a href="#fnref:11" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:12" role="doc-endnote">
+<p>Pun intended. Source: Microsoft Corporation. (2020). <em>Form 10-Q for the Quarter Ended September 30, 2020</em>. <a href="https://view.officeapps.live.com/op/view.aspx?src=https://c.s-microsoft.com/en-us/CMSFiles/MSFT_FY21Q1_10Q.docx?version=e37388fe-99fe-6c5e-deb3-ae5b4fd8b16f">https://view.officeapps.live.com/op/view.aspx?src=https://c.s-microsoft.com/en-us/CMSFiles/MSFT_FY21Q1_10Q.docx?version=e37388fe-99fe-6c5e-deb3-ae5b4fd8b16f</a> (yes, Microsoft seems to now host their SEC filings as .docx rather than as PDFs like everyone else, because they think not enough people know about Microsoft Office???) <a href="#fnref:12" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:13" role="doc-endnote">
+<p>Can’t stop, won’t stop with the cloud puns. <a href="#fnref:13" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:14" role="doc-endnote">
+<p>I recalled from my earlier investment banking years that the average stock price premium is usually around 20%, and a variety of online sources seem to confirm that the typical range is 20% - 30%. For instance: <a href="https://merger.com/ma-question-dont/">https://merger.com/ma-question-dont/</a> <a href="#fnref:14" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:15" role="doc-endnote">
+<p>Red Hat, Inc. (2019). <em>Form 10-K for Fiscal Year 2019</em>. <a href="https://www.sec.gov/ix?doc=/Archives/edgar/data/1087423/000108742319000012/rht-10kq4fy19.htm#s6FE105CDD1C05A3794E63D0DE6C598B5">https://www.sec.gov/ix?doc=/Archives/edgar/data/1087423/000108742319000012/rht-10kq4fy19.htm#s6FE105CDD1C05A3794E63D0DE6C598B5</a> <a href="#fnref:15" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:16" role="doc-endnote">
+<p>&lt;foreshadowing intensifies&gt; <a href="#fnref:16" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:17" role="doc-endnote">
+<p>While no doubt tinted by hindsight bias, the 2010 acquisition of Makara – which included the fledgling seeds of OpenShift – was a prescient move, given they would not need to hedge against the dwindling Middleware business for nearly a decade. <a href="#fnref:17" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:18" role="doc-endnote">
+<p>Literal quote from Red Hat: “We believe revenue growth in our Middleware portfolio has moderated as customers shift their workloads from traditional Java deployments to containerized environments with middleware-as-a-service on OpenShift.” See citation 15 for source. <a href="#fnref:18" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:19" role="doc-endnote">
+<p>The CentOS Project, owned by Red Hat (owned by IBM), <a href="https://blog.centos.org/2020/12/future-is-centos-stream/">recently announced</a> that CentOS is being end-of-life’d <a href="https://en.wikipedia.org/wiki/End-of-life_product">(EoL’d)</a> – so the distros that OpenShift supports will be even further restricted. CentOS Stream will take CentOS’s place, except rather than being a true replacement as a free alternative to RHEL, its new purpose will be to serve as the upstream branch of RHEL. Technically, this means CentOS 8 will be EoL before CentOS 7, presumably because IBM is confused by distributed systems and thus does not understand the importance of consistency in software, in life, in love. <a href="#fnref:19" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:20" role="doc-endnote">
+<p>The appropriate meme for this proclamation is <a href="https://knowyourmeme.com/memes/la-noire-doubt-press-x-to-doubt">“Press X to doubt.”</a> <a href="#fnref:20" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:21" role="doc-endnote">
+<p>If you want elaboration on why I, my friend, and a good many others cringe at “multi-cloud,” I recommend Corey Quinn’s post, <a href="https://www.lastweekinaws.com/blog/multi-cloud-is-the-worst-practice/">“Multi-Cloud is the Worst Practice.”</a> <a href="#fnref:21" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:22" role="doc-endnote">
+<p>Hopefully someone sent Russ Hanneman the memo that “quatro commas” is the new sexy. Or, perhaps, to keep the alliteration from “Tequila Tres Comas” consistent, Mr. Hanneman should consider “Cognac Quatre Virgules.” I am presuming Mr. Hanneman is unaware that non-English languages generally separate large numbers with a period or non-breaking space rather than a comma, given “tres comas.” <a href="#fnref:22" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:23" role="doc-endnote">
+<p>I had no idea what Cloud Paks were and discovered one of the worst sentences written on the modern internet when I <a href="https://www.ibm.com/cloud/paks">looked them up</a>, which now, quite like the videotape in film The Ring, I must share with others lest the curse take me: “IBM Cloud Pak® offerings are an integrated set of AI-infused software solutions for hybrid cloud that help you fully implement intelligent workflows in your business to accelerate digital transformation.” <a href="#fnref:23" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:24" role="doc-endnote">
+<p>One of my guilty pleasures is referring to TAM calculations as Fantasy Math™. As a former i-banker, I can attest that TAMs are a game in which the goal is to produce as high a number as possible while preserving at least one silken microfiber of plausibility. I doubt anyone within IBM, nor any investor, actually believes this is IBM Cloud’s real TAM, but I acknowledge that humans routinely redefine the depths to which the bar of critical thinking can go. <a href="#fnref:24" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:25" role="doc-endnote">
+<p>Page 14 of <a href="https://www.ibm.com/investor/att/pdf/ibm-2019-investor-briefing-presentation.pdf">IBM’s Investor Briefing</a> on the Red Hat deal that cites a $1.2 trillion TAM. <a href="#fnref:25" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:26" role="doc-endnote">
+<p>Nice. <a href="#fnref:26" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:27" role="doc-endnote">
+<p>Nice. <a href="#fnref:27" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:28" role="doc-endnote">
+<p>Red Hat’s TAM breakdown can be found on page 8 of this “Red Hat Value Proposition” presentation: <a href="http://people.redhat.com/~duboyd/CO_RHUG/DEN/12_2016/RHT_Value_Prop_for_CORHUG.pdf">http://people.redhat.com/~duboyd/CO_RHUG/DEN/12_2016/RHT_Value_Prop_for_CORHUG.pdf</a> <a href="#fnref:28" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:29" role="doc-endnote">
+<p>IBM. (2020, October 8). <em>IBM Strategic Update</em>. <a href="https://www.ibm.com/investor/att/pdf/IBM-Strategic-Update-2020-charts.pdf">https://www.ibm.com/investor/att/pdf/IBM-Strategic-Update-2020-charts.pdf</a> <a href="#fnref:29" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:30" role="doc-endnote">
+<p>Given this TAM is exaggerated to a near-childish extent, I presume IBM baked their hybrid cloud market pie in an Easy-Bake Oven. <a href="#fnref:30" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:31" role="doc-endnote">
+<p>For the boomers among you, I am referencing this meme: <a href="https://knowyourmeme.com/memes/electric-boogaloo">https://knowyourmeme.com/memes/electric-boogaloo</a> <a href="#fnref:31" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:32" role="doc-endnote">
+<p>I like to think of IBM Credit as the payday loans of cloud computing. In the spirit of fairness, I must note that AWS also quietly offers <a href="https://podcasts.google.com/?feed=aHR0cHM6Ly9mZWVkcy50cmFuc2lzdG9yLmZtL3NjcmVhbWluZy1pbi10aGUtY2xvdWQ&amp;ep=14&amp;episode=NTgzNjhhMzQtM2FkNi00ODMwLTk4NTEtMTc3NzJlOTMxMjIw&amp;pe=1&amp;pep=0">bespoke contract structuring</a>. <a href="#fnref:32" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:33" role="doc-endnote">
+<p>Global Financing also includes cursed projects, such as this purposeless blockchain: <a href="https://github.com/IBM/global-financing-blockchain">https://github.com/IBM/global-financing-blockchain</a> <a href="#fnref:33" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:34" role="doc-endnote">
+<p>My headcanon is now that IBM retained the Systems division so the name International Business <em>Machines</em> still has relevance. <a href="#fnref:34" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:35" role="doc-endnote">
+<p>IBM. (2019). <em>2019 Annual Report</em>. <a href="https://www.ibm.com/annualreport/assets/downloads/IBM_Annual_Report_2019.pdf">https://www.ibm.com/annualreport/assets/downloads/IBM_Annual_Report_2019.pdf</a> <a href="#fnref:35" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:36" role="doc-endnote">
+<p>Alibaba Group Holding Limited. (2019). <em>Form 20-F</em>. <a href="https://otp.investis.com/clients/us/alibaba/SEC/sec-show.aspx?FilingId=13476929&amp;Cik=0001577552&amp;Type=PDF&amp;hasPdf=1">https://otp.investis.com/clients/us/alibaba/SEC/sec-show.aspx?FilingId=13476929&amp;Cik=0001577552&amp;Type=PDF&amp;hasPdf=1</a> <a href="#fnref:36" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:37" role="doc-endnote">
+<p>Microsoft Corporation. (2019). <em>Form 10-K</em>. <a href="https://microsoft.gcs-web.com/static-files/7c96b326-33bc-4b84-8abb-7afd7a517ea3">https://microsoft.gcs-web.com/static-files/7c96b326-33bc-4b84-8abb-7afd7a517ea3</a> <a href="#fnref:37" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:38" role="doc-endnote">
+<p>Alphabet Inc. (2019). <em>Form 10-K</em>. <a href="https://abc.xyz/investor/static/pdf/20200204_alphabet_10K.pdf?cache=cdd6dbf">https://abc.xyz/investor/static/pdf/20200204_alphabet_10K.pdf?cache=cdd6dbf</a> <a href="#fnref:38" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:39" role="doc-endnote">
+<p>Amazon.com, Inc. (2019). <em>Form 10-K</em>. <a href="https://d18rn0p25nwr6d.cloudfront.net/CIK-0001018724/4d39f579-19d8-4119-b087-ee618abf82d6.pdf">https://d18rn0p25nwr6d.cloudfront.net/CIK-0001018724/4d39f579-19d8-4119-b087-ee618abf82d6.pdf</a> <a href="#fnref:39" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:40" role="doc-endnote">
+<p>The notes I checked were, in fact, just a single PDF of IBM’s <em>Investor Briefing 2019</em>: <a href="https://www.ibm.com/investor/att/pdf/ibm-2019-investor-briefing-presentation.pdf">https://www.ibm.com/investor/att/pdf/ibm-2019-investor-briefing-presentation.pdf</a> <a href="#fnref:40" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:41" role="doc-endnote">
+<p>Not to mention that a company who infamously collaborated with Nazis should probably avoid inventing new stupid phrases that abbreviate to “SS”. <a href="#fnref:41" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:42" role="doc-endnote">
+<p>Parks and Recreation. (2019, November 12). <em>Ron Tells Leslie &ldquo;Never Half-Ass Two Things&rdquo; - Parks and Recreation</em> [Video]. YouTube. <a href="https://www.youtube.com/watch?v=k6hZ9KdG1QU">https://www.youtube.com/watch?v=k6hZ9KdG1QU</a> <a href="#fnref:42" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:43" role="doc-endnote">
+<p>True introspection does not come from diving into high-calorie food or being a spiritual tourist in a foreign land, see also <a href="https://tvtropes.org/pmwiki/pmwiki.php/Main/JourneyToFindOneself">https://tvtropes.org/pmwiki/pmwiki.php/Main/JourneyToFindOneself</a> <a href="#fnref:43" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:44" role="doc-endnote">
+<p>If you wanted a nuclear take in this post, here you go: Imagine if IBM could recapture the same ability to execute that they had when they helped the Nazis execute humans. <a href="#fnref:44" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://swagitda.com/blog/tags/infrastructure">Infrastructure</a></span><span class="tag"><a href="https://swagitda.com/blog/tags/market-analysis">Market Analysis</a></span>
+                </p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>4787 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>0000-12-31 19:00 -0500</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h">Read other posts</span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="https://swagitda.com/blog/posts/wtfunding-industrial-manufacturing-analytics/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">WTFunding: Industrial / Manufacturing Analytics</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://swagitda.com/blog/">Kelly Shortridge</a></span>
+            
+            <span>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</span>
+            <span> <a href="https://swagitda.com/blog/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/blog/bundle.min.c3134e4a0a3d5ff628f7e932e4d6846626cad5e9457046b58e07c6036133ea0d788e9d330d51e709b43a7a8a22e1a4cf28aff9dbf27756a6a12b9c135260726a.js" integrity="sha512-wxNOSgo9X/Yo9&#43;ky5NaEZibK1elFcEa1jgfGA2Ez6g14jp0zDVHnCbQ6eooi4aTPKK/52/J3VqahK5wTUmByag=="></script>
+
+
+
+    </body>
+</html>
