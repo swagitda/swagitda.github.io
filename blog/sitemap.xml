@@ -3,6 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://swagitda.com/blog/posts/ibm-red-hat-bamboozles-foozles-and-the-hybrid-cloud-chimera/</loc>
+    <lastmod>2020-12-14T08:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/tags/infrastructure/</loc>
+    <lastmod>2020-12-14T08:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/</loc>
+    <lastmod>2020-12-14T08:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/tags/market-analysis/</loc>
+    <lastmod>2020-12-14T08:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/posts/</loc>
+    <lastmod>2020-12-14T08:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/tags/</loc>
+    <lastmod>2020-12-14T08:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://swagitda.com/blog/tags/behavioral-infosec/</loc>
     <lastmod>2020-09-22T08:00:41-04:00</lastmod>
   </url>
@@ -13,32 +43,12 @@
   </url>
   
   <url>
-    <loc>https://swagitda.com/blog/</loc>
-    <lastmod>2020-09-22T08:00:41-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://swagitda.com/blog/posts/on-yolosec-and-fomosec/</loc>
     <lastmod>2020-09-22T08:00:41-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://swagitda.com/blog/posts/</loc>
-    <lastmod>2020-09-22T08:00:41-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://swagitda.com/blog/tags/</loc>
-    <lastmod>2020-09-22T08:00:41-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://swagitda.com/blog/posts/buzzword-bingo-all-editions/</loc>
-    <lastmod>2020-08-05T12:47:37-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://swagitda.com/blog/tags/market-analysis/</loc>
     <lastmod>2020-08-05T12:47:37-04:00</lastmod>
   </url>
   
@@ -229,14 +239,6 @@
   
   <url>
     <loc>https://swagitda.com/blog/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://swagitda.com/blog/posts/ibm-red-hat-bamboozles-foozles-and-the-hybrid-cloud-chimera/</loc>
-  </url>
-  
-  <url>
-    <loc>https://swagitda.com/blog/tags/infrastructure/</loc>
   </url>
   
 </urlset>

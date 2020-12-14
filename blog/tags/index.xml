@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 22 Sep 2020 08:00:41 -0400</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Dec 2020 08:00:00 -0500</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Infrastructure</title>
+      <link>https://swagitda.com/blog/tags/infrastructure/</link>
+      <pubDate>Mon, 14 Dec 2020 08:00:00 -0500</pubDate>
+      
+      <guid>https://swagitda.com/blog/tags/infrastructure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Market Analysis</title>
+      <link>https://swagitda.com/blog/tags/market-analysis/</link>
+      <pubDate>Mon, 14 Dec 2020 08:00:00 -0500</pubDate>
+      
+      <guid>https://swagitda.com/blog/tags/market-analysis/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Behavioral InfoSec</title>
       <link>https://swagitda.com/blog/tags/behavioral-infosec/</link>
@@ -23,15 +41,6 @@
       <pubDate>Tue, 22 Sep 2020 08:00:41 -0400</pubDate>
       
       <guid>https://swagitda.com/blog/tags/infosec/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Market Analysis</title>
-      <link>https://swagitda.com/blog/tags/market-analysis/</link>
-      <pubDate>Wed, 05 Aug 2020 12:47:37 -0400</pubDate>
-      
-      <guid>https://swagitda.com/blog/tags/market-analysis/</guid>
       <description></description>
     </item>
     
@@ -86,15 +95,6 @@
       <pubDate>Thu, 17 Mar 2016 19:29:13 -0400</pubDate>
       
       <guid>https://swagitda.com/blog/tags/privacy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Infrastructure</title>
-      <link>https://swagitda.com/blog/tags/infrastructure/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://swagitda.com/blog/tags/infrastructure/</guid>
       <description></description>
     </item>
     
