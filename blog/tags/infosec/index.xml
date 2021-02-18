@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 22 Sep 2020 08:00:41 -0400</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/infosec/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Jan 2021 08:00:29 -0500</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/infosec/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating Security Decision Trees With Graphviz</title>
+      <link>https://swagitda.com/blog/posts/security-decision-trees-with-graphviz/</link>
+      <pubDate>Mon, 25 Jan 2021 08:00:29 -0500</pubDate>
+      
+      <guid>https://swagitda.com/blog/posts/security-decision-trees-with-graphviz/</guid>
+      <description>This post walks through creating a decision tree for pragmatic threat modeling using the open source graph vizualization tool Graphviz (with an AWS S3 bucket containing sensitive data as an example).</description>
+    </item>
+    
     <item>
       <title>On YOLOsec and FOMOsec</title>
       <link>https://swagitda.com/blog/posts/on-yolosec-and-fomosec/</link>
@@ -140,16 +149,6 @@ The median funding raised by all ten startups is $10.5 million (mean of $10.3 mi
       <description>This is probably how a Cyber Tub looks, right?
 People struggle to understand how risk accumulates in complex systems, thereby also not understanding the extent to which risk must be reduced. This misapprehension can lead to “wait and see” decisions that cause a problem to snowball, or mitigations that don’t meaningfully reduce risk, creating the feeling of just barely treading water in your security program.
 It is challenging for people to understand risk dynamics conceptually for two primary reasons.</description>
-    </item>
-    
-    <item>
-      <title>2019 Cyber Security Predictions</title>
-      <link>https://swagitda.com/blog/posts/2019-cyber-security-predictions/</link>
-      <pubDate>Wed, 05 Dec 2018 20:07:01 -0400</pubDate>
-      
-      <guid>https://swagitda.com/blog/posts/2019-cyber-security-predictions/</guid>
-      <description>Fed up with ridiculous infosec predictions for the upcoming year, I decided to aggregate them all and use the power of Markov Chains to generate my own list. What follows is the result, very lightly edited solely for readability. You can see last year’s edition here.
-In 2019, we predict 2019. Cyber espionage, cybercriminals — in 2019, they materialize. What if this is a dangerous reality? For example, consider how the world feels sometimes.</description>
     </item>
     
   </channel>

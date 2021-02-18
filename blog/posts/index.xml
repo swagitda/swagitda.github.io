@@ -6,8 +6,718 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-        <lastBuildDate>Tue, 22 Dec 2020 16:13:58 -0500</lastBuildDate>
+        <lastBuildDate>Mon, 25 Jan 2021 08:00:29 -0500</lastBuildDate>
         <atom:link href="https://swagitda.com/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Creating Security Decision Trees With Graphviz</title>
+            <link>https://swagitda.com/blog/posts/security-decision-trees-with-graphviz/</link>
+            <pubDate>Mon, 25 Jan 2021 08:00:29 -0500</pubDate>
+            
+            <guid>https://swagitda.com/blog/posts/security-decision-trees-with-graphviz/</guid>
+            <description>This post walks through creating a decision tree for pragmatic threat modeling using the open source graph vizualization tool Graphviz (with an AWS S3 bucket containing sensitive data as an example).</description>
+            <content type="html"><![CDATA[<p>In the recently published <a href="https://www.verica.io/sce-book/">&ldquo;Security Chaos Engineering&rdquo; e-book</a>, one of the chapters I wrote covers attacker math and the power of decision trees to guide more pragmatic threat modelling. This post will walk through creating the example decision tree from the e-book using <a href="https://graphviz.org/">Graphviz</a> and a .DOT file.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p>Using this as a reference, you can extrapolate this process into a pattern to inform saner security prioritization during the design phase of the product lifecycle. I won&rsquo;t cover how to populate your own decision tree in this post since that is already covered in the e-book, which is immediately available at your fingertips for the delectable price of free.</p>
+<p>As an apéritif, here&rsquo;s the end result towards which we&rsquo;ll be building:</p>
+<p><img src="/blog/img/graphviz/attack-tree-15.png" alt="The final decision tree for threat modeling an S3 bucket containing sensitive data"></p>
+<h2 id="a-brief-intro-on-graphviz">A brief intro on Graphviz</h2>
+<p>As the name suggests, Graphviz is a graph visualization tool. It is open source, which was especially compelling as I tried out various graphing tools for the decision tree use case because I am a ho for not spending money.</p>
+<p>Graphviz takes descriptions of graphs in text form and converts them into a visual (like an image or PDF). I found that the default styling options for Graphviz can quickly look like a hybrid of the infamous <a href="https://twitter.com/defensecharts">defense charts</a> or the <a href="https://knowyourmeme.com/memes/graphic-design-is-my-passion">&ldquo;graphic design is my passion&rdquo; meme</a>. However, these style deficiencies are balanced by the ease of editing the relationships represented in the graph &ndash; an issue I previously found tedious when using GUI-based tools.</p>
+<p>The textual descriptions of the graph are written using the <a href="https://graphviz.org/doc/info/lang.html">DOT language</a> (and thereby saved as a .DOT file). I personally found it quite intuitive, though, as always, your mileage may vary.</p>
+<h2 id="building-the-decision-tree">Building the decision tree</h2>
+<p>For those of you who haven&rsquo;t read the report yet (reminder: <a href="https://www.verica.io/sce-book/">it&rsquo;s free</a>), let&rsquo;s set some background context on this example.</p>
+<p>Organizations often store important content in cloud storage buckets. In this example, our imaginary organization wants to store customer video recordings in an S3 bucket. As the product and engineering teams think through the design of this project, they want to avoid bad things happening to the project that could cost money (whether via downtime or compliance fines) or time (which is also money)<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.</p>
+<p>The (rather obvious) way attackers win is by successfully accessing the video recordings in the S3 bucket. Thus, the decision tree shows the potential paths attackers can take, including attacker actions performed in response to defensive actions or mitigations, to reach the goal of accessing that S3 bucket.</p>
+<p>The branches of the tree are oriented from the lowest cost paths to attackers (on the left) to the most expensive attacker paths (on the right). The lowest cost path for attackers is generally the one with zero defensive mitigations in place, what I <a href="https://swagitda.com/blog/posts/on-yolosec-and-fomosec/">affectionately call &ldquo;yolosec.&quot;</a> The highest cost path for attackers usually involves finding and exploiting zero day vulnerabilities or performing upstream supply chain attacks<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.</p>
+<p>If you want to understand more about the decision tree architecture, I entreat you yet again to <a href="https://www.verica.io/sce-book/">download the Security Chaos Engineering report</a>.</p>
+<h2 id="step-1---defining-the-basic-nodes">Step 1 - Defining the basic nodes</h2>
+<p>The most basic security decision tree will have two common states: Reality (the starting node from which all others descend)<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> and Attackers Win (the ending node reflecting attackers accomplishing their goal).<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></p>
+<p>All the branches on the tree &ndash; reflecting different cost paths &ndash; will end up connecting the Reality and Attackers Win nodes in some fashion.</p>
+<p>Let&rsquo;s define these states in a .dot file (I named mine <code>sce-tree.dot</code>). We&rsquo;re going to be using a <em>digraph</em>, which is short for &ldquo;directed graph.&rdquo; Directed graphs show one-way relationships, whereas undirected graphs show symmetrical relationships.</p>
+<p>Your initial code thus looks like:</p>
+<pre><code>digraph {
+	reality
+	attack_win 
+}
+</code></pre><p><code>reality</code> and <code>attack_win</code> are our first two nodes. We don&rsquo;t have any attributes for them yet (styling will <a href="#step-8---beautifying-the-graph">come later</a>), so it looks pretty plain.</p>
+<p>In this example, we know that the asset we&rsquo;re threat modelling is the S3 bucket with video recordings, so we can apply a label to the <code>attack_win</code> node saying as much. That way, when the graph is visualized, the node will read as &ldquo;Access video recordings in S3 bucket&rdquo; rather than &ldquo;attack_win&rdquo;.</p>
+<p>To create this label, we add brackets after the relevant node to contain the attribute <code>label=&quot;Access video recordings in S3 bucket&quot;</code>. There are a <a href="https://graphviz.org/doc/info/attrs.html">bunch of attributes</a> you can assign to nodes (like styling), but we&rsquo;ll cover more of those later.</p>
+<p>For now, the foundation for our threat model decision tree looks like this:</p>
+<pre><code>digraph {
+	reality [ label=&quot;Reality&quot; ]
+	attack_win [ label=&quot;Access video recordings in S3 bucket&quot; ]
+}
+</code></pre><h2 id="step-2---creating-the-first-attack-node">Step 2 - Creating the first attack node</h2>
+<p>The first branch in the decision tree should represent the lowest cost attack path. In the example from <a href="https://www.verica.io/sce-book/">the SCE report</a>, the branch barely involves an attack &ndash; it assumes #yolosec, representing a reality in which you&rsquo;ve allowed crawling on your sitemap, enabling cache APIs (like the Wayback machine) to create caches of the bucket&rsquo;s contents.</p>
+<p>This means our first attack node is actually more of a state of being. The only attacker action is to access this API cache, for which we will create a new node:</p>
+<pre><code>digraph {
+	// base nodes
+	reality [ label=&quot;Reality&quot; ]
+	attack_win [ label=&quot;Access video recordings in S3 bucket&quot; ]
+
+	// attack nodes
+	attack_1 [ label=&quot;API cache (e.g. Wayback Machine)&quot; ]
+}
+</code></pre><p>You have a few options for how you want to define the nodes in your decision tree. Above, I defined the node as <code>attack_1</code>, since I personally find it easier to keep track of attack (and defense) actions sequentially. However, you can also define the nodes more explicitly, such as <code>api_cache</code>, like so:</p>
+<pre><code>	// attack nodes
+	api_cache [ label=&quot;API cache (e.g. via Wayback machine)&quot; ]
+	toothbrush_0day [ label=&quot;0day in your electric toothbrush&quot; ]
+	planet_hax [ label=&quot;Hack the planet!&quot;]
+}
+</code></pre><p>You can also use letters, like <code>A</code>, <code>B</code>, <code>C</code>, etc., but I personally find it crude and harder to follow relative to the more descriptive options as the tree gets more complex.</p>
+<p>You&rsquo;ll also note I&rsquo;ve commented the heading <code>// attack nodes</code>. I find it easier to separate out attack vs. defense nodes, especially when it comes to styling (as we&rsquo;ll see first in <a href="#step-6---differentiating-between-attack--defense-nodes">step 6</a>). Another option is to organize your nodes within the .dot file by branch, such as:</p>
+<pre><code>digraph {
+	// base nodes
+	reality [ label=&quot;Reality&quot; ]
+	attack_win [ label=&quot;Access video recordings in S3 bucket&quot; ]
+
+	// branch 1
+	attack_1 [ label=&quot;API cache (e.g. via Wayback machine)&quot; ]
+	defense_1 [ label=&quot;#yolosec&quot; ]
+
+	// branch 2
+	attack_2 [ label=&quot;0day in your electric toothbrush&quot; ]
+	defense_2 [ label=&quot;roll over and play dead&quot; ]
+}
+</code></pre><p>Whatever your preference, just make sure you&rsquo;re consistent as you continue to build out the tree. Also note that Graphviz does <em>not</em> warn you if there are duplicate nodes, so choose whichever organization option will minimize the probability of you creating duplicates.</p>
+<h2 id="step-3---creating-the-first-branch-edges">Step 3 - Creating the first branch edges</h2>
+<p>Because I&rsquo;m impatient and maybe you are, too, let&rsquo;s work towards visualizing this first branch so we can see something tangible from our efforts thus far. This means we need to create the <em>edges</em> for the first branch.</p>
+<p>Edges are the connectors between nodes. Because our decision trees are causal diagrams, we&rsquo;ll be using the <code>-&gt;</code> edge (i.e. arrowhead edge) to represent a directional flow of action.</p>
+<p>In the case of this first branch, we start from the reality node, which connects to the #yolosec state of an API cache existing, which leads to attackers successfully accessing the bucket data (and thus winning). In our .dot file, these edges will be defined like this:</p>
+<pre><code>digraph {
+	// base nodes
+	reality [ label=&quot;Reality&quot; ]
+	attack_win [ label=&quot;Access video recordings in S3 bucket&quot; ]
+
+	// attack nodes
+	attack_1 [ label=&quot;API cache (e.g. Wayback Machine)&quot; ]
+
+	// branch 1 edges
+	reality -&gt; attack_1
+	attack_1 -&gt; attack_win
+}
+</code></pre><p>If you want to highlight what a snafu the API cache is, you can even add a &ldquo;#yolosec&rdquo; label (via <code>xlabel=</code>) to the edge:</p>
+<pre><code>reality -&gt; attack_1 [ xlabel=&quot;#yolosec&quot; ]
+attack_1 -&gt; attack_win
+</code></pre><h2 id="step-4---visualizing-the-first-branch">Step 4 - Visualizing the first branch</h2>
+<p>Now that we have the necessary nodes and edges for our first branch, let&rsquo;s visualize it! Spoiler alert: without any styling, it&rsquo;s not going to look too pretty.</p>
+<p>I find a PDF to be the most digestible format for decision trees, since it allows better zooming and panning than an image (like a .png). However, for obvious reasons, I&rsquo;ll be using .png&rsquo;s to illustrate the results of each command throughout this post.</p>
+<p>To create a PDF of our decision tree thus far, we can use the command:
+<code>dot -Tpdf sce-tree.dot -o attack-tree.pdf</code></p>
+<p><img src="/blog/img/graphviz/attack-tree-01.png" alt="First branch of our decision tree"></p>
+<p>That is super hideous! But we successfully visualized that a reality in which an API cache of our video recordings is available leads to attackers winning with minimal effort (with the #yolosec tag for extra flair).</p>
+<h2 id="step-5---filling-out-another-branch">Step 5 - Filling out another branch</h2>
+<p>Now it&rsquo;s time to add another branch. This will involve creating new attack nodes, defense nodes, and edges between them.</p>
+<p>Because we learned our lesson on the dangers of #yolosec, we know that we should implement the mitigation of disallowing crawling on our site maps. This will be our first defense node:</p>
+<pre><code>digraph {
+	// base nodes
+	reality [ label=&quot;Reality&quot; ]
+	attack_win [ label=&quot;Access video recordings in S3 bucket (attackers win)&quot; ]
+
+	// attack nodes
+	attack_1 [ label=&quot;API cache (e.g. Wayback Machine)&quot; ]
+
+	// defense nodes
+	defense_1 [ label=&quot;Disallow crawling on site maps&quot; ]
+
+	// branch 1 edges
+	reality -&gt; attack_1 [ xlabel=&quot;#yolosec&quot; ]
+	attack_1 -&gt; attack_win
+}
+</code></pre><p>As discussed in <a href="https://www.verica.io/sce-book/">the SCE report</a>, we next need to think about how an attacker will respond to our mitigations (what is known as &ldquo;belief prompting&rdquo;). The easiest thing an attacker can do next, if an API cache isn&rsquo;t available, is searching public buckets to see if the target data is accessible. This will be our second node among our attack nodes:</p>
+<pre><code>// attack nodes
+attack_1 [ label=&quot;API cache (e.g. Wayback Machine)&quot; ]
+attack_2 [ label=&quot;AWS public buckets search&quot; ]
+</code></pre><p>We will again assume #yolosec &ndash; that our S3 bucket is set to public and thus accessible via search. This will be our third attack node:</p>
+<pre><code>// attack nodes
+attack_1 [ label=&quot;API cache (e.g. Wayback Machine)&quot; ]
+attack_2 [ label=&quot;AWS public buckets search&quot; ]
+attack_3 [ label=&quot;S3 bucket set to public&quot; ]
+</code></pre><p>With all our nodes defined for the second branch, we now need to connect them via edges:</p>
+<pre><code>digraph {
+	// base nodes
+	reality [ label=&quot;Reality&quot; ]
+	attack_win [ label=&quot;Access video recordings in S3 bucket (attackers win)&quot; ]
+
+	// attack nodes
+	attack_1 [ label=&quot;API cache (e.g. Wayback Machine)&quot; ]
+	attack_2 [ label=&quot;AWS public buckets search&quot; ]
+	attack_3 [ label=&quot;S3 bucket set to public&quot; ]
+
+	// defense nodes
+	defense_1 [ label=&quot;Disallow crawling on site maps&quot; ]
+
+	// branch 1 edges
+	reality -&gt; attack_1 [ xlabel=&quot;#yolosec&quot; ]
+	attack_1 -&gt; attack_win
+
+	// branch 2 edges
+	reality -&gt; defense_1
+	defense_1 -&gt; attack_2
+	attack_2 -&gt; attack_3 [ xlabel=&quot;#yolosec&quot; ]
+	attack_3 -&gt; attack_win
+}
+</code></pre><p>We can overwrite our prior file with this new branch by running the same command again:
+<code>dot -Tpdf sce-tree.dot -o attack-tree.pdf</code></p>
+<p><img src="/blog/img/graphviz/attack-tree-02.png" alt="First and second branches of our decision tree"></p>
+<p>We can now see how the attackers must change their actions when a mitigation is place. However, it is still ugly af.</p>
+<h2 id="step-6---differentiating-between-attack--defense-nodes">Step 6 - Differentiating between attack &amp; defense nodes</h2>
+<p>While we&rsquo;ll take care of the hideousness later when we apply real styling, you can probably already tell just from two branches that differentiating between attack and defense nodes can get confusing quickly &ndash; especially as we keep adding nodes.</p>
+<p>Luckily, Graphviz allows you to define styling specific to a list of nodes. Given we already have separate lists of attack and defense nodes, we can add different colors for each by adding the <code>color</code> attribute at the beginning of the list using <code>node [ color=&quot;#hexgoeshere&quot; ]</code>. This will start as an outline color for now but result in a fill color once we apply more styling in <a href="step-8---beautifying-the-graph">step 8</a>.</p>
+<p>Let&rsquo;s start by applying a pale raspberry color to our attack actions:</p>
+<pre><code>// attack nodes
+node [ color=&quot;#ED96AC&quot; ]
+attack_1 [ label=&quot;API cache (e.g. Wayback Machine)&quot; ]
+attack_2 [ label=&quot;AWS public buckets search&quot; ]
+attack_3 [ label=&quot;S3 bucket set to public&quot; ]
+</code></pre><p>Then, we can add a pale blue color for our defense actions (matching the common red team vs. blue team parlance):</p>
+<pre><code>// defense nodes
+node [ color=&quot;#ABD2FA&quot; ]
+defense_1 [ label=&quot;Disallow crawling on site maps&quot; ]
+</code></pre><p>Let&rsquo;s see how this looks by running our command again:</p>
+<p><img src="/blog/img/graphviz/attack-tree-03.png" alt="First and second branches of our decision tree with red and blue color coding"></p>
+<p>Astute readers may quibble that the existence of an API cache and the public bucket setting aren&rsquo;t <em>really</em> attacker actions. Graphviz allows you to style nodes individually, too &ndash; so we can apply a grey color to the attack nodes that moreso reflect conditions that facilitate attack success:</p>
+<pre><code>// attack nodes
+node [ color=&quot;#ED96AC&quot; ]
+attack_1 [ label=&quot;API cache (e.g. Wayback Machine)&quot; color=&quot;#C6CCD2&quot; ]
+attack_2 [ label=&quot;AWS public buckets search&quot; ]
+attack_3 [ label=&quot;S3 bucket set to public&quot; color=&quot;#C6CCD2&quot; ]
+</code></pre><p>Finally, we can add some colors for our base nodes: a bold strawberry for our Attackers Win ;_; condition and a charcoal one for our Reality node:</p>
+<pre><code>reality [ label=&quot;Reality&quot; color=&quot;#2B303A&quot; ]
+attack_win [ label=&quot;Access video recordings in S3 bucket (attackers win)&quot; color=&quot;#DB2955&quot; ]
+</code></pre><p>When we run <code>dot -Tpdf sce-tree.dot -o attack-tree.pdf</code> again, we can now differentiate between the various nodes:</p>
+<p><img src="/blog/img/graphviz/attack-tree-04.png" alt="First and second branches of our decision tree with color coding"></p>
+<p>With this super basic styling set up for better readability as we build out the tree, let&rsquo;s get to the next branches &ndash; many of which are more complicated.</p>
+<h2 id="step-7---drawing-the-owl">Step 7 - Drawing the Owl</h2>
+<p>To shorten an already lengthy post, we will walk through the third branch but then add the rest of the nodes and edges roughly en masse so we can move onto the <a href="#step-8---beautifying-the-graph">styling</a> and <a href="#step-9---fixing-the-ordering">ordering</a> steps.</p>
+<p>This is a bit of a <a href="https://knowyourmeme.com/memes/how-to-draw-an-owl">&ldquo;draw the owl&rdquo;</a> moment, but hopefully you can extrapolate from the fully fleshed example branches to the rest &ndash; connecting the .dots, as it were &ndash; using the complete decision tree <a href="https://www.verica.io/sce-book/">in the report</a> as a reference.</p>
+<p>However, because I&rsquo;m not totally heartless, I also created <a href="https://github.com/swagitda/security-decision-trees-graphviz">a GitHub repo</a> containing the <a href="https://github.com/swagitda/security-decision-trees-graphviz/tree/main/branch-dot-files">dot files</a> and <a href="https://github.com/swagitda/security-decision-trees-graphviz/tree/main/branch-images">graph images</a> for each of the branches so you can see the changes along the way.</p>
+<h3 id="filling-out-the-third-branch">Filling out the third branch</h3>
+<p>This branch starts with our final mitigation that directly descends from the reality branch. Learning our #yolosec lesson yet again, we see that making the S3 bucket private and having some sort of access control on it is a sensible mitigation. This is reflected in our second node among the defense nodes:</p>
+<pre><code>// defense nodes
+node [ color=&quot;#ABD2FA&quot; ]
+defense_1 [ label=&quot;Disallow crawling on site maps&quot; ]
+defense_2 [ label=&quot;Auth required / ACLs (private bucket)&quot; ]  
+</code></pre><p>What will attackers do in response? Well, they&rsquo;ll probably try to <a href="https://en.wikipedia.org/wiki/Brute-force_attack">brute force</a> their way in (usually the lower-cost option) or try to <a href="https://en.wikipedia.org/wiki/Phishing">phish</a> credentials of users with access to the bucket. They could also try to perform reconnaissance on our organization&rsquo;s S3 buckets, but that is a more expensive option which we will reflect on a later branch.</p>
+<p>For now, we add the former two options to our list of attack nodes:</p>
+<pre><code>// attack nodes
+node [ color=&quot;#ED96AC&quot; ]
+attack_1 [ label=&quot;API cache (e.g. Wayback Machine)&quot; color=&quot;#C6CCD2&quot; ]
+attack_2 [ label=&quot;AWS public buckets search&quot; ]
+attack_3 [ label=&quot;S3 bucket set to public&quot; color=&quot;#C6CCD2&quot; ]
+attack_4 [ label=&quot;Brute force&quot; ]
+attack_5 [ label=&quot;Phishing&quot; ]
+</code></pre><p>If brute forcing is successful, then attackers can compromise user credentials &ndash; and the same with phishing. Logging in with those credentials (&ldquo;creds&rdquo;), the attacker can find a subsystem with access to the target bucket data, leading to an attacker win.</p>
+<p>However, we can potentially mitigate subsystem access -&gt; bucket access by locking down our web client with creds or access control lists (ACLs). In response, the attacker will need to manually analyze the web client for some sort of access control misconfiguration so they can still access the target S3 bucket &ndash; and thus still win.</p>
+<p>We can mitigate that attacker response, too, by ensuring we perform all access control server-side. With these easier options thwarted, attackers will need to go back to the phishing drawing board and aim for more privileged credentials (which you can see on <a href="https://github.com/swagitda/security-decision-trees-graphviz/blob/main/branch-dot-files/04-branch.dot">branch 4</a>).</p>
+<p>Putting this flow of attacker action -&gt; defender response -&gt; attacker response together, we now have these attack and defense nodes:</p>
+<pre><code>// attack nodes
+node [ color=&quot;#ED96AC&quot; ]
+attack_1 [ label=&quot;API cache (e.g. Wayback Machine)&quot; color=&quot;#C6CCD2&quot; ]
+attack_2 [ label=&quot;AWS public buckets search&quot; ]
+attack_3 [ label=&quot;S3 bucket set to public&quot; color=&quot;#C6CCD2&quot; ]
+attack_4 [ label=&quot;Brute force&quot; ]
+attack_5 [ label=&quot;Phishing&quot; ]
+attack_6 [ label=&quot;Compromise user credentials&quot; ]
+attack_7 [ label=&quot;Subsystem with access to bucket data&quot; color=&quot;#C6CCD2&quot; ]
+attack_8 [ label=&quot;Manually analyze web client for access control misconfig&quot; ]
+
+// defense nodes
+node [ color=&quot;#ABD2FA&quot; ]
+defense_1 [ label=&quot;Disallow crawling on site maps&quot; ]
+defense_2 [ label=&quot;Auth required / ACLs (private bucket)&quot; ]
+defense_3 [ label=&quot;Lock down web client with creds / ACLs&quot; ]
+defense_4 [ label=&quot;Perform all access control server-side&quot; ]
+</code></pre><p>Now we need to connect them to reflect the &ldquo;If This, Then That&rdquo;-style logic of the attacker / defender game at hand. There are a few decision forks here depending on whether or not there is a mitigation. I find it useful to comment <code>// potential mitigation</code> at those forks for clarity, as shown here:</p>
+<pre><code>// branch 3 edges
+reality -&gt; defense_2
+defense_2 -&gt; attack_4
+defense_2 -&gt; attack_5
+attack_4 -&gt; attack_6
+attack_5 -&gt; attack_6
+attack_6 -&gt; attack_7
+attack_7 -&gt; attack_win
+// potential mitigation path
+attack_7 -&gt; defense_3
+defense_3 -&gt; attack_8
+attack_8 -&gt; attack_win
+// potential mitigation path
+attack_8 -&gt; defense_4 
+defense_4 -&gt; attack_5 [ style=&quot;dashed&quot; color=&quot;#7692FF&quot; ]
+</code></pre><p>To reflect the fact that our last mitigation (performing access control server-side) sends attackers back up the tree to try a more expensive branch, I&rsquo;ve styled the last edge as a <code>dashed</code> line with a periwinkle color.</p>
+<p>Running our output command again, we can see the three branches together:</p>
+<p><img src="/blog/img/graphviz/attack-tree-05.png" alt="Three branches of our decision tree"></p>
+<p>Well&hellip; it&rsquo;s technically correct, but organized in a weird way that makes it pretty tricky to follow. Since we have five more branches to add, it doesn&rsquo;t make sense for us to tweak the ordering yet &ndash; that will be covered in <a href="#step-9---fixing-the-ordering">step 9</a>.</p>
+<h3 id="adding-branches-4---7">Adding branches 4 - 7</h3>
+<p>To keep this post moving, I beseech you to review the .dot files and graph outputs <a href="https://github.com/swagitda/security-decision-trees-graphviz">in the GitHub repo</a> for the rest of the branches through the last one (branch 8). There is also commentary within the .dot files for each of the branches skipped over here for your perusal.</p>
+<p>Your .dot file ahead of the final branch should <a href="https://github.com/swagitda/security-decision-trees-graphviz/drawing-the-owl-dot.dot">look like this</a>:</p>
+<pre><code>digraph {
+	// base nodes
+	reality [ label=&quot;Reality&quot; color=&quot;#2B303A&quot; ]
+	attack_win [ label=&quot;Access video recordings in S3 bucket (attackers win)&quot; color=&quot;#DB2955&quot; ]
+
+  	// attack nodes
+  	node [ color=&quot;#ED96AC&quot; ]
+	attack_1 [ label=&quot;API cache (e.g. Wayback Machine)&quot; color=&quot;#C6CCD2&quot; ]
+	attack_2 [ label=&quot;AWS public buckets search&quot; ]
+	attack_3 [ label=&quot;S3 bucket set to public&quot; color=&quot;#C6CCD2&quot; ]
+	attack_4 [ label=&quot;Brute force&quot; ]
+	attack_5 [ label=&quot;Phishing&quot; ]
+	attack_6 [ label=&quot;Compromise user credentials&quot; ]
+	attack_7 [ label=&quot;Subsystem with access to bucket data&quot; color=&quot;#C6CCD2&quot; ]
+	attack_8 [ label=&quot;Manually analyze web client for access control misconfig&quot; ]
+	attack_9 [ label=&quot;Compromise admin creds&quot; ]
+	attack_10 [ label=&quot;Intercept 2FA&quot; ]
+	attack_11 [ label=&quot;SSH to an accessible machine&quot; ]
+	attack_12 [ label=&quot;Lateral movement to machine with access to target bucket&quot; ]
+	attack_13 [ label=&quot;Compromise AWS admin creds&quot; ]
+	attack_14 [ label=&quot;Compromise presigned URLs&quot; ]
+	attack_15 [ label=&quot;Compromise URL within N time period&quot; ]
+	attack_16 [ label=&quot;Recon on S3 buckets&quot; ]
+	attack_17 [ label=&quot;Find systems with R/W access to target bucket&quot; ]
+	attack_18 [ label=&quot;Exploit known 3rd party library vulns&quot; ]
+
+	// defense nodes
+	node [ color=&quot;#ABD2FA&quot; ]
+	defense_1 [ label=&quot;Disallow crawling on site maps&quot; ]
+	defense_2 [ label=&quot;Auth required / ACLs (private bucket)&quot; ]
+	defense_3 [ label=&quot;Lock down web client with creds / ACLs&quot; ]
+	defense_4 [ label=&quot;Perform all access control server-side&quot; ]
+	defense_5 [ label=&quot;2FA&quot; ]
+	defense_6 [ label=&quot;IP allowlist for SSH&quot; ]
+	defense_7 [ label=&quot;Make URL short lived&quot; ]
+	defense_8 [ label=&quot;Disallow the use of URLs to access buckets&quot; ]
+	defense_9 [ label=&quot;No public system has R/W access (internal only)&quot; ]
+	defense_10 [ label=&quot;3rd party library checking / vuln scanning&quot; ]
+
+	// branch 1 edges
+	reality -&gt; attack_1 [ xlabel=&quot;#yolosec&quot; fontcolor=&quot;#DB2955&quot; ]
+	attack_1 -&gt; attack_win	
+
+	// branch 2 edges
+	reality -&gt; defense_1
+	defense_1 -&gt; attack_2
+	attack_2 -&gt; attack_3 [ xlabel=&quot;#yolosec&quot; fontcolor=&quot;#DB2955&quot; ]
+	attack_3 -&gt; attack_win
+
+	// branch 3 edges
+	reality -&gt; defense_2
+	defense_2 -&gt; attack_4
+	defense_2 -&gt; attack_5
+	attack_4 -&gt; attack_6
+	attack_5 -&gt; attack_6
+	attack_6 -&gt; attack_7
+	attack_7 -&gt; attack_win
+	// potential mitigation path
+	attack_7 -&gt; defense_3
+	defense_3 -&gt; attack_8
+	attack_8 -&gt; attack_win
+	// potential mitigation path
+	attack_8 -&gt; defense_4 
+	defense_4 -&gt; attack_5 [ style=&quot;dashed&quot; color=&quot;#7692FF&quot; ]
+	
+	// branch 4 edges
+	attack_5 -&gt; attack_9
+	attack_9 -&gt; attack_11 [ xlabel=&quot;#yolosec&quot; fontcolor=&quot;#DB2955&quot; ]
+	// potential mitigation path
+	attack_9 -&gt; defense_5 
+	defense_5 -&gt; attack_10 
+	attack_10 -&gt; attack_11
+	// potential mitigation path
+	attack_11 -&gt; defense_6 
+	defense_6 -&gt; attack_12 
+	attack_12 -&gt; attack_win
+
+	// branch 5 edges
+	attack_5 -&gt; attack_13
+	attack_13 -&gt; attack_11
+	attack_13 -&gt; defense_5
+
+	// branch 6 edges
+	attack_5 -&gt; attack_14
+	attack_14 -&gt; attack_win
+	attack_14 -&gt; attack_15
+	// potential mitigation path
+	attack_14 -&gt; defense_7 
+	defense_7 -&gt; attack_15 
+	attack_15 -&gt; attack_win
+	// potential mitigation path
+	attack_15 -&gt; defense_8 
+
+	// branch 7 edges
+	defense_2 -&gt; attack_16
+	defense_5 -&gt; attack_16 [ style=&quot;dashed&quot; color=&quot;#7692FF&quot; ]
+	defense_8 -&gt; attack_16 [ style=&quot;dashed&quot; color=&quot;#7692FF&quot; ]
+	attack_16 -&gt; attack_17 [ xlabel=&quot;#yolosec&quot; fontcolor=&quot;#DB2955&quot; ]
+	// potential mitigation path
+	attack_17 -&gt; defense_9 
+	defense_9 -&gt; attack_5 [ style=&quot;dashed&quot; color=&quot;#7692FF&quot; ]
+	attack_17 -&gt; attack_18
+	// potential mitigation path
+	attack_18 -&gt; defense_10
+
+}
+</code></pre><h3 id="adding-the-last-branch-branch-8">Adding the last branch (branch 8)</h3>
+<p><a href="https://youtu.be/5Nvxv2R01po?t=5">We&rsquo;re now on the hardest branch for attackers</a>, the one requiring zero-day (&ldquo;0day&rdquo;) exploits or supply chain backdoors. These are expensive, whether in money or time, so attackers will generally use them as a last resort or if the return on investment (ROI) is more favorable &ndash; such as when those actions enable the ability to gain access to a bunch of organizations in one fell swoop, avoiding the need to compromise them individually.</p>
+<p>Our last mitigation from the <a href="https://github.com/swagitda/security-decision-trees-graphviz/blob/main/branch-images/07-branch.png">seventh branch</a> was vulnerability (&ldquo;vuln&rdquo;) scanning, (ideally) eliminating the option for attackers to exploit a known vuln. Thus, attackers will either need to buy 0day or discover and develop 0day themselves. A potential mitigation to 0day exploits is, somewhat obviously, exploit detection and prevention.</p>
+<p>Assuming this mitigation actually works<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>, attackers will be forced to try 0day affecting AWS multitenant systems. In response, defenders could adopt a single tenant AWS hardware security module (<a href="https://en.wikipedia.org/wiki/Hardware_security_module">HSM</a>) model, which would then force attackers to plant a backdoor in a component in AWS&rsquo;s supply chain.</p>
+<p>For the purposes of illustration, I&rsquo;ve assumed that the organization creating this decision tree / threat model does <em>not</em> currently employ AWS HSMs. Therefore, the edge leading to that defense node is styled as a <code>dotted</code> line.</p>
+<p>This final branch results in the following new nodes and edges:</p>
+<pre><code>attack_19 [ label=&quot;Manual discovery of 0day&quot; ]
+attack_20 [ label=&quot;Buy 0day&quot; ]
+attack_21 [ label=&quot;Exploit vulns&quot; ]
+attack_22 [ label=&quot;0day in AWS multitenant systems&quot; ]
+attack_23 [ label=&quot;Supply chain compromise (backdoor)&quot; ]
+</code></pre><pre><code>defense_11 [ label=&quot;Exploit prevention/ detection&quot; ]
+defense_12 [ label=&quot;Use single tenant AWS HSM&quot; ]
+</code></pre><pre><code>// branch 8 edges
+defense_10 -&gt; attack_19
+defense_10 -&gt; attack_20
+attack_19 -&gt; attack_21
+attack_20 -&gt; attack_21
+attack_21 -&gt; attack_win
+// potential mitigation path
+attack_21 -&gt; defense_11 
+defense_11 -&gt; attack_22 
+attack_22 -&gt; attack_win 
+// potential mitigation path
+attack_22 -&gt; defense_12 [ style=&quot;dotted&quot; ]
+defense_12 -&gt; attack_23 
+attack_23 -&gt; attack_win
+</code></pre><p>With all our nodes and edges now in place, our graph looks like this:</p>
+<p><img src="/blog/img/graphviz/attack-tree-10.png" alt="Eight branches of our decision tree"></p>
+<p>It is very ugly and difficult to follow. We should proceed to the next steps so that we do not have to stare at this monstrosity further.</p>
+<h2 id="step-8---beautifying-the-graph">Step 8 - Beautifying the graph</h2>
+<p>Before we tackle the fact that many of the nodes are out of intended order, we should try to make this all look less hideous. Graphviz allows for some limited styling options, which, to be honest, I mostly figured out through guess and check given how sparse I found the docs to be.</p>
+<h3 id="node-styling">Node styling</h3>
+<p>Let&rsquo;s start by making the nodes less Word 95-era design. I personally chose to replace the outlines with a fill, using the same colors as before.</p>
+<p>You can set global node design by inserting <code>node [ * ]</code> at the beginning of your .dot file. To get rid of the outlines, add the <code>shape</code> attribute with the value <code>plaintext</code> and add the <code>style</code> attribute with the value <code>filled, rounded</code> (I possess a fondness for rounded edges):</p>
+<pre><code>digraph {
+	// Base Styling
+	node [ shape=&quot;plaintext&quot; style=&quot;filled, rounded&quot; ]
+</code></pre><p>Because nodes are now filled with the previously-defined colors, we also need to lighten the font color for the <code>reality</code> and <code>attack_win</code> nodes; I chose white:</p>
+<pre><code>// base nodes
+reality [ label=&quot;Reality&quot; fillcolor=&quot;#2B303A&quot; fontcolor=&quot;#ffffff&quot; ]
+attack_win [ label=&quot;Access video recordings in S3 bucket (attackers win)&quot;
+fillcolor=&quot;#DB2955&quot; fontcolor=&quot;#ffffff&quot; ]
+</code></pre><p>Also, who uses Times New Roman anymore? Apparently Graphviz does, since it&rsquo;s the default font. Let&rsquo;s change the font to Lato:</p>
+<pre><code>// Base Styling
+node [ shape=&quot;plaintext&quot; style=&quot;filled, rounded&quot; fontname=&quot;Lato&quot;]
+</code></pre><p>Finally, we can make the nodes a bit roomier by adding a slight margin around the text within:</p>
+<pre><code>// Base Styling
+node [ shape=&quot;plaintext&quot; style=&quot;filled, rounded&quot; fontname=&quot;Lato&quot; margin=0.2]
+</code></pre><p>Our graph now looks like this with the new node styling:</p>
+<p><img src="/blog/img/graphviz/attack-tree-11.png" alt="The decision tree with filled and rounded nodes, plus Lato font"></p>
+<p>It&rsquo;s already looking more modern! But we can do more.</p>
+<h3 id="edge-styling">Edge styling</h3>
+<p>We can make the edges prettier, too, by changing the #yolosec label font to Lato and by lightening the lines up slightly so they aren&rsquo;t in stark black:</p>
+<pre><code>// Base Styling
+node [ shape=&quot;plaintext&quot; style=&quot;filled, rounded&quot; fontname=&quot;Lato&quot;]
+edge [ fontname=&quot;Lato&quot; color=&quot;#2B303A&quot; ]
+</code></pre><p>We can see the results of our slight changes here:</p>
+<p><img src="/blog/img/graphviz/attack-tree-12.png" alt="The decision tree with lighter edges, plus Lato font"></p>
+<h3 id="graph-styling">Graph styling</h3>
+<p>There&rsquo;s a lot of whitespace in our graph right now, which arguably reduces navigability. Ideally, the graph should be a solidly readable size in the <code>Page Width</code> view in a PDF reader. So, let&rsquo;s reduce some of the white space.</p>
+<p>We can set styling for the whole graph by inserting it above the <code>node [ * ]</code> and <code>edge [ * ]</code> base styling we added above. Let&rsquo;s start by reducing the horizontal distance between nodes via the <code>nodesep</code> attribute and the vertical distance via the <code>ranksep</code> attribute:</p>
+<pre><code>// Base Styling
+nodesep=&quot;0.2&quot;;
+ranksep=&quot;0.4&quot;;
+node [ shape=&quot;plaintext&quot; style=&quot;filled, rounded&quot; fontname=&quot;Lato&quot; margin=0.2]
+edge [ fontname=&quot;Lato&quot; color=&quot;#2B303A&quot; ]
+</code></pre><p>For this next styling option, I&rsquo;m going to level with y&rsquo;all: this combination resulted in the best visual outcomes after a lot of guess and check, but I&rsquo;m still not 100% what they do. In any case, setting <code>splines=true</code> and <code>overlap=false</code> seems to generate the cleanest visualization:</p>
+<pre><code>// Base Styling
+splines=true;
+overlap=false;
+nodesep=&quot;0.2&quot;;
+ranksep=&quot;0.4&quot;;
+node [ shape=&quot;plaintext&quot; style=&quot;filled, rounded&quot; fontname=&quot;Lato&quot; margin=0.2]
+edge [ fontname=&quot;Lato&quot; color=&quot;#2B303A&quot; ]
+</code></pre><p>I also added in the attribute specifying the graph should be visualized from top to bottom, even though it&rsquo;s the default (I am risk averse):</p>
+<pre><code>rankdir=&quot;TB&quot;;
+</code></pre><p>Last, but certainly not least, I titled the graph using the <code>label</code> attribute and set the label location to the top with <code>labelloc</code>. With all of this incorporated, the base styling section in the .dot file now looks like this:</p>
+<pre><code>// Base Styling
+rankdir=&quot;TB&quot;;
+splines=true;
+overlap=false;
+nodesep=&quot;0.2&quot;;
+ranksep=&quot;0.4&quot;;
+label=&quot;Attack Tree for S3 Bucket with Video Recordings&quot;;
+labelloc=&quot;t&quot;;
+fontname=&quot;Lato&quot;;
+node [ shape=&quot;plaintext&quot; style=&quot;filled, rounded&quot; margin=0.2 fontname=&quot;Lato&quot; ]
+edge [ fontname=&quot;Lato&quot; color=&quot;#2B303A&quot; ]
+</code></pre><p>With the new styling complete, our graph looks much more visually appealing:</p>
+<p><img src="/blog/img/graphviz/attack-tree-13.png" alt="The decision tree with the base styling"></p>
+<p>However, it&rsquo;s still a little confusing due to the errant default node placement by Graphviz. We&rsquo;ll fix this in the next step.</p>
+<h2 id="step-9---fixing-the-ordering">Step 9 - Fixing the ordering</h2>
+<p>One of the benefits of the decision tree is to visualize a threat model in order of easiest / lowest cost attacker path to hardest / highest cost attacker path (generally from left to right). By default, Graphviz does not respect the order in which we&rsquo;ve written our nodes and edges, necessitating some fixes.</p>
+<p>I approached this necessary re-ordering by creating a <em>cluster</em> for each group of nodes that should be equal in hierarchy. In Graphviz, a cluster is encoded as a <a href="https://graphviz.org/Gallery/directed/cluster.html"><code>subgraph</code></a>, which can be used for a variety of purposes beyond the aesthetic ordering one in this post.</p>
+<p>The three clusters in our tree diagram are:</p>
+<ul>
+<li>The initial nodes after the reality node: the API cache, disallowing crawling on site maps, and private buckets</li>
+<li>The attack nodes after auth is required: brute force, phishing, and recon on s3 buckets</li>
+<li>The subsequent attack nodes after phishing: compromise user creds, admin creds, AWS admin creds, or pre-signed URLs</li>
+</ul>
+<p>We can encode these clusters as subgraphs with the attribute <code>rank=same</code> (to weight the nodes equally in the hierarchy) along with the list of relevant nodes in the cluster:</p>
+<pre><code>// Subgraphs / Clusters
+subgraph initialstates {
+	rank=same;
+	attack_1;
+	defense_1;
+	defense_2;
+}
+
+subgraph authrequired {
+	rank=same;
+	attack_4;
+	attack_5;
+	attack_16;
+}
+
+subgraph phishcluster {
+	rank=same;
+	attack_6;
+	attack_9;
+	attack_13;
+	attack_14;
+} 
+</code></pre><p>I would like to spare y&rsquo;all the vexation I experienced when Graphviz didn&rsquo;t respect the order in which I listed the nodes within a cluster. For instance, instead of showing <code>attack_4</code> as the leftmost node in the <code>authrequired</code> cluster and <code>attack_16</code> as the rightmost, Graphviz seemed to prefer to use a methodology reflected by <code>¯\_(ツ)_/¯</code>.</p>
+<p>What seems to fix this ordering issue is creating invisible edges that enforce the left to right ordering. For our graph, the fix is specifically found in enforcing the correct order in the <code>phishcluster</code> subgraph:</p>
+<pre><code>attack_6 -&gt; attack_9 -&gt; attack_13 -&gt; attack_14 [ style=&quot;invis&quot; ]
+</code></pre><p>Aren&rsquo;t computers great? In any case, our graph now accurately visualizes the ordering of our decision tree:</p>
+<p><img src="/blog/img/graphviz/attack-tree-14.png" alt="The decision tree with the base styling"></p>
+<h2 id="step-10---tweaking-the-design">Step 10 - Tweaking the design</h2>
+<p>There are other tweaks we can make to make this graph (and the .dot file itself!) more digestible.</p>
+<p>I chose to add line breaks for particularly long node labels, such as <code>label=&quot;API cache\n(e.g. Wayback\nMachine)&quot;</code>, and definitely recommend it for your own tree. I also added in more comments to the .dot file so that someone else reading it could better understand what is going on.</p>
+<p>With these last tweaks, this is how our final .dot file looks:<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup></p>
+<pre><code>digraph {
+	// Base Styling
+	rankdir=&quot;TB&quot;;
+	splines=true;
+	overlap=false;
+	nodesep=&quot;0.2&quot;;
+	ranksep=&quot;0.4&quot;;
+	label=&quot;Attack Tree for S3 Bucket with Video Recordings&quot;;
+	labelloc=&quot;t&quot;;
+	fontname=&quot;Lato&quot;;
+	node [ shape=&quot;plaintext&quot; style=&quot;filled, rounded&quot; fontname=&quot;Lato&quot; margin=0.2 ]
+	edge [ fontname=&quot;Lato&quot; color=&quot;#2B303A&quot; ]
+
+	// List of Nodes
+
+	// base nodes
+	reality [ label=&quot;Reality&quot; fillcolor=&quot;#2B303A&quot; fontcolor=&quot;#ffffff&quot; ]
+	attack_win [ label=&quot;Access video\nrecordings in\nS3 bucket\n(attackers win)&quot; fillcolor=&quot;#DB2955&quot; fontcolor=&quot;#ffffff&quot; ]
+
+  	// attack nodes
+  	node [ color=&quot;#ED96AC&quot; ]
+	attack_1 [ label=&quot;API cache\n(e.g. Wayback\nMachine)&quot; color=&quot;#C6CCD2&quot; ]
+	attack_2 [ label=&quot;AWS public\nbuckets search&quot; ]
+	attack_3 [ label=&quot;S3 bucket\nset to public&quot; color=&quot;#C6CCD2&quot; ]
+	attack_4 [ label=&quot;Brute force&quot; ]
+	attack_5 [ label=&quot;Phishing&quot; ]
+	attack_6 [ label=&quot;Compromise\nuser credentials&quot; ]
+	attack_7 [ label=&quot;Subsystem with\naccess to\nbucket data&quot; color=&quot;#C6CCD2&quot; ]
+	attack_8 [ label=&quot;Manually analyze\nweb client for access\ncontrol misconfig&quot; ]
+	attack_9 [ label=&quot;Compromise\nadmin creds&quot; ]
+	attack_10 [ label=&quot;Intercept 2FA&quot; ]
+	attack_11 [ label=&quot;SSH to an\naccessible\nmachine&quot; ]
+	attack_12 [ label=&quot;Lateral movement to\nmachine with access\nto target bucket&quot; ]
+	attack_13 [ label=&quot;Compromise\nAWS admin creds&quot; ]
+	attack_14 [ label=&quot;Compromise\npresigned URLs&quot; ]
+	attack_15 [ label=&quot;Compromise\nURL within N\ntime period&quot; ]
+	attack_16 [ label=&quot;Recon on S3 buckets&quot; ]
+	attack_17 [ label=&quot;Find systems with\nR/W access to\ntarget bucket&quot; ]
+	attack_18 [ label=&quot;Exploit known 3rd\nparty library vulns&quot; ]
+	attack_19 [ label=&quot;Manual discovery\nof 0day&quot; ]
+	attack_20 [ label=&quot;Buy 0day&quot; ]
+	attack_21 [ label=&quot;Exploit vulns&quot; ]
+	attack_22 [ label=&quot;0day in AWS\nmultitenant systems&quot; ]
+	attack_23 [ label=&quot;Supply chain\ncompromise\n(backdoor)&quot; ]
+
+	// defense nodes
+	node [ color=&quot;#ABD2FA&quot; ]
+	defense_1 [ label=&quot;Disallow\ncrawling\non site maps&quot; ]
+	defense_2 [ label=&quot;Auth required / ACLs\n(private bucket)&quot; ]
+	defense_3 [ label=&quot;Lock down\nweb client with\ncreds / ACLs&quot; ]
+	defense_4 [ label=&quot;Perform all access\ncontrol server-side&quot; ]
+	defense_5 [ label=&quot;2FA&quot; ]
+	defense_6 [ label=&quot;IP allowlist for SSH&quot; ]
+	defense_7 [ label=&quot;Make URL\nshort lived&quot; ]
+	defense_8 [ label=&quot;Disallow the use\nof URLs to\naccess buckets&quot; ]
+	defense_9 [ label=&quot;No public system\nhas R/W access\n(internal only)&quot; ]
+	defense_10 [ label=&quot;3rd party library\nchecking / vuln\nscanning&quot; ]
+	defense_11 [ label=&quot;Exploit prevention\n/ detection&quot; ]
+	defense_12 [ label=&quot;Use single tenant\nAWS HSM&quot; ]
+
+	// List of Edges
+
+	// branch 1 edges
+	// this starts from the reality node and connects with the first &quot;attack&quot;,
+	// which is really just taking advantage of #yolosec (big oof)
+	reality -&gt; attack_1 [ xlabel=&quot;#yolosec&quot; fontcolor=&quot;#DB2955&quot; ]
+	attack_1 -&gt; attack_win	
+
+	// branch 2 edges
+	// this connects the reality node to the first mitigation, 
+	// which helps avoid the #yolosec path from branch 1
+	reality -&gt; defense_1
+	defense_1 -&gt; attack_2
+	attack_2 -&gt; attack_3 [ xlabel=&quot;#yolosec&quot; fontcolor=&quot;#DB2955&quot; ]
+	attack_3 -&gt; attack_win
+
+	// branch 3 edges
+	// this connects the reality node to another mitigation,
+	// which helps avoid the #yolosec path from branch 2
+	reality -&gt; defense_2
+	defense_2 -&gt; attack_4
+	defense_2 -&gt; attack_5
+	attack_4 -&gt; attack_6
+	attack_5 -&gt; attack_6
+	attack_6 -&gt; attack_7
+	attack_7 -&gt; attack_win
+	// potential mitigation path
+	attack_7 -&gt; defense_3
+	defense_3 -&gt; attack_8
+	attack_8 -&gt; attack_win
+	// potential mitigation path
+	attack_8 -&gt; defense_4 
+	defense_4 -&gt; attack_5 [ style=&quot;dashed&quot; color=&quot;#7692FF&quot; ]
+	
+	// branch 4 edges
+	// this starts from the last mitigation loop vs. the reality node
+	attack_5 -&gt; attack_9
+	attack_9 -&gt; attack_11 [ xlabel=&quot;#yolosec&quot; fontcolor=&quot;#DB2955&quot; ]
+	// potential mitigation path
+	attack_9 -&gt; defense_5 
+	defense_5 -&gt; attack_10 
+	attack_10 -&gt; attack_11
+	// potential mitigation path
+	attack_11 -&gt; defense_6 
+	defense_6 -&gt; attack_12 
+	attack_12 -&gt; attack_win
+
+	// branch 5 edges
+	// this also represents a branch from the prior mitigation loop
+	// but it is more difficult than branch 4, hence comes after
+	// the new attack step allows attackers to skip some steps on branch 4
+	// so it links back to branch 4, whose edges are already defined
+	attack_5 -&gt; attack_13
+	attack_13 -&gt; attack_11
+	attack_13 -&gt; defense_5
+
+	// branch 6 edges
+	// depending on the mitigations, the initial node allows for different outcomes
+	// this also represents a branch from the prior mitigation loop
+	// it is more difficult than branch 4 and branch 5, hence comes after
+	attack_5 -&gt; attack_14
+	attack_14 -&gt; attack_win
+	attack_14 -&gt; attack_15
+	// potential mitigation path
+	attack_14 -&gt; defense_7 
+	defense_7 -&gt; attack_15 
+	attack_15 -&gt; attack_win
+	// potential mitigation path
+	attack_15 -&gt; defense_8 
+
+	// branch 7 edges
+	// a new loop is born!
+	// the first edges tie prior mitigations to the new attack step
+	defense_2 -&gt; attack_16
+	defense_5 -&gt; attack_16 [ style=&quot;dashed&quot; color=&quot;#7692FF&quot; ]
+	defense_8 -&gt; attack_16 [ style=&quot;dashed&quot; color=&quot;#7692FF&quot; ]
+	attack_16 -&gt; attack_17 [ xlabel=&quot;#yolosec&quot; fontcolor=&quot;#DB2955&quot; ]
+	// potential mitigation path
+	attack_17 -&gt; defense_9 
+	defense_9 -&gt; attack_5 [ style=&quot;dashed&quot; color=&quot;#7692FF&quot; ]
+	attack_17 -&gt; attack_18
+	// potential mitigation path
+	attack_18 -&gt; defense_10
+
+	// branch 8 edges
+	// we've reached the last path!
+	// this is the most expensive one for attackers.
+	// these attacks are definitely uncommon...
+	// ...because attackers will be cheap / lazy if they can be.
+	// these edges start from the last mitigation from branch 7
+	defense_10 -&gt; attack_19
+	defense_10 -&gt; attack_20
+	attack_19 -&gt; attack_21
+	attack_20 -&gt; attack_21
+	attack_21 -&gt; attack_win
+	// potential mitigation path
+	attack_21 -&gt; defense_11 
+	defense_11 -&gt; attack_22 
+	attack_22 -&gt; attack_win 
+	// potential mitigation path
+	// for the purposes of illustration, this path represents a mitigation
+	// that isn't actually implemented yet -- hence a dotted edge
+	attack_22 -&gt; defense_12 [ style=&quot;dotted&quot; ]
+	defense_12 -&gt; attack_23 
+	attack_23 -&gt; attack_win
+
+	// Subgraphs / Clusters
+
+	// these clusters enforce the correct hierarchies
+	subgraph initialstates {
+    	rank=same;
+    	attack_1;
+    	defense_1;
+    	defense_2;
+  	}
+	subgraph authrequired {
+    	rank=same;
+    	attack_4;
+    	attack_5;
+    	attack_16;
+  	}
+  	subgraph phishcluster {
+    	rank=same;
+    	attack_6;
+    	attack_9;
+    	attack_13;
+    	attack_14;
+    	rankdir=LR;
+  	}
+  	// these invisible edges are to enforce the correct left-to-right order 
+  	// based on the level of attack difficulty
+  	attack_6 -&gt; attack_9 -&gt; attack_13 -&gt; attack_14 [ style=&quot;invis&quot; ]
+}
+</code></pre><h2 id="conclusion">Conclusion</h2>
+<p>After these ten steps, we&rsquo;ve successfully recreated the decision tree from <a href="https://www.verica.io/sce-book/">the SCE report</a> and optimized it for readability, too:</p>
+<p><img src="/blog/img/graphviz/attack-tree-15.png" alt="The final decision tree for threat modeling an S3 bucket containing sensitive data"></p>
+<p>While it may feel daunting to create your first decision tree in this manner, the good news is you now have a base template with styling that you can use to threat model other critical assets.</p>
+<p>If you try this out yourself or for your own organization, I welcome any and all feedback on how the .dot config or process itself can be improved. Security chaos engineering is a blossoming discipline bearing real potential to make infosec finally not suck, so we should help each other level up however we can.</p>
+<hr>
+<p>Thank you shoutout to Team Bad &lt;3</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>One notable benefit of this post is that it helps you avoid using Visio, which feels like the type of tool a petty Greek god would create just to torture a human who slighted their ego. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>There is also arguably an incentive to avoid obviously bad things happening so that the security team cannot seize upon the crisis to impose heavier change or release processes, as security is infamously wont to do. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>Yes, I am aware of the SolarWinds breach. Discussing the attacker math behind it is a blog post for another time. Suffice to say, the average criminal group is much less motivated to employ a supply chain compromise than a nation state &ndash; especially a nation state with a notoriously lower bar for stealthiness than other nation states. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>This post assumes that reality can at least be approximately objectively defined. Whether or not that is an appropriate assumption is a topic I would relish discussing IRL over a matcha oatmilk latte once the plague time is over. <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p>To start out, you can also define another possible end state of &ldquo;Attackers Lose.&rdquo; A sufficiently incentivized attacker will escalate resource expenditure as needed in order to reach their goal, so I think this is generally an unrealistic end state. However, I also argue that for many organizations, it&rsquo;s a relatively sane threat model to accept the risk of attackers throwing 0day at you. If you&rsquo;ve made compromising your business-critical assets so difficult that attackers must resort to 0day, you&rsquo;ve done quite a lot right in your security program. And, again, it suggests that the attacker is extremely motivated to compromise you, so the marginal benefit of defending against 0day or even costlier attacker actions is pretty poor. In contrast, <a href="https://twitter.com/swagitda_/status/1341023749647327232">the marginal benefit of something like two-factor authentication</a> is resoundingly high. <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p>Be skeptical whenever a vendor is claiming to detect 0day, especially if the words &ldquo;AI&rdquo; or &ldquo;deep learning&rdquo; are in the same sentence. <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7" role="doc-endnote">
+<p>I realized at the end I forgot to describe adding the bold strawberry font color to the &ldquo;#yolosec&rdquo; labels. I am hoping that you all are smart and can leverage the full .dot file to figure out how to do it yourself. <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+]]></content>
+        </item>
         
         <item>
             <title>My 2020 Reading List</title>

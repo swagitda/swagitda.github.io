@@ -3,8 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://swagitda.com/blog/posts/security-decision-trees-with-graphviz/</loc>
+    <lastmod>2021-01-25T08:00:29-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/tags/infosec/</loc>
+    <lastmod>2021-01-25T08:00:29-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://swagitda.com/blog/</loc>
-    <lastmod>2020-12-22T16:13:58-05:00</lastmod>
+    <lastmod>2021-01-25T08:00:29-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/posts/</loc>
+    <lastmod>2021-01-25T08:00:29-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/tags/</loc>
+    <lastmod>2021-01-25T08:00:29-05:00</lastmod>
   </url>
   
   <url>
@@ -13,17 +33,7 @@
   </url>
   
   <url>
-    <loc>https://swagitda.com/blog/posts/</loc>
-    <lastmod>2020-12-22T16:13:58-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://swagitda.com/blog/tags/reading-list/</loc>
-    <lastmod>2020-12-22T16:13:58-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://swagitda.com/blog/tags/</loc>
     <lastmod>2020-12-22T16:13:58-05:00</lastmod>
   </url>
   
@@ -44,11 +54,6 @@
   
   <url>
     <loc>https://swagitda.com/blog/tags/behavioral-infosec/</loc>
-    <lastmod>2020-09-22T08:00:41-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://swagitda.com/blog/tags/infosec/</loc>
     <lastmod>2020-09-22T08:00:41-04:00</lastmod>
   </url>
   
