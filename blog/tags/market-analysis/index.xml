@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 14 Dec 2020 08:00:00 -0500</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/market-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Mar 2021 08:00:08 -0400</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/market-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Simplified Spectrum of Compute</title>
+      <link>https://swagitda.com/blog/posts/spectrum-of-compute/</link>
+      <pubDate>Mon, 22 Mar 2021 08:00:08 -0400</pubDate>
+      
+      <guid>https://swagitda.com/blog/posts/spectrum-of-compute/</guid>
+      <description>This is a simplified diagram representing a business-minded tl;dr about the differences in scalability, complexity, lifecycle, and cost across the spectrum of compute &amp;ndash; from bare metal, VMs, containers, serverless / FaaS, to edge compute.</description>
+    </item>
+    
     <item>
       <title>IBM &#43; Red Hat: Bamboozles, Foozles, and the Hybrid Cloud Chimera</title>
       <link>https://swagitda.com/blog/posts/ibm-red-hat-bamboozles-foozles-and-the-hybrid-cloud-chimera/</link>

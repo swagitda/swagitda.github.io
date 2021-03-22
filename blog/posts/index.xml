@@ -6,8 +6,42 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-        <lastBuildDate>Mon, 25 Jan 2021 08:00:29 -0500</lastBuildDate>
+        <lastBuildDate>Mon, 22 Mar 2021 08:00:08 -0400</lastBuildDate>
         <atom:link href="https://swagitda.com/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>A Simplified Spectrum of Compute</title>
+            <link>https://swagitda.com/blog/posts/spectrum-of-compute/</link>
+            <pubDate>Mon, 22 Mar 2021 08:00:08 -0400</pubDate>
+            
+            <guid>https://swagitda.com/blog/posts/spectrum-of-compute/</guid>
+            <description>This is a simplified diagram representing a business-minded tl;dr about the differences in scalability, complexity, lifecycle, and cost across the spectrum of compute &amp;ndash; from bare metal, VMs, containers, serverless / FaaS, to edge compute.</description>
+            <content type="html"><![CDATA[<p>Computers are hard. Abstractions are hard. So what better challenge than creating an abstraction<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> of the differences between types of computers<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>?</p>
+<p>I recently developed a digestible diagram (below) to serve as a simplified explanation for less technical professionals on the benefits and trade-offs of different types of compute. In particular, I wanted to translate the increasing abstraction away from the underlying server hardware, OS, and runtime along the spectrum into a more business-friendly translation &ndash; how it translates into financial and human-effort expenditures.</p>
+<p>As with any simplification, there are plenty of wells one could actually<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> and a fertile field of caveats. Nevertheless, business people appreciate a healthy <a href="https://en.wikipedia.org/wiki/Harvey_balls">Harvey Ball chart</a>, so try it out on your CFO rather than your resident HN comment crusader.</p>
+<p>Since I must turn to other projects<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>, I will spare further elaboration and let you dissect the diagram yourself:</p>
+<p><img src="/blog/img/spectrum-of-compute.png" alt="My diagram of the differences in scalability, complexity, lifecycle, and cost across the spectrum of compute, from bare metal, VMs, containers, serverless / FaaS, to edge compute."></p>
+<hr>
+<p>Shoutout to Dr. Watson for having Sherlock&rsquo;s back.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Yo dawg, I heard you like abstractions&hellip; <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>This spectrum focuses on the types of computers / compute typically used to run production services. While desktops, laptops, and mobile devices count as &ldquo;computers,&rdquo; most enterprises are not leveraging them to deliver their software to end-users. If you&rsquo;re still salty about it, please see footnote 3. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>If you&rsquo;re out of the loop on my quip, this post on <a href="https://jenabl.wordpress.com/2017/08/16/the-semiotics-of-mansplaining/">&ldquo;The Semiotics of Mansplaining&rdquo;</a> may help illuminate the &ldquo;Well, actually&hellip;&rdquo; phenomenon. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>Hot take: <a href="https://www.youtube.com/watch?v=l3Cj7Esqr0c">&ldquo;I can&rsquo;t talk right now, I&rsquo;m doing hot girl shit&rdquo;</a> is the new <a href="https://www.youtube.com/watch?v=r8coOHhotXY">&ldquo;I have to return some videotapes.&quot;</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+]]></content>
+        </item>
         
         <item>
             <title>Creating Security Decision Trees With Graphviz</title>
