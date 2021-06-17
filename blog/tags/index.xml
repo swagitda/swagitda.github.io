@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 22 Mar 2021 08:00:08 -0400</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Jun 2021 10:38:50 -0400</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>InfoSec</title>
+      <link>https://swagitda.com/blog/tags/infosec/</link>
+      <pubDate>Thu, 17 Jun 2021 10:38:50 -0400</pubDate>
+      
+      <guid>https://swagitda.com/blog/tags/infosec/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Security Predictions</title>
+      <link>https://swagitda.com/blog/tags/security-predictions/</link>
+      <pubDate>Thu, 17 Jun 2021 10:38:50 -0400</pubDate>
+      
+      <guid>https://swagitda.com/blog/tags/security-predictions/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Infrastructure</title>
       <link>https://swagitda.com/blog/tags/infrastructure/</link>
@@ -23,15 +41,6 @@
       <pubDate>Mon, 22 Mar 2021 08:00:08 -0400</pubDate>
       
       <guid>https://swagitda.com/blog/tags/market-analysis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>InfoSec</title>
-      <link>https://swagitda.com/blog/tags/infosec/</link>
-      <pubDate>Mon, 25 Jan 2021 08:00:29 -0500</pubDate>
-      
-      <guid>https://swagitda.com/blog/tags/infosec/</guid>
       <description></description>
     </item>
     
@@ -59,15 +68,6 @@
       <pubDate>Thu, 20 Dec 2018 22:02:49 -0400</pubDate>
       
       <guid>https://swagitda.com/blog/tags/risk-management/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Security Predictions</title>
-      <link>https://swagitda.com/blog/tags/security-predictions/</link>
-      <pubDate>Wed, 05 Dec 2018 20:07:01 -0400</pubDate>
-      
-      <guid>https://swagitda.com/blog/tags/security-predictions/</guid>
       <description></description>
     </item>
     

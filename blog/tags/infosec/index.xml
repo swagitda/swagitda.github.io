@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 25 Jan 2021 08:00:29 -0500</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/infosec/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Jun 2021 10:38:50 -0400</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/infosec/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2021 Cybersecurity Predictions, as told by a bot</title>
+      <link>https://swagitda.com/blog/posts/2021-cyber-security-predictions/</link>
+      <pubDate>Thu, 17 Jun 2021 10:38:50 -0400</pubDate>
+      
+      <guid>https://swagitda.com/blog/posts/2021-cyber-security-predictions/</guid>
+      <description>I forced a bot to read over 1,000 cybersecurity predictions and then asked it to write its own cybersecurity predictions for 2021.</description>
+    </item>
+    
     <item>
       <title>Creating Security Decision Trees With Graphviz</title>
       <link>https://swagitda.com/blog/posts/security-decision-trees-with-graphviz/</link>
@@ -138,17 +147,6 @@ I surveyed 100 companies’ websites[1], the vast majority of which are exhibiti
       <description>This year’s nominees for the 2019 edition of the RSA Conference’s Innovation Sandbox were announced this morning. As I’m wont to do, I wanted to explore the funding side of these ten startups.
 Total Funding Raised &amp;amp; the Latest Stage for each 2019 RSA Innovation Sandbox Finalist ($USD millions)
 The median funding raised by all ten startups is $10.5 million (mean of $10.3 million), which makes sense for an early stage-flavored competition.</description>
-    </item>
-    
-    <item>
-      <title>The Cyber Tub: Communicating the Dynamics of Information Security Risk Management</title>
-      <link>https://swagitda.com/blog/posts/the-cyber-tub/</link>
-      <pubDate>Thu, 20 Dec 2018 22:02:49 -0400</pubDate>
-      
-      <guid>https://swagitda.com/blog/posts/the-cyber-tub/</guid>
-      <description>This is probably how a Cyber Tub looks, right?
-People struggle to understand how risk accumulates in complex systems, thereby also not understanding the extent to which risk must be reduced. This misapprehension can lead to “wait and see” decisions that cause a problem to snowball, or mitigations that don’t meaningfully reduce risk, creating the feeling of just barely treading water in your security program.
-It is challenging for people to understand risk dynamics conceptually for two primary reasons.</description>
     </item>
     
   </channel>

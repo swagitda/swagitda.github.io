@@ -3,6 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://swagitda.com/blog/posts/2021-cyber-security-predictions/</loc>
+    <lastmod>2021-06-17T10:38:50-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/tags/infosec/</loc>
+    <lastmod>2021-06-17T10:38:50-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/</loc>
+    <lastmod>2021-06-17T10:38:50-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/posts/</loc>
+    <lastmod>2021-06-17T10:38:50-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/tags/security-predictions/</loc>
+    <lastmod>2021-06-17T10:38:50-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/tags/</loc>
+    <lastmod>2021-06-17T10:38:50-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://swagitda.com/blog/posts/spectrum-of-compute/</loc>
     <lastmod>2021-03-22T08:00:08-04:00</lastmod>
   </url>
@@ -13,32 +43,12 @@
   </url>
   
   <url>
-    <loc>https://swagitda.com/blog/</loc>
-    <lastmod>2021-03-22T08:00:08-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://swagitda.com/blog/tags/market-analysis/</loc>
     <lastmod>2021-03-22T08:00:08-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://swagitda.com/blog/posts/</loc>
-    <lastmod>2021-03-22T08:00:08-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://swagitda.com/blog/tags/</loc>
-    <lastmod>2021-03-22T08:00:08-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://swagitda.com/blog/posts/security-decision-trees-with-graphviz/</loc>
-    <lastmod>2021-01-25T08:00:29-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://swagitda.com/blog/tags/infosec/</loc>
     <lastmod>2021-01-25T08:00:29-05:00</lastmod>
   </url>
   
@@ -149,11 +159,6 @@
   
   <url>
     <loc>https://swagitda.com/blog/posts/2019-cyber-security-predictions/</loc>
-    <lastmod>2018-12-05T20:07:01-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://swagitda.com/blog/tags/security-predictions/</loc>
     <lastmod>2018-12-05T20:07:01-04:00</lastmod>
   </url>
   
