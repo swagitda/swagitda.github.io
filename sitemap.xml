@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://swagitda.com/</loc>
+  <lastmod>2020-09-26T19:27:52+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/about/index.html</loc>
+  <lastmod>2021-04-23T15:19:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/index.html</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/writing/index.html</loc>
+  <lastmod>2021-04-23T15:18:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/speaking/index.html</loc>
+  <lastmod>2021-04-23T15:18:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/index.html</loc>
+  <lastmod>2020-09-26T19:27:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/deciduous/index.html</loc>
+  <lastmod>2021-07-05T15:19:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/2021-cyber-security-predictions/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/spectrum-of-compute/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/security-decision-trees-with-graphviz/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/2020-reading-list/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/ibm-red-hat-bamboozles-foozles-and-the-hybrid-cloud-chimera/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/on-yolosec-and-fomosec/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/buzzword-bingo-all-editions/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/resilience-in-security-101/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/kellys-hierarchy-of-security-product-needs/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/shall-we-play-a-coordination-game/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/analyzing-2020-rsa-innovation-sandbox/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/2019-reading-list/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/ransomware-towards-an-economic-equilibrium/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/when-prospect-theory-meets-chaos-engineering/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/analyzing-blackhatusa-business-hall-2019/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/darth-jar-jar-model-infosec-innovation/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/my-reflections-on-rsac-2019/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/infosec-buzzword-bingo-2019-edition/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/analyzing-2019-rsa-innovation-sandbox-finalists/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/the-cyber-tub/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/2018-reading-list/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/2019-cyber-security-predictions/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/analyzing-blackhatusa-business-hall-2018/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/red-pill-of-resilience-infosec/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/security-as-a-product/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/2018-cybersecurity-predictions/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/2017-reading-list/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/first-principles-building-security-products/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/choice-architecture-infosec-blue-teams/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/russia-used-us-influence-ops-playbook/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/revisiting-2016-security-predictions/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/2016-reading-list/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/3-questions-cybersecurity-debates/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/behavioral-models-infosec-prospect-theory/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/wtfunding-bioinformatics-genetic-data/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/apple-vs-fbi-privacy-inequality/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/wtfunding-space-data-satellite-imagery/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/posts/wtfunding-industrial-manufacturing-analytics/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/speaking/From-Catastrophe-to-Chaos-in-Production-GOTO-Chaos-Day-2021-Kelly-Shortridge.pdf</loc>
+  <lastmod>2021-02-18T19:02:20+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/speaking/Exit-Stage-Left-Eradicating-Security-Theater-Kelly-Shortridge-Snykcon-2020.pdf</loc>
+  <lastmod>2020-10-21T16:55:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/speaking/To-Err-is-Human-Kelly-Shortridge-DC-Chaos-Engineering-Meeup-2020.pdf</loc>
+  <lastmod>2020-09-27T02:29:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/speaking/Controlled-Chaos-DevOps-Security-Shortridge-S4x20.pdf</loc>
+  <lastmod>2020-09-27T02:29:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/speaking/Controlled-Chaos-Inevitable-Marriage-DevOps-Security-Shortridge-Velocity-2019.pdf</loc>
+  <lastmod>2020-09-27T02:29:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/speaking/To-Err-is-Human-Kelly-Shortridge-Hacktivity-Keynote-2019.pdf</loc>
+  <lastmod>2020-09-27T02:29:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/speaking/us-19-Shortridge-Forsgren-Controlled-Chaos-the-Inevitable-Marriage-of-DevOps-and-Security.pdf</loc>
+  <lastmod>2020-09-27T02:29:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/speaking/Security-Delusions-Kelly-Shortridge-QConNYC-2019.pdf</loc>
+  <lastmod>2020-09-27T02:29:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/speaking/Risk-Quicksand-Information-Security-Kelly-Shortridge-ACoD-2019.pdf</loc>
+  <lastmod>2020-09-27T02:29:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/speaking/Paint-by-Numbers-Measuring-Resilience-in-Information-Security-Kelly-Shortridge-SquareR00t-2018.pdf</loc>
+  <lastmod>2020-09-27T02:29:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/speaking/Paint-by-Numbers-Measuring-Resilience-in-Information-Security-Kelly-Shortridge-DuraznoConf-2018.pdf</loc>
+  <lastmod>2020-09-27T02:29:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/speaking/Paint-by-Numbers-Resilience-in-Infosec-Kelly-Shortridge-AusCERT-2018.pdf</loc>
+  <lastmod>2020-09-27T02:29:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/speaking/Freeing-White-Whale-Threat-Prioritization-Shortridge-HackNYC-2018.pdf</loc>
+  <lastmod>2020-09-27T02:29:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/speaking/Practical-Magic-IoT-Security-Behavioral-Design-Shortridge-Troopers-2018.pdf</loc>
+  <lastmod>2020-09-27T02:29:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/speaking/Dangerous-Folly-Attack-Prediction-Shortridge-Art-into-Science-2018.pdf</loc>
+  <lastmod>2020-09-27T02:29:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/speaking/Defensive-Exploitation-Shortridge-Zero-Nights-2017.pdf</loc>
+  <lastmod>2020-09-27T02:29:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/speaking/Red-Pill-of-Resilience-Shortridge-Countermeasure-2017.pdf</loc>
+  <lastmod>2020-09-27T02:29:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/speaking/Big-Game-Theory-Hunting-Shortridge-BSidesPDX-2017.pdf</loc>
+  <lastmod>2020-09-27T02:29:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/speaking/Red-Pill-of-Resilience-Shortridge-RSS-2017.pdf</loc>
+  <lastmod>2020-09-27T02:29:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/speaking/us-17-Shortridge-Big-Game-Theory-Hunting.pdf</loc>
+  <lastmod>2020-09-27T02:29:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/speaking/Attacker-Behavior-RiskSecNY-2017-Kelly-Shortridge.pdf</loc>
+  <lastmod>2020-09-27T02:29:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/speaking/Volatile-Memory-Kelly-Shortridge-Troopers-2017.pdf</loc>
+  <lastmod>2020-09-27T02:29:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/speaking/Know-Thyself-Kelly-Shortridge-ACoD-2017.pdf</loc>
+  <lastmod>2020-09-27T02:29:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/speaking/Art-of-Explanation-Kelly-Shortridge-Hacktivity-2016.pdf</loc>
+  <lastmod>2020-09-27T02:29:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/speaking/Behavioral-Models-Infosec-Kelly-Shortridge-NCC-2016.pdf</loc>
+  <lastmod>2020-09-27T02:29:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/tags/security-predictions/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/tags/infosec/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/tags/infrastructure/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/tags/market-analysis/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/tags/reading-list/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/tags/behavioral-infosec/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/tags/risk-management/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/tags/keynote/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/tags/wtfunding/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://swagitda.com/blog/tags/privacy/</loc>
+  <lastmod>2021-06-17T15:47:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
