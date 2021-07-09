@@ -780,6 +780,17 @@ img {
 
 }
 
+@media (min-width:1300px) {
+	.about-pic {
+		max-height: 33vh;
+		width: auto;
+		float: right;
+		margin-left: 2rem;
+		margin-bottom: 0rem;
+	}
+
+}
+
 @media (min-width:768px) {
 	.mobile-only {
 		display: none;
