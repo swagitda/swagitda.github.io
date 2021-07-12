@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security Chaos Engineering on Kelly Shortridge</title>
+    <link>https://swagitda.com/blog/tags/security-chaos-engineering/</link>
+    <description>Recent content in Security Chaos Engineering on Kelly Shortridge</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Mon, 12 Jul 2021 08:00:17 -0400</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/security-chaos-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deciduous: A Security Decision Tree Generator</title>
+      <link>https://swagitda.com/blog/posts/deciduous-attack-tree-app/</link>
+      <pubDate>Mon, 12 Jul 2021 08:00:17 -0400</pubDate>
+      
+      <guid>https://swagitda.com/blog/posts/deciduous-attack-tree-app/</guid>
+      <description>Introducing Deciduous, a web app that lets you generate security decision trees (aka attack trees) with minimal effort.</description>
+    </item>
+    
+    <item>
+      <title>Creating Security Decision Trees With Graphviz</title>
+      <link>https://swagitda.com/blog/posts/security-decision-trees-with-graphviz/</link>
+      <pubDate>Mon, 25 Jan 2021 08:00:29 -0500</pubDate>
+      
+      <guid>https://swagitda.com/blog/posts/security-decision-trees-with-graphviz/</guid>
+      <description>This post walks through creating a decision tree for pragmatic threat modeling using the open source graph vizualization tool Graphviz (with an AWS S3 bucket containing sensitive data as an example).</description>
+    </item>
+    
+    <item>
+      <title>Resilience in Security 101</title>
+      <link>https://swagitda.com/blog/posts/resilience-in-security-101/</link>
+      <pubDate>Mon, 18 May 2020 20:00:41 -0400</pubDate>
+      
+      <guid>https://swagitda.com/blog/posts/resilience-in-security-101/</guid>
+      <description>A short primer on what resilience means in information security, intended as a resilience 101 resource for people who build, maintain, and secure systems or lead teams who do.</description>
+    </item>
+    
+    <item>
+      <title>When Prospect Theory Meets Chaos Engineering</title>
+      <link>https://swagitda.com/blog/posts/when-prospect-theory-meets-chaos-engineering/</link>
+      <pubDate>Mon, 12 Aug 2019 08:00:00 -0400</pubDate>
+      
+      <guid>https://swagitda.com/blog/posts/when-prospect-theory-meets-chaos-engineering/</guid>
+      <description>There is a connection between my research into behavioral models of information security and my Black Hat USA talk with Dr. Forsgren from last week regarding DevOps and the future of information security that might not be immediately obvious. However, it is a connection I believe is worth illuminating.
+Adopting the “chaotic infosec” philosophy (the application of chaos engineering to information security) can influence those who build and secure systems to operate more like attackers – that is, to be more risk averse and to more quickly update their mental models given new inputs.</description>
+    </item>
+    
+  </channel>
+</rss>

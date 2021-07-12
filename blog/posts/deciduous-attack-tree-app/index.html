@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author"
+    content="Kelly Shortridge ">
+<meta name="description"
+    content="Introducing Deciduous, a web app that lets you generate security decision trees (aka attack trees) with minimal effort." />
+<meta name="keywords" content="blog, technology, infosec, cybersecurity, information security" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://swagitda.com/blog/posts/deciduous-attack-tree-app/" />
+
+
+<title>
+    
+    Deciduous: A Security Decision Tree Generator | Kelly Shortridge 
+    
+</title>
+
+
+
+<meta name="twitter:title" content="Deciduous: A Security Decision Tree Generator"/>
+<meta name="twitter:description" content="Introducing Deciduous, a web app that lets you generate security decision trees (aka attack trees) with minimal effort."/><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://swagitda.com/blog/img/deciduous/deciduous-logo.png"/>
+
+
+
+<meta property="og:title" content="Deciduous: A Security Decision Tree Generator" />
+<meta property="og:description" content="Introducing Deciduous, a web app that lets you generate security decision trees (aka attack trees) with minimal effort." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://swagitda.com/blog/posts/deciduous-attack-tree-app/" />
+	
+<meta property="article:published_time" content="2021-07-12T08:00:17-04:00" />
+<meta property="article:modified_time" content="2021-07-12T08:00:17-04:00" /><meta property="og:site_name" content="Kelly Shortridge" />
+
+
+<meta property="og:title" content="Deciduous: A Security Decision Tree Generator" />
+<meta property="og:description" content="Introducing Deciduous, a web app that lets you generate security decision trees (aka attack trees) with minimal effort." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://swagitda.com/blog/posts/deciduous-attack-tree-app/" />
+<meta property="article:published_time" content="2021-07-12T08:00:17-04:00" />
+<meta property="article:modified_time" content="2021-07-12T08:00:17-04:00" /><meta property="og:site_name" content="Kelly Shortridge" />
+ 
+
+
+  <meta property="og:type" content="website" />
+   <meta property="og:title" content="Kelly Shortridge"/>
+   <meta property="og:description" content="Blog by Kelly Shortridge"/>
+   <meta property="og:site_name" content="Kelly Shortridge"/>
+   <meta property="og:url" content="https://swagitda.com/blog/"/>
+   <meta property="og:locale" content="en">
+   <meta name="image" property="og:image" content="https://swagitda.com/blog/img/deciduous/deciduous-logo.png"/>
+   <meta property="og:type" content="website"/>
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/blog/main.min.f3682787577e1c348a7f58b0ba10e5f54c2187f38442b4e7e60f2ef85c0f3449.css">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/blog/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/blog/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/blog/favicon-16x16.png">
+<link rel="manifest" href="/blog/site.webmanifest">
+<link rel="mask-icon" href="/blog/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="/blog/favicon.ico">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="Deciduous: A Security Decision Tree Generator">
+<meta itemprop="description" content="Introducing Deciduous, a web app that lets you generate security decision trees (aka attack trees) with minimal effort.">
+<meta itemprop="datePublished" content="2021-07-12T08:00:17-04:00" />
+<meta itemprop="dateModified" content="2021-07-12T08:00:17-04:00" />
+<meta itemprop="wordCount" content="1340">
+
+
+
+<meta itemprop="keywords" content="InfoSec,Security Chaos Engineering," />
+
+
+
+
+
+<meta property="article:published_time" content="2021-07-12 08:00:17 -0400 EDT" />
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  var _paq = window._paq || [];
+   
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setCookieDomain", "*.swagitda.com"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//swagitda.com/skynet/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//swagitda.com/skynet/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /swagitda.com/</span>
+            <span class="logo__cursor"></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://swagitda.com/blog/posts">Blog</a></li><li><a href="https://kellyshortridge.com/">About</a></li><li><a href="https://twitter.com/swagitda_"><img src='/blog/img/twitter.svg'></a></li><li><a href="https://www.linkedin.com/in/kellyshortridge"><img src='/blog/img/linkedin.svg'></a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>7 minutes
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title"><a href="https://swagitda.com/blog/posts/deciduous-attack-tree-app/">Deciduous: A Security Decision Tree Generator</a></h1>
+
+            
+
+            <div class="post-content">
+                <p><a href="https://swagitda.com/deciduous/"><img style="float:right; max-width:40%; padding-left: 10px" src="/blog/img/deciduous/deciduous-logo.png" alt="The logo for Deciduous"></a></p>
+<p>Security decision trees are a powerful tool to inform saner security prioritization when designing, building, and operating software systems. But creating them has largely involved highly manual tinkering, which is why it&rsquo;s understandable that I&rsquo;m constantly asked, &ldquo;Is there an app that my team can use to create them?&rdquo; I&rsquo;m delighted that I now can say &ldquo;fuck yes there is!&rdquo; with the <a href="https://swagitda.com/deciduous/">release of Deciduous</a>, a security decision tree generator.</p>
+<p>Inspired by the <a href="https://www.verica.io/sce-book/">Security Chaos Engineering e-book</a> and <a href="https://swagitda.com/blog/posts/security-decision-trees-with-graphviz/">my previous blog post</a> on creating security decision trees with Graphviz, one of my unindicted co-conspirators <a href="https://github.com/rpetrich">Ryan Petrich</a> built a web app that handles all the annoying grunt work of building an attack tree. This lets you focus on the thinky thinky and typey typey around likely attacker actions, potential mitigations, and how attackers will respond to those mitigations as Deciduous dynamically generates an organized and styled<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> graph for you.</p>
+<h2 id="using-deciduous">Using Deciduous</h2>
+<p>Step one of creating a decision tree is determining what resource you are threat modeling. The default example when you load <a href="https://swagitda.com/deciduous/">Deciduous</a> is the example I explored in <a href="https://www.verica.io/sce-book/">the Security Chaos Engineering e-book</a> and in the <a href="https://swagitda.com/blog/posts/security-decision-trees-with-graphviz/">Graphviz blog post</a>: an S3 bucket containing customer video recordings.</p>
+<p>Given the e-book is free and explains all you need to know about populating the different parts of the decision-tree with your assumptions, I&rsquo;ll focus on how to use Deciduous to implement your assumptions rather than walking you through the threat modelling process.</p>
+<h3 id="basic-components">Basic components</h3>
+<p>Deciduous has two panes: an editor on the left and the generated decision tree on the right. The left sidebar of Deciduous is where you can change the components of the decision tree, which is dynamically generated on the right side. The main categories of components you can change are:</p>
+<ul>
+<li>
+<p><strong>title</strong>: the name of your decision tree (e.g. &ldquo;Attack Tree for S3 Bucket with Video Recordings&rdquo; or &ldquo;Attack Tree for a Cryptominer in a Cloud-hosted Container&rdquo;)</p>
+</li>
+<li>
+<p><strong>facts</strong>: these are things that are true about the system but aren&rsquo;t attacker actions or defensive mitigations (e.g. &ldquo;S3 bucket set to public&rdquo;); they are shown in dark grey font within the editor and as grey nodes in the graph</p>
+</li>
+<li>
+<p><strong>attacks</strong>: these are actions taken by attackers, often appearing as a series of consecutive actions (e.g. &ldquo;compromise user credentials&rdquo;) and each node corresponds to a specific attacker action; they are shown in pink font within the editor and as pink nodes in the graph</p>
+</li>
+<li>
+<p><strong>mitigations</strong>: these actions taken by defenders to mitigate attacker activity (e.g. &ldquo;authentication required&rdquo; or &ldquo;2FA&rdquo;) and each node corresponds to a specific mitigation; they are shown in blue font in the editor and as blue nodes in the graph</p>
+</li>
+<li>
+<p><strong>goals</strong>: this is the attacker&rsquo;s ultimate goal, the end result that results in them winning (e.g. &ldquo;Access video recordings in S3 bucket&rdquo; or &ldquo;Run a cryptominer in a cloud-hosted container&rdquo;); it is shown in purple font color in the editor and as a purple node at the bottom of the graph</p>
+</li>
+</ul>
+<p>For the visual learners among you, here is a super basic security decision tree showing how the text on the left corresponds to the components in the graph on the right:</p>
+<p><img src="/blog/img/deciduous/super-basic-attack-tree.PNG" alt="A basic attack tree showing the components that can be edited in Deciduous"></p>
+<h3 id="navigating-the-tree">Navigating the tree</h3>
+<p>Clicking on a node in the decision tree will jump you to its location in the editor on the left (as shown in the gif below). This saves you from scrolling and hunting for the text that corresponds to a component in the tree. Deciduous also supports syntax highlighting to help you differentiate between components.</p>
+<p><img src="/blog/img/deciduous/navigating-deciduous.gif" alt="A gif showing how to navigate Deciduous by clicking on nodes and seeing them highlighted in the editor pane."></p>
+<h3 id="connecting-nodes-together">Connecting nodes together</h3>
+<p>A decision tree graphs sequences of actions by connecting nodes in a particular order. For instance, my morning routine would include the sequential decisions <code>get out of bed --&gt; make matcha</code> because my decision to make matcha only happens after I decide to get out of bed.</p>
+<p>We can describe this as one decision flowing <em>from</em> another decision. In fact, a single decision can flow from multiple prior decisions; the <code>make matcha</code> decision could directly flow from <code>get out of bed</code> or <code>conduct blood sacrifice to the eldritch ones</code>. And a decision can flow from someone else&rsquo;s decision, like my cat&rsquo;s decision to <code>lick hooman's nose</code> leading to my decision to <code>get out of bed</code>.</p>
+<p><img src="/blog/img/deciduous/matcha-morning.PNG" alt="A screenshot of the example decision flow"></p>
+<h4 id="creating-from-flow">Creating &ldquo;from&rdquo; flow</h4>
+<p>To capture this flow in the graph, you can define the list of decisions (i.e. other nodes) that directly lead to a particular node by using <code>from:</code>. For example, we could implement a mitigation (<code>defense_1</code>) in response to an attacker action (<code>attack_1</code>). This means we want to show that <code>defense_1</code> flows <em>from</em> <code>attack_1</code>. To do so, we can type:</p>
+<pre><code>mitigations:
+- defense_1: Defender mitigates attacker action
+  from:
+  - attack_1
+</code></pre><p>This declaration manifests on the decision tree by adding an arrow pointing from the node labeled <code>Attacker leverages a fact</code> to the node labeled <code>Defender mitigates attacker action</code>, as shown here:</p>
+<p><img src="/blog/img/deciduous/defining-flow.png" alt="A screenshot of how this example &ldquo;from&rdquo; declaration manifests in the graph. There is an arrow pointing from the declaration to the line connecting the node &ldquo;Attacker leverages a fact&rdquo; and the node &ldquo;Defender mitigates an action&rdquo;."></p>
+<p>We can also express that the attacker responds to this mitigation by bypassing it with a second action (<code>attack-2</code>):</p>
+<pre><code>- attack_2: Attacker bypasses mitigation
+  from:
+  - defense_1
+</code></pre><p><img src="/blog/img/deciduous/defining-from.gif" alt="A gif showing how typing a &ldquo;from&rdquo; declaration manifests in the graph. A new arrow appears connecting the node &ldquo;Defender mitigates an action&rdquo; towards the node &ldquo;Attacker bypasses mitigation&rdquo;."></p>
+<h4 id="backwards-connections">Backwards connections</h4>
+<p>Sometimes a mitigation amputates the attacker&rsquo;s path forward; ergo, the attacker cannot pursue the current branch any further and must escalate their effort by restarting on another branch.</p>
+<p>For instance, the presence of 2FA can abscise the branch containing the node representing the attacker using legitimate credentials to access a resource. Instead, the attacker is forced to pursue an exploitation-based strategy, a branch that begins with the decision to gather intelligence on exploitable resources (aka &ldquo;recon&rdquo;).</p>
+<p>To convey this dynamic, you can specify <code>backwards: true</code> when connecting nodes with <code>from</code>. For example, the following snippet visualizes that implementing <code>2FA</code> as a mitigation would compel attackers back up the tree to pursue a new branch starting with the action <code>Recon on S3 buckets</code>:</p>
+<pre><code>- recon_on_s3: Recon on S3 buckets
+  from:
+  - 2fa:
+    backwards: true
+</code></pre><p>Your goal node will likely have a lot of other nodes connecting to it (especially attack nodes). By the end of your configuration, all roads should lead to the Rome that is your goal node.</p>
+<h3 id="adding-yolosec-labels">Adding #yolosec labels</h3>
+<p>The reality for many organizations is that there is often an <em>absence</em> of a mitigation or else an implementation of &ldquo;worst practice&rdquo; &ndash; a phenomenon I&rsquo;ve previously dubbed <a href="https://swagitda.com/blog/posts/on-yolosec-and-fomosec/">&ldquo;YOLOsec&rdquo;</a>.</p>
+<p>For example, failing to disallow Wayback Machine&rsquo;s caching of an API handling sensitive customer data is an inaction that begets a facile way for attackers to win. Such a big yikes reflects a YOLO attitude to security and therefore should be labeled as such in our decision tree by adding <code>#yolosec</code> next to the relevant connection, as seen here:</p>
+<pre><code>facts:
+- wayback: API cache (e.g. Wayback Machine)
+  from:
+  - reality: '#yolosec'
+</code></pre><p><img src="/blog/img/deciduous/yolosec-label.png" alt="A screenshot showing how typing a &ldquo;#yolosec&rdquo; label manifests in the graph. The label #yolosec appears next to the arrow pointing from the &ldquo;Reality&rdquo; node to the &ldquo;API cache Wayback Machine&rdquo; node."></p>
+<h3 id="downloading-the-tree">Downloading the tree</h3>
+<p>Accessible documentation is a crucial part of fostering an organizational learning culture, so you can download and share your tree with your team<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> as an SVG file or print it as a PDF.</p>
+<p>You can also download the .DOT file (which Graphviz uses) to store as a reference or tweak as you desire on your own machine. Sharing is caring!</p>
+<p><img src="/blog/img/deciduous/deciduous-download-links.png" alt="A screenshot of the download links within Deciduous"></p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Using Deciduous to edit text and immediately behold the resulting changes is a lot easier than fiddling around with Graphviz or using cumbersome drag-and-drop tools<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. We hope this makes your security decision tree journey more straightforward, especially for software engineering teams seeking to better design for resiliency.</p>
+<p>Constructive feedback is welcome so we can help level up the art of threat modeling and better serve the community. Feel free to tweet constructive feedback to <a href="https://twitter.com/rpetrich">@rpetrich</a> or <a href="https://twitter.com/swagitda_/">@swagitda_</a>.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>As readers of the Graphviz blog post know, the quest for decent layout and styling was an arduous one and I am sincerely glad that others can avoid such hardship by using Deciduous. Seriously, getting the layout to not suck is surprisingly challenging for autolayout and manual config alike, and you do not want to drown in that time sink. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>I assume most people share security decision trees with their colleagues or clients, but any of y&rsquo;all who share trees with friends for funsies are kindred spirits of mine &lt;3 <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p><em>Looks askance at Visio</em> :eyes: <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://swagitda.com/blog/tags/infosec">InfoSec</a></span><span class="tag"><a href="https://swagitda.com/blog/tags/security-chaos-engineering">Security Chaos Engineering</a></span>
+                </p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>1340 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2021-07-12 08:00 -0400</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h">Read other posts</span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+
+                    
+                        <span class="button next">
+                            <a href="https://swagitda.com/blog/posts/2021-cyber-security-predictions/">
+                                <span class="button__text">2021 Cybersecurity Predictions, as told by a bot</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2021</span>
+            
+                <span><a href="https://swagitda.com/blog/">Kelly Shortridge</a></span>
+            
+            <span>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</span>
+            <span> <a href="https://swagitda.com/blog/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/blog/bundle.min.c3134e4a0a3d5ff628f7e932e4d6846626cad5e9457046b58e07c6036133ea0d788e9d330d51e709b43a7a8a22e1a4cf28aff9dbf27756a6a12b9c135260726a.js" integrity="sha512-wxNOSgo9X/Yo9&#43;ky5NaEZibK1elFcEa1jgfGA2Ez6g14jp0zDVHnCbQ6eooi4aTPKK/52/J3VqahK5wTUmByag=="></script>
+
+
+
+    </body>
+</html>

@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 17 Jun 2021 10:38:50 -0400</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/infosec/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Jul 2021 08:00:17 -0400</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/infosec/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deciduous: A Security Decision Tree Generator</title>
+      <link>https://swagitda.com/blog/posts/deciduous-attack-tree-app/</link>
+      <pubDate>Mon, 12 Jul 2021 08:00:17 -0400</pubDate>
+      
+      <guid>https://swagitda.com/blog/posts/deciduous-attack-tree-app/</guid>
+      <description>Introducing Deciduous, a web app that lets you generate security decision trees (aka attack trees) with minimal effort.</description>
+    </item>
+    
     <item>
       <title>2021 Cybersecurity Predictions, as told by a bot</title>
       <link>https://swagitda.com/blog/posts/2021-cyber-security-predictions/</link>
@@ -136,17 +145,6 @@ Reflecting on my existential crisis during RSAC, I tried to distill what exactly
       <guid>https://swagitda.com/blog/posts/infosec-buzzword-bingo-2019-edition/</guid>
       <description>This is the third edition of my Infosec Buzzword Bingo, just in time for 2019’s RSA Conference (RSAC). Rather than relying on my keenly tuned snake oil spidey senses to generate the words populating the bingo card, I took a more data-driven approach this year.
 I surveyed 100 companies’ websites[1], the vast majority of which are exhibiting at RSAC and possess VC funding. I did not include any of the large security vendors[2], who probably could populate their own bingo cards across their mastodonian websites.</description>
-    </item>
-    
-    <item>
-      <title>Analyzing the 2019 RSA Innovation Sandbox Finalists</title>
-      <link>https://swagitda.com/blog/posts/analyzing-2019-rsa-innovation-sandbox-finalists/</link>
-      <pubDate>Tue, 05 Feb 2019 19:02:53 -0400</pubDate>
-      
-      <guid>https://swagitda.com/blog/posts/analyzing-2019-rsa-innovation-sandbox-finalists/</guid>
-      <description>This year’s nominees for the 2019 edition of the RSA Conference’s Innovation Sandbox were announced this morning. As I’m wont to do, I wanted to explore the funding side of these ten startups.
-Total Funding Raised &amp;amp; the Latest Stage for each 2019 RSA Innovation Sandbox Finalist ($USD millions)
-The median funding raised by all ten startups is $10.5 million (mean of $10.3 million), which makes sense for an early stage-flavored competition.</description>
     </item>
     
   </channel>
