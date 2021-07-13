@@ -58,7 +58,7 @@
   - attack_1
 </code></pre><p>This declaration manifests on the decision tree by adding an arrow pointing from the node labeled <code>Attacker leverages a fact</code> to the node labeled <code>Defender mitigates attacker action</code>, as shown here:</p>
 <p><img src="/blog/img/deciduous/defining-flow.png" alt="A screenshot of how this example &ldquo;from&rdquo; declaration manifests in the graph. There is an arrow pointing from the declaration to the line connecting the node &ldquo;Attacker leverages a fact&rdquo; and the node &ldquo;Defender mitigates an action&rdquo;."></p>
-<p>We can also express that the attacker responds to this mitigation by bypassing it with a second action (<code>attack-2</code>):</p>
+<p>We can also express that the attacker responds to this mitigation by bypassing it with a second action (<code>attack_2</code>):</p>
 <pre><code>- attack_2: Attacker bypasses mitigation
   from:
   - defense_1
@@ -86,7 +86,7 @@
 <p><img src="/blog/img/deciduous/deciduous-download-links.png" alt="A screenshot of the download links within Deciduous"></p>
 <h2 id="conclusion">Conclusion</h2>
 <p>Using Deciduous to edit text and immediately behold the resulting changes is a lot easier than fiddling around with Graphviz or using cumbersome drag-and-drop tools<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. We hope this makes your security decision tree journey more straightforward, especially for software engineering teams seeking to better design for resiliency.</p>
-<p>Constructive feedback is welcome so we can help level up the art of threat modeling and better serve the community. Feel free to tweet constructive feedback to <a href="https://twitter.com/rpetrich">@rpetrich</a> or <a href="https://twitter.com/swagitda_/">@swagitda_</a>.</p>
+<p>Constructive feedback is welcome so we can help level up the art of threat modeling and better serve the community. Feel free to tweet constructive feedback to <a href="https://twitter.com/rpetrich">@rpetrich</a> or <a href="https://twitter.com/swagitda_/">@swagitda_</a> and check out the <a href="https://github.com/rpetrich/deciduous">open source repo</a>.</p>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
