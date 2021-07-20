@@ -7,11 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 12 Jul 2021 08:00:17 -0400</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Jul 2021 08:30:26 -0400</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Behavioral InfoSec</title>
+      <link>https://swagitda.com/blog/tags/behavioral-infosec/</link>
+      <pubDate>Thu, 15 Jul 2021 08:30:26 -0400</pubDate>
+      
+      <guid>https://swagitda.com/blog/tags/behavioral-infosec/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>InfoSec</title>
       <link>https://swagitda.com/blog/tags/infosec/</link>
-      <pubDate>Mon, 12 Jul 2021 08:00:17 -0400</pubDate>
+      <pubDate>Thu, 15 Jul 2021 08:30:26 -0400</pubDate>
       
       <guid>https://swagitda.com/blog/tags/infosec/</guid>
       <description></description>
@@ -59,15 +68,6 @@
       <pubDate>Tue, 22 Dec 2020 16:13:58 -0500</pubDate>
       
       <guid>https://swagitda.com/blog/tags/reading-list/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Behavioral InfoSec</title>
-      <link>https://swagitda.com/blog/tags/behavioral-infosec/</link>
-      <pubDate>Tue, 22 Sep 2020 08:00:41 -0400</pubDate>
-      
-      <guid>https://swagitda.com/blog/tags/behavioral-infosec/</guid>
       <description></description>
     </item>
     

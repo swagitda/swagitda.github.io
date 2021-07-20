@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 22 Sep 2020 08:00:41 -0400</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/behavioral-infosec/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Jul 2021 08:30:26 -0400</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/behavioral-infosec/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Markets DGAF About Cybersecurity</title>
+      <link>https://swagitda.com/blog/posts/markets-dgaf-about-cybersecurity/</link>
+      <pubDate>Thu, 15 Jul 2021 08:30:26 -0400</pubDate>
+      
+      <guid>https://swagitda.com/blog/posts/markets-dgaf-about-cybersecurity/</guid>
+      <description>Do public markets actually care about cybersecurity? The evidence suggests no.</description>
+    </item>
+    
     <item>
       <title>On YOLOsec and FOMOsec</title>
       <link>https://swagitda.com/blog/posts/on-yolosec-and-fomosec/</link>
