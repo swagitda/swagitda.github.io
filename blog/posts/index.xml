@@ -6,8 +6,148 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-        <lastBuildDate>Thu, 15 Jul 2021 08:30:26 -0400</lastBuildDate>
+        <lastBuildDate>Mon, 09 Aug 2021 08:55:49 -0400</lastBuildDate>
         <atom:link href="https://swagitda.com/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Rick &amp; Morty&#39;s Thanksploitation Spectacular Decision Tree</title>
+            <link>https://swagitda.com/blog/posts/rick-morty-thanksploitation-decision-tree/</link>
+            <pubDate>Mon, 09 Aug 2021 08:55:49 -0400</pubDate>
+            
+            <guid>https://swagitda.com/blog/posts/rick-morty-thanksploitation-decision-tree/</guid>
+            <description>Visualizing the turkey pardon game theory conflict featured in Rick and Morty season 5 episode 6 as a decision tree created using the Deciduous app.</description>
+            <content type="html"><![CDATA[<p>The new season of <em>Rick and Morty</em> contains an excellent example of belief prompting in a game theoretic scenario, much to my surprise and delight.</p>
+<p>Season 5 Episode 6, <a href="https://www.adultswim.com/videos/rick-and-morty/rick-mortys-thanksploitation-spectacular">&ldquo;Rick &amp; Morty&rsquo;s Thanksploitation Spectacular&rdquo;</a>, shows Rick Sanchez and the President of the United States explicating their plans to outwit each other; Rick seeks to deceive the President into granting him a federal pardon during the National Thanksgiving Turkey Presentation, while the President seeks to stymie Rick&rsquo;s sly scheme.</p>
+<p>Naturally, I knew I must model their conflict as a decision tree using <a href="https://www.deciduous.app/">Deciduous</a>, the security decision tree generator app Ryan Petrich and I created (warning: spoilers for the first ~8 minutes of the episode are ahead):</p>
+<p><img src="/blog/img/deciduous/rick-morty-thanksploitation-decision-tree.svg" alt="The decision tree for the turkey pardon conflict featured in season 5 episode 6 of Rick and Morty."></p>
+<p>In prior years, Rick was able to gain a federal pardon for his myriad crimes via the American tradition of Presidents <a href="https://en.wikipedia.org/wiki/National_Thanksgiving_Turkey_Presentation">pardoning a turkey on Thanksgiving Day</a>. Rick would brainwash the presidential turkey wrangler, turn himself into a turkey, infiltrate the potential turkey pardonee pool, and then be selected as the chosen turkey to receive a pardon from the President.</p>
+<p>But this year, the President is wise to Rick&rsquo;s tricks and intent on thwarting him &ndash; and is willing to expend considerable resources on a mission codenamed &ldquo;Operation Deep Gobble&rdquo; to do so. Rick rightly expects this revenge and plans to escalate his investment accordingly.</p>
+<p>What follows in the show is an exquisite example of <a href="https://www.google.com/books/edition/Advances_in_Understanding_Strategic_Beha/bMWHDAAAQBAJ?hl=en&amp;gbpv=1&amp;dq=%22belief-prompting%22&amp;pg=PA132&amp;printsec=frontcover">belief prompting</a>: considering what moves your adversary is likely to make to reach their goal, including how they will respond to any mitigations you implement.</p>
+<p>The episode shows Rick and the President simultaneously articulating their assumptions about how the other party will operate on Thanksgiving Day, actively anticipating each other&rsquo;s moves to inform their planning<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. On the fateful day, both encounter moves that were unexpected and must quickly reroute their strategy accordingly.</p>
+<p>These pre-planned assumptions and just-in-time decisions can both be elegantly mapped on the decision tree, elucidating the strategic and explanatory potential of <a href="https://swagitda.com/blog/posts/security-decision-trees-with-graphviz/">this visual device</a>.</p>
+<p>For y&rsquo;all&rsquo;s convenience, I&rsquo;ve pasted the full Deciduous config code for this Thanksploitation decision tree below. Simply copy and paste it into the <a href="https://www.deciduous.app/">deciduous.app</a> text editor to explore it as a hands-on example for <a href="https://swagitda.com/blog/posts/deciduous-attack-tree-app/">using Deciduous</a>.</p>
+<p>As a fun next step, think about what additional attacks or mitigations you would pursue if you were Rick Sanchez or Mr. President and add them to the tree. If you&rsquo;re a fellow nerdburger with nerdburger friends, try roleplaying the scenario and updating the tree live as you LARP the turkey pardon conflict.</p>
+<pre><code>title: Rick &amp; Morty's Thanksploitation Decision Tree
+
+attacks:
+- brainwash_wrangler: Brainwash presidential turkey wrangler pre-ceremony
+  from:
+  - reality: '#yolosec'
+- become_turkey: Turn into a turkey 
+  from:
+  - brainwash_wrangler
+- infiltrate_turkeys: Infiltrate potential turkey pardonee population
+  from:
+  - become_turkey
+  - sneak_onboard
+- chosen_turkey: Be selected at the National Thanksgiving Turkey Presentation
+  from:
+  - infiltrate_turkeys
+  - turkey_behavior
+- ghost_corp: Set up ghost corporations to manufacture the vehicles
+  from:
+  - armored_transport
+  - euthanize_wrangler:
+    backwards: true
+- pass_audit: Pass audit through unexplained means
+  from:
+  - audit_vehicles
+- access_computers: Gain access to vehicle corp's central computers
+  from:
+  - ghost_corp
+  - pass_audit
+- track_transport: Track the real armored transports
+  from:
+  - access_computers
+  - flesh_robots
+  - decoy_vehicles
+- stealth_mode: Land flying ship in stealth mode on top of transport
+  from:
+  - face_blind
+  - armed_marines
+- sneak_onboard: Sneak onboard the armored transport
+  from:
+  - track_transport
+  - stealth_mode
+  - roof_combat
+- face_blind: Exploit marines' turkey-face blindness by turning into a turkey
+  from:
+  - armed_marines
+- flesh_robots: Create flesh-covered robots of self as decoys
+  from:
+  - monitor_home
+- jam_radios: Jam the marines' radios
+  from: 
+  - investigate_noise
+- roof_combat: Engage marines in physical combat
+  from:
+  - jam_radios
+- turkey_behavior: Act like a turkey to avoid detection by President
+  from:
+  - president_turkey
+
+mitigations:
+- euthanize_wrangler: Euthanize the turkey wrangler
+  from:
+  - brainwash_wrangler
+- armored_transport: Transport the turkeys in armored military vehicles
+  from:
+  - reality
+- audit_vehicles: Audit the vehicle manufacturers
+  from:
+  - ghost_corp
+- decoy_vehicles: Deploy decoy vehicles to obfuscate real transport
+  from:
+  - access_computers
+- armed_marines: Put fully armed marines in the real transport vehicle
+  from:
+  - track_transport
+- turkey_marines: Turn marines into turkeys to mitigate turkey-face blindness
+  from:
+  - face_blind
+- id_chips: Track turkey marines with swallowed ID chips
+  from: 
+  - turkey_marines
+- monitor_home: Monitor Rick's house the day of the ceremony
+  from:
+  - reality
+- investigate_noise: Marines investigate noise on roof of vehicle
+  from:
+  - stealth_mode
+- call_backup: Marines call for backup
+  from:
+  - investigate_noise
+- blaine_box: Bring in David Blaine box to detect decoy flesh robots
+  from:
+  - flesh_robots
+- scan_transport: Scan transport truck for ID chip anomalies 
+  from:
+  - blaine_box
+  - id_chips
+  - sneak_onboard
+- president_turkey: Turn President into turkey to hunt for Rick in the pen
+  from:
+  - infiltrate_turkeys
+  - scan_transport
+- attack_rick: President detects and attacks Rick
+  from: 
+  - turkey_behavior
+
+
+goals:
+- receive_pardon: Receive federal pardon (Rick wins)
+  from:
+  - chosen_turkey
+</code></pre><section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Some moves are left unexplained by the show, such as how Rick bypasses the President&rsquo;s audits of the ghost corporations and how Rick determines the &ldquo;real&rdquo; vehicle from the decoys. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+]]></content>
+        </item>
         
         <item>
             <title>Markets DGAF About Cybersecurity</title>
@@ -72,11 +212,11 @@
             
             <guid>https://swagitda.com/blog/posts/deciduous-attack-tree-app/</guid>
             <description>Introducing Deciduous, a web app that lets you generate security decision trees (aka attack trees) with minimal effort.</description>
-            <content type="html"><![CDATA[<p><a href="https://swagitda.com/deciduous/"><img style="float:right; max-width:40%; padding-left: 10px" src="/blog/img/deciduous/deciduous-logo.png" alt="The logo for Deciduous"></a></p>
-<p>Security decision trees are a powerful tool to inform saner security prioritization when designing, building, and operating software systems. But creating them has largely involved highly manual tinkering, which is why it&rsquo;s understandable that I&rsquo;m constantly asked, &ldquo;Is there an app that my team can use to create them?&rdquo; I&rsquo;m delighted that I now can say &ldquo;fuck yes there is!&rdquo; with the <a href="https://swagitda.com/deciduous/">release of Deciduous</a>, a security decision tree generator.</p>
+            <content type="html"><![CDATA[<p><a href="https://www.deciduous.app/"><img style="float:right; max-width:40%; padding-left: 10px" src="/blog/img/deciduous/deciduous-logo.png" alt="The logo for Deciduous"></a></p>
+<p>Security decision trees are a powerful tool to inform saner security prioritization when designing, building, and operating software systems. But creating them has largely involved highly manual tinkering, which is why it&rsquo;s understandable that I&rsquo;m constantly asked, &ldquo;Is there an app that my team can use to create them?&rdquo; I&rsquo;m delighted that I now can say &ldquo;fuck yes there is!&rdquo; with the <a href="https://www.deciduous.app/">release of Deciduous</a>, a security decision tree generator (hosted at <a href="https://www.deciduous.app/">https://www.deciduous.app/</a>).</p>
 <p>Inspired by the <a href="https://www.verica.io/sce-book/">Security Chaos Engineering e-book</a> and <a href="https://swagitda.com/blog/posts/security-decision-trees-with-graphviz/">my previous blog post</a> on creating security decision trees with Graphviz, one of my unindicted co-conspirators <a href="https://github.com/rpetrich">Ryan Petrich</a> built a web app that handles all the annoying grunt work of building an attack tree. This lets you focus on the thinky thinky and typey typey around likely attacker actions, potential mitigations, and how attackers will respond to those mitigations as Deciduous dynamically generates an organized and styled<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> graph for you.</p>
 <h2 id="using-deciduous">Using Deciduous</h2>
-<p>Step one of creating a decision tree is determining what resource you are threat modeling. The default example when you load <a href="https://swagitda.com/deciduous/">Deciduous</a> is the example I explored in <a href="https://www.verica.io/sce-book/">the Security Chaos Engineering e-book</a> and in the <a href="https://swagitda.com/blog/posts/security-decision-trees-with-graphviz/">Graphviz blog post</a>: an S3 bucket containing customer video recordings.</p>
+<p>Step one of creating a decision tree is determining what resource you are threat modeling. The default example when you load <a href="https://www.deciduous.app/">Deciduous</a> is the example I explored in <a href="https://www.verica.io/sce-book/">the Security Chaos Engineering e-book</a> and in the <a href="https://swagitda.com/blog/posts/security-decision-trees-with-graphviz/">Graphviz blog post</a>: an S3 bucket containing customer video recordings.</p>
 <p>Given the e-book is free and explains all you need to know about populating the different parts of the decision-tree with your assumptions, I&rsquo;ll focus on how to use Deciduous to implement your assumptions rather than walking you through the threat modelling process.</p>
 <h3 id="basic-components">Basic components</h3>
 <p>Deciduous has two panes: an editor on the left and the generated decision tree on the right. The left sidebar of Deciduous is where you can change the components of the decision tree, which is dynamically generated on the right side. The main categories of components you can change are:</p>

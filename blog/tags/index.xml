@@ -7,13 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 15 Jul 2021 08:30:26 -0400</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Aug 2021 08:55:49 -0400</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Behavioral InfoSec</title>
       <link>https://swagitda.com/blog/tags/behavioral-infosec/</link>
-      <pubDate>Thu, 15 Jul 2021 08:30:26 -0400</pubDate>
+      <pubDate>Mon, 09 Aug 2021 08:55:49 -0400</pubDate>
       
       <guid>https://swagitda.com/blog/tags/behavioral-infosec/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Security Chaos Engineering</title>
+      <link>https://swagitda.com/blog/tags/security-chaos-engineering/</link>
+      <pubDate>Mon, 09 Aug 2021 08:55:49 -0400</pubDate>
+      
+      <guid>https://swagitda.com/blog/tags/security-chaos-engineering/</guid>
       <description></description>
     </item>
     
@@ -23,15 +32,6 @@
       <pubDate>Thu, 15 Jul 2021 08:30:26 -0400</pubDate>
       
       <guid>https://swagitda.com/blog/tags/infosec/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Security Chaos Engineering</title>
-      <link>https://swagitda.com/blog/tags/security-chaos-engineering/</link>
-      <pubDate>Mon, 12 Jul 2021 08:00:17 -0400</pubDate>
-      
-      <guid>https://swagitda.com/blog/tags/security-chaos-engineering/</guid>
       <description></description>
     </item>
     

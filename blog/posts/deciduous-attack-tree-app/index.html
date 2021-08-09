@@ -74,7 +74,7 @@
 <meta itemprop="description" content="Introducing Deciduous, a web app that lets you generate security decision trees (aka attack trees) with minimal effort.">
 <meta itemprop="datePublished" content="2021-07-12T08:00:17-04:00" />
 <meta itemprop="dateModified" content="2021-07-12T08:00:17-04:00" />
-<meta itemprop="wordCount" content="1347">
+<meta itemprop="wordCount" content="1350">
 
 
 
@@ -178,11 +178,11 @@
             
 
             <div class="post-content">
-                <p><a href="https://swagitda.com/deciduous/"><img style="float:right; max-width:40%; padding-left: 10px" src="/blog/img/deciduous/deciduous-logo.png" alt="The logo for Deciduous"></a></p>
-<p>Security decision trees are a powerful tool to inform saner security prioritization when designing, building, and operating software systems. But creating them has largely involved highly manual tinkering, which is why it&rsquo;s understandable that I&rsquo;m constantly asked, &ldquo;Is there an app that my team can use to create them?&rdquo; I&rsquo;m delighted that I now can say &ldquo;fuck yes there is!&rdquo; with the <a href="https://swagitda.com/deciduous/">release of Deciduous</a>, a security decision tree generator.</p>
+                <p><a href="https://www.deciduous.app/"><img style="float:right; max-width:40%; padding-left: 10px" src="/blog/img/deciduous/deciduous-logo.png" alt="The logo for Deciduous"></a></p>
+<p>Security decision trees are a powerful tool to inform saner security prioritization when designing, building, and operating software systems. But creating them has largely involved highly manual tinkering, which is why it&rsquo;s understandable that I&rsquo;m constantly asked, &ldquo;Is there an app that my team can use to create them?&rdquo; I&rsquo;m delighted that I now can say &ldquo;fuck yes there is!&rdquo; with the <a href="https://www.deciduous.app/">release of Deciduous</a>, a security decision tree generator (hosted at <a href="https://www.deciduous.app/">https://www.deciduous.app/</a>).</p>
 <p>Inspired by the <a href="https://www.verica.io/sce-book/">Security Chaos Engineering e-book</a> and <a href="https://swagitda.com/blog/posts/security-decision-trees-with-graphviz/">my previous blog post</a> on creating security decision trees with Graphviz, one of my unindicted co-conspirators <a href="https://github.com/rpetrich">Ryan Petrich</a> built a web app that handles all the annoying grunt work of building an attack tree. This lets you focus on the thinky thinky and typey typey around likely attacker actions, potential mitigations, and how attackers will respond to those mitigations as Deciduous dynamically generates an organized and styled<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> graph for you.</p>
 <h2 id="using-deciduous">Using Deciduous</h2>
-<p>Step one of creating a decision tree is determining what resource you are threat modeling. The default example when you load <a href="https://swagitda.com/deciduous/">Deciduous</a> is the example I explored in <a href="https://www.verica.io/sce-book/">the Security Chaos Engineering e-book</a> and in the <a href="https://swagitda.com/blog/posts/security-decision-trees-with-graphviz/">Graphviz blog post</a>: an S3 bucket containing customer video recordings.</p>
+<p>Step one of creating a decision tree is determining what resource you are threat modeling. The default example when you load <a href="https://www.deciduous.app/">Deciduous</a> is the example I explored in <a href="https://www.verica.io/sce-book/">the Security Chaos Engineering e-book</a> and in the <a href="https://swagitda.com/blog/posts/security-decision-trees-with-graphviz/">Graphviz blog post</a>: an S3 bucket containing customer video recordings.</p>
 <p>Given the e-book is free and explains all you need to know about populating the different parts of the decision-tree with your assumptions, I&rsquo;ll focus on how to use Deciduous to implement your assumptions rather than walking you through the threat modelling process.</p>
 <h3 id="basic-components">Basic components</h3>
 <p>Deciduous has two panes: an editor on the left and the generated decision tree on the right. The left sidebar of Deciduous is where you can change the components of the decision tree, which is dynamically generated on the right side. The main categories of components you can change are:</p>
@@ -274,7 +274,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://swagitda.com/blog/tags/infosec">InfoSec</a></span><span class="tag"><a href="https://swagitda.com/blog/tags/security-chaos-engineering">Security Chaos Engineering</a></span>
                 </p>
 
-            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>1347 Words</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>1350 Words</p>
 
             <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2021-07-12 08:00 -0400</p>
         </div>
