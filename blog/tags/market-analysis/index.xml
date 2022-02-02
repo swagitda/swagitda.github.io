@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 22 Mar 2021 08:00:08 -0400</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/market-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Feb 2022 08:10:34 -0500</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/market-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Infosec Startup Buzzword Bingo: 2022 Edition</title>
+      <link>https://swagitda.com/blog/posts/infosec-buzzword-bingo-2022/</link>
+      <pubDate>Wed, 02 Feb 2022 08:10:34 -0500</pubDate>
+      
+      <guid>https://swagitda.com/blog/posts/infosec-buzzword-bingo-2022/</guid>
+      <description>What buzzwords define the infosec industry in 2022? This post introduces the 2022 edition of the Infosec Buzzword Bingo Card and analyzes the state of security through the lens of the zeitgeistyist buzzwords.</description>
+    </item>
+    
+    <item>
+      <title>The Security Obstructionism (SecObs) Market</title>
+      <link>https://swagitda.com/blog/posts/the-security-obstructionism-secobs-market/</link>
+      <pubDate>Wed, 12 Jan 2022 08:55:49 -0400</pubDate>
+      
+      <guid>https://swagitda.com/blog/posts/the-security-obstructionism-secobs-market/</guid>
+      <description>This post introduces the Security Obstructionism (SecObs) market, examining its role in enterprise infosec programs, why it&amp;rsquo;s so pernicious, and why DevSecOps is just SecObs wrapped with the shiny bow of modernity.</description>
+    </item>
+    
     <item>
       <title>A Simplified Spectrum of Compute</title>
       <link>https://swagitda.com/blog/posts/spectrum-of-compute/</link>

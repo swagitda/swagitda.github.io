@@ -3,8 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://swagitda.com/blog/tags/infosec/</loc>
+    <lastmod>2022-02-02T08:10:34-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/posts/infosec-buzzword-bingo-2022/</loc>
+    <lastmod>2022-02-02T08:10:34-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://swagitda.com/blog/</loc>
-    <lastmod>2021-12-20T07:53:31-05:00</lastmod>
+    <lastmod>2022-02-02T08:10:34-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/tags/market-analysis/</loc>
+    <lastmod>2022-02-02T08:10:34-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/posts/</loc>
+    <lastmod>2022-02-02T08:10:34-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/tags/</loc>
+    <lastmod>2022-02-02T08:10:34-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/tags/behavioral-infosec/</loc>
+    <lastmod>2022-01-12T08:55:49-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/posts/the-security-obstructionism-secobs-market/</loc>
+    <lastmod>2022-01-12T08:55:49-04:00</lastmod>
   </url>
   
   <url>
@@ -13,23 +48,8 @@
   </url>
   
   <url>
-    <loc>https://swagitda.com/blog/posts/</loc>
-    <lastmod>2021-12-20T07:53:31-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://swagitda.com/blog/tags/reading-list/</loc>
     <lastmod>2021-12-20T07:53:31-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://swagitda.com/blog/tags/</loc>
-    <lastmod>2021-12-20T07:53:31-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://swagitda.com/blog/tags/behavioral-infosec/</loc>
-    <lastmod>2021-08-09T08:55:49-04:00</lastmod>
   </url>
   
   <url>
@@ -40,11 +60,6 @@
   <url>
     <loc>https://swagitda.com/blog/tags/security-chaos-engineering/</loc>
     <lastmod>2021-08-09T08:55:49-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://swagitda.com/blog/tags/infosec/</loc>
-    <lastmod>2021-07-15T08:30:26-04:00</lastmod>
   </url>
   
   <url>
@@ -74,11 +89,6 @@
   
   <url>
     <loc>https://swagitda.com/blog/tags/infrastructure/</loc>
-    <lastmod>2021-03-22T08:00:08-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://swagitda.com/blog/tags/market-analysis/</loc>
     <lastmod>2021-03-22T08:00:08-04:00</lastmod>
   </url>
   

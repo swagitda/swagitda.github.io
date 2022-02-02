@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 15 Jul 2021 08:30:26 -0400</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/infosec/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Feb 2022 08:10:34 -0500</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/infosec/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Infosec Startup Buzzword Bingo: 2022 Edition</title>
+      <link>https://swagitda.com/blog/posts/infosec-buzzword-bingo-2022/</link>
+      <pubDate>Wed, 02 Feb 2022 08:10:34 -0500</pubDate>
+      
+      <guid>https://swagitda.com/blog/posts/infosec-buzzword-bingo-2022/</guid>
+      <description>What buzzwords define the infosec industry in 2022? This post introduces the 2022 edition of the Infosec Buzzword Bingo Card and analyzes the state of security through the lens of the zeitgeistyist buzzwords.</description>
+    </item>
+    
+    <item>
+      <title>The Security Obstructionism (SecObs) Market</title>
+      <link>https://swagitda.com/blog/posts/the-security-obstructionism-secobs-market/</link>
+      <pubDate>Wed, 12 Jan 2022 08:55:49 -0400</pubDate>
+      
+      <guid>https://swagitda.com/blog/posts/the-security-obstructionism-secobs-market/</guid>
+      <description>This post introduces the Security Obstructionism (SecObs) market, examining its role in enterprise infosec programs, why it&amp;rsquo;s so pernicious, and why DevSecOps is just SecObs wrapped with the shiny bow of modernity.</description>
+    </item>
+    
     <item>
       <title>Markets DGAF About Cybersecurity</title>
       <link>https://swagitda.com/blog/posts/markets-dgaf-about-cybersecurity/</link>
@@ -125,25 +143,6 @@ Adopting the “chaotic infosec” philosophy (the application of chaos engineer
       <guid>https://swagitda.com/blog/posts/analyzing-blackhatusa-business-hall-2019/</guid>
       <description>Prerequisite plug that you should come see my talk with Dr. Nicole Forsgren at Black Hat next week (16:00 in South Pacific)!
 What type of vendors are showing themselves off in the Business Hall? Are they mostly startups? Exactly like last year, 46% of the vendors in the Business Hall are startups backed by venture capital (VC) firms. Private companies represent only 13% of total vendors this year (vs. 17% last year), and there are far more acquired companies (&#34;</description>
-    </item>
-    
-    <item>
-      <title>Darth Jar Jar: a Model for Infosec Innovation</title>
-      <link>https://swagitda.com/blog/posts/darth-jar-jar-model-infosec-innovation/</link>
-      <pubDate>Sun, 05 May 2019 08:30:09 -0400</pubDate>
-      
-      <guid>https://swagitda.com/blog/posts/darth-jar-jar-model-infosec-innovation/</guid>
-      <description>Despite its seeming absurdity and superficiality, the theory of Darth Jar Jar can serve as a poignant parable for security innovation. For those unfamiliar, the notion of a Darth Jar Jar springs from a meticulously researched fan theory from the Star Wars subreddit. While I do not wish to spoil the breathtaking beauty of the fleshed-out theory, the underlying legend is one of an ostensibly bumbling fool who, in reality, is an insidious puppet master full of cunning and strength.</description>
-    </item>
-    
-    <item>
-      <title>My Reflections on the 2019 RSA Conference</title>
-      <link>https://swagitda.com/blog/posts/my-reflections-on-rsac-2019/</link>
-      <pubDate>Wed, 13 Mar 2019 21:28:01 -0400</pubDate>
-      
-      <guid>https://swagitda.com/blog/posts/my-reflections-on-rsac-2019/</guid>
-      <description>Artist’s rendition of how I felt by Thursday morning of the con
-Reflecting on my existential crisis during RSAC, I tried to distill what exactly was so troublesome about the conference. The expo floor was less two separate halls, as per years prior, and more like Mordor, with a befouled sprawl connecting Minas Morgul and the Black Gate — but instead of orcs and Uruk-hai, vendors crammed the hallways that used to serve as open breathing space.</description>
     </item>
     
   </channel>

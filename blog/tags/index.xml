@@ -7,7 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 20 Dec 2021 07:53:31 -0500</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Feb 2022 08:10:34 -0500</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>InfoSec</title>
+      <link>https://swagitda.com/blog/tags/infosec/</link>
+      <pubDate>Wed, 02 Feb 2022 08:10:34 -0500</pubDate>
+      
+      <guid>https://swagitda.com/blog/tags/infosec/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Market Analysis</title>
+      <link>https://swagitda.com/blog/tags/market-analysis/</link>
+      <pubDate>Wed, 02 Feb 2022 08:10:34 -0500</pubDate>
+      
+      <guid>https://swagitda.com/blog/tags/market-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Behavioral InfoSec</title>
+      <link>https://swagitda.com/blog/tags/behavioral-infosec/</link>
+      <pubDate>Wed, 12 Jan 2022 08:55:49 -0400</pubDate>
+      
+      <guid>https://swagitda.com/blog/tags/behavioral-infosec/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Reading-List</title>
       <link>https://swagitda.com/blog/tags/reading-list/</link>
@@ -18,29 +45,11 @@
     </item>
     
     <item>
-      <title>Behavioral InfoSec</title>
-      <link>https://swagitda.com/blog/tags/behavioral-infosec/</link>
-      <pubDate>Mon, 09 Aug 2021 08:55:49 -0400</pubDate>
-      
-      <guid>https://swagitda.com/blog/tags/behavioral-infosec/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Security Chaos Engineering</title>
       <link>https://swagitda.com/blog/tags/security-chaos-engineering/</link>
       <pubDate>Mon, 09 Aug 2021 08:55:49 -0400</pubDate>
       
       <guid>https://swagitda.com/blog/tags/security-chaos-engineering/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>InfoSec</title>
-      <link>https://swagitda.com/blog/tags/infosec/</link>
-      <pubDate>Thu, 15 Jul 2021 08:30:26 -0400</pubDate>
-      
-      <guid>https://swagitda.com/blog/tags/infosec/</guid>
       <description></description>
     </item>
     
@@ -59,15 +68,6 @@
       <pubDate>Mon, 22 Mar 2021 08:00:08 -0400</pubDate>
       
       <guid>https://swagitda.com/blog/tags/infrastructure/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Market Analysis</title>
-      <link>https://swagitda.com/blog/tags/market-analysis/</link>
-      <pubDate>Mon, 22 Mar 2021 08:00:08 -0400</pubDate>
-      
-      <guid>https://swagitda.com/blog/tags/market-analysis/</guid>
       <description></description>
     </item>
     

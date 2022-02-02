@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author"
+    content="Kelly Shortridge ">
+<meta name="description"
+    content="This post introduces the Security Obstructionism (SecObs) market, examining its role in enterprise infosec programs, why it&amp;rsquo;s so pernicious, and why DevSecOps is just SecObs wrapped with the shiny bow of modernity." />
+<meta name="keywords" content="blog, technology, infosec, cybersecurity, information security" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://swagitda.com/blog/posts/the-security-obstructionism-secobs-market/" />
+
+
+<title>
+    
+    The Security Obstructionism (SecObs) Market | Kelly Shortridge 
+    
+</title>
+
+
+
+<meta name="twitter:title" content="The Security Obstructionism (SecObs) Market"/>
+<meta name="twitter:description" content="This post introduces the Security Obstructionism (SecObs) market, examining its role in enterprise infosec programs, why it&rsquo;s so pernicious, and why DevSecOps is just SecObs wrapped with the shiny bow of modernity."/><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://swagitda.com/blog/img/secobs-infernal-quadrant.png"/>
+
+
+
+<meta property="og:title" content="The Security Obstructionism (SecObs) Market" />
+<meta property="og:description" content="This post introduces the Security Obstructionism (SecObs) market, examining its role in enterprise infosec programs, why it&rsquo;s so pernicious, and why DevSecOps is just SecObs wrapped with the shiny bow of modernity." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://swagitda.com/blog/posts/the-security-obstructionism-secobs-market/" />
+	
+<meta property="article:published_time" content="2022-01-12T08:55:49-04:00" />
+<meta property="article:modified_time" content="2022-01-12T08:55:49-04:00" /><meta property="og:site_name" content="Kelly Shortridge" />
+
+
+<meta property="og:title" content="The Security Obstructionism (SecObs) Market" />
+<meta property="og:description" content="This post introduces the Security Obstructionism (SecObs) market, examining its role in enterprise infosec programs, why it&rsquo;s so pernicious, and why DevSecOps is just SecObs wrapped with the shiny bow of modernity." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://swagitda.com/blog/posts/the-security-obstructionism-secobs-market/" />
+<meta property="article:published_time" content="2022-01-12T08:55:49-04:00" />
+<meta property="article:modified_time" content="2022-01-12T08:55:49-04:00" /><meta property="og:site_name" content="Kelly Shortridge" />
+ 
+
+
+  <meta property="og:type" content="website" />
+   <meta property="og:title" content="Kelly Shortridge"/>
+   <meta property="og:description" content="Blog by Kelly Shortridge"/>
+   <meta property="og:site_name" content="Kelly Shortridge"/>
+   <meta property="og:url" content="https://swagitda.com/blog/"/>
+   <meta property="og:locale" content="en">
+   <meta name="image" property="og:image" content="https://swagitda.com/blog/img/secobs-infernal-quadrant.png"/>
+   <meta property="og:type" content="website"/>
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/blog/main.min.f3682787577e1c348a7f58b0ba10e5f54c2187f38442b4e7e60f2ef85c0f3449.css">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/blog/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/blog/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/blog/favicon-16x16.png">
+<link rel="manifest" href="/blog/site.webmanifest">
+<link rel="mask-icon" href="/blog/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="/blog/favicon.ico">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="The Security Obstructionism (SecObs) Market">
+<meta itemprop="description" content="This post introduces the Security Obstructionism (SecObs) market, examining its role in enterprise infosec programs, why it&rsquo;s so pernicious, and why DevSecOps is just SecObs wrapped with the shiny bow of modernity.">
+<meta itemprop="datePublished" content="2022-01-12T08:55:49-04:00" />
+<meta itemprop="dateModified" content="2022-01-12T08:55:49-04:00" />
+<meta itemprop="wordCount" content="3360">
+
+
+
+<meta itemprop="keywords" content="InfoSec,Behavioral InfoSec,Market Analysis," />
+
+
+
+
+
+<meta property="article:published_time" content="2022-01-12 08:55:49 -0400 -0400" />
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  var _paq = window._paq || [];
+   
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setCookieDomain", "*.swagitda.com"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//swagitda.com/skynet/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//swagitda.com/skynet/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /swagitda.com/</span>
+            <span class="logo__cursor"></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://swagitda.com/blog/posts">Blog</a></li><li><a href="https://kellyshortridge.com/">About</a></li><li><a href="https://twitter.com/swagitda_"><img src='/blog/img/twitter.svg'></a></li><li><a href="https://www.linkedin.com/in/kellyshortridge"><img src='/blog/img/linkedin.svg'></a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p>
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title"><a href="https://swagitda.com/blog/posts/the-security-obstructionism-secobs-market/">The Security Obstructionism (SecObs) Market</a></h1>
+
+            
+
+            <div class="post-content">
+                <p>Obstruction is “a thing that impedes or prevents passage or progress; an obstacle or blockage.” Under this definition, I would include sabotage – deliberate obstruction or damage – as well as passivity, or what I like to term “aggressive passivity” – deliberate non-interference to actuate an undesirable outcome (the “sink or swim” approach).</p>
+<p>In security, obstructionism foments the dreaded Department of No, the begrudged gatekeeper, and the truculent Security Theatre<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. Hence, I am introducing the term Security Obstructionism (SecObs)<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>, a category of tools, policies, and practices whose outcome is to impede or prevent progress for security’s (speculative) sake. I suspect the TAM (total addressable market) for SecObs is enormous and perhaps provides a more coherent understanding of security stacks than traditional market categories.</p>
+<p>But outputs aren’t outcomes<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. The amount of activity performed by a team is not equivalent to productivity nor its ability to produce desirable outcomes<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. The secret to the SecObs market is that this does not matter. The point of SecObs is not better security outcomes for the business or end users. The point is more security outputs as a proxy for progress and these outputs impart more control over the organization, transmogrifying into power and status. In essence, the point is a self-perpetuating organism<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</p>
+<p>How does the infosec organism self-perpetuate via SecObs? Here are some examples (which perhaps can be called “Indicators of Obstructionism” or IoOs<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>):</p>
+<ul>
+<li>Vulnerability management that creates long lists of things to triage (and outside of dev workflows)</li>
+<li>“Shadow” anything – shadow IT, shadow SaaS, shadow APIs…</li>
+<li>Manual security reviews, manual change approval – basically anything to block shipping new code unless security personally gives the go ahead</li>
+<li>Internal education programs that are not based on measurable security outcomes (the primary outcome is wasted time)</li>
+<li>“Gotchya” phishing simulations that primarily measure the efficacy of phishing copy rather than the efficacy of security strategy</li>
+<li>Password rotation, key rotation, access approval, and other policies that may leave internal users unable to work</li>
+<li>Corporate VPNs, whose most effective use in 2022 is perhaps as the entry point for Ransomware-as-a-Service operations</li>
+<li>Shutting down modernization initiatives (cloud, microservices, etc.), slowing adoption of new tech or tools<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup></li>
+<li>“Insider threat” detection that bears a remarkable resemblance to malware (such as using keyloggers<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup> and screen recording<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup>…)</li>
+<li>Petulantly allowing “self-serve” security… but without providing recommended patterns or guidance</li>
+<li>As soon as a security property or feature is embraced by the rest of the organization, it no longer “counts” as security – like how I’ve heard SSO recently labeled somewhat pejoratively as “convenience” vs. security by some infosec professionals…</li>
+</ul>
+<p>As seems necessary to legitimize a market category, I plotted SecObs on a market &ldquo;graph&rdquo;<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup>:
+<img src="/blog/img/secobs-infernal-quadrant.png" alt="The Infernal Quadrant for Security Obstructionism"></p>
+<p>Astute readers might have noted that some of these SecObs practices fall under the purview of “DevSecOps,” which is basically SecObs disguised in a hoodie, AllBirds, and Fjallraven backpack (carrying a Macbook). The typical definition of DevSecOps is that security is integrated across the software development lifecycle<sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup> and it is an unobjectionable goal. The problematic part is that the goal is twisted from a thoughtful entwining of things that could promote systems resilience from design through to delivery into a goal of security reasserting itself as an authority.</p>
+<p>But even the typical definition of DevSecOps does not justify its existence as a term; we would also need DevTestOps, DevQAOps, DevComplianceOps, DevAccountingOps, DevGeneralCounselOps to ensure that <em>their</em> concerns are also considered or built-in throughout the SDLC (as they should be!). Ergo, DevSecOps is quite literally Security Obstructionism in the linguistic sense but lamentably in the living sense, too – inserting security into the equation to impede Dev from meeting Ops.</p>
+<p>The tragedy of SecObs echoes across hype cycles: bad security ideology mixed with bad incentives leads to bad implementation which leads to bad outcomes in all dimensions except the justification of status quo security people’s existence. Implementation is manipulable and can pervert even noble goals into SecObs. For instance, “shift left” is the purported mantra of DevSecOps<sup id="fnref:12"><a href="#fn:12" class="footnote-ref" role="doc-noteref">12</a></sup>, but what it means too often in practice is shifting obstructionism earlier into the development process.</p>
+<p>There are arguably some psychological benefits of ensuring expectations of timely software releases are destroyed sooner rather than later<sup id="fnref:13"><a href="#fn:13" class="footnote-ref" role="doc-noteref">13</a></sup>, but the more tangible outcomes are that the obsession with preventing failure happens in more places. As a result, there are more outputs and more opportunities for finger pointing and citing “you did not follow process at X, Y juncture” when something goes wrong. Because SecObs is a defense mechanism, perhaps the most effective one in status quo security’s arsenal.</p>
+<p>Obstruction is ultimately about preservation. Nobody obstructs something from happening if they <em>want</em> things to change. If security <em>wanted</em> things to go the DevOps way, they would understand that security, like resilience or reliability or maintainability<sup id="fnref:14"><a href="#fn:14" class="footnote-ref" role="doc-noteref">14</a></sup>, is part of the outcomes that DevOps practices aim to achieve – and that there is immense value in ensuring all those qualities can be nurtured as a check against myopic organizational pressures<sup id="fnref:15"><a href="#fn:15" class="footnote-ref" role="doc-noteref">15</a></sup>.</p>
+<p>The problem is, if security <em>is</em> already one of the qualities that orgs doing the DevOps are trying to achieve, then that means the status quo will change. Software engineers, architects, and SREs will identify where existing security programs are falling short of desired outcomes and pioneer new programs to solve these challenges using their expertise as builders.</p>
+<p>They will develop strategies to perform asset inventory, testing, and patching their own way – one that likely treats bugs as bugs, regardless of whether there are performance or security implications<sup id="fnref:16"><a href="#fn:16" class="footnote-ref" role="doc-noteref">16</a></sup>. That means the security team is no longer performing these actions, which is one less thing to point to when proving the security strategy is “successful.” Never mind that security could absolutely still be essential by providing recommended patterns, serving as an expert sounding board, operating like a platform engineering team to build foundational systems to make security work easier, or leading security chaos engineering experiments<sup id="fnref:17"><a href="#fn:17" class="footnote-ref" role="doc-noteref">17</a></sup>. Security professionals will be expected to design systems &ndash; a daunting shift that can catalyze existential panic about whether existing skill sets actually matter.</p>
+<p>I suspect the lizard brain<sup id="fnref:18"><a href="#fn:18" class="footnote-ref" role="doc-noteref">18</a></sup> origin of SecObs lurks within in-groups and out-groups<sup id="fnref:19"><a href="#fn:19" class="footnote-ref" role="doc-noteref">19</a></sup>. The information security establishment has seen itself as a marginalized outsider, a scorned prophet, an unfairly resented authority figure who is just trying to keep the devs from sticking forks into electrical sockets. Humans like seeing members of their in-group succeed, but they <em>love</em> seeing members of the out-group fail (or at least suffer)<sup id="fnref:20"><a href="#fn:20" class="footnote-ref" role="doc-noteref">20</a></sup>. Humans will sacrifice the greater good – or even more for themselves in a bigger but equally-divided pie – if it means the out-group gets less than they do<sup id="fnref:21"><a href="#fn:21" class="footnote-ref" role="doc-noteref">21</a></sup>.</p>
+<img style="float:right; max-width:40%; padding-left: 10px" src="/blog/img/please-do-not-resist.jpg" alt="A screenshot of K-2SO from the movie Rogue One saying Congratulations! You are being rescued! Please do not resist.">
+<p>Adopting SecObs is how infosec can ensure the out-group(s) receive less. I have long been perplexed why some security professionals are quite so resistant to my thinky thinky – how could they so detest and resent something that extirpates toil for them so that they may stretch out their strategic wings to soar on the zephyrs of innovation? I’ve felt like they must see me <a href="https://en.meming.world/wiki/Congratulations!_You_Are_Being_Rescued">as K-2SO saying</a> “Congratulations! You are being rescued! Please do not resist.”</p>
+<p>What I realized is that it does not matter if Security Chaos Engineering<sup id="fnref:22"><a href="#fn:22" class="footnote-ref" role="doc-noteref">22</a></sup> or all the other things<sup id="fnref:23"><a href="#fn:23" class="footnote-ref" role="doc-noteref">23</a></sup> I’ve proposed make these infosec traditionalists better off; what matters is that they feel that they are worse off on a <em>relative</em> basis<sup id="fnref:24"><a href="#fn:24" class="footnote-ref" role="doc-noteref">24</a></sup>. SecObs makes everyone else in the organization miserable and puts them at least partially under infosec’s thumb. Therefore, even though it is a woefully inefficient use of the security team’s time, SecObs makes infosec better off on a <em>relative</em> basis – if not equals with engineering, at least able to directly impact their outcomes; if not fulfilled by their work, at least they aren’t the ones facing a Kafkaesque imposition on their workflows.</p>
+<p>SecObs depends on the definition of “secure” remaining nebulous and unquantifiable. The argument for DevSecOps is that “while DevOps applications have stormed ahead in terms of speed, scale and functionality, they are often lacking in robust security and compliance.”<sup id="fnref:25"><a href="#fn:25" class="footnote-ref" role="doc-noteref">25</a></sup> But what does “robust security” even mean? The justification for Sec being treated as an equal among Dev and Ops is based on wielding the abstract ideal of “security” as a Maginot Line. If you ask what a “secure” app means, you will rarely receive an actionable or consistent answer. Is it free of bugs? Does it never experience failure? Or is it something that only security teams and security teams alone can identify, akin to “I know it when I see it”<sup id="fnref:26"><a href="#fn:26" class="footnote-ref" role="doc-noteref">26</a></sup>?</p>
+<p>Conceiving concrete security outcomes is not an arcane art, despite what the industry inculcates. An engineering team’s product is broken if they aren’t meeting relevant compliance standards. If they are addressing the retail industry, they can’t have a product if they aren’t PCI compliant; their customers quite literally cannot purchase it. The same is true for financial services or healthcare.</p>
+<p>And in my recent experience<sup id="fnref:27"><a href="#fn:27" class="footnote-ref" role="doc-noteref">27</a></sup>, SREs think about impacts to availability more than security people, despite availability being the A in the classic C.I.A. triad (which just turned 44 years old a few months ago)<sup id="fnref:28"><a href="#fn:28" class="footnote-ref" role="doc-noteref">28</a></sup>. A cryptominer can impact stability and reliability in production – which jeopardizes the organization’s ability to conduct its business. An attacker exploiting a web vuln and crashing the machine causes downtime. Exfil of customer data can cause latency and result in compliance sanctions.</p>
+<p>SecObs spends all its time fretting about preventing incidents and implementing tools and policies that impede business operations<sup id="fnref:29"><a href="#fn:29" class="footnote-ref" role="doc-noteref">29</a></sup> under the guise of collapsing the probabilistic wave function of failure to zero while spending very little time actually preparing for the inevitable incident.</p>
+<p>But if an attacker cuts down an application in a hosted container forest and it automatically disappears and grows again, who cares? The impact is negligible, <em>just as it should be</em> if security is done well – if security is focused on outcomes rather than outputs. All that prevention just doesn’t matter if you can’t recover quickly when something bad happens, <em>which it will</em>. And what was the point of holding up a release by a week because the security team wanted to personally inspect it first for bugs when the impact of exploiting those bugs is “autoprovision another container to replace the compromised one”?</p>
+<p>What is to be done?<sup id="fnref:30"><a href="#fn:30" class="footnote-ref" role="doc-noteref">30</a></sup> When you see or hear weasel words like “appropriate” or “sufficient” or “robust” to describe a “level” or “maturity model”<sup id="fnref:31"><a href="#fn:31" class="footnote-ref" role="doc-noteref">31</a></sup> of security, it is worth pausing to ponder whether SecObs abounds. If the security program evokes the on-prem monolith and waterfalls era – SAST, DAST, vulnerability management, security reviews and approvals – but is festooned with the words “continuous” or “automated”, then perhaps what is now automated and continuous is SecObs. When you hear “we need to bake security into [thing]”, it could be a boon – weaving security into workflows to make it consistent, repeatable, and scalable – but it could also be a leading indicator of SecObs; engineering teams will be left to sink or swim because when they fail, it’s an opportunity for SecObs to say, “See why you need us?”</p>
+<p>SecObs is pernicious; it is deeply rooted in the information security swamp and will be difficult to excise from the industry. DevSecOps may be its modern incarnation, but SecObs is a larger problem that existed before this trend and will continue to exist after it wanes. SecObs carries a massive TAM – at least $10 billion and likely much higher<sup id="fnref:32"><a href="#fn:32" class="footnote-ref" role="doc-noteref">32</a></sup> – which means there are legions of incumbents incentivized to actively fight against its removal.</p>
+<p>The strategies I have seen work are either to burn down the status quo (quite literally firing obstructionists and building anew) and / or to support motivated software engineers and architects building overarching security programs in parallel, which treats patches like other upgrades and attacks like other incidents. Security is treated as a facet of resilience, as it should be because it reflects reality<sup id="fnref:33"><a href="#fn:33" class="footnote-ref" role="doc-noteref">33</a></sup>.</p>
+<p>What I have never seen work is attempting to modernize SecObs, which is what we are seeing with too much of the DevSecOps movement. Getting status quo security pros up to speed on the latest technology just means they’ll now be able to weaponize it and talk about the dangers of <em>shadow APIs</em> and <em>shadow Infrastructure as Code</em> and <em>shadow functions</em>.</p>
+<p>Because getting up to speed in the SecObs market isn’t about understanding the technology – how it works, its strengths, its potential, its deficiencies, its concerns – it’s about understanding the power dynamics of it and figuring out where security can best assert itself to maintain control in the organization. Find a vulnerability, exploit it, persist in the system… maybe the only difference between the “good actors” and the “bad actors” is that the bad ones make money for their organizations.</p>
+<hr>
+<p>Thanks to Camille Fournier, Ryan Petrich, Greg Poirier, Andrew Ruef, James Turnbull, and Leif Walsh for feedback on this post.</p>
+<hr>
+<p>Enjoy this post? Stay tuned for the full Security Chaos Engineering book later in 2022. In the meantime, you can read the Security Chaos Engineering report in the <a href="https://www.oreilly.com/library/view/security-chaos-engineering/9781492080350/">O’Reilly Learning Library</a>.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>For a theatrical discussion of Security Theatre, I recommend my keynote Exit Stage Left: Eradicating Security Theatre: <a href="https://www.youtube.com/watch?v=kiunphALNKw">https://www.youtube.com/watch?v=kiunphALNKw</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>I will use SecObs throughout this post since pithy buzzwords seem to be infosec’s perpetual zeitgeist. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>While I recommend reading <a href="https://itrevolution.com/accelerate-book/">her book</a> in full, this lucid interview with Dr. Forsgren cites examples of outcomes vs. outputs in the context of software engineering: <a href="https://www.techrepublic.com/article/how-to-measure-outcomes-of-your-companys-devops-initiatives/">https://www.techrepublic.com/article/how-to-measure-outcomes-of-your-companys-devops-initiatives/</a> Book citation: Forsgren, PhD, N., Humble, J., &amp; Kim, G. (2018). <em>Accelerate: The science of lean software and devops: Building and scaling high performing technology organizations.</em> IT Revolution. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>Forsgren, N., Storey, M. A., Maddila, C., Zimmermann, T., Houck, B., &amp; Butler, J. (2021). The SPACE of Developer Productivity: There&rsquo;s more to it than you think. <em>Queue, 19</em>(1), 20-48. <a href="https://queue.acm.org/detail.cfm?id=3454124">https://queue.acm.org/detail.cfm?id=3454124</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p>This could perhaps be called the Tumor Model of Information Security. <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p>Perhaps later in 2022 we will see a YARA scanner for IoOs raise a $100 million Series A with a $1 billion post-money valuation on $1 million ARR. <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7" role="doc-endnote">
+<p>New and not-quite-compliant on everything is much better than old and unmaintained but compliant. The inability to update a system should terrify security; alas, in many cases, it is an afterthought or worse, seen as a comfort. <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8" role="doc-endnote">
+<p>Usually vendors won’t say “keylogging” explicitly but will use euphemisms like “keystroke dynamics”, “keystroke logging”, or “user behavior analytics”. <a href="https://www.cisa.gov/sites/default/files/publications/Insider%20Threat%20Mitigation%20Guide_Final_508.pdf">As CISA explains in their Insider Threat Mitigation Guide</a> about User Activity Monitoring (UAM), <em>“In general, UAM software monitors the full range of a user’s cyber behavior. It can log keystrokes, capture screenshots, make video recordings of sessions, inspect network packets, monitor kernels, track web browsing and searching, record the uploading and downloading of files, and monitor system logs for a comprehensive picture of activity across the network.”</em> See also the presentation <a href="https://apps.dtic.mil/sti/pdfs/AD1090474.pdf">Exploring keystroke dynamics for insider threat detection</a>. <a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:9" role="doc-endnote">
+<p><a href="https://www.cisa.gov/sites/default/files/publications/Insider%20Threat%20Mitigation%20Guide_Final_508.pdf">CISA’s description of UAM tools</a> (see citation 8) also notes the ability to “make video recordings of sessions” as a general capability of insider threat tools. As an example of a vendor that isn’t quite as shy about it: <a href="https://www.proofpoint.com/us/blog/insider-threat-management/what-advanced-corporate-keylogging-definition-benefits-and-uses">https://www.proofpoint.com/us/blog/insider-threat-management/what-advanced-corporate-keylogging-definition-benefits-and-uses</a> <a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:10" role="doc-endnote">
+<p>Unlike other entities purporting to analyze markets, the Infernal Quadrant is <em>actually</em> a quadrant because it is a plane divided into four infinite regions. It is hard to imagine something less magical than constraining infinite regions by bounding them in a larger square, although this perhaps exposes the underlying principal problem: fitting everything into neat boxes and calling them something they’re not. <a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:11" role="doc-endnote">
+<p>Each vendor defines DevSecOps in their own way, but this is the definition that stays constant across most of them. Some vendors additionally <a href="https://www.redhat.com/en/topics/devops/what-is-devsecops">highlight automation</a>, some focus <a href="https://www.synopsys.com/glossary/what-is-devsecops.html">more on shift left</a>, some suggest <a href="https:%5Cwww.csoonline.com%5Carticle%5C3245748%5Cwhat-is-devsecops-developing-more-secure-applications.html">security processes are handled by devs</a>, and some talk about <a href="https://www.ibm.com/cloud/learn/devsecops">“enabling development of secure software at the speed of Agile and DevOps”</a>. <a href="#fnref:11" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:12" role="doc-endnote">
+<p>Although IBM refers to “Shift Left” as <em>a</em> mantra rather than <em>the</em> mantra, suggesting that the collective noun for DevSecOps is a <em>mantra</em> of DevSecOpses. <a href="#fnref:12" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:13" role="doc-endnote">
+<p>Koyama, T., McHaffie, J. G., Laurienti, P. J., &amp; Coghill, R. C. (2005). The subjective experience of pain: where expectations become reality. <em>Proceedings of the National Academy of Sciences, 102</em>(36), 12950-12955. <a href="https://www.pnas.org/content/pnas/102/36/12950.full.pdf">https://www.pnas.org/content/pnas/102/36/12950.full.pdf</a> <a href="#fnref:13" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:14" role="doc-endnote">
+<p>Kleppmann, M. (2017). <em>Designing data-intensive applications: The big ideas behind reliable, scalable, and maintainable systems.</em> &ldquo;O&rsquo;Reilly Media, Inc.&rdquo;. <a href="#fnref:14" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:15" role="doc-endnote">
+<p>Rasmussen, J. (1997). Risk management in a dynamic society: a modelling problem. <em>Safety science, 27</em>(2-3), 183-213. <a href="http://sunnyday.mit.edu/16.863/rasmussen-safetyscience.pdf">http://sunnyday.mit.edu/16.863/rasmussen-safetyscience.pdf</a> <a href="#fnref:15" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:16" role="doc-endnote">
+<p>This recalls Linus Torvalds’ remark in 2008: “I personally consider security bugs to be just ‘normal bugs.’ I don’t cover them up, but I also don’t have any reason what-so-ever to think it’s a good idea to track them and announce them as something special.” <a href="https://yarchive.net/comp/linux/security_bugs.html">https://yarchive.net/comp/linux/security_bugs.html</a> <a href="#fnref:16" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:17" role="doc-endnote">
+<p>For more on security chaos engineering experiments, either <a href="https://www.oreilly.com/library/view/security-chaos-engineering/9781492080350/">read the SCE ebook</a> or watch my talk “The Scientific Method: Security Chaos Experimentation &amp; Attacker Math” <a href="https://www.youtube.com/watch?v=oJ3iSyhWb5U">https://www.youtube.com/watch?v=oJ3iSyhWb5U</a> <a href="#fnref:17" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:18" role="doc-endnote">
+<p>One of my finest achievements is being responsible for the term “lizard brain” making it into the Wall Street Journal. Mitchell, H. (2021, September 7). How Hackers Use Our Brains Against Us. <em>The Wall Street Journal.</em> <a href="https://www.wsj.com/articles/how-hackers-use-our-brains-against-us-11631044800">https://www.wsj.com/articles/how-hackers-use-our-brains-against-us-11631044800</a> <a href="#fnref:18" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:19" role="doc-endnote">
+<p>I grazed the surface of in-groups and out-groups in my blog post “On YOLOsec and FOMOsec” but this particular insight had not yet coalesced in my mind at the time. <a href="https://swagitda.com/blog/posts/on-yolosec-and-fomosec/">https://swagitda.com/blog/posts/on-yolosec-and-fomosec/</a> <a href="#fnref:19" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:20" role="doc-endnote">
+<p>Molenberghs, P., &amp; Louis, W. R. (2018). Insights from fMRI studies into ingroup bias. <em>Frontiers in psychology, 9,</em> 1868. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6174241/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6174241/</a> <a href="#fnref:20" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:21" role="doc-endnote">
+<p>The OG paper on this dynamic is: Tajfel, H. (1970). Experiments in intergroup discrimination. <em>Scientific American, 223</em>(5), 96-103. <a href="https://faculty.ucmerced.edu/jvevea/classes/Spark/readings/tajfel-1970-experiments-in-intergroup-discrimination.pdf">https://faculty.ucmerced.edu/jvevea/classes/Spark/readings/tajfel-1970-experiments-in-intergroup-discrimination.pdf</a> <a href="#fnref:21" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:22" role="doc-endnote">
+<p>Shortridge, K., Rinehart, A. (2020). <em>Security Chaos Engineering</em>. United States: O&rsquo;Reilly Media, Incorporated. <a href="https://www.oreilly.com/library/view/security-chaos-engineering/9781492080350/">https://www.oreilly.com/library/view/security-chaos-engineering/9781492080350/</a> <a href="#fnref:22" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:23" role="doc-endnote">
+<p>My favorite of these things perhaps being Darth Jar Jar: A Model for Infosec Innovation: <a href="https://swagitda.com/blog/posts/darth-jar-jar-model-infosec-innovation/">https://swagitda.com/blog/posts/darth-jar-jar-model-infosec-innovation/</a> followed by Lamboozling Attackers: A New Generation of Deception <a href="https://queue.acm.org/detail.cfm?id=3494836">https://queue.acm.org/detail.cfm?id=3494836</a> <a href="#fnref:23" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:24" role="doc-endnote">
+<p>For a 101 about reference points in decision making (and about the OG behavioral economics theory, Prospect Theory) I recommend reading the Decision Lab’s guide on it: <a href="https://thedecisionlab.com/reference-guide/economics/reference-point/">https://thedecisionlab.com/reference-guide/economics/reference-point/</a> <a href="#fnref:24" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:25" role="doc-endnote">
+<p>Quoted from <a href="https://www.forcepoint.com/cyber-edu/devsecops">https://www.forcepoint.com/cyber-edu/devsecops</a> <a href="#fnref:25" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:26" role="doc-endnote">
+<p>I will spare y’all a diversion into epistemology and instead just cite this somewhat bizarre historical examination of the quote, which, incidentally, serves as another example of the potency of in-group vs. out-group framing: <a href="https://www.wsj.com/articles/BL-LB-4558">https://www.wsj.com/articles/BL-LB-4558</a> <a href="#fnref:26" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:27" role="doc-endnote">
+<p>By recent experience I mean reception to my talks, writings, and the Security Chaos Engineering e-book. But the SRE book provides additional supporting evidence by repeatedly underlining the importance of availability to SRE success: <a href="https://sre.google/sre-book/service-level-objectives/">https://sre.google/sre-book/service-level-objectives/</a> <a href="#fnref:27" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:28" role="doc-endnote">
+<p>Ruthberg, Z. G., &amp; McKenzie, R. G. (1977). Audit and Evaluation of Computer Security. <a href="https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication500-19.pdf">https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication500-19.pdf</a> <a href="#fnref:28" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:29" role="doc-endnote">
+<p>For instance, <a href="https://twitter.com/jfslowik/status/1479490219573276673">a recent infosec Twitter thread</a> suggested people <code>TAKE THEIR SHIT OFF THE INTERNET</code> as a solution to problems like vulnerabilities in vCenter instances. Its popularity even lead to the creation of a site dedicated to this mindblowing advice: <a href="https://www.getyourshitofftheinternet.com/">https://www.getyourshitofftheinternet.com/</a> <a href="#fnref:29" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:30" role="doc-endnote">
+<p>This reference to the title of Lenin’s pamphlet is a chance for me to shoehorn in my quip that status quo information security should adore Marx’s <a href="https://plato.stanford.edu/entries/marx/#LaboTheoValu">labor theory of value</a> (originally David Ricardo’s) in which goods or services are valued based on the effort that went into producing them rather than based on the consumer’s preferences (I will avoid going down the rabbit hole of <a href="https://plato.stanford.edu/entries/decision-theory/">decision theory</a> at this juncture). <a href="#fnref:30" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:31" role="doc-endnote">
+<p>I suggest reading Dr. Forsgren’s excellent takedown of maturity models for more on why they are “for chumps”: <a href="https://twitter.com/nicolefv/status/1130192402608664576">https://twitter.com/nicolefv/status/1130192402608664576</a> <a href="#fnref:31" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:32" role="doc-endnote">
+<p>The entire information security market is somewhere between <a href="https://www.grandviewresearch.com/industry-analysis/cyber-security-market">~$165 billion</a> and <a href="https://www.grandviewresearch.com/industry-analysis/cyber-security-market">~$185 billion</a> as of 2020. It feels reasonable that at least ~6% of that spending is in security obstructionism. To wit, the vulnerability management market is <a href="https://www.businesswire.com/news/home/20211011005555/en/Global-Security-and-Vulnerability-Management-Market-2021-to-2026---Integration-of-Vulnerability-Management-and-Patch-Management-Solutions-Presents-Opportunities---ResearchAndMarkets.com">nearly $14 billion</a> as of 2021, the VPN market is <a href="https://www.yahoo.com/now/global-virtual-private-network-vpn-122300132.html">also around $14 billion</a>, and the CASB market (which addresses “shadow IT”) was valued at <a href="https://www.verifiedmarketresearch.com/product/global-cloud-access-security-brokers-market-size-and-forecast-to-2025/">just under $9 billion</a> in 2020. Smaller categories include the cybersecurity awareness training market <a href="https://blog.knowbe4.com/some-interesting-security-awareness-computer-based-training-numbers">at $1 billion</a> in 2021, SAST is <a href="https://www.industryarc.com/Report/19220/static-application-security-testing-market.html">less than a billion</a>, and the insider threat market, which is still small enough that Gartner hasn’t sized it yet it seems. I strongly suspect that some percentage of each security market category includes tools that facilitate obstructionism, but that is difficult to quantify. <a href="#fnref:32" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:33" role="doc-endnote">
+<p>Connelly, E. B., Allen, C. R., Hatfield, K., Palma-Oliveira, J. M., Woods, D. D., &amp; Linkov, I. (2017). Features of resilience. <em>Environment systems and decisions, 37</em>(1), 46-50. <a href="https://www.osti.gov/pages/servlets/purl/1346540">https://www.osti.gov/pages/servlets/purl/1346540</a> <a href="#fnref:33" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://swagitda.com/blog/tags/infosec">InfoSec</a></span><span class="tag"><a href="https://swagitda.com/blog/tags/behavioral-infosec">Behavioral InfoSec</a></span><span class="tag"><a href="https://swagitda.com/blog/tags/market-analysis">Market Analysis</a></span>
+                </p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>3360 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2022-01-12 07:55 -0500</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h">Read other posts</span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="https://swagitda.com/blog/posts/infosec-buzzword-bingo-2022/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">Infosec Startup Buzzword Bingo: 2022 Edition</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                        <span class="button next">
+                            <a href="https://swagitda.com/blog/posts/2021-reading-list/">
+                                <span class="button__text">My 2021 Reading List</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2022</span>
+            
+                <span><a href="https://swagitda.com/blog/">Kelly Shortridge</a></span>
+            
+            <span>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</span>
+            <span> <a href="https://swagitda.com/blog/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/blog/bundle.min.c3134e4a0a3d5ff628f7e932e4d6846626cad5e9457046b58e07c6036133ea0d788e9d330d51e709b43a7a8a22e1a4cf28aff9dbf27756a6a12b9c135260726a.js" integrity="sha512-wxNOSgo9X/Yo9&#43;ky5NaEZibK1elFcEa1jgfGA2Ez6g14jp0zDVHnCbQ6eooi4aTPKK/52/J3VqahK5wTUmByag=="></script>
+
+
+
+    </body>
+</html>

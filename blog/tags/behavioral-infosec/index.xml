@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 09 Aug 2021 08:55:49 -0400</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/behavioral-infosec/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Jan 2022 08:55:49 -0400</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/behavioral-infosec/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Security Obstructionism (SecObs) Market</title>
+      <link>https://swagitda.com/blog/posts/the-security-obstructionism-secobs-market/</link>
+      <pubDate>Wed, 12 Jan 2022 08:55:49 -0400</pubDate>
+      
+      <guid>https://swagitda.com/blog/posts/the-security-obstructionism-secobs-market/</guid>
+      <description>This post introduces the Security Obstructionism (SecObs) market, examining its role in enterprise infosec programs, why it&amp;rsquo;s so pernicious, and why DevSecOps is just SecObs wrapped with the shiny bow of modernity.</description>
+    </item>
+    
     <item>
       <title>Rick &amp; Morty&#39;s Thanksploitation Spectacular Decision Tree</title>
       <link>https://swagitda.com/blog/posts/rick-morty-thanksploitation-decision-tree/</link>
