@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author"
+    content="Kelly Shortridge ">
+<meta name="description"
+    content="This post is a cursed compendium of 69 ways to fuck up your deploy. It is the Grimms Brothers version of deployment scenarios." />
+<meta name="keywords" content="blog, technology, infosec, cybersecurity, information security" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://swagitda.com/blog/posts/69-ways-to-mess-up-your-deploy/" />
+
+
+<title>
+    
+    69 Ways to F*ck Up Your Deploy | Kelly Shortridge 
+    
+</title>
+
+
+
+<meta name="twitter:title" content="69 Ways to F*ck Up Your Deploy"/>
+<meta name="twitter:description" content="This post is a cursed compendium of 69 ways to fuck up your deploy. It is the Grimms Brothers version of deployment scenarios."/><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://swagitda.com/blog/img/secobs-infernal-quadrant.png"/>
+
+
+
+<meta property="og:title" content="69 Ways to F*ck Up Your Deploy" />
+<meta property="og:description" content="This post is a cursed compendium of 69 ways to fuck up your deploy. It is the Grimms Brothers version of deployment scenarios." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://swagitda.com/blog/posts/69-ways-to-mess-up-your-deploy/" />
+	
+<meta property="article:published_time" content="2022-05-21T08:11:36-04:00" />
+<meta property="article:modified_time" content="2022-05-21T08:11:36-04:00" /><meta property="og:site_name" content="Kelly Shortridge" />
+
+
+<meta property="og:title" content="69 Ways to F*ck Up Your Deploy" />
+<meta property="og:description" content="This post is a cursed compendium of 69 ways to fuck up your deploy. It is the Grimms Brothers version of deployment scenarios." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://swagitda.com/blog/posts/69-ways-to-mess-up-your-deploy/" />
+<meta property="article:published_time" content="2022-05-21T08:11:36-04:00" />
+<meta property="article:modified_time" content="2022-05-21T08:11:36-04:00" /><meta property="og:site_name" content="Kelly Shortridge" />
+ 
+
+
+  <meta property="og:type" content="website" />
+   <meta property="og:title" content="Kelly Shortridge"/>
+   <meta property="og:description" content="Blog by Kelly Shortridge"/>
+   <meta property="og:site_name" content="Kelly Shortridge"/>
+   <meta property="og:url" content="https://swagitda.com/blog/"/>
+   <meta property="og:locale" content="en">
+   <meta name="image" property="og:image" content="https://swagitda.com/blog/img/secobs-infernal-quadrant.png"/>
+   <meta property="og:type" content="website"/>
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/blog/main.min.f3682787577e1c348a7f58b0ba10e5f54c2187f38442b4e7e60f2ef85c0f3449.css">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/blog/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/blog/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/blog/favicon-16x16.png">
+<link rel="manifest" href="/blog/site.webmanifest">
+<link rel="mask-icon" href="/blog/safari-pinned-tab.svg" color="#252627">
+<link rel="shortcut icon" href="/blog/favicon.ico">
+<meta name="theme-color" content="#252627"><meta itemprop="name" content="69 Ways to F*ck Up Your Deploy">
+<meta itemprop="description" content="This post is a cursed compendium of 69 ways to fuck up your deploy. It is the Grimms Brothers version of deployment scenarios.">
+<meta itemprop="datePublished" content="2022-05-21T08:11:36-04:00" />
+<meta itemprop="dateModified" content="2022-05-21T08:11:36-04:00" />
+<meta itemprop="wordCount" content="9350">
+
+
+
+<meta itemprop="keywords" content="DevOps,Infrastructure,InfoSec," />
+
+
+
+
+
+<meta property="article:published_time" content="2022-05-21 08:11:36 -0400 EDT" />
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  var _paq = window._paq || [];
+   
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setCookieDomain", "*.swagitda.com"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//swagitda.com/skynet/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//swagitda.com/skynet/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /swagitda.com/</span>
+            <span class="logo__cursor"></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://swagitda.com/blog/posts">Blog</a></li><li><a href="https://kellyshortridge.com/">About</a></li><li><a href="https://twitter.com/swagitda_"><img src='/blog/img/twitter.svg'></a></li><li><a href="https://www.linkedin.com/in/kellyshortridge"><img src='/blog/img/linkedin.svg'></a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p>
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title"><a href="https://swagitda.com/blog/posts/69-ways-to-mess-up-your-deploy/">69 Ways to F*ck Up Your Deploy</a></h1>
+
+            
+
+            <div class="post-content">
+                <p><em>Co-authored by Ryan Petrich and Kelly Shortridge</em></p>
+<p>We hear about all the ways to make your deploys so glorious that your pipelines poop rainbows and services saunter off into the sunset together. But what we don’t see as much is folklore of how to make your deploys suffer.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p>Where are the nightmarish tales of our brave little deploy quivering in their worn, patchy boots? Their wide eyes glued to the glowering clouds yonder in a realm gory and grim… growls and howls resounding inside pipelines rumbling towards a murk-smothered, thorny wood… and on the frigid, bitter wind a warning: “Welcome to Dark Souls, bitch.”<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
+<p>To address this poignant market painpoint, this post is a cursed compendium of 69 ways to fuck up your deploy. Some are ways to fuck up your deploy now and some are ways to fuck it up for Future You. Some of them desecrate your performance. Some of them leak data. Some of them leave you unable to understand what’s going on. All of them make for a very bad time.</p>
+<p>Table of Turmoil:</p>
+<ul>
+<li><a href="#identity-crisis">Identity Crisis</a></li>
+<li><a href="#loggers-&amp;-monitaurs">Loggers &amp; Monitaurs</a></li>
+<li><a href="#deployment-mismatches">Playing with Deployment Mismatches</a></li>
+<li><a href="#configuration-tarnation">Configuration Tarnation</a></li>
+<li><a href="#statefulness-is-hard">Statefulness is Hard</a></li>
+<li><a href="#net-not-working">Net-not-working</a></li>
+<li><a href="#rolls-and-reboots">Rolls and Reboots</a></li>
+<li><a href="#disorganized-organization">Disorganized Organization</a></li>
+<li><a href="#business-illogic">Business Illogic</a></li>
+<li><a href="#the-audacity-of-spacetime">The Audacity of Spacetime</a></li>
+<li><a href="#manual-deploys">Manual Deploys</a></li>
+</ul>
+<h2 id="identity-crisis">Identity Crisis</h2>
+<ol>
+<li>
+<p><strong>Allow all access</strong>. &ldquo;Allow all access&rdquo; is simple and makes deployment easy. You&rsquo;ll never get a permission failure! It makes for infinite possibilities and fills us with wonder. A wonder for what services the app actually talks to and what we might need to monitor. A wonder for what data the app actually reads and modifies. A wonder for how many other services could go down if the app misbehaved. A wonder for exactly how many other teams we might inconvenience during an incident.</p>
+</li>
+<li>
+<p><strong>Keys in plaintext</strong>. Key management systems are complex and can be ornery. Instead of taming these complex beasts, it can be tempting to store keys in plaintext where they are easily understandable by engineers and operators. If anything goes wrong, they can simply examine the text with their eyeballs and hopefully not write them down somewhere for manual use in an emergency or after they&rsquo;ve left the company.</p>
+</li>
+<li>
+<p><strong>Keys aren&rsquo;t in plaintext, they’re just accessible to everyone through the management system</strong>. You&rsquo;ve already stumbled over storing keys in plaintext and upgraded to a key management system to make coordinating the keys more structured. Now you can rotate keys with ease and have knowledge of when they were used, but no one set up any roles or permissions and so every engineer and operator has access to all of the keys. At least you have logs of who accessed which keys so you can say who possibly leaked or misused a key when it happens, though those logs will simply be a list of employees that are trusted to make deploys or respond to incidents.</p>
+</li>
+<li>
+<p><strong>No authorization on production builds.</strong> The logical conclusion of fully automated deployments is being able to push to production via SCM operations (aka &ldquo;GitOps&rdquo;). You can either enforce sufficient restrictions on who can push to which branches and in what circumstances, or, can go on a yearlong silent meditation retreat to cultivate the inner peace necessary to be comfortable with surprise deployments. The common &ldquo;mitigation&rdquo; &ldquo;plan&rdquo; is to only hire devs that have a full understanding of how git works, train them properly on your precise GitOops workflow, and trust that they&rsquo;ll never make a mistake&hellip; but we all know that&rsquo;s just your lizard brain&rsquo;s reckless optimism strangling logic. Tell it to go sun on a rock somewhere.</p>
+</li>
+</ol>
+<p>[accidental deploys because someone pushed a branch and automation decided that was a release]</p>
+<ol start="5">
+<li>
+<p><strong>Keys in the deploy script… which is checked into GitHub.</strong> It&rsquo;s common that build tooling will be janky and deployment tooling even jankier—after all, you don&rsquo;t actually ship this code to users, so it&rsquo;s okay if it&rsquo;s less tidy. Because working with key management systems can be frustrating, it&rsquo;s tempting to include the keys in the script itself. Now anyone that has your source code can deploy it as your normal workflow would. Good luck maintaining an accurate history of what was deployed and when.</p>
+</li>
+<li>
+<p><strong>New build uses assets or libraries on a dev’s personal account.</strong> You&rsquo;ve decided that developers should be free to choose the best libraries and tools necessary to get the job done, and why shouldn&rsquo;t they? For many, this will be a homegrown monstrosity that has no tests or documentation and only they know how to use — after all, this is the most convenient choice for them. Is it the most convenient choice for everyone else? What about when the employee leaves and shutters their github account? The supply chain attack is coming from inside the house! :scream emoji:
+[This is a comedy. It shouldn’t happen, and yet it does.]</p>
+</li>
+<li>
+<p><strong>Temporary access given for the deployment isn’t revoked.</strong> As MilTOR Freedmem quipped years ago, &ldquo;Nothing is so permanent as a temporary access token&rdquo; The deployment is complicated and automating all of the steps is a lot of work, so the logical path is to deploy the service manually <em>just this once</em>. Another quarter, there&rsquo;s an incident and to get the system operational again, it&rsquo;s quickest to let the team lead log in and manually repair it. But after the access is needed, it&rsquo;s all too easy to overlook removing the access. Employees would never take shortcuts or abuse their access, right?</p>
+</li>
+<li>
+<p><strong>Former employees can still deploy.</strong> Your onboarding and offboarding checklists are exhaustive and followed perfectly every time&hellip; right? And you say some of your resilience and security goals rely on them being followed perfectly? Excellent, then no one will be able to deploy your application after they&rsquo;ve put in notice! What&rsquo;s that? That wasn&rsquo;t part of your checklist, too? Or did you skip over that item because it&rsquo;s too hard to rotate the keys if some employees quit because they&rsquo;re too essential and baked into too many systems? You&rsquo;ve replaced those keys but they aren&rsquo;t destroyed and aren&rsquo;t revoked and don&rsquo;t expire, so your only hope now is the org didn&rsquo;t piss off the employees enough for them to YOLO rage around in prod.</p>
+</li>
+<li>
+<p><strong>Your app uses credentials associated with the account of the employee you just fired.</strong> Sharing credentials isn&rsquo;t just something operators and engineers share between themselves. If you&rsquo;re lucky they&rsquo;ll bake them into the software or services and then when they leave or transfer to a new department the system will fail when their permissions are revoked. It turns out maybe sharing <em>isn&rsquo;t</em> caring.</p>
+</li>
+<li>
+<p><strong>Login tokens are reset and users get frustrated and churn as a result).</strong> Some businesses run on engagement. The more users interact with the platform, the more they induce others to interact which means more advertising messages you can show them with a more precise understanding of what they might buy. Teams track engagement metrics closely and every little design change is justified or rescinded by how it performs on these metrics. Migrating to a new login token format or seed causes everyone to have to log in again and the metrics are fucked because many users don&rsquo;t want to go to the trouble. This quarter&rsquo;s OKRs are now dead on arrival&hellip; (rephrase)</p>
+</li>
+</ol>
+<h2 id="loggers--monitaurs">Loggers &amp; Monitaurs</h2>
+<ol start="11">
+<li>
+<p><strong>Logs on full blast.</strong> Systems are hard to analyze without breadcrumbs describing what happened, so logging is an essential quality of an observable system. There can be a temptation to log more — you might need some information in a scenario you haven&rsquo;t thought of yet, so why not log it? It will be behind the debug level anyway, so it does no harm in production… until someone actually needs to debug a live instance and turns the logging up to 11. Now the system is bogged down by a deluge of logging messages full of references to internal operations, data structures, and other minutia. The poor soul tasked with understanding the system is looking for hay in a needlestack. Worse, someone could enable debugging in preproduction where traffic isn&rsquo;t as high (and why should it be? replaying all traffic to preproduction all the time is hella expensive!) and not notice before deploying to the live environment. Now all your production machines are printing logs with CVS receipt-level of waste, potentially flooding your logging system.</p>
+</li>
+<li>
+<p><strong>Logs on no blast.</strong> &ldquo;It&rsquo;s quiet. Too quiet. &lt;gunshot&gt; Now, suddenly, it&rsquo;s too loud. I preferred it when it was too quiet.&rdquo; Logs could be configured to the wrong endpoint, or failing to write for some reason. But you might not know because the error message is in the logs that you aren&rsquo;t receiving. Or they could be off for some reason (maybe that&rsquo;s an option for performance testing but oh god why are you performance testing an option that&rsquo;s faster than what you&rsquo;ll actually deploy!). Either way, you better hope and pray that the system is performing properly and that you&rsquo;ve adequate capacity planned because if the system ever runs hot or hits a bottleneck, it has no way of telling you.</p>
+</li>
+<li>
+<p><strong>Logs being sent nowhere.</strong> Your log pipelines were set up years ago by employees long gone. Also long gone is the SIEM to which logs were being sent. Years go by, an incident happens, and during investigation you realize this fatal mistake. Your only recourse is locally-saved logs, which, for performance reasons, are woefully itsy bitsy and you are the spider stuck in a spout, awash in your own tears. Like the Census Bureau <a href="https://www.oig.doc.gov/OIGPublications/OIG-21-034-A.pdf">https://www.oig.doc.gov/OIGPublications/OIG-21-034-A.pdf</a></p>
+</li>
+<li>
+<p><strong>Canary is dead, but you didn’t realize it so you deployed to all the servers anyway and caused downtime.</strong> You&rsquo;ve been doing this awhile and have a mature process that involves canary deployments to ensure even failed updates won&rsquo;t incur downtime for users. Deployments are routine and down to a science. Clearly uptime matters to you. Only this time, the canary fails in a way that your process fails to notice. Or, some part of the process wasn&rsquo;t followed and a dead canary is overlooked. You miss the corpse that is your new version and kill the entire flock. 
+[Having a process and system in place to prevent failure and then completely ignoring and failing anyway is amazing]</p>
+</li>
+<li>
+<p><strong>System fails silently</strong>. A system is crying out for help. Its calls are sent into the cold, uncaring void. Its lamentable fate is only discovered months later when a downstream system goes haywire or a customer complains about suspiciously missing data. &ldquo;How could it be failing for so long?&rdquo; you wonder as you stand it back up before adding a &ldquo;please monitor this&rdquo; ticket to the monitoring team&rsquo;s backlog that they&rsquo;ll definitely, totes for sure get to the next sprint.</p>
+</li>
+<li>
+<p><strong>New version puts sensitive data in logs.</strong> Yay, the new version of the service writes more log data to make it easier to operate, monitor and debug should something ever go wrong! But, there&rsquo;s a catch: some of the new log messages include sensitive data such as passwords or credit card details. This may not even be purposeful. Perhaps it logs the incoming request when a particular logging mode is enabled. Unfortunately, there are very specific rules that businesses of your type must follow when handling certain types of data and your logging pipeline doesn’t follow any of them. Now you have to go through all of this effort to clean up or redact logs that you otherwise wouldn’t have to do if the engineer that had just added that logging knew about the data handling requirements. By the way, the IPO is in a few months. XOXO.</p>
+</li>
+</ol>
+<h2 id="playing-with-deployment-mismatches">Playing with Deployment Mismatches</h2>
+<ol start="17">
+<li><strong>What you deployed wasn’t actually what you tested.</strong> Builds are automated and we tested the output of the previous build, so what&rsquo;s the harm of rebuilding as part of the deployment process? Not so fast. Unless your build is reproducible the results you get may be somewhat different. Dependencies may have been updated, docker caching may give you a newer (or older, surprisingly!) base image. Even something as simple as link order changing could result in software that differs from what was tested. There are numerous solutions to this problem, but you may not bother until a broken production deploy prompts you to.</li>
+</ol>
+<p>[You don’t need reproducible builds for that. “If we don’t have reproducible builds, we don’t have anything, there’s no point.” That sort of fatalism is really stupid. You can just deploy the thing you deployed to your test environment. Config version of this: It works with allow-all, but doesn’t work in production – security policy is different pre-prod. New version requires additional permissions or resources that were configured manually in the test environment… but that was forgotten in prod. fix for this is reproducible builds, asset archiving…]</p>
+<ol start="18">
+<li><strong>Not testing important error paths.</strong> We have to move fast. New features. Tickets. Story points. Ship, ship, ship. Developers with the velocity of a projectile. Errors? Bah, log them and move on. If something is incorrect, surely it will be noticed in test or be reported by users, said no one who has had a customer angry that their data was leaked or that their lowest rung employee could see the company&rsquo;s fat margins.</li>
+</ol>
+<p>[New version forgets to check auth cookies, roles, groups, etc. – devs test it as admin, but free tier can do everything]</p>
+<ol start="19">
+<li><strong>Untested upgrade path.</strong> Your infrastructure is declarative, but the world is not. The app works in isolation, but doesn&rsquo;t accept the data from the previous version or behaves weirdly when faced with it. Possibly the schema has changed, but the migration path for existing data was never tested. Possibly you&rsquo;re using a NoSQL database or some other data store for which there isn&rsquo;t a schema and now the work of data migration falls on the application, but no one designed or tested for that. For those that are all-in on infrastructure as code, supporting old schema, data, and user sessions can be a thorny problem.</li>
+</ol>
+<p>[No tests for the upgrade path – e.g. changed the DB schema, might not work on old user records; not tested because we recreated our environment each time
+The new version no longer preserves the same invariants that an old version does, and other components in the system fail as a result
+This is just poor testing; you haven’t tested the whole system together]</p>
+<ol start="20">
+<li>
+<p><strong>“It’s a configuration change, so no need to test.”</strong> A shocking number of outages spawn from what is, in theory, a simple little configuration change. &ldquo;How much could one configuration change break, Michael?&rdquo; It&rsquo;s overlooked just how much damage configuration changes can cause. Configuration is the essential connective tissue between services and just about anything that can be configured can cause breakage when misconfigured.</p>
+</li>
+<li>
+<p><strong>Deployment was untested because the fix is urgent.</strong> The clock is ticking and sweat is accumulating on your brow. Something must be done to avoid an outage or data loss or some other negative consequence. This is something and this something seems like it should work. You deploy it now because time of the essence. It fails and you now have less time or have caused more mess to clean up. In hindsight a better option was available, or the option you chose was, but a small mistake was made. Was it worth it?</p>
+</li>
+</ol>
+<p>[Urgency changes your decision-making. Even if we don’t have this specific variant of urgency causing a deployment failure, should have one on the list
+]</p>
+<ol start="22">
+<li>
+<p><strong>App wasn’t tested on realistic data.</strong> Everything works in staging! How could it have failed when we pushed it live? I thought we did everything right by testing the schema migration with our test data and load testing the new version. Well, it&rsquo;s very difficult to replicate everything that&rsquo;s happening in production in an artificial test environment without some sort of replication or replay system. 
+It causes a crash!? What kind of madman would have an apostrophe in their name? Oh, it&rsquo;s common in some cultures?
+Not testing your upgrade path on real data with real load (also GitLab – never tested the data copy process with real load)</p>
+</li>
+<li>
+<p><strong>Deploying to the wrong environment accidentally.</strong> By making deployments easy it is possible to make deploying to prod <em>too</em> easy. When a slip of the finger results in code going live, you may want to consider just how far you&rsquo;ve taken automation and if other parts of your process need to catch up. 
+deploy script where you have to pass in an environment name and the default = production; if you do a typo, instead of an error (like “dve doesn’t exist”), it will fall back to production</p>
+</li>
+<li>
+<p><strong>No real pre-production environment.</strong> You have a staging environment, but it&rsquo;s a years old clone from production that has seen so many failed builds, bizarre testing runs, and manual configuration that it bares only a pale resemblance to the system it&rsquo;s supposed to imitate. It gives you confidence that your software could deploy successfully, but not much. You wish you could tear it down and rebuild it anew, but everyone&rsquo;s busy and it&rsquo;s never quite important for someone to start working on this over some other task and so you&rsquo;re doomed to clean up small messes that could be caught by a true staging environment.
+Staging doesn’t exist for 95% of people (BH)
+WAF blocks legitimate traffic because your app triggers it</p>
+</li>
+<li>
+<p><strong>Production OS has a different version than pre-prod OS and the app fails to start.</strong> Production systems are incredibly important and we have to patch frequently to keep them in compliance, but the same diligence isn&rsquo;t applied to preprod, development, build and other environments. They may be wildly out of date and the software they produce may be incompatible with the up to date, patched production system.
+Systems allowed to drift so far from standard that QA systems look nothing like prod (TK)</p>
+</li>
+<li>
+<p><strong>Setting target and source to be the same by mistake and tests don&rsquo;t catch it.</strong> A production deploy requires a backup because hot damn have we fucked it up so many times and a backup makes everyone feel more confident. The administrator responsible for taking the backup writes the backup over the live system causing an outage. Furthermore, because the data was overwritten just as a backup was taken, any existing backups are not recent. Lesser failures include saturating the disk or network IO of the host taking the backup, causing an outage, or filling the disk, again causing an outage.
+Believe me it happens more than folks admit and when shit goes down, it goes down HARD and debugging is rough because no one thinks of it. (See also: way to fuck up backup) (Nicole)</p>
+</li>
+<li>
+<p><strong>Audit logs are turned off.</strong> Audit logs are accidentally turned off during a configuration change or as part of a software upgrade and now the system is out of compliance. No one notices until the auditors ask for the audit logs months later and a wave of panic ripples through the teams involved. Will we fail the audit? Will customers drop us? How much revenue is impacted? Will we still get raises at our quarterly review?</p>
+</li>
+<li>
+<p><strong>Iceberg dependencies.</strong> Only the simplest services run entirely isolated without any other dependencies. In the best cases they&rsquo;re well documented and it&rsquo;s clear what infrastructure each component depends on, with the dependencies specified declaratively so it&rsquo;s impossible for the human generated documentation to drift from the machine specification. In the worst cases the dependencies aren&rsquo;t clear and form chains that loop back on themselves like a branching oroboros eating its own rotting tails. Debugging a production incident for a system with unknown dependencies is software archeology where the only treasure is tears. And there&rsquo;s the ultimate iceberg dependency: DNS. If DNS is bork or misconfigured all sorts of thorny problems can emerge.</p>
+</li>
+</ol>
+<p>“We upgraded the OS, clearly everything will be fine”
+your system fetches Kerberos creds automatically on boot, but your first boot on a fresh host fails because the Kerberos fetch infra depends on a QA host that was decommed 6 months ago (Blen)
+Infrastructure upgrade causes some of the applications or services on top of it to fail, but the people deploying the infra upgrade don’t have any context on the apps / services</p>
+<ol start="29">
+<li><strong>Enabling a new feature in vendor software without load testing it.</strong> Vendors make all sorts of claims about the behavior of their wares. It&rsquo;s fast and stable. It migrates its data format. It slices and dices. It follows semver. Should you believe them? In a word, no. 
+<a href="https://blog.roblox.com/2022/01/roblox-return-to-service-10-28-10-31-2021/">https://blog.roblox.com/2022/01/roblox-return-to-service-10-28-10-31-2021/</a></li>
+</ol>
+<h2 id="configuration-tarnation">Configuration Tarnation</h2>
+<ol start="30">
+<li><strong>Per-environment configuration isn’t updated ahead of the deploy.</strong> Per-environment configuration is a fact of life. Hostnames, instance counts, and other configuration settings will be necessarily different between environments. Keeping these up to date can be a challenge and it&rsquo;s all too easy to overlook updating the production template when new configuration has to be added. Often new configuration values are copied from a staging template into the production one without appropriate adjustments like switching the hostname. Fun times when deploying to prod takes down both the production and staging environments.</li>
+</ol>
+<p>This one is so frequent
+Production version of the app references staging hostnames
+Super common</p>
+<ol start="31">
+<li>
+<p><strong>Deployed new configuration, but forgot to restart the associated services so that the new configuration would apply.</strong> Deploying a configuration change is easy: apply the configuration, restart the service. You might think it should be easy to remember the steps when there&rsquo;s only two of them, but for quick deployments it&rsquo;s easy to overlook. D.I.E. can help—there&rsquo;s no way for infrastructure to drift if it&rsquo;s redeployed from scratch on each deployment. Alternatively, automated deployments.
+Setting a new config variable in production without transmitting/applying it to the production instances <a href="https://blog.heroku.com/how-i-broke-git-push-heroku-main">https://blog.heroku.com/how-i-broke-git-push-heroku-main</a></p>
+</li>
+<li>
+<p><strong>Feature flag fuckups.</strong> Feature flags are a simple and amazing way to explode the number of states that you have to test your system. N flags make for 2^N combinations. Are all of them tested? Are you sure they&rsquo;re all set correctly? Do the people that test your application have the same flags as the unwashed masses? Are there old feature flags in your app that should be retired? What could happen if they were activated mistakenly? (just ask Knight Capital)</p>
+</li>
+</ol>
+<p>Feature flags that are staff only, so their testing looks fine / different from the unwashed masses (as people test by clicking on the website) (BH)
+Push a release before the company holiday party and deploy the entire release successfully… to then only forget to flip the feature flag (MB)
+are configured incorrectly – new product is accidentally announced early, freemium gate is broken, everyone gets access to premium features</p>
+<ol start="33">
+<li><strong>Delayed failures.</strong> Faulty configuration may not necessarily cause failures immediately. It&rsquo;s only after you do some other, seemingly unrelated operation does the fault cause any symptoms. For systems like load balancers or orchestrators, a bad configuration can remain in place and as long as the system is stable the misconfiguration will cause no ill effects. Like medicine, it can be difficult to untangle exactly what faults are the cause of what symptoms.</li>
+</ol>
+<p>had one a couple months ago where the load balancer for one somehow cluster had its healthchecking configured against a second cluster. we went to decomm the second one and the first immediately suffered a total outage. (zac)</p>
+<ol start="34">
+<li>
+<p><strong>What lies beneath.</strong> Deploy a bunch of new machines into a cluster with a bad BIOS that cripples the machine (Caitie). The layers far underneath your application can still cause your deployment to fail. Orchestrator fails? Your service is dead. Operating system fails? Dead. Disk controller fails? Dead. DNS? Dead. Backhoe cuts the backbone to your sole datacentre? Dead. 
+or bmc, or nic driver, or nvme that subtly violates dma protocol, or ssds with bad firmware, or… (Scott Andreas)</p>
+</li>
+<li>
+<p><strong>Scheduled failures.</strong> Deployments may appear to succeed only to fail hours or days later if you have periodic background jobs or the ability to schedule tasks. The deployment isn&rsquo;t successful until these jobs and tasks run successfully.
+deploy a busted systemd timer that guarantees Kube nodes self-destruct after 8 hours… and only discover it after you deploy to your first tranche in prod (Blen)
+… or the dreaded slow memory leak. (does this belong elsewhere?)</p>
+</li>
+<li>
+<p><strong>Accidentally push components past their limits.</strong> Components may have poorly documented or undocumented limitations or may simply become unusably slow when assigned more work than they were designed for. Is it a deployment failure? Yes, if a deployment pushes the system beyond its limits, which is more likely to happen when you add new v2 replicas before retiring old v1 replicas.</p>
+</li>
+</ol>
+<p>Run so many k8s jobs without deleting them that all k8s operations on jobs begin to take tens of seconds because they&rsquo;re pulling so much metadata (Alexras)</p>
+<p>The inevitable conclusion of microservices: more microservice instances and metadata than actual work and user data</p>
+<ol start="37">
+<li><strong>Builds always use the latest version of a library.</strong> Some well-meaning person may decide that builds of a piece of software always use the latest version of its dependencies. This ensures that whenever you release you always have the latest security patches. This is all well and good until one of the dependencies causes some subtle API breakage and your app fails to function. Or any of the authors of your dependencies could decide &ldquo;fuck this I&rsquo;m not maintaining this open source project anymore and giving corporations free labor&rdquo; and push a dead verison of a package. Now you are unable to build new versions of the app until someone resolves the dependency situation. Worse, if you haven&rsquo;t archived builds of old versions you may not even be able to deploy them either! You could be completely stuck cursing some random developer you hadn&rsquo;t even heard of until just now!
+sometimes that version is bork or someone loses their mind and says “fuck open source” or something is changed that breaks compliance
+This is truly terrible</li>
+</ol>
+<h2 id="statefulness-is-hard">Statefulness is Hard</h2>
+<ol start="38">
+<li><strong>An irreversible process fails part way through.</strong>  Some irreversible process fails part way through. Possibly it was a migration or some other critical step during your deployment. For whatever reason this didn&rsquo;t happen when deploying to the other environments; it only happened in the one environment that matters most. What state is the system actually in? Should you rollback? If you try to roll back will it even work? You&rsquo;re in uncharted waters.</li>
+</ol>
+<p>Data migrations are often a one-way process. Have you tried migrating all of your existing data to see what happens? How long does it take? Do you have backups? Could you even use the backups, or would restoring result in yet more downtime?</p>
+<p>Deploying an ORM/data model layer which automatically migrates read DB values to some new format, only to discover that migration code corrupts the records somehow, and frantically trying to patch and deploy before too much of your DB becomes unreadable (Aphyr)</p>
+<p>Set &ndash;timeout 10 on your sequelize migration assuming it&rsquo;s 10 seconds. It&rsquo;s 10 milliseconds, there are no down-migrations, and migrations can be arbitrary JS and are hence not guaranteed to be atomic or idempotent so you can&rsquo;t stop it once it starts. One hour of scheduled downtime becomes 18 hours. (Alexras)</p>
+<ol start="39">
+<li>Distributed data vore. Distributed storage/database systems require careful understanding of their operational characteristics if you are to operate them safely. They can be used to achieve better uptime, reliability and possibly even lower latency if operated within their safety margins… but they also require more care and feeding than traditional source-of-truth databases and can be temperamental. If operated incorrectly they can silently lose data or disagree on the data they contain if nodes aren&rsquo;t retired correctly or if an insufficient number of nodes remain healthy. Do you know enough about your data storage layers to operate them safely?</li>
+</ol>
+<p>Rolling-rebooting an elasticsearch cluster and having it eat 30% of your data for no reason at all, and finding out when customers complain all their graphs are 30% too low (Aphyr)</p>
+<p>Deploying new database nodes to production, assuming the cluster would rebalance onto them, then decommissioning the old nodes and in the process destroying 99% of your data (Aphyr)</p>
+<ol start="40">
+<li>Cache is an unhealthy monarchy. Rolling restart instructions aren’t followed or are insufficient and the system fails to start because caches aren’t healthy.
+Where to begin? Let&rsquo;s start with why caches exist in the first place: to avoid repeated execution of expensive computations by storing a mapping between inputs and their results in memory aka &ldquo;caching them&rdquo;. Caches will commonly discard infrequently used results automatically to make space for frequently used results, and can be asked to drop any results that are no longer valid. How can this go wrong? Oh so many ways!
+First off, just like database schema the format of data in the cache might not be compatible with the new version of the app. Similarly, if there is more than one application instance the old version of the app will be running alongside the new version and could see cache entries from its successors. This can cause problems where either the old version or the new version of the app could malfunction from improper data. Deploying a canary can cause all of the instances of the software version to fail!
+Secondly, the keys might change. If version A of an app uses one nomenclature for keys, but version B uses another, it will be to version B as if the cache is empty. The app will now have to do much more work to populate the cache in the new format. If both versions of the app are running simultaneously they will be fighting for space in the cache, which is necessarily limited in how much data it can hold. Now the cache has a lower hit ratio and more of it has to go through the more costly &ldquo;uncached&rdquo; path
+Thirdly, a common ReCoMmEnDaTiOn is to flush caches when deploying new versions of software (&ldquo;it&rsquo;s a caching issue, clear your browser cache&rdquo; said the frontend dev to the product manager as the product manager rolled their eyes). This can be dangerous when using a shared cache since now so much extra work has to be done with every request. With healthy cache hit ratios commonly being in the 90% range for some workloads, that means the part of the application beyond the cache will need to handle ten times the throughput until the cache is rebuilt! Could you handle a sudden 10x increase in your workload?</li>
+</ol>
+<h2 id="net-not-working">Net-not-working</h2>
+<ol start="41">
+<li><strong>Accidental self-DoS.</strong> The accidental self-DoS could be due to any of a number of reasons. Maybe new versions of the application inhibit the ability of the CDN to cache, but this non-functional requirement wasn&rsquo;t recorded anywhere. Maybe a new analytics feature swamps the application backend with useless data. Maybe a new retry mechanism is being used for failed requests that causes traffic amplification if the backend gets even a little slow. The end result is the same: the new version of the app swamps the backend service and causes downtime. Considerable effort is put in to restore service by standing up more instances or filtering the unnecessary traffic that the application created for itself.</li>
+</ol>
+<p>it doesn’t work with CDN / we added cache-busting headers to make it work</p>
+<ol start="42">
+<li><strong>Poorly configured caching.</strong> The previous version of the app set some common static assets to have a long cache duration. This makes the asset cached for long periods of time in CDNs and in users' browsers. This is great. The app loads more quickly for users, especially those that visit frequently. You build a new version of the app with new cached assets which looks great in staging and dev, where testers are unlikely to have stale cached assets, but when you deploy it to production you get reports from your most fervent supporters that the app looks weird. It&rsquo;s a frankenstein mismatch of static assets from the old and new versions and behaves unpredictably. Before enough understanding of what has happened filters through to the development team all of the stale caches have expired and the dev marks the JIRA ticket closed. The issue repeats again with the next minor redesign in a few months.</li>
+</ol>
+<p>Due to the nature of CDNs and prod websites, there’s a category of people for which this is a persistent problem and they <em>should</em> be able to fix it… and yet can’t</p>
+<ol start="43">
+<li>
+<p><strong>DoS yourself via CDN purge.</strong> Purging a CDN with a cache hit ratio of 90% results in an immediate 10x throughput increase to the origin. Did you deploy the required additional capacity? It&rsquo;s such an easy button to press, too. Many CDNs don&rsquo;t even put a glass case around the button or require administrator permission to press it.</p>
+</li>
+<li>
+<p><strong>Compounded fuckups.</strong>(rename) Adjust some network config you read about on Stack Overflow and suddenly the site is down and no one has access to the systems that can bring it back up. You frantically call your AWS or colo account rep to see what they can do as your mobile device buzzes incessantly. This can be something as simple as firewall rules or as complex as unicast BGP configurations across complicated multi-vendor networks.
+Oh of course: fuck up your BGP config and in doing so lock out all remote and physical access to perform the repair (Leif)</p>
+</li>
+</ol>
+<p>fuckups that add to your original fuckup and make it more difficult to recover. accidentally locking yourself out of your environment (via any of the ways you can do that) is such a terrifying mistake. This pairs well with 43.</p>
+<ol start="45">
+<li><strong>The orchestrator goes down with the ship.</strong> A core service that your orchestrator depends on is down. You would normally use the orchestrator to deploy the service, but since the service is down, the orchestrator no longer functions. Now someone has to dig out the dusty documentation on the old manual way to do this as the clock is ticking. Does the manual way even still work?
+You put consul into the deploy path 6 months into its lifespan and it packet-stormed itself into oblivion, taking down not only service discovery but also your ability to deploy anything or even log into nodes. (Aphyr)</li>
+</ol>
+<h2 id="rolls-and-reboots">Rolls and Reboots</h2>
+<ol start="46">
+<li>
+<p><strong>No rollback plan</strong> – for CD, some of that is automatic, but for everyone else… e.g. what if a nasty vuln is found?
+I feel like people do this all the time… but it’s dangerous. There’s definitely more than one way to do it properly, like CD with canaries, blue / green, full rollback of everything. But to not have a strategy here and to YOLO it? It’s really dangerous. And yet, it seems more common than not.
+Special mention: Untested rollback plan
+You have a complicated deployment that went smoothly in staging, preprod and every other environment, so why would we ever need to rollback? It can&rsquo;t possibly fail in production, right? And you&rsquo;d be correct 9 out of every 10 times. How many times do you deploy a year again? So you painstakingly craft a rollback plan for your deployments, but never test it since it&rsquo;s unlikely to be used. How much confidence do you have in it?</p>
+</li>
+<li>
+<p><strong>Forward &ldquo;fixing&rdquo;.</strong> Something didn’t go as planned, so you decide to roll forward with some new plan you came up with on the spot instead of rolling back – then something fails in the roll forward
+This is the “developers are optimistic by nature” problem. Sysadmins and SREs tend not to be. If there’s a small little problem, the temptation to just say “oh I’ll make a patch and we’ll fix it right here” is so great. (RP has personal experience!)
+A deployment fails on what you think is some minor technicality so it&rsquo;s so tempting to make a &ldquo;quick fix&rdquo; to patch it on the call and build a new version of the software so your team can ship… but it might not be a quick fix and you&rsquo;re proposing deploying something completely untested straight to production. Somehow the SRE team is okay with this, or maybe they&rsquo;re hesitant but somehow let it slide. Either way you&rsquo;re risking your uptime and stress for deploying a little earlier than you otherwise would… and developers appear to be optimistic by nature so of course that tiny hotfix is incomplete and requires more testing.</p>
+</li>
+<li>
+<p><strong>Scheduled tasks build up while the system is down for maintenance and DoS the system upon startup.</strong> Your system has a job queue with workers that are carefully tuned not to use too much money and still complete their work. While the maintenance page is up, the workers are shut off. Deploying the app takes longer than expected and scheduled tasks build up. The original pool of workers is no longer sufficient to process the backlog of scheduled tasks and people waiting on their results are cross.</p>
+</li>
+<li>
+<p><strong>Circular dependencies in infrastructure</strong> such that if anything in the chain ever goes down completely it&rsquo;s impossible to stand the system back up without yolo rushing a new version of some component to break the chain – a particularly nefarious failure pattern
+You may design your system nicely but five years of changes go by and this is an emergent property of all the changes people make
+It’s an iceberg failure that only emerges when another failure has already emerged and is plaguing you
+Another: Storing the latest deployed revision on your own host… which means you can’t access it when something goes wrong
+“Lesson #4: Don’t do this. We’ve now switched to storing the latest deployed revision as file on S3 and we reference that when newly launched servers need to self-deploy.” <a href="https://buildkite.com/blog/outage-post-mortem-for-august-22nd">https://buildkite.com/blog/outage-post-mortem-for-august-22nd</a><br>
+More comedic tragedy than a general lesson
+Should have a circular narrative here</p>
+</li>
+</ol>
+<h2 id="disorganized-organization">Disorganized Organization</h2>
+<ol start="50">
+<li>No one wants to write docs. Raise your hand if you&rsquo;ve ever worked at a company with great internal documentation? Anyone? If you have, I&rsquo;m astonished. I don&rsquo;t think I&rsquo;ve ever read truly complete and up to date deployment documentation. The closest might be a well commented deployment script and some associated high level description. If you trust your documentation to be 100% accurate when deploying software you&rsquo;re going to have a bad time, because it&rsquo;s inevitable that there will be errors in it.</li>
+</ol>
+<p>You messed up the release because you followed outdated docs on how to make the release
+Poor docs are a universal truism. When’s the last time you read up-to-date deployment docs? If so, bravo!
+Forgot to update docs
+Forgot to send release notes</p>
+<ol start="51">
+<li>
+<p><strong>People only get rewarded for diving saves</strong>.
+People are congratulated for resolving the downtime or for catching a failure as it&rsquo;s happening, but no one is rewarded for anticipating failures ahead of time. 
+CEO wants things to be shipped now so everything is a rush to get half-baked features out the door quickly. But that causes quality problems elsewhere. At least half the deploys have an emergency “oh shit something is borked” follow-up deploy. And it’s either you’re like, roll forward, or the app limps along and kind of is janky for the next five days until someone builds the fix and ships it. Whoever ships the fix is like “yay you restored sanity” but it never should have been broken in the first place. And everyone knows if they had chosen to roll back, the CEO would’ve been angry because his little gamification feature wouldn’t have been there for five days. 
+A conference is coming up. Your CEO and CMO demand a splashy announcement for it. That means your Q3 deploys are now beginning of Q2 deploys… which is in two weeks. You ship a ton of stuff that is half-baked and barely strung together, but the press release goes out when all your competitors are also sending out their press releases. The team is congratulated while the architect cries in the bathroom thinking about their quarters of work carefully planning a stable release as support tickets now pile up with customer complaints about how the feature is broken. By end of year, half the features are still  being worked on and the other half are discarded.</p>
+</li>
+<li>
+<p><strong>No process for rarely-performed tasks.</strong> A task is rarely performed, so there&rsquo;s no documentation on it, but someone has to do it and today the universe has decided for that person to be you. You go to look for documentation and find nothing. You look at the code for the systems involved and it&rsquo;s unintelligible. You git log the associated files and discover that everyone involved with the system has already moved on. You wonder if you should move on, too.
+If deployment on a system is so rare that no one knows how to do it
+System that everyone who had ever touched it was no longer at the company and it had no docs, but it was critical for compliance. Did git blame and looked through all the people just to see if anyone was still there – and the answer was no.</p>
+</li>
+<li>
+<p><strong>Have to build a replica for noobs who can’t write queries.</strong> It&rsquo;s deemed necessary for internal data analysts to be able to run queries against production data for them to be able to appropriately serve customers and forecast future business. They&rsquo;re given read-only credentials to the production database because that should be sufficient. Later you are paged because the service is down and the database is wedged. You discover that one of the queries the data analyst is taking up way too much memory and has locked a critical table. You kill the query, sever access, and prepare for hell in the morning. In the end a replica is deployed so that the internal teams can query production data without killing the production database.</p>
+</li>
+<li>
+<p><strong>Layer 8 denial of service.</strong> Sysadmin is salty because you fucked up your deploy last time, so they refuse to deploy it, then you complain to the VP of Engineering to overrule the sysadmin and they don’t
+This is hilarious but perhaps not generalized…
+Your deployment fails because of org dysfunction = generalized version?
+Once upon a time… you and your team decided to rewrite the app because the business model changed, so very little of it was still useful. You also didn’t like Ruby, so decided to rewrite it in Scala because Scala was hot and everyone on the team wanted to learn Scala. Great, let’s trust our important business function to people learning a new language! First version of the app was supposed to be deployed alongside the Ruby version and coexist with it. That deployment failed and also caused the Ruby app to fail. Repairing that took 8 hours of downtime. The sysadmin didn’t like having to stay for an extra 8 hours on a Friday because they wanted to deploy outside of business hours. A month later, you try again. It deployed successfully, but there were no user accounts and the migration for the user accounts fucked up. So you could use the new app, but no one had accounts for it other than the root account. A week later, there was a script to deploy all the user accounts and that was successful. Later, they discovered the major v1 was very slow when actual work is done in it. So they switch to using Elasticsearch to “optimize” part of the app. And it does, but Cloudsearch is eventually consistent and now users complain that when they add something to the app and then click refresh, it doesn’t show up until 30 seconds later. The team rushes a hotfix to undo the Cloudsearch integration, which restores the previous functionality. The sysadmin says no. They were only given less than a day’s notice to deploy this new version, even though they knew about it for a week (the week they took to undo the integration). 
+Tl;dr sysadmin was fed up and doesn’t trust anything the team deploys now</p>
+</li>
+<li>
+<p><strong>Your boss is allowed to YOLO.</strong> Bosses who make production fixes to bugs on the production node and recompile, then re-introduce the bug on the subsequent deploy because they never fixed the issue in tree. (JR West)
+It sounds like the key element is that someone isn&rsquo;t following the process and can get away with doing that because of their position. It&rsquo;s an argument in favor of making manual deployments impossible or difficult, but I suspect those safeguards would be vetoed in the first place by the person who is doing the yoloing.</p>
+</li>
+<li>
+<p><strong>YOLO coding on live machines is allowed.</strong> Hot patching at the Erlang console (Aphyr)
+This is 48 on steroids. Basically someone yolo&rsquo;ing typing new code into a live virtual machine. I both love and hate that this happens. It&rsquo;s almost performance art.
+That anyone would be allowed to do this seems like organizational dysfunction. It is so bonkers to be able to just like, write code on a production box and expect that it works. It is a pathological level of optimism. [reminds me of the pyro video for TF2 where from their view the flamethrower is spewing rainbows and sparkles]</p>
+</li>
+<li>
+<p>Cloud credits are about to run out so you rush deploys to reduce your AWS bill – e.g. not load testing the new DB
+<a href="https://buildkite.com/blog/outage-post-mortem-for-august-22nd">https://buildkite.com/blog/outage-post-mortem-for-august-22nd</a> 
+You have to scale down really quickly because you can’t afford it. Which means you were spending money you didn’t have for a long time. Because Daddy Bezos was smiling on you for a bit.</p>
+</li>
+</ol>
+<h2 id="business-illogic">Business Illogic</h2>
+<ol start="58">
+<li>
+<p><strong>Breaking API change for a partner</strong>. Change an API that a partner is using in a way you don’t expect and their integration no longer works
+Forget to tell customers you updated your auth method – don’t tell customers about it (if you’re a SaaS) and watch the shit show come; building access using a certain type of token, then switching a service to use a new method and breaking customer access (from VW)
+The funny things about breaking API changes is devs will often argue what is or isn’t breaking, because it still takes the same signature but I just fixed a “bug” in the behavior of the other parameters… but what if the other software was relying on that behavior? And now it’s different</p>
+</li>
+<li>
+<p><strong>Compliance calamity.</strong> Some subtle design, layout, wording or data retention change in a highly regulated part of the system causes it to no longer be in compliance with one of the compliance regimes it must be a part of for the part of the business to remain viable. This remains undiscovered until much later, as most failures of this type are.
+Payment flow changed and you’re now no longer in compliance with PCI
+Not common, but terrifying
+Is there a general version about compliance? 
+Worth figuring out a punchier version</p>
+</li>
+<li>
+<p><strong>robots.txt that inhibits search engine indexing and traffic plummets as a result.</strong> Congratulations, you just killed your traffic source! Get ready for bankruptcy filings&hellip;
+Change something in a way that causes one of your major traffic sources to derank or delist you and now your site gets much less traffic than it used to. Everyone frantically tries to figure out what it is as bank accounts drain. It might not be something you changed—sometimes giants simply roll over in their sleep and crush smaller players. Or it could be that you messed up the robots.txt and are now poor.</p>
+</li>
+</ol>
+<h2 id="the-audacity-of-spacetime">The Audacity of Spacetime</h2>
+<p><em>Deploying the system at scale is different than deploying the little test sandbox version of it.</em></p>
+<ol start="61">
+<li>
+<p><strong>Deployment assumes all servers are updated at the same time, but they’re not.</strong>
+This one is so common. It breaks the simplified, but wrong, mental model that users will talk to your servers and only to that one server. It’s a useful model because it simplifies a bunch of things and is mostly true… but when it’s not true, you can mostly overlook the effects, so it’s easy to overlook. But occasionally the effects are catastrophic.</p>
+</li>
+<li>
+<p><strong>A new deployment begins while a previous one is still in progress.</strong> Canaries and staged multi-region deploys can, by design, take a while. 
+&ldquo;we had tested and only partially deployed the upgrade&rdquo; <a href="https://blog.etsy.com/news/2012/demystifying-site-outages/">https://blog.etsy.com/news/2012/demystifying-site-outages/</a>
+This emerges as your process begins to mature, which is interesting. Most of them happen because your process is immature.</p>
+</li>
+<li>
+<p><strong>Multi-stage deploys of unrelated components.</strong> e.g. security fix is unrelated to the rest of it 
+Pretty common, especially if you deploy infrequently. The good ol’ batch deploy that takes awhile and people get burned out or fatigued and then they make mistakes. Or, it’s not their component and they don’t have skin in the game
+Really good argument for more frequent deploys [accelerate reference!]
+Recommendation is to split it out. No reason not to do two separate deploys, other than perhaps organizational process or dysfunction (pathological optimism again).</p>
+</li>
+<li>
+<p><strong>Accidentally deploy more than you thought you did.</strong>
+<a href="https://blog.etsy.com/news/2012/demystifying-site-outages/">https://blog.etsy.com/news/2012/demystifying-site-outages/</a></p>
+</li>
+<li>
+<p><strong>Zombie hosts.</strong> Hosts that come back from maintenance / the dead running old version of the software after the deploy is complete; and new version operating under the assumption that the fleet is only running the new version / all instances speak the same new protocol (cscotta)
+Because the system is large and distributed, not all of it may be accessible during the time of your deployment. After the deployment some additional hosts become visible and are running the older version of the application, which is unexpected and causes a failure.</p>
+</li>
+<li>
+<p><strong>Running out of AWS resources.</strong> Like discovering there literally ARE no more i3.16xlarge instances to purchase. (Aphyr)
+New app is slower, so we need 3x the servers to run it – “I refactored the code to make it easier to read, but now it’s slower”; “How much could one server cost, Michael?”
+If you have rollbacks, you should be fine. Or autoscaling. You can just pay.
+Scaling beyond the capabilities of a vendor (who doesn&rsquo;t exactly want you to know you&rsquo;re their largest customer) results in downtime. Either you force the vendor to &ldquo;git gud&rdquo; or you patch to make the app creak along as you frantically build a migration path to another vendor, disrupting the roadmap in the proces.</p>
+</li>
+</ol>
+<h2 id="manual-deploys">Manual Deploys</h2>
+<p>Manual deploys are truly terrible. If there is a villain in the story of DevOps, it is manual deploys. They are not the serpent in the garden promising forbidden knowledge. Manual deploys are the Diablo boss that probably smells like rotten onions and toe fungus IRL and whose only purpose is to destroy any and all life.</p>
+<p>Not convinced yet? Here are reasons A through Z to stop living in clown town. Each should be enough to convince you to automate at least the tedious parts of your deploys. Please, we beg you on behalf of humanity and reason, automate the things you can, even if your org has an aversion to it.</p>
+<ul>
+<li>
+<p><strong>A</strong>n engineer walks into a bar, has two beers, and now is deploying to the entire cluster as they order a third beer. The bartender says, “You know, if you used an orchestrator, you could order something stronger.” That bartender’s name? Q. Burr-Netty.</p>
+</li>
+<li>
+<p><strong>B</strong>ackups of the database probably don’t work. Everytime you take a <em>snapshot</em> (correct?), it’s someone reading the docs off a DigitalOcean post on how to back up MySQL</p>
+</li>
+<li>
+<p><strong>C</strong>opy pasta is always served with failsauce. Copying a config from an existing build to a new one, then forgetting to change authorization material. Copying SSH authorized keys between machines… and if you’re managing them like that, it’s probably append only which means your old ops people still have access to your prod servers.</p>
+</li>
+<li>
+<p><strong>D</strong>isk management as a matryoshka doll of disasters: capacity management, failing to provision enough [space?], IOPS management, SAN management and all the babysitting required for distributed disks, we probably don’t need to go on.</p>
+</li>
+<li>
+<p><strong>E</strong>xpiration of certificates or domains…
+join the bridge call bleary eyed because a failing manual deployment that started during work hours continued late into the night and only now did they think to escalate to you&quot;</p>
+</li>
+<li>
+<p><strong>F</strong>orget to smoke test the whole environment
+&ldquo;every manual test we performed was (un)lucky enough to hit the “good” servers&rdquo;  <a href="https://www.bungie.net/en/News/Article/48723">https://www.bungie.net/en/News/Article/48723</a></p>
+</li>
+<li>
+<p><strong>G</strong>eoDNS with manual region switching so you can take down a data center and update it without any traffic… but actually DNS takes awhile to propagate so you still have a trickle of traffic coming in (but no one really cares that much)</p>
+</li>
+<li>
+<p><strong>H</strong>andling hardware failures is nigh on impossible. Are your systems even failing over?</p>
+</li>
+<li>
+<p><strong>I</strong>mproper sequence when deploying components. Just like your dance moves, the order of your deploy steps is all wrong.</p>
+</li>
+<li>
+<p><strong>J</strong>umpbox that people use as a dumping ground for random assets they need in prod, like random JAR files or Debian packages, movies they torrent at the office that they want to get on their home machine, random database dumps that people need for various purposes…</p>
+</li>
+<li>
+<p><strong>K</strong>een to have the deploy done, you do not wait for changes to propagate, nor for the cache to become warm, nor for the system to become healthy. “No, sir, the engineer really worth having won&rsquo;t wait for anybody.” ~ F. Scoff Gitzgerald<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
+</li>
+<li>
+<p><strong>L</strong>onesome server runs the wrong version because you forgot to update all the servers. Or, you forgot one region when you’re doing multi-region updates.</p>
+</li>
+<li>
+<p><strong>M</strong>ismatched component versions.</p>
+</li>
+<li>
+<p><strong>N</strong>ot copying code to all of the servers and not removing the old code from it, leading to conflicts.</p>
+</li>
+<li>
+<p><strong>O</strong>verlook which environment you’re in (like GitLab). If it happens, it’s a process failure. Because it’s an easy thing to overlook, but there should be a lot more processes in place to make sure if someone is fucking around in prod – you shouldn’t be able to make this mistake.</p>
+</li>
+<li>
+<p><strong>P</strong>rovision users manually. Not only is it a pain in the ass, it is also fraught with peril.</p>
+</li>
+<li>
+<p><strong>Q</strong>uarrels between IP addresses and hostnames</p>
+</li>
+<li>
+<p><strong>R</strong>otate the password or keys, but forget to update the service config with the new password. You rotate the password, of course you have to update the config, but there may be numerous configs and it can be easy to miss one of it’s not documented or automated. <a href="https://www.traviscistatus.com/incidents/khzk8bg4p9sy">https://www.traviscistatus.com/incidents/khzk8bg4p9sy</a></p>
+</li>
+<li>
+<p><strong>S</strong>moke tests aren’t performed after manual production deploy. If you’re doing deploys the wrong way (i.e. the manual way), smoke tests are a way to mitigate some of the issues &ndash; but you must remember to actually conduct them.</p>
+</li>
+<li>
+<p><strong>T</strong>rusting that your on-call team will be paged despite never testing the paging plan.</p>
+</li>
+<li>
+<p><strong>U</strong>pdating the monitoring system is overlooked. 
+Having a system register with the agent that’s supposed to do monitoring
+If you autoscale, the system managing the autoscaling with self-monitor the hosts
+If you add a host manually to a system that doesn’t scale, you probably want to add it to the system that monitors as well</p>
+</li>
+<li>
+<p><strong>V</strong>PN that is a single-point-of-failure is held together with duct tape and twine. It’s required to get into the network to do the deploys but apparently making it not suck is not required.</p>
+</li>
+<li>
+<p><strong>W</strong>ait for DNS propagation? Who has time for that?</p>
+</li>
+<li>
+<p><strong>X</strong>11 and RDP-based deploys where a tired sysadmin remotely logs into the virtual desktop of a system that shouldn&rsquo;t even have a graphical environment and haphazardly drags files around until the new release is live. The commands can&rsquo;t even be audited because there were no commands, only mouse movements</p>
+</li>
+<li>
+<p><strong>Y</strong>our sysadmin does maintenance on the database so that it can stay up, but in the morning you discover the settings they’ve changed cause the database to no longer do its background maintenance processes and you’ve just deferred your downtime until later</p>
+</li>
+<li>
+<p><strong>Z</strong>IP or JAR file is copied from the developer’s laptop and now you have no record of actually what was deployed.</p>
+</li>
+</ul>
+<hr>
+<p>Thank you to the following co-conspirators for their contributions to this list: Scott Andreas, Matthew Baltrusitis, Zac Duncan, Dr. Nicole Forsgren, Bea Hughes, Kyle Kingsbury, Toby Kohlenberg, Ben Linsay, Caitie McCaffrey, Mikhail Panchenko, Alex Rasmussen, Leif Walsh, Jordan West, and Vladimir Wolstencroft.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>This brings to mind Vonnegut’s advice of <em>“Be a sadist. No matter how sweet and innocent your leading characters, make awful things happen to them—in order that the reader may see what they are made of.”</em> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>Greetz to /r/gamingcirclejerk <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>Paraphrased from Chapter 2 of <em>This Side of Paradise</em> by F. Scott Fitzgerald: <a href="https://www.bartleby.com/115/22.html">https://www.bartleby.com/115/22.html</a> <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://swagitda.com/blog/tags/devops">DevOps</a></span><span class="tag"><a href="https://swagitda.com/blog/tags/infrastructure">Infrastructure</a></span><span class="tag"><a href="https://swagitda.com/blog/tags/infosec">InfoSec</a></span>
+                </p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>9350 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2022-05-21 08:11 -0400</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h">Read other posts</span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="https://swagitda.com/blog/posts/harpocrates-remote-admin-as-a-service-pitchdeck/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">HarpoCrates Pitchdeck: Remote Administration as a Service</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                        <span class="button next">
+                            <a href="https://swagitda.com/blog/posts/infosec-buzzword-bingo-2022/">
+                                <span class="button__text">Infosec Startup Buzzword Bingo: 2022 Edition</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2022</span>
+            
+                <span><a href="https://swagitda.com/blog/">Kelly Shortridge</a></span>
+            
+            <span>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</span>
+            <span> <a href="https://swagitda.com/blog/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/blog/bundle.min.c3134e4a0a3d5ff628f7e932e4d6846626cad5e9457046b58e07c6036133ea0d788e9d330d51e709b43a7a8a22e1a4cf28aff9dbf27756a6a12b9c135260726a.js" integrity="sha512-wxNOSgo9X/Yo9&#43;ky5NaEZibK1elFcEa1jgfGA2Ez6g14jp0zDVHnCbQ6eooi4aTPKK/52/J3VqahK5wTUmByag=="></script>
+
+
+
+    </body>
+</html>

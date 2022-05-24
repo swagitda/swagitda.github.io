@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 02 Feb 2022 08:10:34 -0500</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/infosec/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 May 2022 21:12:36 -0400</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/infosec/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HarpoCrates Pitchdeck: Remote Administration as a Service</title>
+      <link>https://swagitda.com/blog/posts/harpocrates-remote-admin-as-a-service-pitchdeck/</link>
+      <pubDate>Mon, 23 May 2022 21:12:36 -0400</pubDate>
+      
+      <guid>https://swagitda.com/blog/posts/harpocrates-remote-admin-as-a-service-pitchdeck/</guid>
+      <description>I had never encountered a DevSecOps startup I considered revolutionary, until HarpoCrates. This post exposes this revelation, including HarpoCrates&#39; exclusive pitch deck for those interested in investing in their sizzling seed round&amp;hellip;</description>
+    </item>
+    
     <item>
       <title>Infosec Startup Buzzword Bingo: 2022 Edition</title>
       <link>https://swagitda.com/blog/posts/infosec-buzzword-bingo-2022/</link>
@@ -133,16 +142,6 @@
       <guid>https://swagitda.com/blog/posts/when-prospect-theory-meets-chaos-engineering/</guid>
       <description>There is a connection between my research into behavioral models of information security and my Black Hat USA talk with Dr. Forsgren from last week regarding DevOps and the future of information security that might not be immediately obvious. However, it is a connection I believe is worth illuminating.
 Adopting the “chaotic infosec” philosophy (the application of chaos engineering to information security) can influence those who build and secure systems to operate more like attackers – that is, to be more risk averse and to more quickly update their mental models given new inputs.</description>
-    </item>
-    
-    <item>
-      <title>Analyzing the Black Hat USA 2019 Business Hall</title>
-      <link>https://swagitda.com/blog/posts/analyzing-blackhatusa-business-hall-2019/</link>
-      <pubDate>Fri, 02 Aug 2019 08:35:54 -0400</pubDate>
-      
-      <guid>https://swagitda.com/blog/posts/analyzing-blackhatusa-business-hall-2019/</guid>
-      <description>Prerequisite plug that you should come see my talk with Dr. Nicole Forsgren at Black Hat next week (16:00 in South Pacific)!
-What type of vendors are showing themselves off in the Business Hall? Are they mostly startups? Exactly like last year, 46% of the vendors in the Business Hall are startups backed by venture capital (VC) firms. Private companies represent only 13% of total vendors this year (vs. 17% last year), and there are far more acquired companies (&#34;</description>
     </item>
     
   </channel>

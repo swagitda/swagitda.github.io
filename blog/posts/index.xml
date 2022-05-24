@@ -6,8 +6,234 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-        <lastBuildDate>Wed, 02 Feb 2022 08:10:34 -0500</lastBuildDate>
+        <lastBuildDate>Mon, 23 May 2022 21:12:36 -0400</lastBuildDate>
         <atom:link href="https://swagitda.com/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>HarpoCrates Pitchdeck: Remote Administration as a Service</title>
+            <link>https://swagitda.com/blog/posts/harpocrates-remote-admin-as-a-service-pitchdeck/</link>
+            <pubDate>Mon, 23 May 2022 21:12:36 -0400</pubDate>
+            
+            <guid>https://swagitda.com/blog/posts/harpocrates-remote-admin-as-a-service-pitchdeck/</guid>
+            <description>I had never encountered a DevSecOps startup I considered revolutionary, until HarpoCrates. This post exposes this revelation, including HarpoCrates&#39; exclusive pitch deck for those interested in investing in their sizzling seed round&amp;hellip;</description>
+            <content type="html"><![CDATA[<hr>
+<p>This past weekend, I learned of the most revolutionary DevSecOps startup yet.</p>
+<p>Naive to my imminent enlightenment, I crunched into some delectably crispy bacon while having brunch with my bff, Apate Dolus, in the Village. Just as I was arranging a forkful of over-medium egg with peppery watercress, she took off her Tom Ford sunnies and gingerly folded them next to her truffle omelette, straightening her posture and drawing a deep breath. I halted my brunching and returned her intense eye contact, now curious.</p>
+<p>&ldquo;What is it?&rdquo;</p>
+<p>&ldquo;I&rsquo;ve founded a startup. I&rsquo;m raising a seed round. And I want you to share its vision with your audience.&rdquo;</p>
+<p>My heart rate relented. That was all? I continued my cronching and monching, now with an extra serving of blasé.</p>
+<p>&ldquo;So,&rdquo; I asked in between bites, &ldquo;what does it do?&rdquo; Knowing Apate&rsquo;s ambition, I assumed she must be capitalizing on the effervescent web3 hype or else had crafted some other couture cash grab.</p>
+<p>But what she said next thunderbolted me in place.</p>
+<p>&ldquo;<em>It</em> is HarpoCrates and we&rsquo;re revolutionizing remote administration as a service. We&rsquo;re going after a $2 trillion TAM with another $10 trillion &ndash; and change,&rdquo; she grinned, &ldquo;in untapped upside.&rdquo; Her phone was suddenly in my hand, the pitch deck&rsquo;s cover blazing on the screen. &ldquo;Read it. The secret is AI to deliver remote encryption services at lightspeed and hyperscale. Deep learning. NLP. The highest payment conversion rates you&rsquo;ve ever seen. The biggest <em>payments</em> you&rsquo;ve ever seen. Think of it this way&hellip; HarpoCrates is an anemone and the world is our tasty fucking oyster.&rdquo;</p>
+<p>Time stilled on the sleepy cobblestoned street. A fat bumblebee guzzled nectar in a violently pink azalea bush near our cast iron café table. I, too, felt I was drinking deeply of some sweet substance. Apate&rsquo;s pitch was near divine, an ambrosia too sublime for mere mortal throats to imbibe. The TAM pierced my soul like Poseidon&rsquo;s trident; the value prop glinted and scintillated like Athena&rsquo;s fabled crown; the differentiators dazzled and tantalized to such a titillating degree that I imagined Zeus himself would deign to transform into a vulnerable VPN just for a moment&rsquo;s entanglement with HarpoCrates &ndash; HarpoCrates, so clearly fated as the climax of DevSecOps by all the oracles across all the lands, lest they be fools.</p>
+<p>Apate swirled her yuzu mimosa as a royal vizier might swirl a mystical tonic in their jeweled goblet, having just bequeathed arcane insights from distant coruscating constellations upon an awestruck prince. Her long, coffin-shaped nails now bore a new meaning: a prophecy of the competitors she would bury. Her diamond tennis bracelet gleamed like a pristine weapon to be wielded around the market&rsquo;s tender neck, wringing every last dollar from its coffers.</p>
+<p>I looked up at the clouds swaying across the sky to the jazz of the late spring breeze. Such majesty, so high up&hellip; but not as high as I knew HarpoCrates' valuation must be. Perhaps not even as majestic as the RAaaS revolution to come.</p>
+<p>&ldquo;Do you have a lead yet?&rdquo; I asked, still awestruck. She rolled her eyes.</p>
+<p>&ldquo;Obviously. Every top VC was begging to lead. But I want some darling angels in my choir. And that&rsquo;s where you come in. RSA is soon and I want meetings with the best of the best in infosec.&rdquo;</p>
+<p>My hands trembled as finished nibbling on my bacon and sipping my matcha latte. I felt honored with this glorious burden. This must be how Napoleon&rsquo;s generals must have felt, I marveled, watching an overheated Chow Chow prance past our table. So, too, would HarpoCrates prance into countless enterprises and slobber all over them until they relinquished their coins.</p>
+<p>Thus, here I am before the Internet today, spreading the word about the seed round to end all seed rounds, which is being led by the world&rsquo;s best VC (who must remain anonymous, <a href="https://twitter.com/lettersofnote/status/397354825915985921?lang=en">for secret reasons</a>).</p>
+<p>I&rsquo;ve included the pitch deck below for the world&rsquo;s perusal. HarpoCrates is <strong>actively seeking follow-on and angel investors</strong>, so if you&rsquo;ll be in SF during RSAC week, I implore you to email Apate at <a href="mailto:ad@harpocrates.dev">ad@harpocrates.dev</a> to learn more about this unprecedented opportunity and fund this unrivaled revolution in remote systems administration.</p>
+<script type="text/javascript" src= '/blog/js/pdf-js/build/pdf.js'></script>
+<style>
+#the-canvas {
+  border: 1px solid black;
+  direction: ltr;
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+#paginator {
+  display: none;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#paginator button {
+  display: inline-block;
+}
+
+#loadingWrapper {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 350px;
+}
+
+#loading {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #d2d0d0;;
+  border-radius: 50%;
+  border-top-color: #383838;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+</style>
+
+<div id="paginator">
+    <button id="prev">Previous</button>
+    <button id="next">Next</button>
+    &nbsp; &nbsp;
+    <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
+</div>
+<div id="embed-pdf-container">
+    <div id="loadingWrapper">
+      <div id="loading"></div>
+    </div>
+    <canvas id="the-canvas"></canvas>
+</div>
+
+<script type="text/javascript">
+window.onload = function() {
+
+
+var url = "" + '\/blog\/img\/HarpoCrates-Overview-May-2022-Investor-Deck.pdf';
+
+var hidePaginator = "" === "true";
+var hideLoader = "" === "true";
+var selectedPageNum = parseInt("") || 1;
+
+
+var pdfjsLib = window['pdfjs-dist/build/pdf'];
+
+
+pdfjsLib.GlobalWorkerOptions.workerSrc = "/blog/" + 'js/pdf-js/build/pdf.worker.js';
+
+
+var pdfDoc = null,
+    pageNum = selectedPageNum,
+    pageRendering = false,
+    pageNumPending = null,
+    scale = 3,
+    canvas = document.getElementById('the-canvas'),
+    ctx = canvas.getContext('2d'),
+    paginator = document.getElementById("paginator"),
+    loadingWrapper = document.getElementById('loadingWrapper');
+
+
+
+showPaginator();
+showLoader();
+
+
+
+function renderPage(num) {
+  pageRendering = true;
+  
+  pdfDoc.getPage(num).then(function(page) {
+    var viewport = page.getViewport({scale: scale});
+    canvas.height = viewport.height;
+    canvas.width = viewport.width;
+
+    
+    var renderContext = {
+      canvasContext: ctx,
+      viewport: viewport
+    };
+    var renderTask = page.render(renderContext);
+
+    
+    renderTask.promise.then(function() {
+      pageRendering = false;
+      showContent();
+      
+      if (pageNumPending !== null) {
+        
+        renderPage(pageNumPending);
+        pageNumPending = null;
+      }
+    });
+  });
+
+  
+  document.getElementById('page_num').textContent = num;
+}
+
+
+
+function showContent() {
+  loadingWrapper.style.display = 'none';
+  canvas.style.display = 'block';
+}
+
+
+
+function showLoader() {
+  if(hideLoader) return
+  loadingWrapper.style.display = 'flex';
+  canvas.style.display = 'none';
+}
+
+
+
+function showPaginator() {
+  if(hidePaginator) return
+  paginator.style.display = 'block';
+}
+
+
+
+function queueRenderPage(num) {
+  if (pageRendering) {
+    pageNumPending = num;
+  } else {
+    renderPage(num);
+  }
+}
+
+
+
+function onPrevPage() {
+  if (pageNum <= 1) {
+    return;
+  }
+  pageNum--;
+  queueRenderPage(pageNum);
+}
+document.getElementById('prev').addEventListener('click', onPrevPage);
+
+
+
+function onNextPage() {
+  if (pageNum >= pdfDoc.numPages) {
+    return;
+  }
+  pageNum++;
+  queueRenderPage(pageNum);
+}
+document.getElementById('next').addEventListener('click', onNextPage);
+
+
+
+pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+  pdfDoc = pdfDoc_;
+  var numPages = pdfDoc.numPages;
+  document.getElementById('page_count').textContent = numPages;
+  
+  
+  if(pageNum > numPages) {
+    pageNum = numPages
+  }
+
+  
+  renderPage(pageNum);
+});
+}
+
+</script>
+
+]]></content>
+        </item>
         
         <item>
             <title>Infosec Startup Buzzword Bingo: 2022 Edition</title>
@@ -18,7 +244,7 @@
             <description>What buzzwords define the infosec industry in 2022? This post introduces the 2022 edition of the Infosec Buzzword Bingo Card and analyzes the state of security through the lens of the zeitgeistyist buzzwords.</description>
             <content type="html"><![CDATA[<p>It is the year 2022. One hundred years after T.S. Eliot wrote <em>The Wasteland</em>, we find ourselves lost in a wasteland of information security buzzwords. If we grab a handful of dust from this parched land, what trends do we see? This edition of <a href="https://swagitda.com/blog/posts/buzzword-bingo-all-editions/">my annual Infosec Buzzword Bingo</a> elucidates the current zeitgeist through which buzzwords are most popular among security startups.</p>
 <p>I surveyed 100 infosec companies’ websites<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, the vast majority of which are startups who raised VC funding in the past nine to twelve months. The idea behind the bingo card is to take it with you on physical journeys through vendor halls or virtual quests through vendor websites and see whether you can replace your existential dread with a cry out into the void of “Bingo!”.</p>
-<p>For even more fun, see what your cursed cyber startup would offer by trying out my <a href="https://brightly-willing-guinea.edgecompute.app/">Infosec Startup Tagline Generator</a> (built on Compute@Edge), which includes all the &ldquo;best&rdquo; buzzwords from this years' cohort: <a href="https://brightly-willing-guinea.edgecompute.app/">https://brightly-willing-guinea.edgecompute.app/</a></p>
+<p>For even more fun, see what your cursed cyber startup would offer by trying out my <a href="https://brightly-willing-guinea.edgecompute.app/">Infosec Startup Tagline Generator</a> (built on <a href="https://developer.fastly.com/solutions/starters/">Compute@Edge</a>), which includes all the &ldquo;best&rdquo; buzzwords from this years' cohort: <a href="https://brightly-willing-guinea.edgecompute.app/">https://brightly-willing-guinea.edgecompute.app/</a></p>
 <p>Without further introduction, below is the 2022 Infosec Startup Buzzword Bingo card – read on if you want more analysis:</p>
 <p><img src="/blog/img/infosec-startup-buzzword-bingo-2022.png" alt="The 2022 edition of the infosec buzzword bingo card. The background is terrible cyber art that is roughly a translucent caution sign resting above vaporwave colored cubes that are meant to look vaguely like a circuit board. In order from left to right, starting on the upper left side, the buzzwords included on the card are as follows. Automated. Discover. Cloud-native. Engine. Visibility. API. AI / ML. Seamless. Posture. One-click. Powerful. Dynamic. Continuous, which is the center word of the bingo card. Deep. Accelerate. Simple. Zero Trust. Agentless. Native. Lifecycle. Platform. Accurate. Enforce. Real-time. Context."></p>
 <p>The top word this year was <em><strong>automated</strong></em> and its variants (<em><strong>automatically</strong></em>, <em><strong>automation</strong></em>, <em><strong>automates</strong></em>), which makes it the reigning champion since 2019. And everyone is now a <strong><em>platform</em></strong>, the second most popular word, even startups who do not actually offer a way to build or run anything on top of what they created (especially when their only creation is an MVP to raise their seed round).</p>

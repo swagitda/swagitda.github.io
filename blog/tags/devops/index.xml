@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DevOps on Kelly Shortridge</title>
+    <link>https://swagitda.com/blog/tags/devops/</link>
+    <description>Recent content in DevOps on Kelly Shortridge</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Sat, 21 May 2022 08:11:36 -0400</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>69 Ways to F*ck Up Your Deploy</title>
+      <link>https://swagitda.com/blog/posts/69-ways-to-mess-up-your-deploy/</link>
+      <pubDate>Sat, 21 May 2022 08:11:36 -0400</pubDate>
+      
+      <guid>https://swagitda.com/blog/posts/69-ways-to-mess-up-your-deploy/</guid>
+      <description>This post is a cursed compendium of 69 ways to fuck up your deploy. It is the Grimms Brothers version of deployment scenarios.</description>
+    </item>
+    
+  </channel>
+</rss>
