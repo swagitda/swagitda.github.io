@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "main.css",
-	"sourceRoot": "C:/Users/strategizer/Documents/GitHub/swagitda-blog",
+	"sourceRoot": "C:/Users/strategizer/Dropbox/PC (2)/Documents/GitHub/swagitda-blog",
 	"sources": [
 		"themes/hello-friend-ng/assets/scss/main.scss",
 		"themes/hello-friend-ng/assets/scss/_normalize.scss",

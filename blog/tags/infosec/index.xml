@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 23 May 2022 21:12:36 -0400</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/infosec/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Jul 2022 21:01:28 -0400</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/infosec/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Opportunity Cost of Action Bias in Cybersecurity Incident Response</title>
+      <link>https://swagitda.com/blog/posts/opportunity-cost-action-bias-cybersecurity-incident-response/</link>
+      <pubDate>Wed, 27 Jul 2022 21:01:28 -0400</pubDate>
+      
+      <guid>https://swagitda.com/blog/posts/opportunity-cost-action-bias-cybersecurity-incident-response/</guid>
+      <description>This post highlights key insights from our new paper on infosec incident response and the opportunity cost of action bias &amp;ndash; how the human tendency to favor action over inaction influences IR activities &amp;ndash; using the Sony breach as a case study.</description>
+    </item>
+    
     <item>
       <title>HarpoCrates Pitchdeck: Remote Administration as a Service</title>
       <link>https://swagitda.com/blog/posts/harpocrates-remote-admin-as-a-service-pitchdeck/</link>
@@ -132,16 +141,6 @@
       
       <guid>https://swagitda.com/blog/posts/ransomware-towards-an-economic-equilibrium/</guid>
       <description>This post will explore my thoughts on how the economics of physical ransom translate to digital ransom, and how we as an industry might want to reconceive our current approaches to considering and dealing with ransomware – and the criminals who run ransomware campaigns.</description>
-    </item>
-    
-    <item>
-      <title>When Prospect Theory Meets Chaos Engineering</title>
-      <link>https://swagitda.com/blog/posts/when-prospect-theory-meets-chaos-engineering/</link>
-      <pubDate>Mon, 12 Aug 2019 08:00:00 -0400</pubDate>
-      
-      <guid>https://swagitda.com/blog/posts/when-prospect-theory-meets-chaos-engineering/</guid>
-      <description>There is a connection between my research into behavioral models of information security and my Black Hat USA talk with Dr. Forsgren from last week regarding DevOps and the future of information security that might not be immediately obvious. However, it is a connection I believe is worth illuminating.
-Adopting the “chaotic infosec” philosophy (the application of chaos engineering to information security) can influence those who build and secure systems to operate more like attackers – that is, to be more risk averse and to more quickly update their mental models given new inputs.</description>
     </item>
     
   </channel>

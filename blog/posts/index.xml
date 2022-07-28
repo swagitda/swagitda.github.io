@@ -6,8 +6,47 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-        <lastBuildDate>Mon, 23 May 2022 21:12:36 -0400</lastBuildDate>
+        <lastBuildDate>Wed, 27 Jul 2022 21:01:28 -0400</lastBuildDate>
         <atom:link href="https://swagitda.com/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Opportunity Cost of Action Bias in Cybersecurity Incident Response</title>
+            <link>https://swagitda.com/blog/posts/opportunity-cost-action-bias-cybersecurity-incident-response/</link>
+            <pubDate>Wed, 27 Jul 2022 21:01:28 -0400</pubDate>
+            
+            <guid>https://swagitda.com/blog/posts/opportunity-cost-action-bias-cybersecurity-incident-response/</guid>
+            <description>This post highlights key insights from our new paper on infosec incident response and the opportunity cost of action bias &amp;ndash; how the human tendency to favor action over inaction influences IR activities &amp;ndash; using the Sony breach as a case study.</description>
+            <content type="html"><![CDATA[<p>I recently had the delectable pleasure of collaborating with some fine folks on <a href="https://josiahdykstra.com/wp-content/uploads/2022/06/HFES2022_OpportunityCostAndActionBias.pdf">a paper about behavioral factors in infosec incident response</a>, specifically about the opportunity cost of action bias &ndash; the human tendency to favor action over inaction &ndash; in these activities. The influence of cognitive bias in various infosec endeavors is an underexplored <a href="https://swagitda.com/blog/tags/behavioral-infosec/">area of research</a> and this paper aims to change that, starting with supporting more constructive incident response decision-making.</p>
+<p>There are a few points we made in <a href="https://josiahdykstra.com/wp-content/uploads/2022/06/HFES2022_OpportunityCostAndActionBias.pdf">the paper</a> that I especially want to highlight:</p>
+<ul>
+<li>Overlooking <a href="https://www.stlouisfed.org/open-vault/2020/january/real-life-examples-opportunity-cost">opportunity cost</a> &ndash; the loss of potential gain from other alternatives when a choice is made &ndash; is rife within infosec decision-making across all activities, not just incident response (IR); get hyped for more on this from Josiah and me soon</li>
+<li>One way to start incorporating opportunity cost in practice is by considering the &ldquo;null baseline&rdquo;; in the context of incident response, it means considering the option of <em>waiting</em> to act</li>
+<li><a href="https://thedecisionlab.com/biases/action-bias">Action bias</a> is especially bad for IR because <em>any</em> option may be chosen without regard for its cost or value &ndash; and such rushed decisions can lead to suboptimal outcomes</li>
+<li>We use the Sony Breach as a case study of this and it&rsquo;s worth pondering how much money they lost from the heat-of-the-moment decision to shut down all computers along with the corporate network once they discovered the intrusion</li>
+<li>This problem extends beyond security-specific IR, too &ndash; for instance, restarting database services that are running “hot” can exacerbate and extend the incident, despite reflecting a common knee-jerk response</li>
+<li>Part of incident preparation involves ensuring more choice options are available during response; for example, reliable logging pipelines would enable the rebuild option during response without sacrificing visibility into system behavior</li>
+<li>Our hypothesis is that thinking about a temporary delay is more helpful than a “do nothing” mentality as well as the &ldquo;do something&rdquo; (i.e. action bias-driven) mentality &ndash; the paper, of course, elaborates on why we believe so</li>
+<li>Practitioners frequently conflate ambiguity and uncertainty; in incident response, collecting more information (solving uncertainty) will not always guide you towards which choice will result in the optimal outcome (i.e. it won&rsquo;t resolve ambiguity)</li>
+<li>Opportunity cost in infosec must also be considered with respect to its externalities; decisions made by defenders will impose costs on other stakeholders, whether users, software engineers, or even society &ndash; and those costs are woefully neglected today</li>
+<li>Pre-mortems, post-mortems, and chaos engineering experiments can all help incident response teams build &ldquo;muscle memory&rdquo; to support &ldquo;watchful waiting&rdquo; rather than succumbing to the instinct to act immediately</li>
+<li>And honestly our send-off just straight up slaps: &ldquo;To <em>avoid</em> a breach is to try and prevent it. Overcoming action bias
+and properly pricing in opportunity cost instead requires a focus on preparation.&rdquo;</li>
+</ul>
+<p>The paper&rsquo;s venue is the upcoming Human Factors and Ergonomics Society Annual Meeting in October 2022, but my co-author Josiah Dykstra published it on his site for the viewing pleasure of all mortals out there seeking enlightenment: <a href="https://josiahdykstra.com/wp-content/uploads/2022/06/HFES2022_OpportunityCostAndActionBias.pdf">https://josiahdykstra.com/wp-content/uploads/2022/06/HFES2022_OpportunityCostAndActionBias.pdf</a></p>
+<h3 id="abstract">Abstract</h3>
+<p>The hours and days immediately following the discovery of a cyber intrusion can be stressful and chaotic
+for victims. Without a documented and well-rehearsed incident response plan, people are prone to costly
+fear-based reactions. Action bias is the human tendency to favor action over inaction. It feels better for victims
+to do something even if rushed decisions are suboptimal to thoughtful, careful alternatives. Furthermore, the
+null baseline of doing nothing or watchful waiting can sometimes be advantageous. This paper describes
+an application of opportunity cost to action bias. While these insights are not yet backed by empirical data,
+this is the first work to examine the intersection of opportunity cost with action bias in cybersecurity incident
+response. Using Sony Pictures Entertainment as a case study, we discuss the implications of opportunity costs
+from acting prematurely and, conversely, the opportunity costs of waiting to act.</p>
+<h3 id="citation">Citation</h3>
+<p><a href="https://josiahdykstra.com/wp-content/uploads/2022/06/HFES2022_OpportunityCostAndActionBias.pdf">Opportunity Cost of Action Bias in Cybersecurity Incident Response</a>. Josiah Dykstra, Kelly Shortridge, Jamie Met, Douglas Hough. <em>Human Factors and Ergonomics Society Annual Meeting</em>, October 2022.</p>
+]]></content>
+        </item>
         
         <item>
             <title>HarpoCrates Pitchdeck: Remote Administration as a Service</title>
@@ -17,6 +56,7 @@
             <guid>https://swagitda.com/blog/posts/harpocrates-remote-admin-as-a-service-pitchdeck/</guid>
             <description>I had never encountered a DevSecOps startup I considered revolutionary, until HarpoCrates. This post exposes this revelation, including HarpoCrates&#39; exclusive pitch deck for those interested in investing in their sizzling seed round&amp;hellip;</description>
             <content type="html"><![CDATA[<hr>
+<p><em>Disclaimer: this is a satirical post. The publication of this post taught me satire is regrettably an art of which infosec is neither familiar or fond.</em></p>
 <p>This past weekend, I learned of the most revolutionary DevSecOps startup yet.</p>
 <p>Naive to my imminent enlightenment, I crunched into some delectably crispy bacon while having brunch with my bff, Apate Dolus, in the Village. Just as I was arranging a forkful of over-medium egg with peppery watercress, she took off her Tom Ford sunnies and gingerly folded them next to her truffle omelette, straightening her posture and drawing a deep breath. I halted my brunching and returned her intense eye contact, now curious.</p>
 <p>&ldquo;What is it?&rdquo;</p>

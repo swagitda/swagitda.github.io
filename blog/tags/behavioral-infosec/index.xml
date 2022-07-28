@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 12 Jan 2022 08:55:49 -0400</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/behavioral-infosec/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Jul 2022 21:01:28 -0400</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/behavioral-infosec/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Opportunity Cost of Action Bias in Cybersecurity Incident Response</title>
+      <link>https://swagitda.com/blog/posts/opportunity-cost-action-bias-cybersecurity-incident-response/</link>
+      <pubDate>Wed, 27 Jul 2022 21:01:28 -0400</pubDate>
+      
+      <guid>https://swagitda.com/blog/posts/opportunity-cost-action-bias-cybersecurity-incident-response/</guid>
+      <description>This post highlights key insights from our new paper on infosec incident response and the opportunity cost of action bias &amp;ndash; how the human tendency to favor action over inaction influences IR activities &amp;ndash; using the Sony breach as a case study.</description>
+    </item>
+    
     <item>
       <title>The Security Obstructionism (SecObs) Market</title>
       <link>https://swagitda.com/blog/posts/the-security-obstructionism-secobs-market/</link>
