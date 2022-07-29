@@ -15,7 +15,7 @@
             <pubDate>Wed, 27 Jul 2022 21:01:28 -0400</pubDate>
             
             <guid>https://swagitda.com/blog/posts/opportunity-cost-action-bias-cybersecurity-incident-response/</guid>
-            <description>This post highlights key insights from our new paper on infosec incident response and the opportunity cost of action bias &amp;ndash; how the human tendency to favor action over inaction influences IR activities &amp;ndash; using the Sony breach as a case study.</description>
+            <description>This post highlights key insights from our new paper on infosec incident response and the opportunity cost of action bias - how the human tendency to favor action over inaction influences IR - with the Sony breach as a case study.</description>
             <content type="html"><![CDATA[<p>I recently had the delectable pleasure of collaborating with some fine folks on <a href="https://josiahdykstra.com/wp-content/uploads/2022/06/HFES2022_OpportunityCostAndActionBias.pdf">a paper about behavioral factors in infosec incident response</a>, specifically about the opportunity cost of action bias &ndash; the human tendency to favor action over inaction &ndash; in these activities. The influence of cognitive bias in various infosec endeavors is an underexplored <a href="https://swagitda.com/blog/tags/behavioral-infosec/">area of research</a> and this paper aims to change that, starting with supporting more constructive incident response decision-making.</p>
 <p>There are a few points we made in <a href="https://josiahdykstra.com/wp-content/uploads/2022/06/HFES2022_OpportunityCostAndActionBias.pdf">the paper</a> that I especially want to highlight:</p>
 <ul>
