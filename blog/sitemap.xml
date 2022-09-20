@@ -3,32 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://swagitda.com/blog/tags/infosec/</loc>
+    <lastmod>2022-09-15T13:57:43-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/</loc>
+    <lastmod>2022-09-15T13:57:43-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/posts/</loc>
+    <lastmod>2022-09-15T13:57:43-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/posts/securing-the-supply-chain-of-nothing/</loc>
+    <lastmod>2022-09-15T13:57:43-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://swagitda.com/blog/tags/</loc>
+    <lastmod>2022-09-15T13:57:43-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://swagitda.com/blog/tags/behavioral-infosec/</loc>
     <lastmod>2022-07-27T21:01:28-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://swagitda.com/blog/tags/infosec/</loc>
-    <lastmod>2022-07-27T21:01:28-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://swagitda.com/blog/</loc>
-    <lastmod>2022-07-27T21:01:28-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://swagitda.com/blog/posts/opportunity-cost-action-bias-cybersecurity-incident-response/</loc>
-    <lastmod>2022-07-27T21:01:28-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://swagitda.com/blog/posts/</loc>
-    <lastmod>2022-07-27T21:01:28-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://swagitda.com/blog/tags/</loc>
     <lastmod>2022-07-27T21:01:28-04:00</lastmod>
   </url>
   

@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 27 Jul 2022 21:01:28 -0400</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/infosec/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Sep 2022 13:57:43 -0400</lastBuildDate><atom:link href="https://swagitda.com/blog/tags/infosec/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Securing the Supply Chain of Nothing</title>
+      <link>https://swagitda.com/blog/posts/securing-the-supply-chain-of-nothing/</link>
+      <pubDate>Thu, 15 Sep 2022 13:57:43 -0400</pubDate>
+      
+      <guid>https://swagitda.com/blog/posts/securing-the-supply-chain-of-nothing/</guid>
+      <description>This post is a rebuttal to the recent guide on &amp;ldquo;Securing the Software Supply Chain&amp;rdquo; published by CISA, ODNI, and the NSA.</description>
+    </item>
+    
     <item>
       <title>Opportunity Cost of Action Bias in Cybersecurity Incident Response</title>
       <link>https://swagitda.com/blog/posts/opportunity-cost-action-bias-cybersecurity-incident-response/</link>
@@ -132,15 +141,6 @@
       
       <guid>https://swagitda.com/blog/posts/analyzing-2020-rsa-innovation-sandbox/</guid>
       <description>How do the nominees for the 2020 RSA Conference’s Innovation Sandbox look compared to prior years? I decided to explore the funding profile of the 10 selected startups for the competition, but with the benefit of comparison this year.</description>
-    </item>
-    
-    <item>
-      <title>Ransomware: Towards an Economic Equilibrium</title>
-      <link>https://swagitda.com/blog/posts/ransomware-towards-an-economic-equilibrium/</link>
-      <pubDate>Sun, 15 Dec 2019 20:58:46 -0500</pubDate>
-      
-      <guid>https://swagitda.com/blog/posts/ransomware-towards-an-economic-equilibrium/</guid>
-      <description>This post will explore my thoughts on how the economics of physical ransom translate to digital ransom, and how we as an industry might want to reconceive our current approaches to considering and dealing with ransomware – and the criminals who run ransomware campaigns.</description>
     </item>
     
   </channel>
